@@ -42,12 +42,20 @@ Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudow
 
 - Chrome:
 
-[1]: images/chrome-devtools.png
+![Narzędzia dewelopera Chrome](images/chrome-devtools.png "Narzędzia dewelopera Chrome")
 
 - Firefox:
 
-[2]: images/ff-devtools.png
+![Narzędzia dewelopera Firefox](images/ff-devtools.png "Narzędzia dewelopera Firefox")
 
 - Internet Explorer:
 
-[3]: images/ie-devtools.png
+![Narzędzia dewelopera Internet Explorer](images/ie-devtools.png "Narzędzia dewelopera Internet Explorer")
+
+Dla ustalenia uwagi od tej pory skupimy się na przykładzie narzędzi deweloperskich w Chrome. Jak widać, wszystkie z powyższych są do siebie podobne (również w funkcjonalności), jednak Google Chrome oferuje najwygodniejsze i najbardziej funkcjonalne narzędzia.
+
+### Jak poruszać się w narzędziach deweloperskich?
+
+Dopóki nie posiadacie wiedzy na temat kodu HTML i CSS, poruszanie się w *devtoolsach* może wydawać się Wam prawdziwą *czarną magią*. Na początek pokażemy Wam tylko najbardziej podstawowe funkcjonalności, a wraz z nabywaniem nowych umiejętności będziecie się już coraz sprawniej odnajdować w korzystaniu z narzędzi programistycznych.
+
+Zauważyliście pewnie, że *devtoolsy* zawierają dużo przycisków i zakładek. Jednak na potrzeby warsztatów i kodowania tylko w HTML i CSS będziemy korzystać właściwie tylko z jednej - *Elementy* (*Elements*).
