@@ -1,16 +1,16 @@
 # Narzędzia dewelopera stron internetowych
 
-Zanim przystąpisz do pisania pierwszych linijek kodu zaprzyjaźnij się z podstawowymi narzędziami kodera, czyli edytorem tekstu oraz przeglądarką!
+Zanim przystąpicie do pisania pierwszych linijek kodu zaprzyjaźnijcie się z podstawowymi narzędziami kodera, czyli edytorem tekstu oraz przeglądarką!
 
 ## Edytor tekstowy
 
 Czy do kodowania stron będzie nam potrzebny jakiś specjalny rodzaj edytora? Być może moglibyśmy użyć do tego na przykład Worda, który przydaje się często do tworzenia dokumentów? Niestety, programy typu Word zapisują tekst w specjalny sposób, który umożliwia formatowanie tekstu (czyli m.in. zmianę wielkości, koloru albo kroju fonta) - jest to tzw. *[RTF (Rich Text Format)](https://pl.wikipedia.org/wiki/Rich_Text_Format)*.
 
-Twój kod natomiast musi być zapisany w postaci **zwykłego tekstu** (*plain text*), w związku z tym Word na pewno nie będzie dobrym wyborem jako edytor!.
+Wasz kod natomiast musi być zapisany w postaci **zwykłego tekstu** (*plain text*), w związku z tym Word na pewno nie będzie dobrym wyborem jako edytor!.
 
-Prostą stronę internetową możesz zakodować używając Notatnika lub innej domyślnej aplikacji, która umożliwia edycję zwykłych plików tekstowych. Nie jest to zły pomysł na początku Twojej drogi jako kodera, jednak pokażemy Ci, że używanie nieco bardziej zaawansowanych narzędzi nie jest takie straszne, a może bardzo ułatwić Ci pracę.
+Prostą stronę internetową możecie zakodować używając Notatnika lub innej domyślnej aplikacji, która umożliwia edycję zwykłych plików tekstowych. Nie jest to zły pomysł na początku Waszej drogi jako koderów, jednak pokażemy Wam, że używanie nieco bardziej zaawansowanych narzędzi nie jest takie straszne, a może bardzo ułatwić pracę.
 
-Kiedy już bardzo się wprawisz w programowaniu stron, na pewno Twoje potrzeby w stosunku do edytora kodu wzrosną - zarówno odnośnie wydajności jak i funkcjonalności. Zwykle w swojej codziennej pracy programiści korzystają z tzw. *IDE* (*Integrated Development Environment*, czyli **zintegrowane środowisko programistyczne**), które potrafią bardzo przyspieszyć pracę. W tej chwili jednak nie musisz zajmować sobie tym głowy!
+Kiedy już bardzo się wprawicie w programowaniu stron, na pewno Wasze potrzeby w stosunku do edytora kodu wzrosną - zarówno odnośnie wydajności jak i funkcjonalności. Zwykle w swojej codziennej pracy programiści korzystają z tzw. *IDE* (*Integrated Development Environment*, czyli **zintegrowane środowisko programistyczne**), które potrafią bardzo przyspieszyć pracę. W tej chwili jednak nie musicie zajmować sobie tym głów!
 
 ### Ćwiczenie 1.
 
@@ -22,7 +22,7 @@ Kiedy już bardzo się wprawisz w programowaniu stron, na pewno Twoje potrzeby w
 
 ## Sublime Text, czyli Twoje środowisko pracy
 
-Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierz ze strony wersję odpowiednią dla Twojego systemu operacyjnego i zainstaluj. Sublime Text, oprócz edycji kodu umożliwia m.in. podgląd struktury projektu oraz podświetlanie kodu. 
+Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierzcie ze strony wersję odpowiednią dla Waszego systemu operacyjnego i zainstaluj. Sublime Text, oprócz edycji kodu umożliwia m.in. podgląd struktury projektu oraz podświetlanie kodu. 
 
 ### Ćwiczenie 2.
 
@@ -32,3 +32,22 @@ Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierz ze
 
 ## Narzędzia dewelopera w przeglądarce stron internetowych
 
+Być może kiedyś, kiedy korzystaliście z jakiejś aplikacji na swoim komputerze lub smartfonie kusiło Was, aby podejrzeć jej kod. Jeśli akurat nie było to otwarte oprogramowanie, to treść tego kodu pozostała tajemnicą dla Was, jako zwykłych użytkowników.
+
+Ze stronami internetowymi sytuacja przedstawia się nieco inaczej. Będąc zwykłym odbiorcą, który czyta wiadomości przy śniadaniu, możecie podejrzeć kod strony i zobaczyć, w jaki sposób została zakodowana! Niemożliwe? Wchodząc na dowolną stronę, klikając prawym przyciskiem myszy ukaże się menu kontekstowe. W tym menu powinna znajdować się pozycja `Wyświetl źródło strony` (lub `Pokaż źródło strony`, w zależności od przeglądarki). Po kliknięciu na nią Waszym oczom powinien ukazać się wtedy blok kodu źródłowego strony. To jednak nie koniec możliwości przeglądarki w badaniu kodu stron.
+
+Praca programisty byłaby prosta, a jego życie usłane różami, gdyby wszystkie linijki kodu działały prawidłowo, a rezultaty były przewidywalne. Niestety, jak pewnie się domyślacie tak nie jest. Kiedy kod nie działa tak, jak trzeba, bardzo przydatna jest wiedza na temat tego, jak znaleźć przyczynę błędu. Proces szukania błędów w kodzie nazywamy [debugowaniem](https://pl.wikipedia.org/wiki/Debugowanie).
+
+Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudowanych w przeglądarkę. Aby z nich skorzystać, wystarczy wcisnąć F12 kiedy wyświetlacie dowolną stronę. Oto, jak narzędzia deweloperskie wyglądają w najpopularniejszych przeglądarkach:
+
+- Chrome:
+
+[1]: images/chrome-devtools.png
+
+- Firefox:
+
+[2]: images/ff-devtools.png
+
+- Internet Explorer:
+
+[3]: images/ie-devtools.png
