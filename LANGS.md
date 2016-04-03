@@ -1,1 +1,1 @@
-* [Polish](pl/)
+* [Polish](pl)
