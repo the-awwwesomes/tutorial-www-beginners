@@ -49,6 +49,9 @@ Co to takiego są [metadane](https://pl.wikipedia.org/wiki/Metadane)? W tym przy
 ```html
 <title>Moja pierwsza strona internetowa</title>
 ```
+> #### Info::Info
+>
+> test 
 
 ### Ćwiczenie 3.
 

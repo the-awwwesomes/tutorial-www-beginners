@@ -42,15 +42,15 @@ Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudow
 
 - Chrome:
 
-![Narzędzia dewelopera Chrome](images/chrome-devtools.png "Narzędzia dewelopera Chrome")
+![Narzędzia dewelopera Chrome](/images/chrome-devtools.png "Narzędzia dewelopera Chrome")
 
 - Firefox:
 
-![Narzędzia dewelopera Firefox](images/ff-devtools.png "Narzędzia dewelopera Firefox")
+![Narzędzia dewelopera Firefox](/images/ff-devtools.png "Narzędzia dewelopera Firefox")
 
 - Internet Explorer:
 
-![Narzędzia dewelopera Internet Explorer](images/ie-devtools.png "Narzędzia dewelopera Internet Explorer")
+![Narzędzia dewelopera Internet Explorer](/images/ie-devtools.png "Narzędzia dewelopera Internet Explorer")
 
 Dla ustalenia uwagi od tej pory skupimy się na przykładzie narzędzi deweloperskich w Chrome. Jak widać, wszystkie z powyższych są do siebie podobne (również w funkcjonalności), jednak Google Chrome oferuje najwygodniejsze i najbardziej funkcjonalne narzędzia.
 
