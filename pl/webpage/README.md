@@ -51,5 +51,5 @@ Poszczególne elementy HTML mogą być zagnieżdżane jeden wewnątrz drugiego, 
 
 Zanim zabierzesz się do pisania swojego pierwszego kodu warto wspomnieć o bardzo ważnej regule, która obowiązuje programistów stron internetowych, a jest nią **separacja zawartości i prezentacji**.
 
-
+Dowiedzieliśmy się już, że język HTML służy do opisu treści stron internetowych. Nie zawiera on żadnych informacji o tym, jak powinna wyglądać nasza strona.
 
