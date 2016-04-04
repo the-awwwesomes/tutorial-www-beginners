@@ -20,13 +20,36 @@ HTML jest to specjalny język znaczników, które umożliwiają nam określenie 
 
 Jak pewnie już wiesz, strony internetowe nie składają się tylko z bloków tekstu, zwykle zawierają też nawigację, nagłówek, stopkę, odnośniki do innych stron, itd. W tych przypadkach HTML także okazuje się bardzo przydatny.
 
-Wcześniej wspomnieliśmy o formatowaniu naszych elementów. Czy HTML bezpośrednio wpływa na wygląd naszych elementów? 
+Właściwie możemy myśleć o naszych elementach strony jak o *klockach lego* z których będziemy budować. Każdy taki "klocek" musi być zapisany w specjalny sposób. Nasze elementy opisywane są przez **tagi HTML**. Jak wygląda przykładowy tag?
+
+```html
+<element>
+```
+
+Oto właśnie nasz pojedynczy tag - musi on być zamnknięty i otwarty przez specjalne nawiasy trójkątne. Umożliwia to przeglądarce określenie, że właśnie w tym miejscu znajduje się nasz element i może określić jego przeznaczenie.
+
+Co bardzo ważne, większość elementów musi być zawarta między **otwierającymi** i **zamykającymi** tagami. Tagi zamykające zawierają charakterystyczny `/`:
+
+```html
+<element>Tutaj znajduje się treść.</element>
+```
+
+Warto już tutaj zaznaczyć, że nie wszystkie elementy wymagają tagów zamykających - są to tzw. *puste elementy*. Które to konkretnie, dowiecie się już niedługo w rozdziale zapoznającym z tajnikami HTML.
+
+Poszczególne elementy HTML mogą być zagnieżdżane jeden wewnątrz drugiego, na przykład:
+
+```html
+<element>
+  Jestem rodzicem.
+  <element>
+    Jestem dzieckiem.
+  </element>
+</element>
+```
 
 ### Separacja zawartości i prezentacji
 
-Zanim zabierzesz się do pisania swojego pierwszego kodu warto wspomnieć o bardzo ważnej regule, która obowiązuje programistów stron internetowych, a jest nią właśnie *separacja zawartości i prezentacji*.
+Zanim zabierzesz się do pisania swojego pierwszego kodu warto wspomnieć o bardzo ważnej regule, która obowiązuje programistów stron internetowych, a jest nią **separacja zawartości i prezentacji**.
 
-Przez zawartość rozumiemy tutaj samą treść dokumentu.
 
-Dlaczego jest to takie ważne?
 

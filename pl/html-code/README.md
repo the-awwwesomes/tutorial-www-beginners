@@ -14,6 +14,8 @@ Prawidłowy plik HTML zawiera kilka niezbędnych elementów:
 <!DOCTYPE html>
 ```
 
+Deklaracja `DOCTYPE` mówi nam o wersji i typie dokumentu HTML. Nie ma znaczenia z punktu widzenia treści, jednak jest bardzo ważna dla przeglądarki interpretującej nasz kod.
+
 - Cały kod strony po deklaracji `DOCTYPE` powinien być zamknięty w tagi `<html>`:
 
 ```html
@@ -49,7 +51,7 @@ Co to takiego są [metadane](https://pl.wikipedia.org/wiki/Metadane)? W tym przy
 ```html
 <title>Moja pierwsza strona internetowa</title>
 ```
-> #### Info::Info
+> #### Exercise::Ćwiczenie
 >
 > test 
 
