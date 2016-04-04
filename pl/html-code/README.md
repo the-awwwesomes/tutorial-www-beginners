@@ -51,6 +51,7 @@ Co to takiego są [metadane](https://pl.wikipedia.org/wiki/Metadane)? W tym przy
 ```html
 <title>Moja pierwsza strona internetowa</title>
 ```
+
 > #### Exercise::Ćwiczenie 3.
 >
 > - W folderze `the-awwwesomes` stwórz podfolder `exercise-3`, w którym będziesz przechowywał wynik ćwiczenia. Otwórz ten folder w Sublime Text i utwórz w nim plik `index.html`.
