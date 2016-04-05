@@ -12,7 +12,7 @@ Prostą stronę internetową możecie zakodować używając Notatnika lub innej 
 
 Kiedy już bardzo się wprawicie w programowaniu stron, na pewno Wasze potrzeby w stosunku do edytora kodu wzrosną - zarówno odnośnie wydajności jak i funkcjonalności. Zwykle w swojej codziennej pracy programiści korzystają z tzw. *IDE* (*Integrated Development Environment*, czyli **zintegrowane środowisko programistyczne**), które potrafią bardzo przyspieszyć pracę. W tej chwili jednak nie musicie zajmować sobie tym głów!
 
-> #### Exercise::Ćwiczenie 1.
+> #### Exercise::Ćwiczenie 1
 >
 >- Utwórz w dowolnym miejscu na dysku folder, w którym będziesz przechowywać efekty swojej pracy. 
 >- Możesz go nazwać np. `the-awwwesomes`, a wewnątrz utworzyć podfolder `exercise-1` jako miejsce dla naszego pierwszego ćwiczenia.
@@ -24,7 +24,7 @@ Kiedy już bardzo się wprawicie w programowaniu stron, na pewno Wasze potrzeby 
 
 Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierzcie ze strony wersję odpowiednią dla Waszego systemu operacyjnego i zainstaluj. Sublime Text, oprócz edycji kodu umożliwia m.in. podgląd struktury projektu oraz podświetlanie kodu. 
 
-> #### Exercise::Ćwiczenie 2.
+> #### Exercise::Ćwiczenie 2
 >
 >- Po zainstalowaniu otwórz Sublime Text.
 >- Z menu wybierz `Plik -> Otwórz folder...` i przejdź do folderu, w którym zapisałeś przed chwilą `index.html`
@@ -38,19 +38,21 @@ Ze stronami internetowymi sytuacja przedstawia się nieco inaczej. Będąc zwyk�
 
 Praca programisty byłaby prosta, a jego życie usłane różami, gdyby wszystkie linijki kodu działały prawidłowo, a rezultaty były przewidywalne. Niestety, jak pewnie się domyślacie tak nie jest. Kiedy kod nie działa tak, jak trzeba, bardzo przydatna jest wiedza na temat tego, jak znaleźć przyczynę błędu. Proces szukania błędów w kodzie nazywamy [debugowaniem](https://pl.wikipedia.org/wiki/Debugowanie).
 
-Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudowanych w przeglądarkę. Aby z nich skorzystać, wystarczy wcisnąć F12 kiedy wyświetlacie dowolną stronę. Oto, jak narzędzia deweloperskie wyglądają w najpopularniejszych przeglądarkach:
-
-- Chrome:
-
-![Narzędzia dewelopera Chrome](/images/chrome-devtools.png "Narzędzia dewelopera Chrome")
-
-- Firefox:
-
-![Narzędzia dewelopera Firefox](/images/ff-devtools.png "Narzędzia dewelopera Firefox")
-
-- Internet Explorer:
-
-![Narzędzia dewelopera Internet Explorer](/images/ie-devtools.png "Narzędzia dewelopera Internet Explorer")
+> #### Important::Ważne
+>
+>Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudowanych w przeglądarkę. Aby z nich skorzystać, wystarczy wcisnąć F12 kiedy wyświetlacie dowolną stronę. Oto, jak narzędzia deweloperskie wyglądają w najpopularniejszych przeglądarkach:
+>
+>- Chrome:
+>
+>![Narzędzia dewelopera Chrome](/images/chrome-devtools.png "Narzędzia dewelopera Chrome")
+>
+>- Firefox:
+>
+>![Narzędzia dewelopera Firefox](/images/ff-devtools.png "Narzędzia dewelopera Firefox")
+>
+>- Internet Explorer:
+>
+>![Narzędzia dewelopera Internet Explorer](/images/ie-devtools.png "Narzędzia dewelopera Internet Explorer")
 
 Dla ustalenia uwagi od tej pory skupimy się na przykładzie narzędzi deweloperskich w Chrome. Jak widać, wszystkie z powyższych są do siebie podobne (również w funkcjonalności), jednak Google Chrome oferuje najwygodniejsze i najbardziej funkcjonalne narzędzia.
 

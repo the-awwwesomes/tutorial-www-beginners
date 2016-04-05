@@ -6,6 +6,10 @@
       "exercise": {
         "alert": "success",
         "picto": "fa-pencil"
+      },
+      "important": {
+        "alert": "warning",
+        "picto": "fa-lightbulb-o"
       }
     }
   }

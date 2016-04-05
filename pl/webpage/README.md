@@ -53,3 +53,30 @@ Zanim zabierzesz się do pisania swojego pierwszego kodu warto wspomnieć o bard
 
 Dowiedzieliśmy się już, że język HTML służy do opisu treści stron internetowych. Nie zawiera on żadnych informacji o tym, jak powinna wyglądać nasza strona. Aby nadać jej nasz wymarzony wygląd musimy stworzyć "skórkę". W programowaniu WWW do tego celu służą **kaskadowe arkusze styli**, czyli **CSS** (Cascading Style Sheets).
 
+> #### Important::Ważne
+>
+>Istnieje możliwość deklarowania styli bezpośrednio w kodzie HTML. Nie jest to jednak dobrą praktyką, ponieważ kod opisujący prezentację strony jest ściśle powiązany z kodem opisującym jego treść. Dużo łatwiej wprowadzać zmiany w wyglądzie strony oraz utrzymywać kod, kiedy te dwie warstwy są logicznie od siebie oddzielone - to właśnie nazywamy **separacją zawartości i prezentacji**.
+>
+>Style piszemy w osobnych plikach z rozszerzeniem `*.css` i dołączamy do naszego dokumentu HTML w specjalny sposób. Jak? Dowiesz się już niedługo!
+
+### Język CSS
+
+Język CSS różni się znacznie w zapisie od HTML. HTML to język znaczników, natomiast CSS to po prostu lista reguł opisujących w jaki sposób dany element ma zostać wyświetlony przez przeglądarkę. 
+
+Składnia CSS operuje na **selektorach**. Za pomocą selektorów wybieramy elementy HTML i nadajemy im *style*. Wygląda to w następujący sposób:
+
+```css
+selektor {
+  właściwość: wartość;
+}
+```
+
+Przykładowo:
+
+```css
+p {
+  color: blue;
+}
+```
+
+Ustawia kolor fontu na niebieski dla wszystkich elementów `p`.
