@@ -6,19 +6,29 @@ Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrz
 
 ### Nagłówki i paragrafy
 
+Tak samo, jak w dokumentach tekstowych, w HTMLu możemy zdefiniować nagłówki dla naszego tekstu:
+
 ```html
-<h1></h1>
-
-<h2></h2>
-
-<h3></h3>
-
-<h4></h4>
-
-<h5></h5>
-
-<h6></h6>
+<h1>Nagłówek 1</h1>
+<h2>Nagłówek 2</h2>
+<h3>Nagłówek 3</h3>
+<h4>Nagłówek 4</h4>
+<h5>Nagłówek 5</h5>
+<h6>Nagłówek 6</h6>
 ```
+
+Co zostanie zinterpretowane przez przeglądarkę jako:
+
+# Nagłówek 1
+## Nagłówek 2
+### Nagłówek 3
+#### Nagłówek 4
+##### Nagłówek 5
+###### Nagłówek 6
+
+> #### Important::Ważne
+>
+> Pamiętajcie, że numery nagłówków nie odnoszą się do rozmiaru wyrenderowanego tekstu, ale oznaczają **hierarchię** zawartości.
 
 ```html
 <p></p>
@@ -45,12 +55,4 @@ Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrz
 ## Formularze
 
 
-## Definiowanie layoutu strony
 
-```html
-<header></header>
-
-<footer></footer>
-
-<section></section>
-```
