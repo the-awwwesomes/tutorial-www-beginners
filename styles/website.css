@@ -1,1 +1,7 @@
 /* CSS for website */
+@import url(https://fonts.googleapis.com/css?family=Ek+Mukta);
+
+body {
+  font-family: 'Ek Mukta', sans-serif;
+  color: #393b5d;
+}
