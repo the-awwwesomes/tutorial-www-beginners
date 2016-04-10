@@ -47,6 +47,12 @@ Poszczególne elementy HTML mogą być zagnieżdżane jeden wewnątrz drugiego, 
 </element>
 ```
 
+Elementy mogą również zawierać *atrybuty*. Atrybuty elementów zapisywane są w ten sposób:
+
+```html
+<element attribute="value">
+```
+
 ### Separacja zawartości i prezentacji
 
 Zanim zabierzesz się do pisania swojego pierwszego kodu warto wspomnieć o bardzo ważnej regule, która obowiązuje programistów stron internetowych, a jest nią **separacja zawartości i prezentacji**.
@@ -55,7 +61,7 @@ Dowiedzieliśmy się już, że język HTML służy do opisu treści stron intern
 
 > #### Important::Ważne
 >
->Istnieje możliwość deklarowania styli bezpośrednio w kodzie HTML. Nie jest to jednak dobrą praktyką, ponieważ kod opisujący prezentację strony jest ściśle powiązany z kodem opisującym jego treść. Dużo łatwiej wprowadzać zmiany w wyglądzie strony oraz utrzymywać kod, kiedy te dwie warstwy są logicznie od siebie oddzielone - to właśnie nazywamy **separacją zawartości i prezentacji**.
+>Istnieje możliwość deklarowania styli bezpośrednio w kodzie HTML (za pomocą atrubutu `style`). Nie jest to jednak dobrą praktyką, ponieważ kod opisujący prezentację strony jest ściśle powiązany z kodem opisującym jego treść. Dużo łatwiej wprowadzać zmiany w wyglądzie strony oraz utrzymywać kod, kiedy te dwie warstwy są logicznie od siebie oddzielone - to właśnie nazywamy **separacją zawartości i prezentacji**.
 >
 >Style piszemy w osobnych plikach z rozszerzeniem `*.css` i dołączamy do naszego dokumentu HTML w specjalny sposób. Jak? Dowiesz się już niedługo!
 

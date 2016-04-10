@@ -52,6 +52,10 @@ Co to takiego są [metadane](https://pl.wikipedia.org/wiki/Metadane)? W tym przy
 <title>Moja pierwsza strona internetowa</title>
 ```
 
+- Znacznik `<meta>` służy do przechowywania różnego rodzaju metadanych.
+- Za pomocą atrybutu `<link>` możemy załączyć do naszego dokumentu na przykład plik `*.css`.
+- Używając znacznika `<script>` umieszczamy na stronie skrypty JavaScript.
+
 > #### Exercise::Ćwiczenie 3
 >
 > - W folderze `the-awwwesomes` stwórz podfolder `exercise-3`, w którym będziesz przechowywał wynik ćwiczenia. Otwórz ten folder w Sublime Text i utwórz w nim plik `index.html`.

@@ -61,3 +61,9 @@ Dla ustalenia uwagi od tej pory skupimy się na przykładzie narzędzi deweloper
 Dopóki nie posiadacie wiedzy na temat kodu HTML i CSS, poruszanie się w *devtoolsach* może wydawać się Wam prawdziwą *czarną magią*. Na początek pokażemy Wam tylko najbardziej podstawowe funkcjonalności, a wraz z nabywaniem nowych umiejętności będziecie się już coraz sprawniej odnajdować w korzystaniu z narzędzi programistycznych.
 
 Zauważyliście pewnie, że *devtoolsy* zawierają dużo przycisków i zakładek. Jednak na potrzeby warsztatów i kodowania tylko w HTML i CSS będziemy korzystać właściwie tylko z jednej - *Elementy* (*Elements*).
+
+Wejdźcie na swoją ulubioną stronę (mogą to być wiadomości albo Facebook) i za pomocą F12 otwórzcie narzędzia deweloperskie. W sekcji po prawej możecie zobaczyć inspektor kodu HTML. Spróbuj chwilę poeksperymentować i wypróbować intuicyjnie jego możliwości. Na pewno zauważysz, że po najechaniu myszą na jedną z *gałęzi* podświetlony zostanie odpowiadający jej element na stronie.
+
+W lewym górnym rogu widnieje ikonka - po jej kliknięciu uruchomicie tryb *inspektora*. W tym trybie możecie wybierać elementy bezpośrednio na stronie i podglądać ich kod w narzędziach deweloperskich. Oprócz kodu HTML można w ten sposób badać również style CSS. Służy do tego sekcja po prawej stronie. Więcej na temat badania styli dowiecie się w rozdziałach poświęconych językowi CSS.
+
+Podsumowując, od tej pory Waszymi przyjaciółmi staną się edytor tekstowy i narzędzia deweloperskie! Nie obawiajcie się używać ich, aby podglądać i weryfikować efekty swojej pracy.
