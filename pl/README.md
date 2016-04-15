@@ -1,4 +1,4 @@
-# Wprowadzenie
+# Wstęp
 
 Cześć! Wygląda na to, że przywędrowaliście tu, bo jesteście zainteresowani tworzeniem stron internetowych. Trafiliście zatem w bardzo dobre miejsce! Tworzenie stron jest naszą pasją i chcielibyśmy podzielić się nią z jak największą liczbą osób.
 
@@ -6,7 +6,7 @@ Cześć! Wygląda na to, że przywędrowaliście tu, bo jesteście zainteresowan
 
 Tutorial powstał specjalnie z myślą o uczestnikach warsztatów [The Awwwesomes](http://theawwwesomes.org), jednak jeśli nie możecie uczestniczyć w warsztatach postaraliśmy się, aby był jak najbardziej przejrzysty i zrozumiały dla wszystkich, którzy będą korzystać z niego bez pomocy mentorów. Żeby uczyć się z tutoriala, nie potrzebujecie żadnej zaawansowanej wiedzy technicznej oprócz podstaw obsługi komputera (w tym umiejętności korzystania z przeglądarki WWW).
 
-Naszą grupą docelową są po prostu ludzie, którzy chcą nauczyć się programować strony internetowe,czyli między innymi:
+Naszą grupą docelową są po prostu ludzie, którzy chcą nauczyć się programować strony internetowe, czyli między innymi:
 
 - graficy, którzy chcą nauczyć się wcielać swoje projekty w życie,
 - blogerzy i właściciele stron, którzy chcą nauczyć się samodzielnie wprowadzać poprawki,

@@ -8,21 +8,21 @@ Czy do kodowania stron będzie nam potrzebny jakiś specjalny rodzaj edytora? By
 
 Wasz kod natomiast musi być zapisany w postaci **zwykłego tekstu** (*plain text*), w związku z tym Word na pewno nie będzie dobrym wyborem jako edytor!.
 
-Prostą stronę internetową możecie zakodować używając Notatnika lub innej domyślnej aplikacji, która umożliwia edycję zwykłych plików tekstowych. Nie jest to zły pomysł na początku Waszej drogi jako koderów, jednak pokażemy Wam, że używanie nieco bardziej zaawansowanych narzędzi nie jest takie straszne, a może bardzo ułatwić pracę.
+Prostą stronę internetową możecie zakodować używając Notatnika lub innej domyślnej aplikacji, która umożliwia edycję zwykłych plików tekstowych. Nie jest to jednak najlepszy pomysł w dzisiejszych czasach. Pokażemy Wam, że używanie nieco bardziej zaawansowanych narzędzi nie jest takie straszne, a może bardzo ułatwić pracę.
 
-Kiedy już bardzo się wprawicie w programowaniu stron, na pewno Wasze potrzeby w stosunku do edytora kodu wzrosną - zarówno odnośnie wydajności jak i funkcjonalności. Zwykle w swojej codziennej pracy programiści korzystają z tzw. *IDE* (*Integrated Development Environment*, czyli **zintegrowane środowisko programistyczne**), które potrafią bardzo przyspieszyć pracę. W tej chwili jednak nie musicie zajmować sobie tym głów!
+Kiedy już bardzo się wprawicie w programowaniu stron, na pewno Wasze potrzeby w stosunku do edytora kodu wzrosną - zarówno odnośnie wydajności jak i funkcjonalności. Zwykle w swojej codziennej pracy programiści korzystają z tzw. *IDE* (*Integrated Development Environment*, czyli **zintegrowanego środowiska programistycznego**), które potrafi bardzo przyspieszyć pracę. W tej chwili jednak nie musicie zajmować sobie tym głów!
 
 > #### Exercise::Ćwiczenie 1
 >
 >- Utwórz w dowolnym miejscu na dysku folder, w którym będziesz przechowywać efekty swojej pracy. 
 >- Możesz go nazwać np. `the-awwwesomes`, a wewnątrz utworzyć podfolder `exercise-1` jako miejsce dla naszego pierwszego ćwiczenia.
 >- Otwórz Notatnik i utwórz w nim plik tekstowy o dowolnej zawartości (na przykład: `Witaj świecie!`).
->- Zapisz ten plik w utworzonym przed chwilą folderze pod nazwą `index.html`. Dokładnie tak! Zwróć uwagę, że nie zapisujemy go pod zwykłym rozszerzeniem `*.txt` ale chcemy w ten sposób zaznaczyć, że jest to specjalny plik, który może odczytać przeglądarka interentowa. O tym, czym tak naprawdę jest HTML opowiemy szerzej w kolejnym kroku.
+>- Zapisz ten plik w utworzonym przed chwilą folderze pod nazwą `index.html`. Dokładnie tak! Zwróć uwagę, że nie zapisujemy go pod zwykłym rozszerzeniem `*.txt`.Chcemy w ten sposób zaznaczyć, że jest to specjalny plik, który może odczytać przeglądarka interentowa. O tym, czym tak naprawdę jest HTML opowiemy szerzej w kolejnym rozdziale.
 >- Otwórz plik `index.html` w przeglądarce i obejrzyj efekt swojej pracy!
 
 ## Sublime Text, czyli Twoje środowisko pracy
 
-Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierzcie ze strony wersję odpowiednią dla Waszego systemu operacyjnego i zainstaluj. Sublime Text, oprócz edycji kodu umożliwia m.in. podgląd struktury projektu oraz podświetlanie kodu. 
+Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierzcie ze strony wersję odpowiednią dla Waszego systemu operacyjnego i zainstalujcie. Sublime Text, oprócz edycji kodu umożliwia m.in. podgląd struktury projektu oraz podświetlanie kodu. 
 
 > #### Exercise::Ćwiczenie 2
 >
@@ -54,7 +54,7 @@ Praca programisty byłaby prosta, a jego życie usłane różami, gdyby wszystki
 >
 >![Narzędzia dewelopera Internet Explorer](/images/ie-devtools.png "Narzędzia dewelopera Internet Explorer")
 
-Dla ustalenia uwagi od tej pory skupimy się na przykładzie narzędzi deweloperskich w Chrome. Jak widać, wszystkie z powyższych są do siebie podobne (również w funkcjonalności), jednak Google Chrome oferuje najwygodniejsze i najbardziej funkcjonalne narzędzia.
+Dla ustalenia uwagi od tej pory skupimy się na narzędziach deweloperskich w Chrome. Jak widać, wszystkie z powyższych są do siebie podobne (również w funkcjonalności), jednak naszym zdaniem Google Chrome oferuje najwygodniejsze i najbardziej funkcjonalne narzędzia.
 
 ### Jak poruszać się w narzędziach deweloperskich?
 
@@ -62,8 +62,8 @@ Dopóki nie posiadacie wiedzy na temat kodu HTML i CSS, poruszanie się w *devto
 
 Zauważyliście pewnie, że *devtoolsy* zawierają dużo przycisków i zakładek. Jednak na potrzeby warsztatów i kodowania tylko w HTML i CSS będziemy korzystać właściwie tylko z jednej - *Elementy* (*Elements*).
 
-Wejdźcie na swoją ulubioną stronę (mogą to być wiadomości albo Facebook) i za pomocą F12 otwórzcie narzędzia deweloperskie. W sekcji po prawej możecie zobaczyć inspektor kodu HTML. Spróbuj chwilę poeksperymentować i wypróbować intuicyjnie jego możliwości. Na pewno zauważysz, że po najechaniu myszą na jedną z *gałęzi* podświetlony zostanie odpowiadający jej element na stronie.
+Wejdźcie na swoją ulubioną stronę (może to być portal z wiadomościami albo Facebook) i za pomocą F12 otwórzcie narzędzia deweloperskie. W sekcji po prawej możecie zobaczyć narzędzie *Inspektor kodu HTML*. Spróbujcie chwilę poeksperymentować i wypróbować intuicyjnie jego możliwości. Na pewno zauważycie, że po najechaniu myszą na jedną z *gałęzi* podświetlony zostanie odpowiadający jej element na stronie.
 
-W lewym górnym rogu widnieje ikonka - po jej kliknięciu uruchomicie tryb *inspektora*. W tym trybie możecie wybierać elementy bezpośrednio na stronie i podglądać ich kod w narzędziach deweloperskich. Oprócz kodu HTML można w ten sposób badać również style CSS. Służy do tego sekcja po prawej stronie. Więcej na temat badania styli dowiecie się w rozdziałach poświęconych językowi CSS.
+W lewym górnym rogu widnieje ikonka - po jej kliknięciu uruchomicie *tryb inspektora*. W tym trybie możecie wybierać elementy bezpośrednio na stronie i podglądać ich kod w narzędziach deweloperskich. Oprócz kodu HTML można w ten sposób badać również style CSS. Służy do tego sekcja po prawej stronie. Więcej na temat badania styli dowiecie się w rozdziałach poświęconych językowi CSS.
 
 Podsumowując, od tej pory Waszymi przyjaciółmi staną się edytor tekstowy i narzędzia deweloperskie! Nie obawiajcie się używać ich, aby podglądać i weryfikować efekty swojej pracy.
