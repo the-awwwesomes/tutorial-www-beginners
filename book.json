@@ -1,11 +1,14 @@
 { 
   "gitbook": "2.x.x",
   "styles": {
-    "website": "styles/website.css"
-  },
+    "website": "styles/website.css",
+    "ebook": "styles/ebook.css",
+    "pdf": "styles/pdf.css",
+    "mobi": "styles/mobi.css",
+    "epub": "styles/epub.css"
+    },
   "plugins": [
-    "callouts",
-    "addcssjs"
+    "callouts"
     ],
   "pluginsConfig": {
     "callouts": {
@@ -17,9 +20,6 @@
         "alert": "warning",
         "picto": "fa-lightbulb-o"
       }
-    },
-    "addcssjs": {
-      "css": ["styles/website.css"]
     }
   }
 }
