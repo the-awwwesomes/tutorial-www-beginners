@@ -19,7 +19,7 @@
       }
     },
     "addcssjs": {
-      "css": ["styles/website.css"]
+      "css": ["./styles/website.css"]
     }
   }
 }
