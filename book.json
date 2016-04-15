@@ -3,7 +3,10 @@
   "styles": {
     "website": "styles/website.css"
   },
-  "plugins": ["callouts"],
+  "plugins": [
+    "callouts",
+    "addcssjs"
+    ],
   "pluginsConfig": {
     "callouts": {
       "exercise": {
@@ -14,6 +17,9 @@
         "alert": "warning",
         "picto": "fa-lightbulb-o"
       }
+    },
+    "addcssjs": {
+      "css": ["styles/website.css"]
     }
   }
 }

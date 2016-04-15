@@ -12,7 +12,7 @@ Jeśli nie mieliście wcześniej do czynienia z programowaniem, może być Wam n
 
 Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ponieważ ich głownym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* -- ponieważ służą do *serwowania* danych.
 
-Ok, ale pewnie chcielibyścue wiedzieć jak wygląda Internet?
+Ok, ale pewnie chcielibyście wiedzieć jak wygląda Internet?
 
 Narysowaliśmy Ci schemat Internetu! Wygląda tak:
 

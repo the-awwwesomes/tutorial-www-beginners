@@ -1,1 +1,1 @@
-# The Awwwesomes - Kurs HTML&CSS dla początkujących
+# The Awwwesomes - Kurs HTML & CSS dla początkujących
