@@ -6,7 +6,7 @@ Zanim przystąpicie do pisania pierwszych linijek kodu zaprzyjaźnijcie się z p
 
 Czy do kodowania stron będzie nam potrzebny jakiś specjalny rodzaj edytora? Być może moglibyśmy użyć do tego na przykład Worda, który przydaje się często do tworzenia dokumentów? Niestety, programy typu Word zapisują tekst w specjalny sposób, który umożliwia formatowanie tekstu (czyli m.in. zmianę wielkości, koloru albo kroju fonta) - jest to tzw. *[RTF (Rich Text Format)](https://pl.wikipedia.org/wiki/Rich_Text_Format)*.
 
-Wasz kod natomiast musi być zapisany w postaci **zwykłego tekstu** (*plain text*), w związku z tym Word na pewno nie będzie dobrym wyborem jako edytor!.
+Wasz kod natomiast musi być zapisany w postaci **zwykłego tekstu** (*plain text*), w związku z tym Word na pewno nie będzie dobrym wyborem jako edytor!
 
 Prostą stronę internetową możecie zakodować używając Notatnika lub innej domyślnej aplikacji, która umożliwia edycję zwykłych plików tekstowych. Nie jest to jednak najlepszy pomysł w dzisiejszych czasach. Pokażemy Wam, że używanie nieco bardziej zaawansowanych narzędzi nie jest takie straszne, a może bardzo ułatwić pracę.
 
@@ -17,12 +17,16 @@ Kiedy już bardzo się wprawicie w programowaniu stron, na pewno Wasze potrzeby 
 >- Utwórz w dowolnym miejscu na dysku folder, w którym będziesz przechowywać efekty swojej pracy. 
 >- Możesz go nazwać np. `the-awwwesomes`, a wewnątrz utworzyć podfolder `exercise-1` jako miejsce dla naszego pierwszego ćwiczenia.
 >- Otwórz Notatnik i utwórz w nim plik tekstowy o dowolnej zawartości (na przykład: `Witaj świecie!`).
->- Zapisz ten plik w utworzonym przed chwilą folderze pod nazwą `index.html`. Dokładnie tak! Zwróć uwagę, że nie zapisujemy go pod zwykłym rozszerzeniem `*.txt`.Chcemy w ten sposób zaznaczyć, że jest to specjalny plik, który może odczytać przeglądarka interentowa. O tym, czym tak naprawdę jest HTML opowiemy szerzej w kolejnym rozdziale.
+>- Zapisz ten plik w utworzonym przed chwilą folderze pod nazwą `index.html`. Dokładnie tak! Zwróć uwagę, że nie zapisujemy go pod zwykłym rozszerzeniem `*.txt`. Chcemy w ten sposób zaznaczyć, że jest to specjalny plik, który może odczytać przeglądarka interentowa. O tym, czym tak naprawdę jest HTML opowiemy szerzej w kolejnym rozdziale.
 >- Otwórz plik `index.html` w przeglądarce i obejrzyj efekt swojej pracy!
 
 ## Sublime Text, czyli Twoje środowisko pracy
 
 Na początek polecamy [Sublime Text](https://www.sublimetext.com/3) - pobierzcie ze strony wersję odpowiednią dla Waszego systemu operacyjnego i zainstalujcie. Sublime Text, oprócz edycji kodu umożliwia m.in. podgląd struktury projektu oraz podświetlanie kodu. 
+
+Oto, jak prezentuje się kod strony [theawwwesomes.org](http://theawwwesomes.org) w Sublime Text 3:
+
+![Sublime Text](/images/sublime-screenshot.png "Sublime Text")
 
 > #### Exercise::Ćwiczenie 2
 >
@@ -64,6 +68,6 @@ Zauważyliście pewnie, że *devtoolsy* zawierają dużo przycisków i zakładek
 
 Wejdźcie na swoją ulubioną stronę (może to być portal z wiadomościami albo Facebook) i za pomocą F12 otwórzcie narzędzia deweloperskie. W sekcji po prawej możecie zobaczyć narzędzie *Inspektor kodu HTML*. Spróbujcie chwilę poeksperymentować i wypróbować intuicyjnie jego możliwości. Na pewno zauważycie, że po najechaniu myszą na jedną z *gałęzi* podświetlony zostanie odpowiadający jej element na stronie.
 
-W lewym górnym rogu widnieje ikonka - po jej kliknięciu uruchomicie *tryb inspektora*. W tym trybie możecie wybierać elementy bezpośrednio na stronie i podglądać ich kod w narzędziach deweloperskich. Oprócz kodu HTML można w ten sposób badać również style CSS. Służy do tego sekcja po prawej stronie. Więcej na temat badania styli dowiecie się w rozdziałach poświęconych językowi CSS.
+W lewym górnym rogu widnieje ikonka ![Wybierz element na stronie aby go zbadać](/images/inspector-ico.png "Wybierz element na stronie aby go zbadać") - po jej kliknięciu uruchomicie *tryb inspektora*. W tym trybie możecie wybierać elementy bezpośrednio na stronie i podglądać ich kod w narzędziach deweloperskich. Oprócz kodu HTML można w ten sposób badać również style CSS. Służy do tego sekcja po prawej stronie. Więcej na temat badania styli dowiecie się w rozdziałach poświęconych językowi CSS.
 
 Podsumowując, od tej pory Waszymi przyjaciółmi staną się edytor tekstowy i narzędzia deweloperskie! Nie obawiajcie się używać ich, aby podglądać i weryfikować efekty swojej pracy.

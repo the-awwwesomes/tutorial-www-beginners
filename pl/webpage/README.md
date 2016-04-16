@@ -6,13 +6,7 @@ Skoro występuje tyle podobieństw - mógłbyś zapytać - czemu nie piszemy str
 
 ## Dokumenty HTML, czyli jaki język rozumie przeglądarka?
 
-Zdążyliśmy już wspomnieć, że dokumenty, które mają być otwierane przez przeglądarkę powinny być zapisywane w specjalnym formacie (`*.html`). Czym on się różni od zwykłego tekstu? Przecież zawartość naszego pliku jak dotąd była tylko zwykłym tekstem!
-
-Wróćmy do naszego przykładu czyli strony [grafmag.pl](http://grafmag.pl/). Przyjrzyjmy się stronie z artykułem i spróbujmy wyróżnić poszczególne elementy strony. Artykuł składa się z nagłówka, ilustracji oraz treści, która to składa się z paragrafów tekstu rozdzielonych nagłówkami niższego rzędu.
-
-Przyjrzyj się ilustracji:
-
-Wyróżniliśmy tutaj elementy według ich przeznaczenia na stronie. Skoro kod strony internetowej zapisany jest zwykłym tekstem, jak "powiedzieć" przeglądarce, żeby został sformatowany w określony przez nas sposób?
+Zdążyliśmy już wspomnieć, że dokumenty, które mają być otwierane przez przeglądarkę powinny być zapisywane w specjalnym formacie (`*.html`). Czym on się różni od zwykłego tekstu? Przecież zawartość naszego pliku jak dotąd była tylko zwykłym tekstem! Jak zatem "powiedzieć" przeglądarce, żeby został sformatowany w określony przez nas sposób?
 
 ### Język HTML
 
@@ -89,4 +83,4 @@ p {
 }
 ```
 
-Ustawia kolor czcionki na niebieski dla wszystkich elementów typu `p` (`p` to znacznik reprezentujący akapit, z angielskiego *paragraph*).
+Ustawia kolor fontu na niebieski dla wszystkich elementów typu `p` (`p` to znacznik reprezentujący akapit, z angielskiego *paragraph*).
