@@ -1,8 +1,47 @@
 /* CSS for website */
-@import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900&subset=latin,latin-ext);
 * {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #151d46;
 }
 
+a {
+    color: #f06969 !important;
+    transition: color .3s ease-in;
+}
+
+a:hover {
+    color: #151d46 !important;
+    text-decoration: none !important;
+}
+
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+    font-size: 1.75em;
+    color: #f06969;
+}
+
+.panel-success {
+    border-color: #B5B5B5;
+    background-color: #D7DEED;
+}
+.panel-success > .panel-heading {
+    color: #ffffff;
+    background-color: #293169;
+    border-color: #293169;
+}
+
+.panel-warning > .panel-heading {
+    color: #ffffff;
+    background-color: #f06969;
+    border-color: #f06969;
+}
+
+.panel-warning {
+    border-color: rgba(240, 105, 105, 0.27);
+    background-color: rgba(240, 105, 105, 0.27);
+}
+
+.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
+	font-weight: 500;
+}
