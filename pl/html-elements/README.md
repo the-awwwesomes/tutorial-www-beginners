@@ -6,7 +6,7 @@ Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrz
 
 ### Nagłówki i paragrafy
 
-Tak samo, jak w dokumentach tekstowych, w HTMLu możemy zdefiniować nagłówki dla naszego tekstu:
+Tak samo, jak w dokumentach tekstowych, w HTML-u możemy zdefiniować nagłówki dla naszego tekstu:
 
 ```html
 <h1>Nagłówek 1</h1>
@@ -32,6 +32,12 @@ Co zostanie zinterpretowane przez przeglądarkę jako:
 
 ```html
 <p></p>
+```
+
+```html
+<div></div>
+
+<span></span>
 ```
 
 ### Formatowanie tekstu

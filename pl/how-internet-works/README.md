@@ -10,7 +10,7 @@ Aby zrozumieć jak działa Internet powinniście najpierw dowiedzieć się czym 
 
 Jeśli nie mieliście wcześniej do czynienia z programowaniem, może być Wam na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
 
-Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ponieważ ich głownym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* -- ponieważ służą do *serwowania* danych.
+Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ich głównym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* - ponieważ służą do *serwowania* danych.
 
 Ok, ale pewnie chcielibyście wiedzieć jak wygląda Internet?
 
@@ -42,7 +42,7 @@ List trafia do urzędu pocztowego najbliżej Was. Potem idzie do drugiego urzęd
 
  [4]: images/internet_4.png
 
-Tak, to takie proste. Wysyłacie wiadomości i oczekujecie jakiejś odpowiedzi. Oczywście, zamiast papieru i długopisu używacie bitów danych, ale koncepcja jest dokładnie taka sama!
+Tak, to takie proste. Wysyłacie wiadomości i oczekujecie jakiejś odpowiedzi. Oczywiście, zamiast papieru i długopisu używacie bitów danych, ale koncepcja jest dokładnie taka sama!
 
 Zamiast adresów z nazwą ulicy, miastem, kodem pocztowym oraz nazwą kraju, używa się adresów IP. Wasze komputery najpierw pytają serwer DNS (system nazw domenowych, ang. DNS - Domain Name System) o przetłumaczenie theawwwesomes.org na adres IP. Działa to podobnie do dawnych książek telefonicznych, w których mogliście poszukać adresu czy numeru po nazwisku osoby, z którą chcieliście się skontaktować.
 
