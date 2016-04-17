@@ -44,7 +44,7 @@ Praca programisty byłaby prosta, a jego życie usłane różami, gdyby wszystki
 
 > #### Important::Ważne
 >
->Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudowanych w przeglądarkę. Aby z nich skorzystać, wystarczy wcisnąć F12 kiedy wyświetlacie dowolną stronę. Oto, jak narzędzia deweloperskie wyglądają w najpopularniejszych przeglądarkach:
+>Koder stron w swojej pracy do debugowania używa narzędzi deweloperskich wbudowanych w przeglądarkę. Aby z nich skorzystać, wystarczy wcisnąć F12 dla Windowsa lub kombinację klawiszy Cmd+Alt+I dla OS X (Mac) kiedy wyświetlacie dowolną stronę. Oto, jak narzędzia deweloperskie wyglądają w najpopularniejszych przeglądarkach:
 >
 >- Chrome:
 >
@@ -66,7 +66,7 @@ Dopóki nie posiadacie wiedzy na temat kodu HTML i CSS, poruszanie się w *devto
 
 Zauważyliście pewnie, że *devtoolsy* zawierają dużo przycisków i zakładek. Jednak na potrzeby warsztatów i kodowania tylko w HTML i CSS będziemy korzystać właściwie tylko z jednej - *Elementy* (*Elements*).
 
-Wejdźcie na swoją ulubioną stronę (może to być portal z wiadomościami albo Facebook) i za pomocą F12 otwórzcie narzędzia deweloperskie. W sekcji po prawej możecie zobaczyć narzędzie *Inspektor kodu HTML*. Spróbujcie chwilę poeksperymentować i wypróbować intuicyjnie jego możliwości. Na pewno zauważycie, że po najechaniu myszą na jedną z *gałęzi* podświetlony zostanie odpowiadający jej element na stronie.
+Wejdźcie na swoją ulubioną stronę (może to być portal z wiadomościami albo Facebook) i za pomocą F12 dla Windowsa lub Cmd+Alt+I dla OS X (Mac) otwórzcie narzędzia deweloperskie. W sekcji po prawej możecie zobaczyć narzędzie *Inspektor kodu HTML*. Spróbujcie chwilę poeksperymentować i wypróbować intuicyjnie jego możliwości. Na pewno zauważycie, że po najechaniu myszą na jedną z *gałęzi* podświetlony zostanie odpowiadający jej element na stronie.
 
 W lewym górnym rogu widnieje ikonka ![Wybierz element na stronie aby go zbadać](/images/inspector-ico.png "Wybierz element na stronie aby go zbadać") - po jej kliknięciu uruchomicie *tryb inspektora*. W tym trybie możecie wybierać elementy bezpośrednio na stronie i podglądać ich kod w narzędziach deweloperskich. Oprócz kodu HTML można w ten sposób badać również style CSS. Służy do tego sekcja po prawej stronie. Więcej na temat badania styli dowiecie się w rozdziałach poświęconych językowi CSS.
 

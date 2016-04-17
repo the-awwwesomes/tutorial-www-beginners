@@ -45,3 +45,19 @@ a:hover {
 .book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
 	font-weight: 500;
 }
+
+.panel-info {
+    border-color: #FFCCD5;
+    background-color: #FFF4F6;
+}
+
+.panel-info > .panel-heading {
+    background-color: #F594A4;
+    color: #ffffff;
+    border-color: #F594A4;
+}
+
+.fa {
+    color: #fff;
+    margin-right: 10px;
+}
