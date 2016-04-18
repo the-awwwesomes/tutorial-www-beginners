@@ -24,13 +24,13 @@ a:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 30px;
+    background-color: white;
     box-shadow: 0 0 2px rgba(204, 204, 204, 0.4);
 }
 
 .book .book-body .example-wrapper * {
     font-family: initial !important;
     color: #333 !important;
-    background: white !important;
 }
 
 .panel-success {

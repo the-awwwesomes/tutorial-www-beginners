@@ -62,6 +62,10 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
   </p>
 </div>
 
+> #### Important::Ważne
+>
+> Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić). 
+
 ### Formatowanie tekstu
 
 ```html
