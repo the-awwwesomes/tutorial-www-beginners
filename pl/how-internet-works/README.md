@@ -40,7 +40,7 @@ List trafia do urzędu pocztowego najbliżej Was. Potem idzie do drugiego urzęd
 
 ![Rysunek 1.4][4]
 
- [4]: images/internet_4.png
+ [4]: /images/img1-4.png
 
 Tak, to takie proste. Wysyłacie wiadomości i oczekujecie jakiejś odpowiedzi. Oczywiście, zamiast papieru i długopisu używacie bitów danych, ale koncepcja jest dokładnie taka sama!
 
