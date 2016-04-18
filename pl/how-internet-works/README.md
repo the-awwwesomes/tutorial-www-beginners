@@ -32,7 +32,7 @@ Wygląda to tak:
 
 ![Rysunek 1.3][3]
 
- [3]: images/internet_2.png
+ [3]: /images/img1-3.png
 
 Wyobraźcie sobie, że po wpisaniu http://theawwwesomes.org, wysyłacie list o treści: "Drodzy Awwwesomes, chcę zobaczyć stronę theawwwesomes.org. Wyślijcie ją do mnie, proszę!"
 
