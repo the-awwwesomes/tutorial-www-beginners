@@ -14,15 +14,6 @@ a:hover {
     color: #151d46 !important;
     text-decoration: none !important;
 }
-
-/*.book .book-body .page-wrapper .page-inner section.normal h1,
-.book .book-body .page-wrapper .page-inner section.normal h2,
-.book .book-body .page-wrapper .page-inner section.normal h3,
-.book .book-body .page-wrapper .page-inner section.normal h4,
-.book .book-body .page-wrapper .page-inner section.normal h5,
-.book .book-body .page-wrapper .page-inner section.normal h6 {
-    color: #f06969;
-}*/
  
 .book .book-body .page-wrapper .page-inner section.normal h3.panel-title {
   color: #ffffff;
@@ -39,6 +30,7 @@ a:hover {
 .book .book-body .example-wrapper * {
     font-family: initial !important;
     color: #333 !important;
+    background: white !important;
 }
 
 .panel-success {
