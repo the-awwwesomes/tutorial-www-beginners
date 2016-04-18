@@ -117,7 +117,7 @@ Użycie atrybutów `name` oraz `content` dokładnie w powyższy sposób pozwala 
       </p>
       <h1>The Awwwesomes podbijają świat!</h1>
     </header>
-    <img src="screen.jpg" alt="The Awwwesomes">
+    <img src="/images/screen.jpg" alt="The Awwwesomes">
     <p>Warsztaty ruszyły pełną parą! Grupa 20 zdolnych uczestników zabrała się do kodowania z godnym podziwu zapałem.</p>
     <p>Mentorzy mieli trudne zadanie, ponieważ padło bardzo dużo ciekawych pytań. Nasi uczestnicy są naprawdę <em>awwwesome</em>!</p>
     <h2>Najpierw semantyczny HTML, potem estetyczny CSS</h2>
