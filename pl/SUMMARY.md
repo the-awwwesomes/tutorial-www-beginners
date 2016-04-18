@@ -5,4 +5,5 @@
 * [Co zawiera strona internetowa?](webpage/README.md)
 * [Kod HTML](html-code/README.md)
 * [Podstawowe znaczniki HTML](html-elements/README.md)
+* [Proste formularze](html-forms/README.md)
 * [Definiowanie struktury strony](html-document-structure/README.md)
