@@ -65,7 +65,7 @@ Dowiedzieliśmy się już, że język HTML służy do opisu treści stron intern
 
 ### Język CSS
 
-Język CSS różni się znacznie w zapisie od HTML. HTML pozwala nam stworzyć treść strony, natomiast CSS to lista reguł opisujących w jaki sposób jej elementy mają zostać wyświetlony przez przeglądarkę. 
+Język CSS różni się znacznie w zapisie od HTML. HTML pozwala nam stworzyć treść strony, natomiast CSS to lista reguł opisujących w jaki sposób jej elementy mają zostać wyświetlone przez przeglądarkę. 
 
 Składnia CSS operuje na **selektorach**. Za pomocą selektorów wybieramy elementy strony, którym chcemy nadać określony wygląd. Kod zapisuje się w sposób:
 

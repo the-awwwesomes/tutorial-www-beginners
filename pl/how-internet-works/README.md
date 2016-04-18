@@ -22,9 +22,9 @@ Narysowaliśmy Ci schemat Internetu! Wygląda tak:
 
 Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączonych między sobą maszyn (wspomnianych wyżej *serwerów*). Setki tysięcy maszyn! Wiele, wiele kilometrów kabli na całym świecie! Możecie wejść na stronę [Submarine Cable Map](http://submarinecablemap.com) i sami zobaczyć jak skomplikowana jest ta sieć. Oto zrzut ekranu ze strony internetowej:
 
-![Rysunek 1.2][2]
+![Submarine Cable Map][2]
 
- [2]: images/internet_3.png
+ [2]: /images/submarine-map.png
 
 To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w Internecie. Więc aby dostać się do maszyny dostępnej w Internecie (na przykład tej, na której zapisane jest http://theawwwesomes.org) potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
 
@@ -38,7 +38,7 @@ Wyobraźcie sobie, że po wpisaniu http://theawwwesomes.org, wysyłacie list o t
 
 List trafia do urzędu pocztowego najbliżej Was. Potem idzie do drugiego urzędu, który znajduje się trochę bliżej Waszego adresata. Potem do kolejnego, kolejnego, kolejnego, aż w końcu zostanie doręczony do miejsca przeznaczenia. Ciekawa rzecz - jeśli wyślecie wiele listów (*pakietów danych*) do tego samego adresata, mogą przejść przez zupełnie inne urzędy pocztowe (*routery*). To zależy od tego w jaki sposób zostaną rozdzielone w każdym urzędzie.
 
-![Rysunek 1.4][4]
+![Wysyłamy list][4]
 
  [4]: /images/img1-4.png
 
