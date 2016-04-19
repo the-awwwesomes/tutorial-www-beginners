@@ -126,11 +126,11 @@ Użycie atrybutów `name` oraz `content` dokładnie w powyższy sposób pozwala 
   <form>
     <p>Zostaw swój komentarz:</p>
     <label for="email">Twój email:</label>
-    <input type="email" id="email"><br>
+    <input type="email" id="email">
     <label for="name">Twoje imię:</label>
-    <input type="text" id="name"><br>
+    <input type="text" id="name">
     <label for="comment">Twój komentarz:</label>
-    <textarea id="comment"></textarea><br>
+    <textarea id="comment"></textarea>
     <button type="submit">Prześlij</button>
   </form>
 </div>

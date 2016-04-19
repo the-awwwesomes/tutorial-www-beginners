@@ -33,6 +33,10 @@ a:hover {
     color: #333 !important;
 }
 
+.book .book-body .example-wrapper a {
+    color: blue !important;
+}
+
 .panel-success {
     border-color: #B5B5B5;
     background-color: #D7DEED;
@@ -72,4 +76,45 @@ a:hover {
 .fa {
     color: #fff;
     margin-right: 10px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-title,
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-string, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-value, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-inheritance, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-inheritance, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-header, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-header, 
+.book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-symbol, 
+.book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata,
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-variable, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-variable, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-attribute, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-attribute, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-tag, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-tag, 
+.book .book-body .page-wrapper .page-inner section.normal pre .hljs-regexp, 
+.book .book-body .page-wrapper .page-inner section.normal code .hljs-regexp, 
+.book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-constant, 
+.book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-constant, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-tag .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-tag .hljs-title, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-pi, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-pi, 
+.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal pre .html .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal code .html .hljs-doctype, 
+.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-id, 
+.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-id, 
+.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-class, 
+.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-class, 
+.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-pseudo, 
+.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-pseudo {
+    font-family: 'Consolas', monospace;
 }

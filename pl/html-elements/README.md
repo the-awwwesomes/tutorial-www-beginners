@@ -1,10 +1,20 @@
-# Znaczniki HTML
+# Podstawowe znaczniki HTML
 
 Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrzycie na niego, poza podstawowym szkieletem zawiera on jednolity blok tekstu. Brakuje nam wyróżnienia nagłówków, hiperłączy, obrazka i formularzy. Pora na zapoznanie Was z różnymi znacznikami HTML.
 
 ## Podstawowe znaczniki
 
 Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w *tagi* (*znaczniki*). Nie poznaliśmy jednak jak dotąd żadnych nazw znaczników, których moglibyśmy użyć na rzeczywistym przykładzie strony.
+
+### Komentarze
+
+Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania *"Co ten koder miał na myśli?"*.
+
+Pomocne bywają nam wtedy komentarze. Są one ignorowane przez przeglądarkę podczas wyświetlania strony i widoczne tylko podczas podglądania jej kodu źródłowego. Komentarze bywają bardzo użyteczne przy opisie kodu i umożliwiają jego dokumentowanie.
+
+```html
+<!-- To jest komentarz do naszego kodu -->
+```
 
 ### Nagłówki i paragrafy
 
@@ -52,7 +62,6 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
 
 ```html
 <p>Jestem bardzo długim tekstem, który nie mieści się w jednej linii, <br> zatem muszę zostać złamany.</p>
-
 ```
 
 <div class="example-wrapper">
@@ -66,23 +75,69 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
 >
 > Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić). 
 
-### Formatowanie tekstu
-
-```html
-<strong></strong>
-```
-
 ### Hiperłącza
 
+Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal dowolne inne miejsce w sieci. Link możecie umieścić na stronie używając znacznika `<a>` (od angielskiego słowa *anchor*) - podając adres linkowanej strony jako wartość atrybutu `href`.
+
+Można powiedzieć, że hiperłącza są solą Internetu!
+
 ```html
-<a href="http://theawwwesomes.org" target="_blank">Darmowe warsztaty HTML & CSS</a>
+<a href="http://theawwwesomes.org">Przeniosę Cię na stronę The Awwwesomes!</a>
+
+<a href="http://theawwwesomes.org" target="_blank">
+  Przeniosę Cię na stronę The Awwwesomes otwierając ją w osobnej karcie przeglądarki!
+</a>
 ```
 
+<div class="example-wrapper">
+  <a href="http://theawwwesomes.org">Przeniosę Cię na stronę The Awwwesomes!</a>
+  <br>
+  <a href="http://theawwwesomes.org" target="_blank">
+    Przeniosę Cię na stronę The Awwwesomes otwierając ją w osobnej karcie przeglądarki!
+  </a>
+</div>
+
+Tak, jak pokazaliśmy w przykładzie wyżej - użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link zostanie otwarta w nowej karcie przeglądarki.
+
 ### Obrazki
+
+Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elementem i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
+
+- `src`, który zawiera ścieżkę do obrazka na dysku serwera lub w sieci. Jeśli wskazuje on na ścieżkę na dysku, zwykle jest to ścieżka względna - względem pliku HTML w którym znajduje się konkretny element `<img>`.
 
 ```html
 <img src="/images/awwwesome.png" alt="Nasi niesamowici uczestnicy">
 ```
+
+### Listy
+
+```html
+<ul>
+  <li>Jestem elementem listy</li>
+  <li>Jestem elementem listy</li>
+  <li>Jestem elementem listy</li>
+</ul>
+
+<ol>
+  <li>Jestem pierwszym elementem listy</li>
+  <li>Jestem drugim elementem listy</li>
+  <li>Jestem trzecim elementem listy</li>
+</ol>
+```
+
+<div class="example-wrapper">
+  <ul>
+    <li>Jestem elementem listy</li>
+    <li>Jestem elementem listy</li>
+    <li>Jestem elementem listy</li>
+  </ul>
+
+  <ol>
+    <li>Jestem pierwszym elementem listy</li>
+    <li>Jestem drugim elementem listy</li>
+    <li>Jestem trzecim elementem listy</li>
+  </ol>
+</div>
 
 ### Elementy generyczne (ogólne)
 
@@ -93,3 +148,5 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
 ```html
 <span>Jestem generycznym elementem liniowym</span>
 ```
+
+Powyżej przedstawiliśmy Wam najczęściej używane znaczniki - a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/pl/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.
