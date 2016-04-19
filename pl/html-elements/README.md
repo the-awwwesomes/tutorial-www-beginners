@@ -4,6 +4,8 @@ Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrz
 
 ## Podstawowe znaczniki
 
+Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w *tagi* (*znaczniki*). Nie poznaliśmy jednak jak dotąd żadnych nazw znaczników, których moglibyśmy użyć na rzeczywistym przykładzie strony.
+
 ### Nagłówki i paragrafy
 
 Tak samo, jak w dokumentach tekstowych, w HTML-u możemy zdefiniować nagłówki dla naszego tekstu:
@@ -19,26 +21,50 @@ Tak samo, jak w dokumentach tekstowych, w HTML-u możemy zdefiniować nagłówki
 
 Co zostanie zinterpretowane przez przeglądarkę jako:
 
-# Nagłówek 1
-## Nagłówek 2
-### Nagłówek 3
-#### Nagłówek 4
-##### Nagłówek 5
-###### Nagłówek 6
+<div class="example-wrapper">
+  <h1 style="margin-top:0">Nagłówek 1</h1>
+  <h2>Nagłówek 2</h2>
+  <h3>Nagłówek 3</h3>
+  <h4>Nagłówek 4</h4>
+  <h5>Nagłówek 5</h5>
+  <h6>Nagłówek 6</h6>
+</div>
 
 > #### Important::Ważne
 >
 > Pamiętajcie, że numery nagłówków nie odnoszą się do rozmiaru wyrenderowanego tekstu, ale oznaczają **hierarchię** zawartości.
 
-```html
-<p></p>
-```
+Przy okazji omawiania składni CSS napomknęliśmy o znaczniku `p`. Jego nazwa pochodzi od słowa *paragraph* - służy do definiowania akapitów w tekście.
 
 ```html
-<div></div>
-
-<span></span>
+<p>To jest akapit tekstu. Możesz w nim umieścić tekst dowolnej długości.</p>
 ```
+
+<div class="example-wrapper">
+  <p>To jest akapit tekstu. Możesz w nim umieścić tekst dowolnej długości.</p>
+</div>
+
+Paragrafy zwykle prezentowane są w przeglądarce jako bloki tekstu, wizualnie odseparowane od siebie pionowym odstępem.
+
+### Znak łamania linii
+
+Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w określonym miejscu. Warto wiedzieć, że nie wystarczy tam wcisnąć *enter* w edytorze tekstu - do łamania linni w HTML-u służy specjalny znacznik `<br>`:
+
+```html
+<p>Jestem bardzo długim tekstem, który nie mieści się w jednej linii, <br> zatem muszę zostać złamany.</p>
+
+```
+
+<div class="example-wrapper">
+  <p>
+    Jestem bardzo długim tekstem, który nie mieści się w jednej linii, <br> 
+    zatem muszę zostać złamany.
+  </p>
+</div>
+
+> #### Important::Ważne
+>
+> Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić). 
 
 ### Formatowanie tekstu
 
@@ -55,10 +81,15 @@ Co zostanie zinterpretowane przez przeglądarkę jako:
 ### Obrazki
 
 ```html
-<img src="/images/awwwesome.png" alt="Nasi awwwesome uczestnicy">
+<img src="/images/awwwesome.png" alt="Nasi niesamowici uczestnicy">
 ```
 
-## Formularze
+### Elementy generyczne (ogólne)
 
+```html
+<div>Jestem generycznym elementem blokowym</div>
+```
 
-
+```html
+<span>Jestem generycznym elementem liniowym</span>
+```

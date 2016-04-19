@@ -109,7 +109,31 @@ Użycie atrybutów `name` oraz `content` dokładnie w powyższy sposób pozwala 
 >
 > Przyjrzyjcie się zrzutowi ekranu:
 >
-> ![Przykładowa strona do zakodowania](/images/simple-article.png "Przykładowa strona do zakodowania")
+><div class="example-wrapper">
+  <article>
+    <header>
+      <p>Opublikowano przez: <em>Kasia Niesamowita</em>,
+        <time datetime="2016-04-20T18:00+01:00">20 kwietnia 2016</time>
+      </p>
+      <h1>The Awwwesomes podbijają świat!</h1>
+    </header>
+    <img src="/images/screen.jpg" alt="The Awwwesomes">
+    <p>Warsztaty ruszyły pełną parą! Grupa 20 zdolnych uczestników zabrała się do kodowania z godnym podziwu zapałem.</p>
+    <p>Mentorzy mieli trudne zadanie, ponieważ padło bardzo dużo ciekawych pytań. Nasi uczestnicy są naprawdę <em>awwwesome</em>!</p>
+    <h2>Najpierw semantyczny HTML, potem estetyczny CSS</h2>
+    <p>Naukę zaczęliśmy od HTML, który jest absolutną podstawą dla każdego kodera stron internetowych. Nie obejdzie się jednak bez zapoznania z CSS, dzięki któremu każdy może upiększyć swoją stronę jak tylko sobie wymarzy!</p>
+  </article>
+  <form>
+    <p>Zostaw swój komentarz:</p>
+    <label for="email">Twój email:</label>
+    <input type="email" id="email"><br>
+    <label for="name">Twoje imię:</label>
+    <input type="text" id="name"><br>
+    <label for="comment">Twój komentarz:</label>
+    <textarea id="comment"></textarea><br>
+    <button type="submit">Prześlij</button>
+  </form>
+</div>
 >
 > Strona zawiera artykuł, który składa się z nagłówka, daty publikacji, obrazka i treści. Pod artykułem znajduje się prosty formularz do dodawania komentarzy. Jak przenieść wymienione elementy do kodu HTML?
 >

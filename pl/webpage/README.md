@@ -28,8 +28,6 @@ Co bardzo ważne, większość elementów musi być zawarta między **otwierają
 <element>Tutaj znajduje się treść.</element>
 ```
 
-Warto już tutaj zaznaczyć, że nie wszystkie elementy wymagają tagów zamykających - są to tzw. *puste elementy*. Które to konkretnie, dowiecie się już niedługo w rozdziale zapoznającym z tajnikami HTML.
-
 Poszczególne elementy HTML mogą być zwykle zagnieżdżane jeden wewnątrz drugiego, na przykład:
 
 ```html
@@ -41,10 +39,18 @@ Poszczególne elementy HTML mogą być zwykle zagnieżdżane jeden wewnątrz dru
 </element>
 ```
 
+Warto już tutaj zaznaczyć, że nie wszystkie elementy wymagają tagów zamykających. Nie można też zagnieżdżać wewnątrz nich innych elementów. Są to tak zwane *puste elementy*. Które to konkretnie, dowiecie się już niedługo w rozdziale zapoznającym z tajnikami HTML.
+
+```html
+<empty>
+```
+
 Elementy mogą również zawierać *atrybuty*. Atrybuty elementów zapisywane są w ten sposób:
 
 ```html
-<element attribute="value">
+<element attribute="value"></element>
+
+<empty attribute="otherValue">
 ```
 
 ### Separacja zawartości i prezentacji

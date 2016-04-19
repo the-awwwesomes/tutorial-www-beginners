@@ -14,19 +14,23 @@ a:hover {
     color: #151d46 !important;
     text-decoration: none !important;
 }
-
-.book .book-body .page-wrapper .page-inner section.normal h1,
-.book .book-body .page-wrapper .page-inner section.normal h2,
-.book .book-body .page-wrapper .page-inner section.normal h3,
-.book .book-body .page-wrapper .page-inner section.normal h4,
-.book .book-body .page-wrapper .page-inner section.normal h5,
-.book .book-body .page-wrapper .page-inner section.normal h6 {
-    font-size: 1.75em;
-    color: #151d46;
-}
  
 .book .book-body .page-wrapper .page-inner section.normal h3.panel-title {
   color: #ffffff;
+}
+
+.book .book-body .example-wrapper {
+    margin: 25px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(204, 204, 204, 0.4);
+}
+
+.book .book-body .example-wrapper * {
+    font-family: initial !important;
+    color: #333 !important;
 }
 
 .panel-success {

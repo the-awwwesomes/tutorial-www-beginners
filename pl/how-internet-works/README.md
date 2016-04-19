@@ -34,7 +34,7 @@ Wygląda to tak:
 
  [3]: /images/img1-3.png
 
-Wyobraźcie sobie, że po wpisaniu http://theawwwesomes.org, wysyłacie list o treści: "Drodzy Awwwesomes, chcę zobaczyć stronę theawwwesomes.org. Wyślijcie ją do mnie, proszę!"
+Wyobraźcie sobie, że po wpisaniu http://theawwwesomes.org, wysyłacie list o treści: "Drodzy Awwwesomes, chcę zobaczyć stronę *theawwwesomes.org*. Wyślijcie ją do mnie, proszę!"
 
 List trafia do urzędu pocztowego najbliżej Was. Potem idzie do drugiego urzędu, który znajduje się trochę bliżej Waszego adresata. Potem do kolejnego, kolejnego, kolejnego, aż w końcu zostanie doręczony do miejsca przeznaczenia. Ciekawa rzecz - jeśli wyślecie wiele listów (*pakietów danych*) do tego samego adresata, mogą przejść przez zupełnie inne urzędy pocztowe (*routery*). To zależy od tego w jaki sposób zostaną rozdzielone w każdym urzędzie.
 
