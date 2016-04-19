@@ -18,7 +18,7 @@ Narysowaliśmy Ci schemat Internetu! Wygląda tak:
 
 ![Rysunek 1.1][1]
 
- [1]: images/internet_1.png
+ [1]: /images/img1-2.png
 
 Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączonych między sobą maszyn (wspomnianych wyżej *serwerów*). Setki tysięcy maszyn! Wiele, wiele kilometrów kabli na całym świecie! Możecie wejść na stronę [Submarine Cable Map](http://submarinecablemap.com) i sami zobaczyć jak skomplikowana jest ta sieć. Oto zrzut ekranu ze strony internetowej:
 
