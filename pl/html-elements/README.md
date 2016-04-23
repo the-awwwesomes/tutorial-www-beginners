@@ -2,11 +2,9 @@
 
 Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrzycie na niego, poza podstawowym szkieletem zawiera on jednolity blok tekstu. Brakuje nam wyróżnienia nagłówków, hiperłączy, obrazka i formularzy. Pora na zapoznanie Was z różnymi znacznikami HTML.
 
-## Podstawowe znaczniki
-
 Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w *tagi* (*znaczniki*). Nie poznaliśmy jednak jak dotąd żadnych nazw znaczników, których moglibyśmy użyć na rzeczywistym przykładzie strony.
 
-### Komentarze
+## Komentarze
 
 Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania *"Co ten koder miał na myśli?"*.
 
@@ -16,7 +14,7 @@ Pomocne bywają nam wtedy komentarze. Są one ignorowane przez przeglądarkę po
 <!-- To jest komentarz do naszego kodu -->
 ```
 
-### Nagłówki i paragrafy
+## Nagłówki i paragrafy
 
 Tak samo, jak w dokumentach tekstowych, w HTML-u możemy zdefiniować nagłówki dla naszego tekstu:
 
@@ -56,8 +54,6 @@ Przy okazji omawiania składni CSS napomknęliśmy o znaczniku `p`. Jego nazwa p
 
 Paragrafy zwykle prezentowane są w przeglądarce jako bloki tekstu, wizualnie odseparowane od siebie pionowym odstępem.
 
-### Znak łamania linii
-
 Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w określonym miejscu. Warto wiedzieć, że nie wystarczy tam wcisnąć *enter* w edytorze tekstu - do łamania linni w HTML-u służy specjalny znacznik `<br>`:
 
 ```html
@@ -75,7 +71,7 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
 >
 > Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić). 
 
-### Hiperłącza
+## Hiperłącza
 
 Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal dowolne inne miejsce w sieci. Link możecie umieścić na stronie używając znacznika `<a>` (od angielskiego słowa *anchor*) - podając adres linkowanej strony jako wartość atrybutu `href`.
 
@@ -99,17 +95,27 @@ Można powiedzieć, że hiperłącza są solą Internetu!
 
 Tak, jak pokazaliśmy w przykładzie wyżej - użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link zostanie otwarta w nowej karcie przeglądarki.
 
-### Obrazki
+## Obrazki
 
 Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elementem i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
 
 - `src`, który zawiera ścieżkę do obrazka na dysku serwera lub w sieci. Jeśli wskazuje on na ścieżkę na dysku, zwykle jest to ścieżka względna - względem pliku HTML w którym znajduje się konkretny element `<img>`.
+- `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
 
 ```html
-<img src="/images/awwwesome.png" alt="Nasi niesamowici uczestnicy">
+<img src="/images/example-img.jpg" alt="Uczymy się kodować">
+
+<img src="/images/example-img-broken.jpg" alt="Ten obrazek nie został poprawnie załadowany">
 ```
 
-### Listy
+<div class="example-wrapper">
+  <img src="/images/example-img.jpg" alt="Nasi niesamowici uczestnicy">
+  <img src="/images/example-img-broken.jpg" alt="Ten obrazek nie został poprawnie załadowany">
+</div>
+
+## Listy
+
+Za pomocą znacznika `<ul>` definiujemy listy nieuporządkowanych elementów, natomiast listy uporządkowane zamykamy wewnątrz znaczników `<ol>`:
 
 ```html
 <ul>
@@ -139,14 +145,6 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
   </ol>
 </div>
 
-### Elementy generyczne (ogólne)
+Pomimo, że najbardziej intuicyjnym (i oczywiście poprawnym) przypadkiem użycia list jest wyliczenie w tekście, znaczników listy możemy używać na przykład do definiowania elementów menu strony. Jest to jak najbardziej poprawne z punktu widzenia semantyki dokumentu.
 
-```html
-<div>Jestem generycznym elementem blokowym</div>
-```
-
-```html
-<span>Jestem generycznym elementem liniowym</span>
-```
-
-Powyżej przedstawiliśmy Wam najczęściej używane znaczniki - a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/pl/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.
+Powyżej przedstawiliśmy Wam najczęściej używane znaczniki - a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/en/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.

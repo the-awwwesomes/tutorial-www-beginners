@@ -91,30 +91,30 @@ Pola wielokrotnego wyboru, czyli checkboksy. Dla tego typu pól atrybut `type` p
 
 ```html
 <label for="checkbox1">
-  <input type="checkbox" id="checkbox1">
+  <input type="checkbox" id="checkbox1" name="myGroup">
   Wybierz mnie!
 </label>
 <label for="checkbox2">
-  <input type="checkbox" id="checkbox2">
+  <input type="checkbox" id="checkbox2" name="myGroup">
   Nie, nie, mnie wybierz!
 </label>
 <label for="checkbox3">
-  <input type="checkbox" id="checkbox3">
+  <input type="checkbox" id="checkbox3" name="myGroup">
   Ja też chcę być wybrany!
 </label>
 ```
 
 <div class="example-wrapper">
   <label for="checkbox1">
-    <input type="checkbox" id="checkbox1">
+    <input type="checkbox" id="checkbox1" name="myGroup">
     Wybierz mnie!
   </label>
   <label for="checkbox2">
-    <input type="checkbox" id="checkbox2">
+    <input type="checkbox" id="checkbox2" name="myGroup">
     Nie, nie, mnie wybierz!
   </label>
   <label for="checkbox3">
-    <input type="checkbox" id="checkbox3">
+    <input type="checkbox" id="checkbox3" name="myGroup">
     Ja też chcę być wybrany!
   </label>
 </div>
@@ -125,30 +125,30 @@ Oprócz checkboksów możemy umieścić w swoim formularzu pola jednokrotnego wy
 
 ```html
 <label for="radiobutton1">
-  <input type="radio" id="radiobutton1">
+  <input type="radio" id="radiobutton1" name="myGroup">
   Wybierz mnie!
 </label>
 <label for="radiobutton2">
-  <input type="radio" id="radiobutton2">
+  <input type="radio" id="radiobutton2" name="myGroup">
   Nie, nie, mnie wybierz!
 </label>
 <label for="radiobutton3">
-  <input type="radio" id="radiobutton3">
+  <input type="radio" id="radiobutton3" name="myGroup">
   Ja też chcę być wybrany!
 </label>
 ```
 
 <div class="example-wrapper">
   <label for="radiobutton1">
-    <input type="radio" id="radiobutton1">
+    <input type="radio" id="radiobutton1" name="myGroup">
     Wybierz mnie!
   </label>
   <label for="radiobutton2">
-    <input type="radio" id="radiobutton2">
+    <input type="radio" id="radiobutton2" name="myGroup">
     Nie, nie, mnie wybierz!
   </label>
   <label for="radiobutton3">
-    <input type="radio" id="radiobutton3">
+    <input type="radio" id="radiobutton3" name="myGroup">
     Ja też chcę być wybrany!
   </label>
 </div>
