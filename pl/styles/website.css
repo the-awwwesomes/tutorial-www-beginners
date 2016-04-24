@@ -20,6 +20,8 @@ a:hover {
 }
 
 .book .book-body .example-wrapper {
+    font-family: initial !important;
+    color: #333 !important;
     margin: 25px 0;
     border: 1px solid #ccc;
     border-radius: 4px;

@@ -23,26 +23,88 @@ Do wszystkich wymienionych powyżej elementów możemy zastosować odpowiednie z
 
 ```html
 <header>
-  Tu umieszczamy zawartość nagłówka. Może on zawierać nawigację.
-<nav>
-  Tu umieszczamy nawigację.
-</nav>
+  Tu umieszczamy zawartość nagłówka strony
+  <nav>
+    Tu umieszczamy nawigację
+  </nav>
 </header>
 
 <article>
-  To jest nasz artykuł zawierający np.
-  <section>sekcję.</section>
+  <header>
+    Tu umieszczamy zawartość nagłówka artykułu
+  </header>
+  
+  Tu umieszczamy zawartość treści artykułu
+
+  <footer>
+    Tu umieszczamy zawartość stopki artykułu
+  </footer>
 </article>
 
 <aside>
-  Tu umieszczamy zawartość bocznej części strony lub elementu
+  Tu umieszczamy elementy poboczne (np. reklamy, zajawki innych artykułów)
 </aside>
 
 <footer>
-  Tu umieszczamy zawartość stopki
+  Tu umieszczamy zawartość stopki strony
 </footer>
 ```
 
+Sporo nowych różnych znaczników, prawda? Czujecie się zdezorientowani?
+
+Dzięki znacznikom `<header>` i `<footer>` możemy określić, że dany element strony pełni rolę nagłówka bądź stopki. Z pewnością już w tej chwili zwróciło Waszą uwagę, że również elementy umieszczone wewnątrz strony mogą posiadać swój nagłówek i stopkę (na przykład artykuł). I w takich przypadkach z powodzeniem sprawdzą się znaczniki `<header>` i `<footer>`.
+
+Tak, jak pokazaliśmy w przykładzie wyżej, znacznika `<nav>` używamy kiedy chcemy zaznaczyć, że wewnątrz danego elementu znajduje się nawigacja strony. Może być on użyty więcej niż raz w obrębie tego samego dokumentu.
+
+Znacznik `<aside>` pozwala nam na określenie danego elementu jako nie powiązanego ściśle tematycznie z główną zawartością strony, choć wciąż ważnego z punktu widzenia odbiorcy. Klasycznym przykładem są tu reklamy umieszczane na stronie.
+
+Tag `<article>` jest przydatny dla elementów takich jak artykuł na blogu lub stronie z wiadomościami, post na forum albo komentarz pozostawiony pod artykułem.
+
+### Podział strony na sekcje
+
+Nie wymieniliśmy powyżej jeszcze jednego ważnego znacznika, który pomaga nam organizować zawartość strony:
+
+```html
+<section>Jestem sekcją strony</section>
+```
+
+Znacznik `<section>` ma już nieco bardziej ogólne zastosowanie - używamy go, aby tematycznie pogrupować naszą zawartość. Zwykle każda z tak uzyskanych sekcji powinna posiadać nagłówek odpowiedniego poziomu (`<h1>`-`<h6>`).
+
+Sekcje z powodzeniem mogą być zagnieżdżane wewnątrz siebie.
+
+```html
+<section>
+  <h1>Oto strona o żywych stworzeniach</h1>
+
+  <section>
+    <h2>Tutaj są zwierzęta</h2>
+
+    <section>
+      <h3>Tutaj są ryby</h3>
+    </section>
+
+    <section>
+      <h3>Tutaj są owady</h3>
+    </section>
+
+    <section>
+      <h3>Tutaj są ssaki</h3>
+
+      <section>
+        <h4>Tutaj są ludzie</h4>
+      </section>
+    </section>
+  </section>
+
+  <section>
+    <h2>Tutaj są rośliny</h2>
+  </section>
+
+  <section>
+    <h2>Tutaj są grzyby i bakterie</h2>
+  </section>
+</section>
+```
 
 ### Elementy generyczne (ogólne)
 
@@ -57,3 +119,40 @@ Właśnie w takich przypadkach na ratunek spieszą nam elementy generyczne.
 ```html
 <span>Jestem generycznym elementem liniowym</span>
 ```
+
+Dokładnie tak - z pewnością niejednokrotnie znajdziecie się w sytuacji, kiedy zajdzie potrzeba zakodowania elementu, jednak w morzu tagów HTML nie znajdzie się żaden pasujący do roli. Wtedy użycie *elementów generycznych* nie będzie błędem.
+
+W przykładzie powyżej widzicie aż dwa ich rodzaje. Skąd w ogóle podział na elementy liniowe i blokowe, co on oznacza?
+
+W wielkim skrócie: **elementy liniowe** to takie, które zachowują się tak, jak linie tekstu. Naszego powyższego znacznika `<span>` możemy z powodzeniem użyć, aby "owinąć" nim fragment paragrafu i nie spowoduje to złamania linii.
+
+```html
+<p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
+```
+
+<div class="example-wrapper">
+  <p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
+</div> 
+
+Jeśli umieścimy w naszym kodznie **element blokowy**, spowoduje on złamanie linii - zawartość elementu blokowego zostanie wyświetlona w nowej linii.
+
+```html
+<p>Jestem paragrafem tekstu, który zawiera domyślny <div>element blokowy.</div> Tutaj jest kontynuacja tekstu.</p>
+```
+
+<div class="example-wrapper">
+  <p>Jestem paragrafem tekstu, który zawiera domyślny <div>element blokowy.</div> Tutaj jest kontynuacja tekstu.</p>
+</div>
+
+Dobrą praktyką jest, aby nie umieszczać elementów blokowych wewnątrz liniowych.
+
+> #### Important::Ważne
+>
+> Pamiętaj, aby nie używać znacznika `<section>` jako generycznego kontenera "do wszystkiego"! `<section>`, jak już wspomnieliśmy, pozwala nam na tematyczne grupowanie zawartości strony. Natomiast `<div>` jest znacznikiem, który powinien być używany tylko w przypadkach, kiedy żaden inny znacznik nie będzie odpowiedni dla zawartości.
+
+Temat "czym różnią się elementy liniowe od blokowych" jest bardzo związany z prezentacją elementów na stronie i rozwiniemy go w odpowiednim rozdziale poświęconym stylom CSS.
+
+> #### Exercise::Ćwiczenie 5
+>
+> Otwórzcie [stronę z artykułem](https://www.theguardian.com/technology/2016/apr/23/facebook-global-takeover-f8-conference-messenger-chatbots), która była źródłem przykładu z początku tego rozdziału.
+> - Uruchomcie narzędzia deweloperskie. Spróbujcie obadać różne elementy strony i sprawdzić, jakich znaczników użyli autorzy strony i w jakich celach?

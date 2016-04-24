@@ -14,7 +14,7 @@ Kiedy umieszczamy na stronie formularz, najpierw musimy "powiedzieć" przegląda
 </form>
 ```
 
-Wiedząć, jak zadeklarować sam formularz, możemy po kolei zapoznać się z różnymi rodzajami kontrolek.
+Wiedząc, jak zadeklarować sam formularz, możemy po kolei zapoznać się z różnymi rodzajami kontrolek.
 
 ### Podstawowe interaktywne kontrolki (`input`)
 
@@ -155,6 +155,8 @@ Oprócz checkboksów możemy umieścić w swoim formularzu pola jednokrotnego wy
 
 W przypadku checkboksów i radiobuttonów również potrzebujemy dodać do `<label>` atrybut `for`. Poeksperymentujcie i usuńcie ten atrybut - co się stanie? Jak wpłynie to na doświadczenie użytkownika podczas używania formularza?
 
+Zauważcie również, że w naszych powyższych przykładach używamy atrybutu `name`. Jest on istotny w przypadku radiobuttonów i checkboksów bo wskazuje, że wybieramy elementy spośród konkretnej grupy.
+
 #### Wybieranie plików z dysku
 
 W formularzach istnieje również możliwość dodania pola, dzięki któremu możemy wybrać plik ze swojego dysku i przesłać go na serwer:
@@ -208,9 +210,7 @@ Do wstawiania elementu rozwijalnej listy do formularza służy nam znacznik `<se
 
 ### Przyciski
 
-Wymieniliśmy już większość bardzo przydatnych kontrolek, jakie można umieścić w formularzu. I na razie moglibyśmy na tym zakończyć, gdyby nie jedna, bardzo popularna - bez której właściwie większość formularzy byłaby mało użyteczna.
-
-Poznajcie HTML-owe przyciski!
+Wymieniliśmy już większość bardzo przydatnych kontrolek, jakie można umieścić w formularzu. I na razie moglibyśmy na tym zakończyć, gdyby nie jedna, bardzo popularna - bez której właściwie większość formularzy byłaby mało użyteczna - przyciski. Deklarujemy je w poniższy sposób:
 
 ```html
 <button>Kliknij mnie!</button>
@@ -220,6 +220,37 @@ Poznajcie HTML-owe przyciski!
   <button>Kliknij mnie!</button>
 </div>
 
-
-#### Przesyłanie danych z formularza do serwera
-
+> #### Exercise::Ćwiczenie 4
+>
+> Wróćmy do naszego przykładu z Ćwiczenia 3:
+>
+><div class="example-wrapper">
+  <article>
+    <header>
+      <p>Opublikowano przez: <em>Kasia Niesamowita</em>,
+        <time datetime="2016-04-20T18:00+01:00">20 kwietnia 2016</time>
+      </p>
+      <h1>The Awwwesomes podbijają świat!</h1>
+    </header>
+    <img src="/images/screen.jpg" alt="The Awwwesomes">
+    <p>Warsztaty ruszyły pełną parą! Grupa 20 zdolnych uczestników zabrała się do kodowania z godnym podziwu zapałem.</p>
+    <p>Mentorzy mieli trudne zadanie, ponieważ padło bardzo dużo ciekawych pytań. Nasi uczestnicy są naprawdę <em>awwwesome</em>!</p>
+    <h2>Najpierw semantyczny HTML, potem estetyczny CSS</h2>
+    <p>Naukę zaczęliśmy od HTML, który jest absolutną podstawą dla każdego kodera stron internetowych. Nie obejdzie się jednak bez zapoznania z CSS, dzięki któremu każdy może upiększyć swoją stronę jak tylko sobie wymarzy!</p>
+  </article>
+  <form>
+    <p>Zostaw swój komentarz:</p>
+    <label for="email">Twój email:</label>
+    <input type="email" id="email">
+    <label for="name">Twoje imię:</label>
+    <input type="text" id="name">
+    <label for="comment">Twój komentarz:</label>
+    <textarea id="comment"></textarea>
+    <button type="submit">Prześlij</button>
+  </form>
+</div>
+>
+> W poprzednim ćwiczeniu umieściliśmy całą zawartość jako zwykły tekst. Chcemy jednak, aby nasze elementy były odczytywane i wyświetlane prawidłowo.
+>
+> - Korzystając ze zdobytej dotąd wiedzy, uzupełnij kod w odpowiednie znaczniki opisujące zawartość. Nie zapomnij o formularzu!
+> - Zadbaj o poprawne umieszczenie obrazka w artykule!

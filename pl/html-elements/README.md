@@ -86,7 +86,7 @@ Można powiedzieć, że hiperłącza są solą Internetu!
 ```
 
 <div class="example-wrapper">
-  <a href="http://theawwwesomes.org">Przeniosę Cię na stronę The Awwwesomes!</a>
+  <a href="http://theawwwesomes.org" target="_self">Przeniosę Cię na stronę The Awwwesomes!</a>
   <br>
   <a href="http://theawwwesomes.org" target="_blank">
     Przeniosę Cię na stronę The Awwwesomes otwierając ją w osobnej karcie przeglądarki!
@@ -100,6 +100,37 @@ Tak, jak pokazaliśmy w przykładzie wyżej - użycie `target="_blank"` spowoduj
 Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elementem i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
 
 - `src`, który zawiera ścieżkę do obrazka na dysku serwera lub w sieci. Jeśli wskazuje on na ścieżkę na dysku, zwykle jest to ścieżka względna - względem pliku HTML w którym znajduje się konkretny element `<img>`.
+
+> #### Important::Ważne
+>
+> W tym momencie chcemy zwrócić Waszą uwagę na ścieżki do zasobów (nie tylko obrazków, niedługo zaczniemy dołączać do naszej strony arkusze styli).
+> **Ścieżka bezwzględna** to taka, która zawiera pełny adres internetowy do zasobu, wraz z domeną.
+> ```html
+ <img src="http://theawwwesomes.org/images/example.png" alt="Jestem obrazkiem ze ścieżką bezwzględną"> 
+ ```
+ > W zasadzie moglibyśmy w tym momencie zakończyć temat ścieżek i przestać zawracać sobie tym głowę. Jednak co się stanie, kiedy adres strony ulegnie zmianie? Musielibyśmy wtedy pozmieniać adresy do wszystkich obrazków na naszej stronie - bardzo dużo roboty!
+ > Z pomocą przychodzi nam linkowanie za pomocą **ścieżek względnych**, czyli wskazywanie na położenie zasobu w systemie plików względem miejsca, w którym przechowujemy plik `html` z naszą stroną.
+ > Najprostszym przykładem jest ten, kiedy plik grafiki oraz plik ze stroną znajdują się w tym samym miejscu (folderze):
+ > ```html
+ <img src="example.png" alt="Jestem w tym samym folderze, co strona"> 
+ ```
+ > Jednak wrzucanie plików z różnymi zasobami do tego samego folderu mogłoby spowodować w krótkim czasie spory bałagan. Zwykle tworzymy specjalne podfoldery - osobny dla obrazków (możemy go nazwać np. `images`), dla plików ze stylami oraz skryptami JavaScript.
+ > Spróbujmy w prosty sposób zobrazować strukturę katalogu plików (dla uproszczenia uwzględnimy tylko obrazki):
+ > ```html
+ /my-website
+  |
+  |-- index.html
+  |-- /images
+       |
+       |--apples.png
+       |--cherries.jpg
+       |--bananas.svg
+```
+> W takim wypadku, chcąc wyświetlić na stronie obrazek przedstawiający jabłka, odwołamy się do niego w ten sposób:
+ > ```html
+ <img src="images/apples.png" alt="Tu widzimy jabłka"> 
+ ```
+
 - `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
 
 ```html
@@ -145,6 +176,6 @@ Za pomocą znacznika `<ul>` definiujemy listy nieuporządkowanych elementów, na
   </ol>
 </div>
 
-Pomimo, że najbardziej intuicyjnym (i oczywiście poprawnym) przypadkiem użycia list jest wyliczenie w tekście, znaczników listy możemy używać na przykład do definiowania elementów menu strony. Jest to jak najbardziej poprawne z punktu widzenia semantyki dokumentu.
+Pomimo, że najbardziej intuicyjnym (i oczywiście poprawnym) przypadkiem użycia list jest wyliczenie w tekście, znaczników listy możemy używać na przykład do definiowania elementów menu strony.
 
 Powyżej przedstawiliśmy Wam najczęściej używane znaczniki - a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/en/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.
