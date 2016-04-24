@@ -23,8 +23,20 @@ Do wszystkich wymienionych powyżej elementów możemy zastosować odpowiednie z
 
 ```html
 <header>
-  Tu umieszczamy zawartość nagłówka.
+  Tu umieszczamy zawartość nagłówka. Może on zawierać nawigację.
+<nav>
+  Tu umieszczamy nawigację.
+</nav>
 </header>
+
+<article>
+  To jest nasz artykuł zawierający np.
+  <section>sekcję.</section>
+</article>
+
+<aside>
+  Tu umieszczamy zawartość bocznej części strony lub elementu
+</aside>
 
 <footer>
   Tu umieszczamy zawartość stopki

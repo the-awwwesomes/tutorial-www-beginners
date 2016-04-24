@@ -14,7 +14,7 @@ Kiedy umieszczamy na stronie formularz, najpierw musimy "powiedzieć" przegląda
 </form>
 ```
 
-Wiedząć, jak zadeklarować sam formularz, możemy po kolei zapoznać się z różnymi rodzajami kontrolek!
+Wiedząć, jak zadeklarować sam formularz, możemy po kolei zapoznać się z różnymi rodzajami kontrolek.
 
 ### Podstawowe interaktywne kontrolki (`input`)
 
