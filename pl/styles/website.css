@@ -120,3 +120,7 @@ a:hover {
 .book .book-body .page-wrapper .page-inner section.normal code .css .hljs-pseudo {
     font-family: 'Consolas', monospace;
 }
+
+img.image-full-width {
+    width: 100%;
+}
