@@ -126,6 +126,8 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
        |--cherries.jpg
        |--bananas.svg
 ```
+<img src="/images/img-path-examples.gif" class="image-full-width"> 
+
 > W takim wypadku, chcąc wyświetlić na stronie obrazek przedstawiający jabłka, odwołamy się do niego w ten sposób:
  > ```html
  <img src="images/apples.png" alt="Tu widzimy jabłka"> 
