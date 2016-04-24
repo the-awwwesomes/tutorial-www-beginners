@@ -6,7 +6,7 @@ Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w *tagi* (*z
 
 ## Komentarze
 
-Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania *"Co ten koder miał na myśli?"*.
+Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania *"Co autor miał na myśli?"*.
 
 Pomocne bywają nam wtedy komentarze. Są one ignorowane przez przeglądarkę podczas wyświetlania strony i widoczne tylko podczas podglądania jej kodu źródłowego. Komentarze bywają bardzo użyteczne przy opisie kodu i umożliwiają jego dokumentowanie.
 

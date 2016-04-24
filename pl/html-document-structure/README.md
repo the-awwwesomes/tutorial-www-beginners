@@ -15,7 +15,7 @@ Spróbujmy pogrupować jej zawartość i wyróżnić główne elementy znajdują
 [2]: /images/page-layout-example-sections.png
 
 
-W pierwszej kolejności rzuca się w oczy **nagłówek** strony (oraz **stopka**, która akurat nie jest widoczna na naszym zrzucie ekranu). Moglibyśmy w tym momencie iść krok dalej i w nagłówku strony wyróżnić, na przykład, menu służące do **nawigacji**.
+W pierwszej kolejności rzuca się w oczy **nagłówek** strony (oraz **stopka**, która akurat nie jest widoczna na naszym zrzucie ekranu). Moglibyśmy w tym momencie pójść o krok dalej i w nagłówku strony wyróżnić, na przykład, menu służące do **nawigacji**.
 
 Pod nagłówkiem (a w zasadzie pomiędzy nagłówkiem a stopką) znajduje się główna zawartość strony. Jej najważniejszym elementem jest **artykuł**. Artykuł składa się z **nagłówka** oraz treści, która złożona jest z **ilustracji** oraz **akapitów tekstu**. W nagłówku artykułu możemy wyróżnić **tytuł** i **podtytuł**, a także informacje dotyczące autora oraz daty publikacji. Obok artykułu widzimy listę innych popularnych artykułów, która jest **elementem pobocznym** ponieważ nie dotyczy bezpośrednio głównej zawartości strony.
 
@@ -52,7 +52,7 @@ Do wszystkich wymienionych powyżej elementów możemy zastosować odpowiednie z
 
 Sporo nowych różnych znaczników, prawda? Czujecie się zdezorientowani?
 
-Dzięki znacznikom `<header>` i `<footer>` możemy określić, że dany element strony pełni rolę nagłówka bądź stopki. Z pewnością już w tej chwili zwróciło Waszą uwagę, że również elementy umieszczone wewnątrz strony mogą posiadać swój nagłówek i stopkę (na przykład artykuł). I w takich przypadkach z powodzeniem sprawdzą się znaczniki `<header>` i `<footer>`.
+Dzięki znacznikom `<header>` i `<footer>` możemy określić, że dany element strony pełni rolę nagłówka bądź stopki. Z pewnością już w tej chwili zwróciło Waszą uwagę, że również elementy umieszczone wewnątrz strony mogą posiadać swój nagłówek i stopkę (na przykład artykuł). Również w takich przypadkach z powodzeniem sprawdzą się znaczniki `<header>` i `<footer>`.
 
 Tak, jak pokazaliśmy w przykładzie wyżej, znacznika `<nav>` używamy kiedy chcemy zaznaczyć, że wewnątrz danego elementu znajduje się nawigacja strony. Może być on użyty więcej niż raz w obrębie tego samego dokumentu.
 

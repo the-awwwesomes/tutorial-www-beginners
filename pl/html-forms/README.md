@@ -30,7 +30,7 @@ Załóżmy, że chcemy umieścić w naszym formularzu kilka prostych pól, dzię
 
 Znacznik `input` w większości przypadków służy do przyjmowania od użytkownika danych tekstowych (choć z powodzeniem możecie też wpisywać tam również liczby oraz znaki specjalne!). Musimy jednak pamiętać, że zachowanie pola `input` jest zależne od jego typu, który podajemy za pomocą atrybutu `type`. Dla pola tekstowego będzie to wyglądało jak powyżej: `type="text"`.
 
-Wygląda bardzo prosto, prawda? Tak prosto, że użytkownik nie widzi informacji, podania jakich danych się od niego oczekuje. 
+Wygląda bardzo prosto, prawda? Tak prosto, że użytkownik nie widzi informacji o tym, jakich danych się od niego oczekuje. 
 
 Do opisu pól formularza używamy znacznika `<label>` i właśnie wewnątrz niego umieszczamy informacje, co powinno znajdować się w danym polu:
 
@@ -46,7 +46,7 @@ Do opisu pól formularza używamy znacznika `<label>` i właśnie wewnątrz nieg
 
 Zauważcie, że pojawiły się dwa nowe atrybuty: `id` oraz `for`.
 
-- Atrybut `id` służy nam do elementowi HTML identyfikatora. Jego wartość musi być **unikalna** w obrębie całej strony. Atrybut `id` nie jest charakterystyczny tylko dla pól typu `<input>`, może być używany wraz z *dowolnym* znacznikiem HTML.
+- Atrybut `id` jest identyfikatorem elementu HTML. Jego wartość musi być **unikalna** w obrębie całej strony. Atrybut `id` nie jest charakterystyczny tylko dla pól typu `<input>`, może być używany wraz z *dowolnym* znacznikiem HTML.
 - Atrybut `for` jest już charakterystyczny dla znacznika `<label>`. Łączy on `<label>` wraz z kontrolką formularza, której dotyczy. W takim wypadku wartość atrybutu `for` musi być *identyczna* jak wartość `id` pola tekstowego, do którego się odnosi. Dokładnie tak, jak w przykładzie powyżej.
 
 A teraz zapoznajmy się teraz z pozostałymi typami pola `<input>`!
@@ -174,7 +174,7 @@ W formularzach istnieje również możliwość dodania pola, dzięki któremu mo
 
 Wiemy już, jak wstawiać do naszego formularza pola tekstowe, czyli `<input type="text">`. Co, jeśli jednak użytkownik potrzebuje wpisać większą porcję tekstu, tak jak w przypadku komentarzy pod artykułem na blogu?
 
-Z pomocą przychodzi nam znacznik `<textarea>`, dzięki któremu umożliwimy naszym użytkownikom wpisywanie tekstu w wielu liniach. Będą mieli po prostu więcej miejsca na wyrażenie, na przykład, swoich opinii o naszym tekście.
+Z pomocą przychodzi nam znacznik `<textarea>`, dzięki któremu umożliwimy naszym użytkownikom wpisywanie tekstu w wielu liniach. Będą mieli wtedy więcej miejsca na wyrażenie, na przykład, swoich opinii o naszym tekście.
 
 ```html
 <textarea rows="10" cols="30">Napisz coś tutaj</textarea>
