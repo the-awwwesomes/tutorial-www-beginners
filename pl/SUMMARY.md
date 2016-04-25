@@ -8,3 +8,5 @@
 * [Proste formularze](html-forms/README.md)
 * [Definiowanie struktury strony](html-document-structure/README.md)
 * [Kod CSS](css-code/README.md)
+* [Kaskadowość i dziedziczenie w CSS](css-cascade/README.md)
+* [Złożone selektory i specyficzność](css-specificity/README.md)

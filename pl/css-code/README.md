@@ -84,3 +84,7 @@ Nadajmy tekstowi każdego elementu z powyższego przykładu posiadającego klas�
 ### Nazwa tagu
 
 Wróćmy jeszcze na chwilę do selektorów po nazwie tagu.
+
+## Podstawowe właściwości CSS i ich wartości
+
+## Jak dołączyć style do strony?
