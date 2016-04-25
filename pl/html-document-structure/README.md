@@ -159,7 +159,7 @@ Temat "czym różnią się elementy liniowe od blokowych" jest bardzo związany 
 
 > #### Exercise::Ćwiczenie 6
 >
-> Pora na rozpoczęcie pracy z docelowym layoutem! Na pewno już się cieszysz. Oto on:
+> Pora na rozpoczęcie pracy z docelowym layoutem. Oto on:
 >
 > ![Layout do zakodowania](/resources/planty.png "Layout do zakodowania")
 >
