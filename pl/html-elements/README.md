@@ -132,15 +132,29 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
 > ```html
  <img src="images/apples.png" alt="Tu widzimy jabłka">
  ```
-> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`:
+> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`. Przykładowo: jeśli plik `index.html`, w którym piszemy kod html znajduje się folderze `/html`, umieszczonym w `/my-website`, a obrazki z folderu `/images`, również stanowią podfolder `/my-website`, to musimy wyjść z folderu `/html` o poziom wyżej, stosując magiczne dwie kropki, a następnie wejść do folderu z obrazkami. Być może brzmi to zawile, ale wszystko wyjaśni się jak zaczniecie testować ścieżki względne w praktyce.
+
+
+> ```html
+ /my-website
+  |-- /html
+       |--index.html
+  |-- /images
+    |-- apples.png
+    |-- cherries.jpg
+    |-- bananas.svg
+```
+
 > ```html
  <img src="../images/apples.png" alt="Tu widzimy jabłka">
  ```
-> Natomiast jeśli chcemy cofnąć się jeszcze bardziej w głąb struktury katalogów:
+
+> Natomiast jeśli chcemy cofnąć się jeszcze bardziej w głąb struktury katalogów stosujemy zapis:
 > ```html
  <img src="../../images/apples.png" alt="Tu widzimy jabłka">
  ```
 > ... i tak dalej.
+> Ścieżki bezwględne będą bardzo przydatne np.przy podłączniu pliku, zawierającego style. Przetestujemy ti już niebawem podczas nauki o CSS.
 
 - `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
 

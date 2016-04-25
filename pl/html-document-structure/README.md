@@ -166,5 +166,5 @@ Temat "czym różnią się elementy liniowe od blokowych" jest bardzo związany 
 > - W folderze `the-awwwesomes` (który jest przeznaczony na przechowywanie folderów ze wszystkimi ćwiczeniami) stwórz folder `planty`. Od tej pory to właśnie w tym folderze będziesz umieszczać wszystkie pliki dotyczące layoutu.
 > - Wewnątrz `the-awwwesomes/planty/` utwórz plik `index.html`. Będziesz tam tworzyć kod strony.
 > - Stwórz szkielet dokumentu HTML dbając, aby zawrzeć wszystkie potrzebne metadane w sekcji `<head>`.
-> - Bazując na projekcie layoutu oceń, jak należy pogrupować poszczególne elementy layoutu. Użyj odpowiednich znaczników.
+> - Bazując na projekcie layoutu oceń, jak należy pogrupować poszczególne elementy layoutu. Użyj odpowiednich znaczników. Pamiętaj, że budowanie layoutu można rozwiązać na różne sposoby, więc nie zrażaj się, jeśli Wasz kod będzie różnił się od kodu kolegów. W budowaniu szkieletu warto rozrysować sobie layout na kartce w postaci kontenerów, nadając im odpowiednie znaczenie. 
 > - Rozpocznij pracę nad kodem HTML strony. Zadbaj o to, aby dla każdego elementu użyć odpowiednich znaczników.
