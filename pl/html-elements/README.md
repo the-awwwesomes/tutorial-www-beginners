@@ -78,22 +78,16 @@ Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal
 Można powiedzieć, że hiperłącza są solą Internetu!
 
 ```html
-<a href="http://theawwwesomes.org">Przeniosę Cię na stronę The Awwwesomes!</a>
-
 <a href="http://theawwwesomes.org" target="_blank">
   Przeniosę Cię na stronę The Awwwesomes otwierając ją w osobnej karcie przeglądarki!
 </a>
 ```
 
 <div class="example-wrapper">
-  <a href="http://theawwwesomes.org" target="_self">Przeniosę Cię na stronę The Awwwesomes!</a>
-  <br>
-  <a href="http://theawwwesomes.org" target="_blank">
-    Przeniosę Cię na stronę The Awwwesomes otwierając ją w osobnej karcie przeglądarki!
-  </a>
+  <a href="http://theawwwesomes.org" target="_blank">Przeniosę Cię na stronę The Awwwesomes!</a>
 </div>
 
-Tak, jak pokazaliśmy w przykładzie wyżej - użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link zostanie otwarta w nowej karcie przeglądarki.
+Użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link zostanie otwarta w nowej karcie przeglądarki.
 
 ## Obrazki
 
@@ -132,9 +126,9 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
 > ```html
  <img src="images/apples.png" alt="Tu widzimy jabłka">
  ```
-> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`. Przykładowo: jeśli plik `index.html`, w którym piszemy kod html znajduje się folderze `/html`, umieszczonym w `/my-website`, a obrazki z folderu `/images`, również stanowią podfolder `/my-website`, to musimy wyjść z folderu `/html` o poziom wyżej, stosując magiczne dwie kropki, a następnie wejść do folderu z obrazkami. Być może brzmi to zawile, ale wszystko wyjaśni się jak zaczniecie testować ścieżki względne w praktyce.
-
-
+> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`. 
+>
+> Przykładowo - plik `index.html`, w którym piszemy kod html znajduje się folderze `/html` umieszczonym w `/my-website`, a `/images` stanowi podfolder `/my-website`. 
 > ```html
  /my-website
   |-- /html
@@ -144,7 +138,7 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
     |-- cherries.jpg
     |-- bananas.svg
 ```
-
+> Musimy wtedy wyjść z folderu `/html` o poziom wyżej, stosując "magiczne" dwie kropki, a następnie wejść do folderu z obrazkami. Być może brzmi to zawile, ale wszystko wyjaśni się jak zaczniecie testować ścieżki względne w praktyce.
 > ```html
  <img src="../images/apples.png" alt="Tu widzimy jabłka">
  ```
@@ -154,7 +148,7 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
  <img src="../../images/apples.png" alt="Tu widzimy jabłka">
  ```
 > ... i tak dalej.
-> Ścieżki bezwględne będą bardzo przydatne np.przy podłączniu pliku, zawierającego style. Przetestujemy ti już niebawem podczas nauki o CSS.
+> Ścieżki bezwględne będą bardzo przydatne np. przy podłączniu pliku, zawierającego style. Przetestujemy to już niebawem podczas nauki o CSS.
 
 - `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
 
