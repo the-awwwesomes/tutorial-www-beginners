@@ -33,7 +33,7 @@ Do wszystkich wymienionych powyżej elementów możemy zastosować odpowiednie z
   <header>
     Tu umieszczamy zawartość nagłówka artykułu
   </header>
-  
+
   Tu umieszczamy zawartość treści artykułu
 
   <footer>
@@ -106,11 +106,16 @@ Sekcje z powodzeniem mogą być zagnieżdżane wewnątrz siebie.
 </section>
 ```
 
+> #### Exercise::Ćwiczenie 5
+>
+> Otwórz [stronę z artykułem](https://www.theguardian.com/technology/2016/apr/23/facebook-global-takeover-f8-conference-messenger-chatbots), która była źródłem przykładu z początku tego rozdziału.
+> - Uruchom narzędzia deweloperskie. Spróbuj obadać różne elementy strony i sprawdzić, jakich znaczników użyli autorzy strony i w jakich celach?
+
 ### Elementy generyczne (ogólne)
 
 *"Pomocy! Muszę zakodować element na stronie, jednak nie jestem w stanie dopasować jego znaczenia do żadnego z powyższych tagów!"*
 
-Właśnie w takich przypadkach na ratunek spieszą nam elementy generyczne. 
+Właśnie w takich przypadkach na ratunek spieszą nam elementy generyczne.
 
 ```html
 <div>Jestem generycznym elementem blokowym</div>
@@ -132,7 +137,7 @@ W wielkim skrócie: **elementy liniowe** to takie, które zachowują się tak, j
 
 <div class="example-wrapper">
   <p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
-</div> 
+</div>
 
 Jeśli umieścimy w naszym kodznie **element blokowy**, spowoduje on złamanie linii - zawartość elementu blokowego zostanie wyświetlona w nowej linii.
 
@@ -152,7 +157,14 @@ Dobrą praktyką jest, aby nie umieszczać elementów blokowych wewnątrz liniow
 
 Temat "czym różnią się elementy liniowe od blokowych" jest bardzo związany z prezentacją elementów na stronie i rozwiniemy go w odpowiednim rozdziale poświęconym stylom CSS.
 
-> #### Exercise::Ćwiczenie 5
+> #### Exercise::Ćwiczenie 6
 >
-> Otwórzcie [stronę z artykułem](https://www.theguardian.com/technology/2016/apr/23/facebook-global-takeover-f8-conference-messenger-chatbots), która była źródłem przykładu z początku tego rozdziału.
-> - Uruchomcie narzędzia deweloperskie. Spróbujcie obadać różne elementy strony i sprawdzić, jakich znaczników użyli autorzy strony i w jakich celach?
+> Pora na rozpoczęcie pracy z docelowym layoutem! Na pewno już się cieszysz. Oto on:
+>
+> ![Layout do zakodowania](/resources/planty.png "Layout do zakodowania")
+>
+> - W folderze `the-awwwesomes` (który jest przeznaczony na przechowywanie folderów ze wszystkimi ćwiczeniami) stwórz folder `planty`. Od tej pory to właśnie w tym folderze będziesz umieszczać wszystkie pliki dotyczące layoutu.
+> - Wewnątrz `the-awwwesomes/planty/` utwórz plik `index.html`. Będziesz tam tworzyć kod strony.
+> - Stwórz szkielet dokumentu HTML dbając, aby zawrzeć wszystkie potrzebne metadane w sekcji `<head>`.
+> - Bazując na projekcie layoutu oceń, jak należy pogrupować poszczególne elementy layoutu. Użyj odpowiednich znaczników.
+> - Rozpocznij pracę nad kodem HTML strony. Zadbaj o to, aby dla każdego elementu użyć odpowiednich znaczników.

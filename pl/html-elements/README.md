@@ -62,14 +62,14 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
 
 <div class="example-wrapper">
   <p>
-    Jestem bardzo długim tekstem, który nie mieści się w jednej linii, <br> 
+    Jestem bardzo długim tekstem, który nie mieści się w jednej linii, <br>
     zatem muszę zostać złamany.
   </p>
 </div>
 
 > #### Important::Ważne
 >
-> Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić). 
+> Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić).
 
 ## Hiperłącza
 
@@ -106,13 +106,13 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
 > W tym momencie chcemy zwrócić Waszą uwagę na ścieżki do zasobów (nie tylko obrazków, niedługo zaczniemy dołączać do naszej strony arkusze styli).
 > **Ścieżka bezwzględna** to taka, która zawiera pełny adres internetowy do zasobu, wraz z domeną.
 > ```html
- <img src="http://theawwwesomes.org/images/example.png" alt="Jestem obrazkiem ze ścieżką bezwzględną"> 
+ <img src="http://theawwwesomes.org/images/example.png" alt="Jestem obrazkiem ze ścieżką bezwzględną">
  ```
  > W zasadzie moglibyśmy w tym momencie zakończyć temat ścieżek i przestać zawracać sobie tym głowę. Jednak co się stanie, kiedy adres strony ulegnie zmianie? Musielibyśmy wtedy pozmieniać adresy do wszystkich obrazków na naszej stronie - bardzo dużo roboty!
  > Z pomocą przychodzi nam linkowanie za pomocą **ścieżek względnych**, czyli wskazywanie na położenie zasobu w systemie plików względem miejsca, w którym przechowujemy plik `html` z naszą stroną.
  > Najprostszym przykładem jest ten, kiedy plik grafiki oraz plik ze stroną znajdują się w tym samym miejscu (folderze):
  > ```html
- <img src="example.png" alt="Jestem w tym samym folderze, co strona"> 
+ <img src="example.png" alt="Jestem w tym samym folderze, co strona">
  ```
  > Jednak wrzucanie plików z różnymi zasobami do tego samego folderu mogłoby spowodować w krótkim czasie spory bałagan. Zwykle tworzymy specjalne podfoldery - osobny dla obrazków (możemy go nazwać np. `images`), dla plików ze stylami oraz skryptami JavaScript.
  > Spróbujmy w prosty sposób zobrazować strukturę katalogu plików (dla uproszczenia uwzględnimy tylko obrazki):
@@ -126,19 +126,28 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
        |--cherries.jpg
        |--bananas.svg
 ```
-<img src="/images/img-path-examples.gif" class="image-full-width"> 
+<img src="/images/img-path-examples.gif" class="image-full-width">
 
 > W takim wypadku, chcąc wyświetlić na stronie obrazek przedstawiający jabłka, odwołamy się do niego w ten sposób:
- > ```html
- <img src="images/apples.png" alt="Tu widzimy jabłka"> 
+> ```html
+ <img src="images/apples.png" alt="Tu widzimy jabłka">
  ```
+> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`:
+> ```html
+ <img src="../images/apples.png" alt="Tu widzimy jabłka">
+ ```
+> Natomiast jeśli chcemy cofnąć się jeszcze bardziej w głąb struktury katalogów:
+> ```html
+ <img src="../../images/apples.png" alt="Tu widzimy jabłka">
+ ```
+> ... i tak dalej.
 
 - `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
 
 ```html
-<img src="/images/example-img.jpg" alt="Uczymy się kodować">
+<img src="images/example-img.jpg" alt="Uczymy się kodować">
 
-<img src="/images/example-img-broken.jpg" alt="Ten obrazek nie został poprawnie załadowany">
+<img src="images/example-img-broken.jpg" alt="Ten obrazek nie został poprawnie załadowany">
 ```
 
 <div class="example-wrapper">
