@@ -79,6 +79,22 @@ Nadajmy tekstowi każdego elementu z powyższego przykładu posiadającego klas�
 
 ### ID
 
+Wróćmy jeszcze na chwilę do elementu z naszego poprzedniego przykładu:
+
+```html
+<input type="email" id="myEmail" class="awwwesome-input">
+```
+
+Nadajmy tekstowi w naszej kontrolce kolor czerwony, odnosząc się do niego po `id`. Możemy to zrobić w ten sposób:
+
+```css
+#myEmail {
+  color: red;
+}
+```
+
+Przypomnijmy, że w jednym dokumencie wartości atrybutu `id` powinny być unikalne. W związku z tym style zawarte wewnątrz tego selektora nie są zbyt reużywalne - możemy je zastosować tylko dla jednego, konkretnego elementu na stronie.
+
 ### Atrybut
 
 ### Nazwa tagu
