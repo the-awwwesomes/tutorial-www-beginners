@@ -33,7 +33,7 @@ Zgodnie z tym, co znajdziesz w punkcie na stronie z danym fontem na Google Fonts
 ```
 Dzięki znacznikowi link, podłączyliśmy do naszej strony font "Playfair Display", ale na stronie nic się nie zmieniło - ciągle wyświetlany jest domyślny font systemowy. Należy podpiąć jeszcze wybrany font do arkusza stylów. Dzieję się to dzięki właściwości `font-family`. W punkcie 4. na stronie Google Fonts znajdziesz nazwę fontu, której należy użyć. 
 
-``` html
+```css
 ul li {
 	font-family: 'Playfair Display', serif;
 }

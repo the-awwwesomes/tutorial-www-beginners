@@ -105,19 +105,72 @@ Wróćmy jeszcze na chwilę do selektorów po nazwie tagu.
 
 CSS umożliwia zastosowanie całej palety różnych właściwości - od koloru tekstu, tła, przez zastosowanie dowolnego kroju pisma, dodania cieniowania, gradientu  aż do definiowania ustawiania elementów. W tym rozdziale zajmiemy się tymi najbardziej podstawowymi. 
 
-Kolor i wielkość tekstu
-Kolor tła elementów
-Obramowanie
-Krój pisma
-Marginesy
-Paddingi
+### Kolorowanie tekstu
 
+Służy nam do tego właściwość `color`, której przypisujemy kolor. Najczęściej definiuje się je w kodzie heksadecymalnym, czyli szestnastkowym z charakterystycznym znakiem `#`. Kody te pobiera się z tzw. <i>color pickerów</i>, np. <a href="http://htmlcolorcodes.com/" target="_blank">tutaj</a>. w programach graficznych lub innych narzędzi. Jeśli zainteresowałeś się kodem heksadecymalnym więcej do poczytania <a href="https://pl.wikipedia.org/wiki/Kolory_w_Internecie#Zapis_szesnastkowy">tutaj</a>. 
+```css
+p {
+  color: #f14b5c ; //kolor pomarańczowy
+}
+```
 
-> #### Exercise::Ćwiczenie 7
->
-> W tym ćwiczeniu postawisz swoje pierwsze CSS-owe kroki. Nareszcie Twój kod HTML nabierze życia i zmieni kolory! Gotowy?
-Zacznijmy od stworzenia nowego folderu z exercise-7 i pliku index.html zawartego w tym katalogu. Stwórz szkielet strony 
+Wynik:<p style="color: #f14b5c;">To jest paragraf o kolorze pomarańczowym.</p>
+### Kolorowanie tła
+```css
+p {
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC //kolor jasnoróżowy
+}
+```
+Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
+### Obramowanie
+```css
+p {
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+}
+```
+Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+### Dodawanie dopełnień
+```css
+p {
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+  padding: 20px 10px 20px 10px; //dopełnienia kolejno od: góry, prawej strony, dołu i lewej strony
+}
+```
+Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+### Ułożenie tekstu
+Centrowanie
+
+```css
+p {
+  text-align: center;
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+  padding: 20px 10px 20px 10px; //dopełnienia kolejno od: góry, prawej strony, dołu i lewej strony
+}
+```
+
+### Dodawanie marginesu
+
+```css
+p {
+  margin: 20px 60px;
+  text-align: center;
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+  padding: 20px 10px 20px 10px; //dopełnienia kolejno od: góry, prawej strony, dołu i lewej strony
+}
+```
+Wynik:<p style="color: #f14b5c; text-align: center; margin: 20px 60px; background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p><p style="color: #f14b5c; text-align: center; background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px; margin: 20px 60px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 
 ## Jak dołączyć style do strony?
@@ -152,20 +205,19 @@ W naszym pliku index.html dołączone są następujące deklaracje:
 <link href="/styles/style-2.css" rel="stylesheet">
 ```
 Jeśli w pliku style-1.css występuje deklaracja:
-```html
+```css
 h1 {
   color: red;
 }
 ``` 
 A w pliku style-2.css
-```html
+```css
 h1 {
   color: green;
 }
 ``` 
 To przeglądarka nada naszemu nagłówkowi zielony kolor, gdyż występuje on jako 'ostatni'. W związku z tym nadpisze wszystkie inne właściwości (domyślne przeglądarki - kolor czarny oraz kolor czerwony z pierwszego pliku CSS).
 
-A teraz pora na podłączenie stylów do Twojego pliku HTML.
 
 > #### Exercise::Ćwiczenie 8
 >
@@ -176,6 +228,39 @@ A teraz pora na podłączenie stylów do Twojego pliku HTML.
 
 >**Ważne** - znacznik `<link...>` dodawany jest pomiędzy znacznikami `<head>` i `</head>`, najlepiej po znacznikach `<meta>`. 
 >
+
+Jak sprawdzić czy plik CSS został poprawnie dołączont do strony? Najlepiej poprzez sprawdzenie czy zdefiniowane przez nas style prawidłowo się wyświetlają. Plik `style.css` jest pusty. Pora zatem na napisanie pierwszych CSS-owych deklaracji!
+
+> #### Exercise::Ćwiczenie 7
+>
+> W tym ćwiczeniu postawisz swoje pierwsze CSS-owe kroki. Nareszcie Twój kod HTML nabierze życia i zmieni kolory! Gotowy?
+Zacznijmy od stworzenia nowego folderu z exercise-8 i pliku index.html zawartego w tym katalogu. Stwórz szkielet strony na podstawie poniższego widoku. 
+
+><div class="example-wrapper" style="background: #ffcbd7; ">
+  <article>
+    <header>
+      <p style="color: #FF7684 !important; text-style: underline;">Opublikowano przez: The Awwwesomes,
+        <time datetime="2016-04-20T18:00+01:00" style="color: #f14b5c !important;">20 kwietnia 2016</time>
+      </p>
+      <h1 style="color: #f14b5c !important;">Uczymy się CSS razem z The Awwwesomes!</h1>
+    </header>
+    <img src="/images/img-css.png" alt="The Awwwesomes">
+    <p style="color:#282f5f !important;">Warsztaty ruszyły pełną parą! Grupa 20 zdolnych uczestników zabrała się do kodowania z godnym podziwu zapałem.</p>
+    <p style="color:#282f5f !important;">Mentorzy mieli trudne zadanie, ponieważ padło bardzo dużo ciekawych pytań. Nasi uczestnicy są naprawdę <strong style="color:#282f5f !important;">awwwesome</strong>!</p>
+    <h3 style="color: #f14b5c !important;">Najpierw semantyczny HTML, potem estetyczny CSS</h3>
+    <p style="color:#282f5f !important;">Naukę zaczęliśmy od HTML, który jest absolutną podstawą dla każdego kodera stron internetowych. Nie obejdzie się jednak bez zapoznania z CSS, dzięki któremu każdy może upiększyć swoją stronę jak tylko sobie wymarzy!</p>
+  </article>
+  <form>
+    <p>Zostaw swój komentarz:</p>
+    <label for="email">Twój email:</label>
+    <input type="email" id="email" style="border:1px solid #000; background: transparent;">
+    <label for="name">Twoje imię:</label>
+    <input type="text" id="name" style="border:1px solid #000; background: transparent;">
+    <label for="comment">Twój komentarz:</label>
+    <textarea id="comment" style="border:1px solid #000; background: transparent;"></textarea>
+    <button type="submit" style="background: #282f5f; color:#fff !important; border: 0; ">Prześlij</button>
+  </form>
+</div>
 
 
 
