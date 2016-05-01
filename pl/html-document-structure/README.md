@@ -52,7 +52,7 @@ Do wszystkich wymienionych powyżej elementów możemy zastosować odpowiednie z
 
 Sporo nowych różnych znaczników, prawda? Czujecie się zdezorientowani?
 
-Dzięki znacznikom `<header>` i `<footer>` możemy określić, że dany element strony pełni rolę nagłówka bądź stopki. Z pewnością już w tej chwili zwróciło Waszą uwagę, że również elementy umieszczone wewnątrz strony mogą posiadać swój nagłówek i stopkę (na przykład artykuł). Również w takich przypadkach z powodzeniem sprawdzą się znaczniki `<header>` i `<footer>`.
+Dzięki znacznikom `<header>` i `<footer>` możemy określić, że dany element strony pełni rolę nagłówka bądź stopki. Z pewnością już w tej chwili zwróciło Twoją uwagę, że również elementy umieszczone wewnątrz strony mogą posiadać swój nagłówek i stopkę (na przykład artykuł). Również w takich przypadkach z powodzeniem sprawdzą się znaczniki `<header>` i `<footer>`.
 
 Tak, jak pokazaliśmy w przykładzie wyżej, znacznika `<nav>` używamy kiedy chcemy zaznaczyć, że wewnątrz danego elementu znajduje się nawigacja strony. Może być on użyty więcej niż raz w obrębie tego samego dokumentu.
 
@@ -166,5 +166,6 @@ Temat "czym różnią się elementy liniowe od blokowych" jest bardzo związany 
 > - W folderze `the-awwwesomes` (który jest przeznaczony na przechowywanie folderów ze wszystkimi ćwiczeniami) stwórz folder `planty`. Od tej pory to właśnie w tym folderze będziesz umieszczać wszystkie pliki dotyczące layoutu.
 > - Wewnątrz `the-awwwesomes/planty/` utwórz plik `index.html`. Będziesz tam tworzyć kod strony.
 > - Stwórz szkielet dokumentu HTML dbając, aby zawrzeć wszystkie potrzebne metadane w sekcji `<head>`.
-> - Bazując na projekcie layoutu oceń, jak należy pogrupować poszczególne elementy layoutu. Użyj odpowiednich znaczników. Pamiętaj, że budowanie layoutu można rozwiązać na różne sposoby, więc nie zrażaj się, jeśli Wasz kod będzie różnił się od kodu koleżanek i kolegów. W budowaniu szkieletu warto rozrysować sobie layout na kartce w postaci kontenerów, nadając im odpowiednie znaczenie. 
+> - Bazując na projekcie layoutu oceń, jak należy pogrupować poszczególne elementy layoutu. Użyj odpowiednich znaczników. Pamiętaj, że budowanie layoutu można rozwiązać na różne sposoby, więc nie zrażaj się, jeśli Twój kod będzie różnił się od kodu koleżanek i kolegów. W budowaniu szkieletu warto rozrysować sobie layout na kartce w postaci kontenerów, nadając im odpowiednie znaczenie. 
 > - Rozpocznij pracę nad kodem HTML strony. Zadbaj o to, aby dla każdego elementu użyć odpowiednich znaczników.
+> - Przygotowaliśmy dla Ciebie <a href="../resources/planty-assets/planty-assets.zip">paczkę z zasobami do pobrania</a>, które ułatwią Ci zadanie w razie potrzeby np. załączenia obrazka lub skopiowania tekstu.
