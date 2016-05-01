@@ -66,14 +66,14 @@ Nadajmy tekstowi każdego elementu z powyższego przykładu posiadającego klas�
 ```
 
 <div class="example-wrapper">
-  <h1 class="awwwesome">Tytuł strony</h1>
+  <h1 class="awwwesome" style="color:green !important;">Tytuł strony</h1>
 
-  <p class="awwwesome">Jestem paragrafem tekstu. Nadano mi atrybut class, aby umożliwić stylowanie.</p>
+  <p class="awwwesome" style="color:green  !important; ">Jestem paragrafem tekstu. Nadano mi atrybut class, aby umożliwić stylowanie.</p>
   <p>Jestem paragrafem tekstu.</p>
 
   <form name="myForm">
     <label for="name">Twoje imię:</label>
-    <input id="name" type="text" class="awwwesome">
+    <input id="name" type="text" class="awwwesome" style="color:green; ">
   </form>
 </div>
 
@@ -97,6 +97,19 @@ Przypomnijmy, że w jednym dokumencie wartości atrybutu `id` powinny być unika
 
 ### Atrybut
 
+Stylować można również elementy zawierające konkretny atrybut. Dobrym przykładem jest np. tag `<input type="text">`. W tym wypadku deklaracja CSS będzie dotyczyła kontrolek `input` typu text. 
+
+```css
+input[type="text"] {
+    border: 2px solid blue; 
+}
+```
+W wyniku powyższego kodu do kontrolki zostanie dodana ramka o grubości 2px i kolorze niebieskim.
+
+<div class="example-wrapper">
+<input type="text" style="border: 2px solid blue; ">
+</div>
+
 ### Nazwa tagu
 
 Wróćmy jeszcze na chwilę do selektorów po nazwie tagu.
@@ -105,7 +118,7 @@ Wróćmy jeszcze na chwilę do selektorów po nazwie tagu.
 
 CSS umożliwia zastosowanie całej palety różnych właściwości - od koloru tekstu, tła, przez zastosowanie dowolnego kroju pisma, dodania cieniowania, gradientu  aż do definiowania ustawiania elementów. W tym rozdziale zajmiemy się tymi najbardziej podstawowymi. 
 
-### Kolorowanie tekstu
+### Kolorowanie tekstu (`color`)
 
 Służy nam do tego właściwość `color`, której przypisujemy kolor. Najczęściej definiuje się je w kodzie heksadecymalnym, czyli szestnastkowym z charakterystycznym znakiem `#`. Kody te pobiera się z tzw. <i>color pickerów</i>, np. <a href="http://htmlcolorcodes.com/" target="_blank">tutaj</a>. w programach graficznych lub innych narzędzi. Jeśli zainteresowałeś się kodem heksadecymalnym więcej do poczytania <a href="https://pl.wikipedia.org/wiki/Kolory_w_Internecie#Zapis_szesnastkowy">tutaj</a>. 
 ```css
@@ -115,7 +128,9 @@ p {
 ```
 
 Wynik:<p style="color: #f14b5c;">To jest paragraf o kolorze pomarańczowym.</p>
-### Kolorowanie tła
+### Kolorowanie tła (`background-color`)
+Służy do tego właściwość: `background-color: #fff;`
+
 ```css
 p {
   color: #f14b5c ; //kolor pomarańczowy
@@ -125,6 +140,13 @@ p {
 Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 ### Obramowanie
+
+Za obramowanie odpowiada właściwość `border`, której przypisać możemy grubość, rodzaj linii (przerywana, ciągła, kropkowana) i kolor. Przy nadawaniu wartości powinna być zachowana powyższa kolejność, czyli
+```css
+ border: 2px solid #f14b5c;
+ ```
+
+
 ```css
 p {
   color: #f14b5c ; //kolor pomarańczowy
@@ -134,7 +156,11 @@ p {
 ```
 Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
-### Dodawanie dopełnień
+### Dodawanie dopełnień (`padding`)
+Dopełnienie definiowane jest jako odległość między obramowaniem elementu a jego zawartością. Dla każdej strony mogą być to inne wartości. 
+Np 'padding: 5px 10px 15px 20px', oznacza, że dopełnienie od góry wynosi 5px, od prawej 10px, od dołu 15px a od góry 20px. Żeby łatwiej było Ci wpisywać te wartości zapamiętaj, że są one definiowane zgodnie z kierunkiem wskazówek zegara (od góry, prawo, dół, lewo).
+
+
 ```css
 p {
   color: #f14b5c ; //kolor pomarańczowy
@@ -145,8 +171,13 @@ p {
 ```
 Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
-### Ułożenie tekstu
-Centrowanie
+### Ułożenie tekstu (`text-align`)
+
+Tekst może zostać wyrównany na trzy różne sposoby:
+- do prawej `text-align: right;`
+- do lewej `text-align: left;`
+- do środka `text-align: center;`
+``
 
 ```css
 p {
@@ -158,7 +189,7 @@ p {
 }
 ```
 
-### Dodawanie marginesu
+### Dodawanie marginesu (`margin`)
 
 ```css
 p {
@@ -217,9 +248,13 @@ h1 {
 }
 ``` 
 To przeglądarka nada naszemu nagłówkowi zielony kolor, gdyż występuje on jako 'ostatni'. W związku z tym nadpisze wszystkie inne właściwości (domyślne przeglądarki - kolor czarny oraz kolor czerwony z pierwszego pliku CSS).
+```
+>
 
+.
+.
 
-> #### Exercise::Ćwiczenie 8
+> #### Exercise::Ćwiczenie 7
 >
 > W tym ćwiczeniu nauczysz się jak poprawnie załączać plik CSS do Twojej strony.
 >Otwórz folder z projektem `planty`, zawierający podstawowy kod z poprzednich zajęć (patrz Ćwiczenie 6). A następnie stwórz pusty plik `style.css` i zapisz go do nowo-utworzonego folderu `/styles`. 
@@ -231,7 +266,8 @@ To przeglądarka nada naszemu nagłówkowi zielony kolor, gdyż występuje on ja
 
 Jak sprawdzić czy plik CSS został poprawnie dołączont do strony? Najlepiej poprzez sprawdzenie czy zdefiniowane przez nas style prawidłowo się wyświetlają. Plik `style.css` jest pusty. Pora zatem na napisanie pierwszych CSS-owych deklaracji!
 
-> #### Exercise::Ćwiczenie 7
+
+> #### Exercise::Ćwiczenie 8
 >
 > W tym ćwiczeniu postawisz swoje pierwsze CSS-owe kroki. Nareszcie Twój kod HTML nabierze życia i zmieni kolory! Gotowy?
 Zacznijmy od stworzenia nowego folderu z exercise-8 i pliku index.html zawartego w tym katalogu. Stwórz szkielet strony na podstawie poniższego widoku. 
