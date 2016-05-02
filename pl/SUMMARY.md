@@ -9,5 +9,5 @@
 * [Definiowanie struktury strony](html-document-structure/README.md)
 * [Kod CSS](css-code/README.md)
 * [Dołączanie fontów z Google Fonts](css-fonts/README.md)
-* [Kaskadowość i dziedziczenie w CSS](css-cascade/README.md)
-* [Złożone selektory i specyficzność](css-specificity/README.md)
+<!-- * [Kaskadowość i dziedziczenie w CSS](css-cascade/README.md) -->
+<!-- * [Złożone selektory i specyficzność](css-specificity/README.md) -->

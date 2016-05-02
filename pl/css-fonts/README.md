@@ -2,36 +2,34 @@
 
 Pora na chwilę oddechu - nauczymy się wreszcie dołączać inne kroje pisma.
 
-Kolory i typografia niewątpliwie wpływają na charakter strony i to jak ją odbieramy. Całe szczęście dołączanie różnych, niestandardowych krojów pisma stało się możliwe i całkiem proste. 
+Kolory i typografia niewątpliwie wpływają na charakter strony i to jak ją odbieramy. Całe szczęście dołączanie różnych, niestandardowych krojów pisma stało się możliwe i całkiem proste, o czym zaraz się przekonacie.
 
-Zanim jednak zaczniesz szukać odpowiedniego kroju, musisz pamiętać, że jedynie fonty zapisane w formatach będą renderowane w przeglądarce internetowej. 
-Pamiętaj, że fakt, iż posiadasz dany font u siebie lokalnie na komputerze i jest on odpowiednio wyświetlany u Ciebie na komputerze nie znaczy, że będzie się on poprawnie wyświetlać u innych użytkowników. Cała magia twki w tym, by font został wyrenderowany, pomimo iż użytkownicy nie mają danego fontu u siebie w systemie. W tym celu najlepiej korzystać z Google Fonts lub fontów webowych, których pliki należy 
+Zanim jednak zaczniemy szukać odpowiedniego kroju, musimy pamiętać, że jedynie fonty zapisane w odpowiednich formatach będą renderowane w konkretnych przeglądarkach internetowych.  Pamiętajmy, że posiadanie danego fontu na komputerze i jego poprawne wyświetlanie na naszym systemie, nie oznacza, że będzie się on poprawnie wyświetlać u wszystkich innych użytkowników. Cała magia tkwi w tym, by font został wyrenderowany, pomimo faktu, iż użytkownicy nie mają danego kroju pisma zainstalowanego na swoich komputerach. W tym celu najlepiej korzystać z <a href="https://www.google.com/fonts">Google Fonts</a> lub fontów webowych, których pliki należy zaimportować do CSS-a. Tę drugą metodę poznamy nieco później.
 
-Obecnie istnieje wiele portali, które darmowo udostępniają bardzo wiele różnych <i>fontów</i>. Jednym z najczęściej używanych jest <a href="https://www.google.com/fonts">Google Fonts</a>.
+Obecnie istnieje wiele portali, które darmowo udostępniają bardzo wiele różnych fontów. Jednym z najczęściej używanych jest <a href="https://www.google.com/fonts">Google Fonts</a>.
 
 ## Jak podłączyć font z Google Fonts?
-Odwiedź stronę <a href="https://www.google.com/fonts">Google Fonts</a> i wybierz font. W naszym layoucie Planty wykorzystane zostały trzy różne rodziny fontów: <i>Playfair Display</i>, <i>Montserat</i> oraz <i>Muli</i>. Znajdzimy je na <a href="https://www.google.com/fonts">Google Fonts</a>. 
-Fonty z Google Fonts poza tym, że mogą zostać podpięte pod naszą stronę, możesz również ściągnąć na swój komputer.
-Jeśli znalazłeś już <i>Playfair Display</i> należy kliknąć w <i>Quick use</i> zaznaczoną pomarańczowym kółkiem.
+Odwiedźmy stronę <a href="https://www.google.com/fonts">Google Fonts</a> i wybierzmy font. W naszym layoucie Planty wykorzystane zostały trzy różne rodziny fontów: <i>Playfair Display</i>, <i>Montserat</i> oraz <i>Muli</i>. Znajdziemy je na <a href="https://www.google.com/fonts">Google Fonts</a>. 
+Fonty te poza tym, że mogą zostać podpięte pod naszą stronę, mogą także zostać ściągnięte i zainstalowane na naszych komputerach.
+Jeśli <i>Playfair Display</i> został już znaleziony, należy kliknąć w ikonę <i>Quick use</i> zaznaczoną pomarańczowym kółkiem.
 
 > ![](/images/googlefonts-quickuse.png "")
 
-W punkcie 1. wybierz interesujące Cię style. W projekcie Planty będziemy korzystać z "Normal 400" oraz "Normal 400 Italic". W przypadkach, gdy współpracujesz z projektantem graficznym zapytaj o to, które style zawarte są w projekcie.
+W punkcie 1. wybierzmy interesujące nas style danego kroju. W projekcie Planty będziemy korzystać z "Normal 400" oraz "Normal 400 Italic". W przypadkach, gdy współpracujemy z projektantami graficznymi zapytajmy o to, które style użyte są w projekcie.
 
 > ![Layout do zakodowania](/images/googlefonts-styles.png "Layout do zakodowania")
 
-Jeśli tworzysz stronę w języku polskim upewnij się czy font wyposażony jest w polskie znaki. Możesz to sprawdzić wpisując tekst w Google Fonts i obserwując jak te znaki są wyświetlone. Domyślnie font nie ma zaznaczonego checkboksa "Latin extended", które zawiera polskie znaki. 
+Jeśli tworzymy stronę w języku polskim upewnijmy się czy font wyposażony jest w polskie znaki. Można to sprawdzić wpisując tekst w Google Fonts i obserwując jak te znaki są wyświetlane. Domyślnie font nie ma zaznaczonego checkboksa "Latin extended", który zawiera m.in. polskie znaki. 
 
 
+Pamiętajmy, żeby zaznaczyć tę opcję, jeśli ich potrzebujemy. W przypadku Planty możemy zostawić opcję domyślną (teksty są w języku angielskim).
 
-Pamiętaj, żeby zaznaczyć tę opcję, jeśli potrzebujesz polskich znaków. W przypadku Planty możemy zostawić opcję domyślną.
 
-
-Zgodnie z tym, co znajdziesz w punkcie na stronie z danym fontem na Google Fonts, należy umieścić poniższy tag w sekcji <head>.
+Zgodnie z tym, co znajdziesz w punkcie 3 - należy umieścić poniższy tag w sekcji` <head>`.
 ```html
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 ```
-Dzięki znacznikowi link, podłączyliśmy do naszej strony font "Playfair Display", ale na stronie nic się nie zmieniło - ciągle wyświetlany jest domyślny font systemowy. Należy podpiąć jeszcze wybrany font do arkusza stylów. Dzieję się to dzięki właściwości `font-family`. W punkcie 4. na stronie Google Fonts znajdziesz nazwę fontu, której należy użyć. 
+Dzięki znacznikowi link, podłączyliśmy do naszej strony font "Playfair Display", ale na samej stronie nic się nie zmieniło - ciągle wyświetlany jest domyślny font systemowy. Pozostało jeszcze podpięcie wybranego fonty do arkusza stylów. Dzieję się to dzięki właściwości `font-family`. W punkcie 4. na stronie Google Fonts znajdziemy nazwę fontu, którą trzeba zastosować. 
 
 ```css
 ul li {
@@ -39,18 +37,17 @@ ul li {
 }
 ```
 
-Teraz możesz sprawdzić czy nasza lista na stronie Planty zmieniła font. Dla porównania dla elementu listy odznacz właściwość `font-family` w Narzędziach Developerskich. Czy zauważasz zmianę fontu?
+Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. Dla porównania, dla elementu listy odznaczmy właściwość `font-family` w Narzędziach Developerskich. Czy zaobserwowaliście zmianę fontu?
 
-> #### Exercise::Ćwiczenie 8
+> #### Exercise::Ćwiczenie 10
 >
-> Pora na podłączenie pozostałych dwóch fontów do Planty - są to <i>Muli (Normal 400)</i> oraz <i>Montserrat (Bold 700)</i>. Po podłączeniu fontów, przejdź do pliku CSS i nadaj paragrafom font <i>Muli</i>, natomiast tekstowi "because we care for plants" font <i>Montserrat</i>. 
-Żeby osiągnąc poniższy efekt: 
+> Pora na podłączenie pozostałych dwóch fontów do Planty - są to <i>Muli (Normal 400)</i> oraz <i>Montserrat (Bold 700)</i>. Po podłączeniu fontów, przejdź do pliku CSS i przypisz paragrafom font <i>Muli</i>, natomiast tekstowi "because we care for plants" font <i>Montserrat</i>, tak żeby osiągnąc poniższy efekt: 
 
 > ![Podłączone fonty: Muli, Montserrat oraz Playfair Display](/images/googlefonts-layout.png "Podłączone fonty: Muli, Montserrat oraz Playfair Display")
->Renderowanie fontów może nieco różnić się w zależności od przeglądarki, więc nie przejmuj się na razie, jeśli u Ciebie fonty są "cieńsze" lub "bardziej tłuste". Pomińmy też tym etapie wielkości fontów.
+>Renderowanie fontów może nieco różnić się w zależności od przeglądarki, więc nie przejmuj się na razie, jeśli u Ciebie fonty wyglądają na "cieńsze" lub "bardziej tłuste". Pomińmy też na tym etapie wielkości fontów.
 >
 
-Możesz dodawać dowolną ilość niesystemowych fontów. Pamiętaj jednak, że fonty ładowane są wraz z ładowaniem strony internetowej. Im jest ich więcej, tym wolniej strona będzie się ładować. Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.
+Możesz dodawać dowolną ilość niesystemowych fontów. Pamiętaj jednak, że fonty ładowane są wraz z ładowaniem strony internetowej.Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.
 
 
 
