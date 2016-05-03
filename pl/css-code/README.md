@@ -244,6 +244,20 @@ p {
 ```
 <p style="font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
+## Styl fontu (`font-style`)
+Służy do tego właściwość: `font-style: italic;`, gdzie italic to nic innego jak kursywa.
+
+```css
+p {
+  font-style: italic;
+  font-size: 36px;
+  text-align: center;
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC; //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+}
+```
+Wynik:<p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 Pozostałe właściwości CSS poznamy już niedługo! :)
 

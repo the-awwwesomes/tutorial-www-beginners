@@ -36,8 +36,19 @@ ul li {
 	font-family: 'Playfair Display', serif;
 }
 ```
+Zastanówmy się jeszcze co oznacza wartość `'Playfair Display', serif;` i dlaczego występuje tam nazwa `serif`. 
+Otóż jeśli nie zostanie znaleziony font o nazwie `'Playfair Display'` (np. nie dołączymy do naszego kodu skryptu ze strony Google Fonts), to przeglądarka wyświetli dowolny, dostępny font szeryfowy właśnie dzięki wartości `serif`. 
+Deklarację możemy też rozbudować o większą liczbę krojów, np.
 
-Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. Dla porównania, dla elementu listy odznaczmy właściwość `font-family` w Narzędziach Developerskich. Czy zaobserwowaliście zmianę fontu?
+```css
+ul li {
+	font-family: 'Playfair Display', 'Georgia', serif;
+}
+```
+Co oznacza - wyświetl font 'Playfair Display', jeśli nie jest to możliwe, to wyświetl font 'Georgia', jeśli 'Georgia' nie została znaleziona to wyświetl dowolny font szeryfowy.
+
+
+Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. W celu weryfikacji dla elementu listy odznaczmy właściwość `font-family` w Narzędziach Developerskich. Czy zaobserwowaliście zmianę fontu?
 
 > #### Exercise::Ćwiczenie 9
 >
@@ -48,10 +59,6 @@ Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. Dla p
 >
 
 Możesz dodawać dowolną ilość niesystemowych fontów. Pamiętaj jednak, że fonty ładowane są wraz z ładowaniem strony internetowej.Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.
-
-
-
-
 
 
 
