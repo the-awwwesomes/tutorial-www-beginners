@@ -209,6 +209,42 @@ p {
 ```
 <p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
+### Odmiana (grubość) pisma (`font-weight`)
+
+Ta właściwość okaże się przydatna zwłaszcza w kolejnym rozdziale, kiedy będziemy wybierać niestandardowe rodziny fontów. Wtedy zauważycie, że dany krój może mieć różne grubości. CSS umożliwia ostylowanie tekstu różnymi odmianami. 
+Wartości `font-weight` mogą być liczbami np. <i>100, 300, 500, 700</i> lub określone słownie np. <i>normal, bold, light, lighter</i>.
+Pamiętajmy tylko, że nie każdy, wybrany przez nas krój pisma posiadać będzie różne odmiany - w tych przypadkach właściwość CSS w żaden sposób nie wpłynie na zmianę grubości.
+
+```css
+p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC; //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+}
+```
+<p style="font-weight: bold; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+Czy zauważyliście, w porównaniu do paragrafu z zagadanienia wyżej, że font stał się grubszy?
+
+### Stopień (rozmiar) pisma (`font-size`)
+
+Możemy przypisywać tekstom różne rozmiary pisma. Istnieje kilka jednostek: `px` (piksele), `rem`, `em` czy nawet `%` procenty. Na razie skupmy się na pikselach, a znaczenie pozostałych jednostek wyjaśnimy już niebawem. 
+
+```css
+p {
+  font-size: 36px;
+  text-align: center;
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC; //kolor jasnoróżowy
+  border: 2px solid #f14b5c;
+}
+```
+<p style="font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+
 Pozostałe właściwości CSS poznamy już niedługo! :)
 
 <!-- ### Dodawanie marginesu (`margin`)
@@ -315,7 +351,7 @@ Odseparowanie HTML-a oraz CSS-a zdecydowanie ułatwia życie np. przy późniejs
 > #### Exercise::Ćwiczenie 7
 >
 > W tym ćwiczeniu nauczysz się jak poprawnie załączać plik CSS do Twojej strony.
->Otwórz folder z projektem `planty`, zawierający podstawowy kod z poprzednich zajęć (patrz Ćwiczenie 6). A następnie stwórz pusty plik `style.css` i zapisz go do nowo-utworzonego folderu `/styles`. 
+>Otwórz folder z projektem `planty`, zawierający podstawowy kod z poprzednich zajęć (patrz [Ćwiczenie 6](../html-document-structure/README.md). A następnie stwórz pusty plik `style.css` i zapisz go do nowo-utworzonego folderu `/styles`. 
 
 >Plik CSS został stworzony, zatem należy go teraz podpiąć do `index.html`. W tym celu zastosujesz znacznik `<link href="ścieżka do Twojego pliku css" rel="stylesheet">` z odpowiednio uzupełnionymi atrybutami. Przy okazji przećwiczysz ścieżki względne. 
 
