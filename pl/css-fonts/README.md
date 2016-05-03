@@ -1,4 +1,4 @@
-# Dołączanie krojów pisma (fontów)
+# Dołączanie fontów Google Fonts
 
 Pora na chwilę oddechu - nauczymy się wreszcie dołączać inne kroje pisma.
 
@@ -58,12 +58,4 @@ Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. W cel
 >Renderowanie fontów może nieco różnić się w zależności od przeglądarki, więc nie przejmuj się na razie, jeśli u Ciebie fonty wyglądają na "cieńsze" lub "bardziej tłuste". Pomińmy też na tym etapie wielkości fontów.
 >
 
-Możesz dodawać dowolną ilość niesystemowych fontów. Pamiętaj jednak, że fonty ładowane są wraz z ładowaniem strony internetowej.Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.
-
-
-
-
-
-
-
-
+Możesz dodawać dowolną ilość niesystemowych fontów. Pamiętaj jednak, że fonty ładowane są wraz z ładowaniem strony internetowej. Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.

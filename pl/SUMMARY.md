@@ -8,4 +8,4 @@
 * [Proste formularze](html-forms/README.md)
 * [Definiowanie struktury strony](html-document-structure/README.md)
 * [Kod CSS](css-code/README.md)
-* [Dołączanie fontów z Google Fonts](css-fonts/README.md)
+* [Dołączanie fontów Google Fonts](css-fonts/README.md)
