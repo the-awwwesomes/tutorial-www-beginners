@@ -39,7 +39,7 @@ ul li {
 
 Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. Dla porównania, dla elementu listy odznaczmy właściwość `font-family` w Narzędziach Developerskich. Czy zaobserwowaliście zmianę fontu?
 
-> #### Exercise::Ćwiczenie 10
+> #### Exercise::Ćwiczenie 9
 >
 > Pora na podłączenie pozostałych dwóch fontów do Planty - są to <i>Muli (Normal 400)</i> oraz <i>Montserrat (Bold 700)</i>. Po podłączeniu fontów, przejdź do pliku CSS i przypisz paragrafom font <i>Muli</i>, natomiast tekstowi "because we care for plants" font <i>Montserrat</i>, tak żeby osiągnąc poniższy efekt: 
 

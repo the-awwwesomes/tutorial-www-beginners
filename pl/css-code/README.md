@@ -360,7 +360,7 @@ Odseparowanie HTML-a oraz CSS-a zdecydowanie ułatwia życie np. przy późniejs
 
 Jak sprawdzić czy plik CSS został poprawnie dołączony do strony? Najlepiej poprzez zweryfikowanie czy zdefiniowane przez nas style prawidłowo się wyświetlają. Plik `style.css` jest pusty. Pora zatem na napisanie pierwszych CSS-owych deklaracji!
 
-> #### Exercise::Ćwiczenie 9
+> #### Exercise::Ćwiczenie 8
 >
 > W tym ćwiczeniu postawisz swoje pierwsze CSS-owe kroki. Nareszcie Twój kod HTML nabierze życia i zmieni kolory! Gotowy?
 Zacznijmy od stworzenia nowego folderu z `exercise-8` i pliku `index.html` zawartego w tym katalogu. Stwórz szkielet strony na podstawie poniższego widoku, a następnie ostyluj go. 
