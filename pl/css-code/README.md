@@ -132,7 +132,7 @@ p {
   color: rgb(241, 75, 92); //ten sam kolor w zapisie rgb
 }
 ```
-Wynik:<p style="color: #f14b5c;">To jest paragraf o kolorze pomarańczowym.</p>
+<p style="color: #f14b5c;">To jest paragraf o kolorze pomarańczowym.</p>
 
 > #### Important::Ważne
 >
@@ -148,7 +148,7 @@ p {
   background-color: #FFE7EC; //kolor jasnoróżowy
 }
 ```
-Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="color: #f14b5c ;background-color:#FFE7EC;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 ### Obramowanie (`border`)
 
@@ -160,12 +160,12 @@ Dostępne style linii to m.in : `solid` (ciągła), `dotted` (kropkowana), `dash
 
 ```css
 p {
-  color: #f14b5c ; //kolor pomarańczowy
-  background-color: #FFE7EC; //kolor jasnoróżowy
   border: 2px solid #f14b5c;
+  color: #f14b5c ; //kolor pomarańczowy
+  background-color: #FFE7EC; //kolor jasnoróżowy 
 }
 ```
-Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 <!-- ### Dodawanie dopełnień (`padding`)
 Dopełnienie definiowane jest jako odległość między obramowaniem elementu a jego zawartością. Dla każdej strony mogą być to inne wartości. 
@@ -202,9 +202,9 @@ Tekst może zostać wyrównany na trzy różne sposoby:
 ```css
 p {
   text-align: center;
+  border: 2px solid #f14b5c;
   color: #f14b5c ; //kolor pomarańczowy
   background-color: #FFE7EC; //kolor jasnoróżowy
-  border: 2px solid #f14b5c;
 }
 ```
 <p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
@@ -218,11 +218,10 @@ Pamiętajmy tylko, że nie każdy, wybrany przez nas krój pisma posiadać będz
 ```css
 p {
   font-weight: bold;
-  font-size: 20px;
   text-align: center;
+  border: 2px solid #f14b5c;
   color: #f14b5c ; //kolor pomarańczowy
   background-color: #FFE7EC; //kolor jasnoróżowy
-  border: 2px solid #f14b5c;
 }
 ```
 <p style="font-weight: bold; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
@@ -237,15 +236,15 @@ Możemy przypisywać tekstom różne rozmiary pisma. Istnieje kilka jednostek: `
 p {
   font-size: 36px;
   text-align: center;
+  border: 2px solid #f14b5c;
   color: #f14b5c ; //kolor pomarańczowy
   background-color: #FFE7EC; //kolor jasnoróżowy
-  border: 2px solid #f14b5c;
 }
 ```
-<p style="font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="font-size: 36px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
-## Styl fontu (`font-style`)
-Służy do tego właściwość: `font-style: italic;`, gdzie italic to nic innego jak kursywa.
+### Styl fontu (`font-style`)
+Służy do tego właściwość: `font-style: italic;`, gdzie italic to nic innego jak kursywa. Lub `font-style: normal;`.
 
 ```css
 p {
@@ -257,7 +256,7 @@ p {
   border: 2px solid #f14b5c;
 }
 ```
-Wynik:<p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 Pozostałe właściwości CSS poznamy już niedługo! :)
 
@@ -383,7 +382,7 @@ Zacznijmy od stworzenia nowego folderu z `exercise-8` i pliku `index.html` zawar
   <article>
     <header>
       <p style="color: #FF7684 !important; text-style: underline;">Opublikowano przez: The Awwwesomes,
-        <time datetime="2016-04-20T18:00+01:00" style="color: #f14b5c !important;">20 kwietnia 2016</time>
+        <time datetime="2016-04-20T18:00+01:00" style="color: #FF7684 !important;">20 kwietnia 2016</time>
       </p>
       <h1 style="color: #f14b5c !important;">Uczymy się CSS razem z The Awwwesomes!</h1>
     </header>
@@ -401,7 +400,7 @@ Zacznijmy od stworzenia nowego folderu z `exercise-8` i pliku `index.html` zawar
     <input type="text" id="name" style="border:1px solid #000; background: transparent;">
     <label for="comment">Twój komentarz:</label>
     <textarea id="comment" style="border:1px solid #000; background: transparent;"></textarea>
-    <button type="submit" style="background: #282f5f; color:#fff !important; border: 0; ">Prześlij</button>
+    <button type="submit" style="background: #282f5f; color:#fff !important; border: 0; font-size: 20px; ">Prześlij</button>
   </form>
 </div>
 
