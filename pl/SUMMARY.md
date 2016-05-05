@@ -9,3 +9,4 @@
 * [Definiowanie struktury strony](html-document-structure/README.md)
 * [Kod CSS](css-code/README.md)
 * [Dołączanie fontów Google Fonts](css-fonts/README.md)
+* [Kaskadowość i dziedziczenie w CSS](css-cascade/README.md)
