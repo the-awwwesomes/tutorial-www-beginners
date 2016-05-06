@@ -37,6 +37,67 @@ Mając do dyspozycji style z różnych źródeł, w jaki sposób przeglądarka d
 5. Style zdefiniowane przez programistę strony z użyciem `!important`
 6. Style zdefiniowane po stronie użytkownika z użyciem `!important`
 
-Co to takiego jest `!important` dowiemy się jeszcze w tym rozdziale - już niebawem.
+Co to takiego jest `!important` dowiemy się niebawem, już w kolejnym rozdziale.
 
 ## Dziedziczenie styli
+
+Wykonując ćwiczenie 8 zauważyliście, że udało Wam się pokolorować tekst na całej stronie używając tylko selektora `body`.
+
+```css
+body {
+  color: #f14b5c;
+}
+```
+
+Mimo, że nie odwoływaliśmy się *bezpośrednio* do poszczególnych paragrafów i nagłówków za pomocą selektorów, w pewien magiczny sposób uzyskały one ten sam kolor, co `body`.
+
+Cechę CSS, dzięki której wartości poszczególnych właściwości są przekazywane od elementu rodzica do elementu dziecka nazywamy **dziedziczeniem**. Zademonstrujmy to na przykładzie:
+
+```html
+<h1>Jestem przykładowym nagłówkiem</h1>
+
+<div class="inheritance-example">
+  <p>Jestem paragrafem tekstu, który odziedziczy kolor po rodzicu.</p>
+  <p>Ja również zostanę pokolorowany.</p>
+</div>
+
+<p>Jestem przykładowym tekstem, który nie zostanie pokolorowany.</p>
+```
+
+```css
+.inheritance-example {
+  color: deeppink;
+}
+```
+
+
+  <h1>Jestem przykładowym nagłówkiem</h1>
+
+  <div style="color: deeppink;">
+    <p>Jestem paragrafem tekstu, który odziedziczy kolor po rodzicu.</p>
+    <p>Ja również zostanę pokolorowany.</p>
+  </div>
+
+  <p>Jestem przykładowym tekstem, który nie zostanie pokolorowany.</p>
+
+
+Stałoby się podobnie, jeśli nadalibyśmy rodzicowi określony kolor tła - wtedy wszystkie dzieci automatycznie uzyskałyby taki sam kolor. Jednak nie wszystkie właściwości CSS są dziedziczone. Nie dzieje się tak na przykład w przypadku ramek, co jest zresztą dość intuicyjne. Spróbujcie sobie tylko wyobrazić, jakby wyglądałby efekt, gdyby dodano obramowanie do `body` a pozostałe elementy dziedziczyły tę właściwość! Poniżej podajemy, które ze znanych już Wam właściwości są dziedziczone, a które nie.
+
+Właściwości, które są dziedziczone:
+
+- `color`
+- `font-family`
+- `font-size`
+- `font-style`
+- `font-weight`
+- `text-align`
+
+Właściwości, które nie są dziedziczone:
+
+- `background`
+- `border`
+- `margin`
+- `padding`
+- `width`
+- `height`
+
