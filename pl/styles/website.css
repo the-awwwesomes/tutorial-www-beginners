@@ -1,28 +1,55 @@
 /* CSS for website */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900&subset=latin,latin-ext);
-* {
+
+body {
   font-family: 'Raleway', sans-serif;
   color: #151d46;
   font-weight: 500;
 }
 
-a {
-    color: #f06969 !important;
+.book .book-body .page-wrapper .page-inner section.normal a {
+    color: #f06969;
     transition: color .3s ease-in;
 }
 
-a:hover {
-    color: #151d46 !important;
-    text-decoration: none !important;
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+    color: #151d46;
+    text-decoration: none;
 }
- 
+
+.book .book-body .page-wrapper .page-inner section.normal blockquote, 
+.book .book-body .page-wrapper .page-inner section.normal dl, 
+.book .book-body .page-wrapper .page-inner section.normal ol, 
+.book .book-body .page-wrapper .page-inner section.normal p, 
+.book .book-body .page-wrapper .page-inner section.normal table, 
+.book .book-body .page-wrapper .page-inner section.normal ul, 
+.book .book-body .page-wrapper .page-inner section.normal h1, 
+.book .book-body .page-wrapper .page-inner section.normal h2, 
+.book .book-body .page-wrapper .page-inner section.normal h3, 
+.book .book-body .page-wrapper .page-inner section.normal h4, 
+.book .book-body .page-wrapper .page-inner section.normal h5, 
+.book .book-body .page-wrapper .page-inner section.normal h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #151d46;
+    font-weight: 500;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1, 
+.book .book-body .page-wrapper .page-inner section.normal h2, 
+.book .book-body .page-wrapper .page-inner section.normal h3, 
+.book .book-body .page-wrapper .page-inner section.normal h4, 
+.book .book-body .page-wrapper .page-inner section.normal h5, 
+.book .book-body .page-wrapper .page-inner section.normal h6 {
+    font-weight: 700;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal h3.panel-title {
   color: #ffffff;
 }
 
-.book .book-body .example-wrapper {
-    font-family: initial !important;
-    color: #333 !important;
+.book .book-body .page-wrapper .page-inner section.normal .example-wrapper {
+    font-family: initial;
+    color: #333;
     margin: 25px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -31,13 +58,32 @@ a:hover {
     box-shadow: 0 0 2px rgba(204, 204, 204, 0.4);
 }
 
-.book .book-body .example-wrapper * {
-    font-family: initial !important;
-    color: #333 !important;
+.book .book-body .page-wrapper .page-inner section.normal .example-wrapper * {
+    font-family: initial;
+    color: #333;
 }
 
-.book .book-body .example-wrapper a {
-    color: blue !important;
+.book .book-body .page-wrapper .page-inner section.normal .example-wrapper a {
+    color: blue;
+}
+
+.book .book-summary ul.summary {
+    font-family: 'Raleway', sans-serif;
+}
+
+.book .book-summary ul.summary li.active a,
+.book .book-summary ul.summary li a:hover {
+    color: #151d46;
+}
+
+.book .book-summary ul.summary li a, 
+.book .book-summary ul.summary li span {
+    color: #f06969;
+    transition: color .3s ease-in;
+}
+
+.book .book-summary ul.summary li a b {
+    color: #151d46;
 }
 
 .panel-success {

@@ -10,3 +10,5 @@
 * [Kod CSS](css-code/README.md)
 * [Dołączanie fontów Google Fonts](css-fonts/README.md)
 * [Kaskadowość i dziedziczenie w CSS](css-cascade/README.md)
+* [Złożone selektory i specyficzność](css-specificity/README.md)
+* [Model pudełkowy CSS](css-box-model/README.md)

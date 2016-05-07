@@ -70,16 +70,14 @@ Cechę CSS, dzięki której wartości poszczególnych właściwości są przekaz
 }
 ```
 
-
+<div class="example-wrapper">
   <h1>Jestem przykładowym nagłówkiem</h1>
-
-  <div style="color: deeppink;">
-    <p>Jestem paragrafem tekstu, który odziedziczy kolor po rodzicu.</p>
-    <p>Ja również zostanę pokolorowany.</p>
+  <div style="color:deeppink;">
+    <p style="color:deeppink;">Jestem paragrafem tekstu, który odziedziczy kolor po rodzicu.</p>
+    <p style="color:deeppink;">Ja również zostanę pokolorowany.</p>
   </div>
-
   <p>Jestem przykładowym tekstem, który nie zostanie pokolorowany.</p>
-
+</div>
 
 Stałoby się podobnie, jeśli nadalibyśmy rodzicowi określony kolor tła - wtedy wszystkie dzieci automatycznie uzyskałyby taki sam kolor. Jednak nie wszystkie właściwości CSS są dziedziczone. Nie dzieje się tak na przykład w przypadku ramek, co jest zresztą dość intuicyjne. Spróbujcie sobie tylko wyobrazić, jakby wyglądałby efekt, gdyby dodano obramowanie do `body` a pozostałe elementy dziedziczyły tę właściwość! Poniżej podajemy, które ze znanych już Wam właściwości są dziedziczone, a które nie.
 
