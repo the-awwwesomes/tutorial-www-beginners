@@ -24,6 +24,15 @@ W gruncie rzeczy dokładnie tak się dzieje. Oprócz styli, nad którymi pracuje
 >
 > Przypomnijmy jeszcze na koniec, że powyższe "normalizujące" arkusze styli należy dołączać do naszego dokumentu HTML **w pierwszej kolejności**.
 
+Na początku pracy ze stroną polecamy dołączyć do dokumentu style niwelujące różnice między przeglądarkami.
+
+> #### Exercise::Ćwiczenie 10
+>
+> - Przejdź do folderu `planty`.
+> - Przejdź do strony [`normalize.css`](https://necolas.github.io/normalize.css/) i kilknij *Download* (*Pobierz*). Skopiuj zawartość.
+> - Utwórz w folderze `planty/styles` plik o nazwie `normalize.css` i wklej do niego skopiowane przed chwilą style.
+> - Podłącz arkusz styli `normalize.css` do `index.html` uważając na to, aby był zalinkowany **przed** Twoim własnym arkuszem styli.
+
 Style zdefiniowane przez użytkownika to dość rzadki przypadek. Warto jednak w tym momencie zauważyć, że istnieje taka możliwość, aby CSS został zdefiniowany po stronie użytkownika. Dobrym przykładem takich arkuszy styli są te stosowane np. przez wtyczki przełączające stronę w tryb polepszonej czytelności (przydatny do czytania artykułów - usuwa z pola widzenia wszystkie "rozpraszacze").
 
 Mając do dyspozycji style z różnych źródeł, w jaki sposób przeglądarka decyduje, które z reguł zastosuje dla danego elementu? Skrót CSS w języku angielskim rozwija się jako *Cascading StyleSheets*, co oznacza *kaskadowe arkusze styli*. 
