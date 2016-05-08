@@ -146,7 +146,7 @@ To, jak model pudełkowy został wyliczony przez przeglądarkę, możemy podejrz
 
 ## Jednostki w CSS
 
-Czy wiedzieliście, że w CSS możecie określić długość linii tekstu w liczbie znaków? Tak, jest wiele opcji do wyboru, nie tylko piksele. Te przeróżne jednostki przydają się nam do określenia wymiarów elementów (model pudełkowy!), a także rozmiaru fontu. Zapoznajmy się zatem z kilkoma najpopularniejszymi.
+Czy wiedzieliście, że w CSS możecie określić długość linii tekstu w liczbie znaków? Tak, jest [wiele opcji do wyboru, nie tylko piksele](https://developer.mozilla.org/en/docs/Web/CSS/length). Te przeróżne jednostki przydają się nam do określenia wymiarów elementów (model pudełkowy!), a także rozmiaru fontu. Zapoznajmy się zatem z kilkoma najpopularniejszymi.
 
 - `%`, czyli procenty. Możemy określać wymiary elementu w procentach - będą one wtedy wyrażały te wymiary względem rodzica elementu (czyli kontenera, w którym dany element się znajduje). Procenty są przydatne, jeśli chcemy uzyskać elastyczny layout, którego elementy zmieniają wymiary płynnie wraz ze skalowaniem okna.
 
