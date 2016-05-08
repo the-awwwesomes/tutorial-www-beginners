@@ -106,6 +106,14 @@ input[type="text"] {
 ```
 W wyniku powyższego kodu do kontrolki zostanie dodana ramka o grubości 2px i kolorze niebieskim.
 
+Warto tutaj dodać, że zapis `border: 2px solid blue;` jest zapisem skrótowym. Właściwości ramki możemy zdefiniować także osobno:
+
+```css
+border-width: 2px;
+border-style: solid;
+border-color: blue;
+```
+
 <div class="example-wrapper">
 <input type="text" style="border: 2px solid blue; ">
 </div>

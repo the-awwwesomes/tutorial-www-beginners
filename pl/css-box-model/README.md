@@ -4,6 +4,10 @@
 
 Na początku tej przygody warto zawrzeć bliską znajomość z **modelem pudełkowym**. Model pudełkowy pozwala nam precyzyjnie określić wymiary elementu HTML na stronie. Każdy z elementów na stronie można bowiem potraktować jako prostokąt o określonych wymiarach, który może posiadać wypełnienie (*padding*), obramowanie (*border*) oraz margines (*margin*). 
 
+![Model pudełkowy][1]
+
+[1]: /images/box-model.png
+
 ### Wymiary elementu
 
 Elementom HTML możemy nadawać wysokość i szerokość za pomocą właściwości `height` oraz `width`.
@@ -133,6 +137,7 @@ Margines jest to odległość między krawędzią (ramką) elementu a innym, są
 
 Co ciekawe, marginesy mogą również przybierać wartości **ujemne**, w przeciwieństwie do wypełnień i ramek, które to powinny zawsze przyjmować wartości dodatnie (ujemne w tych przypadkach zostaną zignorowane przez przeglądarkę).
 
+
 To, jak model pudełkowy został wyliczony przez przeglądarkę, możemy podejrzeć w narzędziach deweloperskich w sekcji dotyczącej CSS w zakładce *Computed* (dla Chrome).
 
 ![Podgląd modelu pudełkowego w narzędziach deweloperskich][2]
@@ -221,7 +226,7 @@ html {
 }
 ```
 
-- `vw` oraz `vh`. Są to jednostki dotyczące wysokości i szerokości **okna przeglądarki**. `1vw` oznacza `1/100` szerokości okna, a `1vh` - `1/100` wysokości okna.
+- `vw` (ang. <i>vieport witdh</i>) oraz `vh` (ang. <i>viewport height</i>). Są to jednostki dotyczące wysokości i szerokości **okna przeglądarki**. `1vw` oznacza `1/100` szerokości okna, a `1vh` - `1/100` wysokości okna.
 
 ```css
 .scalable-element {
