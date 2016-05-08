@@ -116,7 +116,7 @@ ul li a[href="http://theawwwesomes.org"] {
 }
 ```
 
-Mając tę świadomość, a także wiedząc, że style mogą pochodzić z różnych źródeł, w jaki sposób przeglądarka określa, jakie style mają zostać zastosowane dla naszego elementu? Aby odpowiedzieć na to pytanie, musimy zapoznać się z pojęciem **specyficzności** (ang. *specificity*).
+Mając tę świadomość, a także wiedząc, że style mogą pochodzić z różnych źródeł, w jaki sposób przeglądarka określa, jakie style mają zostać zastosowane dla naszego elementu? Aby odpowiedzieć na to pytanie, musimy zapoznać się z pojęciem [**specyficzności**](https://css-tricks.com/specifics-on-css-specificity/) (ang. *specificity*).
 
 Każdy rodzaj selektora możemy umieścić na ściśle określonej pozycji w szeregu ważności. Wymieńmy je w kolejności od najmniej do najbardziej ważnych:
 
