@@ -12,3 +12,4 @@
 * [Kaskadowość i dziedziczenie w CSS](css-cascade/README.md)
 * [Złożone selektory i specyficzność](css-specificity/README.md)
 * [Model pudełkowy CSS](css-box-model/README.md)
+* [Photoshop dla front-endowca](photoshop/README.md)
