@@ -64,7 +64,25 @@ Do pomiaru innych elementów możemy skorzystać z linijki, czyli `Ruler Tool`, 
 !["Panel Info"][6]
 [6]: /images/ps-info-panel.jpg
 
-W panelu `Info` odczytać możecie wartość dla W (<i>width</i>), czyli szerokości oraz H (<i>height</i>) wysokości.
+W panelu `Info` odczytać możecie wartość dla W ( <i>width</i> ), czyli szerokości oraz H ( <i>height</i> ) wysokości.
+
+W przypadku kształtów, oznaczonymi w warstwach kwadracikiem <img src="/images/ps-shape.jpg" style="width: 200px; display: inline-block; vertical-align: middle;" />, 
+do pomiaru możemy wykorzystać panel na samej górze aplikacji, który pokazuje m.in jaki kolor wypełnienia, obramowania oraz wysokość (H) i szerokość (W) ma dany element. 
+
+
+!["Górny panel z informacjami dotyczącymi elementu"][7]
+[7]: /images/ps-top-panel.jpg
+
+!["Warstwa zawierająca kształt"][8]
+[8]: /images/ps-shape-layer.jpg
+
+
+Należy jedynie kliknąć na element wykorzystując `Path Selection Tool`
+
+!["Path Selection Tool"][9]
+[9]: /images/ps-path-selection.gif
+
+
 
 
 > #### Important::Ważne
@@ -94,8 +112,8 @@ Photoshop Creative Cloud umożliwia wygenerowanie assetów w bardzo prosty i szy
 ### Warstwy
 Spróbujmy zajrzeć co kryje się w poszczególnych warstawch, uruchamiając panel warstw: `Window -> Layers`
 
-![Panel z warstwami][7]
-[7]: /images/ps-layers-panel.jpg
+![Panel z warstwami][10]
+[10]: /images/ps-layers-panel.jpg
 
 Poszczególne warstwy powiązane są w grupy, czyli foldery. Dzięki temu każdy element strony pogrupowany jest według swojej przynależności do sekcji na stronie. Warto trzymać porządek i usunąć zbędne warstwy - dzięki temu nie pogubimy się. Rozwijając grupy znajdziecie konkretne elementy.
 
@@ -107,8 +125,8 @@ Zwróć uwagę, czy opcja ta jest zaznaczona. Jeśli tak, to automatyczne genero
 W wersji Photohop Creative Cloud mamy możliwość szybkiego zapisywania assetów z poziomu warstw. Wystarczy zmienić nazwę danej warsty np. z `flower-2` na `flower-2.png`, wtedy w folderze, gdzie znajduje się nasz plik .psd, zostaną automatycznie wygenerowane assety z zadaną przez nas nazwą i rozszerzeniem. Assety są zapisywane w podfolderze `planty-assets`. Sprawdźmy teraz czy pojawił się tam plik z danym assetem. 
 
 
-!["Automatyczne generowanie assetów][8]
-[8]: /images/ps-generate-assets.gif
+!["Automatyczne generowanie assetów][11]
+[11]: /images/ps-generate-assets.gif
 
 Taką czynność powtarzamy dla elementów, których będziemy potrzebować do zbudowania layoutu. Pamiętajcie, że CSS umożliwia stworzenie wielu obiektów takich jak ramki lub proste figury geometryczne, więc nie musimy zapisywać każdej z warstw do pliku. W przypadku Planty potrzebować będziemy jedynie zdjęć i ikon mediów społecznościowych.
 
