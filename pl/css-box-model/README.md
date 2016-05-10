@@ -258,6 +258,44 @@ html {
 > Nie przejmuj się, jeśli nie uda Ci się wiernie odwzorować layoutu. Wrócimy do niego po kolejnych zajęciach, kiedy nauczymy się nowych rzeczy :) 
 > Poniżej znajdziecie jeszcze kilka przydatnych informacji, w tym właściwości CSS, które pomogą Wam w tym ćwiczeniu.
 
+### Inne właściwości CSS
+
+#### Obrazek jako tło `background-image`
+
+Żeby wypełnić dany element (sekcje, kontener, czy nawet całą zawartość strony, czyli `<body>`) stosujemy właściwość:
+```css
+  background-image: url('tutaj podaję ścieżkę do obrazka');
+```
+
+Przykładowo: 
+```
+section {
+  background-image: url('./images/background.jpg'); 
+}```
+Pamiętajcie o prawidłowym podaniu względnej ścieżki do obrazka.
+
+Tło może przyjmować jeszcze wiele ciekawych właściwości, które <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-image" target="_blank">znajdziesz tutaj</a>.
+
+Warto potestować różne opcje dla rozmiaru tła, czyli `background-size`
+```css
+    background-size: cover;
+    background-size: 100%;
+    background-size: contain;
+    background-size: 50%;
+```
+Sprawdźcie jak zmienia się tło pod wpływem zmiany szerokości okna przeglądarki.
+
+#### Stylowanie listy
+Pewnie zastanawiacie się jak pozbyć się kropeczek przy elementach listy (`<ul>`). 
+Służy do tego właściwość:
+```css
+  ul.list{
+    list-style: none;
+  }
+```
+Dzięki wartości `none` usunięte zostaną domyślne symbole oznaczające element listy.
+
+
 
 ###`<div>`, czyli kontener 
 <a href="../html-document-structure/index.html">W rozdziale 7.</a> wspomnieliśmy o znaczniku `<div>`, czyli elemencie blokowym. Znacznik ten bardzo często służy nam przy budowaniu layoutów, kiedy żaden z innych tagów nie pasuje znaczeniowo do zawartości, którą umieszczamy.

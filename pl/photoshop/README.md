@@ -12,6 +12,7 @@ Zapraszamy na krótki kurs, dzięki któremu dowiemy się:
 	<li>jak generować assety.</li>
 
 Jeśli jesteś projektantem graficznym lub stawiałeś już pierwsze kroki w Photoshopie możesz pominąć ten rozdział.
+Na samym końcu znajdziesz Ćwiczenie 13.
 
 ## Ustawienie wybranych jednostek
 
@@ -143,6 +144,8 @@ Taką czynność powtarzamy dla elementów, których będziemy potrzebować do z
 > - Zwróć uwagę na pojawiające się elementy formularzy (przyciski, `input`y, `textarea`). Nadaj im wygląd zgodny z projektem.
 >
 > Podpowiadamy, że do dokonania powyższych zmian wystarczy Ci znajomość poznanych dotąd właściwości, czyli `color`, `background-color`, `border`, `padding`, `width`, `height`. Jeśli czujesz się komfortowo używając Photoshopa, możesz pobrać tam wartości kolorów oraz poszczególnych wymiarów.
+>
+>Przypominamy, że paczkę z Planty można <a href="http://localhost:4000/pl/resources/planty-assets/planty-assets.zip">pobrać tutaj</a>.
 
 
 
