@@ -234,3 +234,68 @@ html {
   height: 100vw; /* Zajmuję całą szerokość okna */
 }
 ```
+
+
+> #### Exercise::Ćwiczenie 11* (dla chętnych)
+>
+> Jeśli masz ochotę zakodować nowy layout to ćwiczenie jest dla Ciebie! Wykorzystaj zdobytą dotychczasową wcześniej wiedzę i postaraj się stworzyć stronę, wizualnie zbliżoną do poniższego projektu. 
+>
+> ![Layout Moodly](/resources/moodly-assets/moodly-layout.png "Layout Moodly")
+>
+> <a href="../resources/moodly-assets/moodly-assets.zip">Ściągnij paczkę z zasobami</a> - w pliku `moodly.txt` podano nazwy potrzebnych fontów. W paczce znajdziesz również plik `background.jpg`, który będziesz mógł użyć do projektu. Jeśli pojawił się u Ciebie problem z formatowaniem tekstu w pliku `.txt`, otwórz go w Sublime Text.
+
+>Być może nasuwa Ci się pytanie jak dołączać obrazki jako tło? Odpowiedź znajdziesz pod ćwiczeniem.
+
+> Do pozostałych elementów użyj znanych tagów i właściwości CSS m.in. 
+>
+>- `height` i `width` (do zdefiniowania rozmiarów),
+>- `text-align` (do wycentrowania tekstu),
+>-`border` (do obramowania guzika "download"),
+>- `background-color` (do nadania koloru tła dla sekcji "Features"),
+>- świeżo zdobytej wiedzy o modelu pudełkowym.
+
+
+> Nie przejmuj się, jeśli nie uda Ci się wiernie odwzorować layoutu. Wrócimy do niego po kolejnych zajęciach, kiedy nauczymy się nowych rzeczy :) 
+> Poniżej znajdziecie jeszcze kilka przydatnych informacji, w tym właściwości CSS, które pomogą Wam w tym ćwiczeniu.
+
+
+###`<div>`, czyli kontener 
+<a href="../html-document-structure/index.html">W rozdziale 7.</a> wspomnieliśmy o znaczniku `<div>`, czyli elemencie blokowym. Znacznik ten bardzo często służy nam przy budowaniu layoutów, kiedy żaden z innych tagów nie pasuje znaczeniowo do zawartości, którą umieszczamy.
+
+Najlepiej zobrazuje to poniższy przykład.
+Wyobraźmy sobie, że na naszej stronie występuje sekcja "Autorzy", w której zawartych jest kilka kontenerów ze zdjęciami i opisami osób. 
+Jak by wyglądał kod HTML takiego rozwiązania?
+
+```html
+<section id="authors">
+  <!--kontener dla autora-->
+  <div class="author-box">
+    <h2>Jane Doe</h2>
+    <img src="images/jane-img.jpg"/>
+    <p>Jane loves cookies and spend her time riding a bike</p>
+  </div>
+  <!--koniec kontenera-->
+
+  <!--kontener dla autora-->
+  <div class="author-box">
+    <h2>Sam Smith</h2>
+    <img src="images/sam-img.jpg"/>
+    <p>Sam likes swimming and eating burgers.</p>
+  </div>
+  <!--koniec kontenera-->
+
+  <!--kontener dla autora-->
+  <div class="author-box">
+    <h2>Kim Sofa</h2>
+    <img src="images/kim-img.jpg"/>
+    <p>Kim is keen on watching movies and jogging</p>
+  </div>
+  <!--koniec kontenera-->
+</section>
+```
+
+Tak jak widzcie sylwetka każdego autora, zosała umieszczona w konterze, jakim jest `<div>`. 
+Znacznik ten zatem umożliwia nam powiązać elementy w dany sposób. Dzięki czemu zawartość staje się jeszcze bardziej uporządkowana, a my możemy wykorzystać CSS-ową klasę kontenera i przypisać mu konkretne style.
+
+Podglądając kod innych stron w sieci, zauważycie, że `<div>` jest badzo popularnym tagiem. Jednak pamiętajcie, że dla treści, których znaczenie może być precyzyjniej określone, warto stosować konkretne tagi np.`<article>` dla artykułów, `<footer>` dla stopki, `<aside>` dla elementów pobocznych, `<nav>` dla nawigacji itd.
+
