@@ -242,3 +242,33 @@ Zatem w tej rywalizacji wygra drugi selektor `.main-nav li.active`. Zauważmy, �
   border: 2px solid #fca890;
   color: deeppink;
 ```
+
+> ####Exercise::Ćwiczenie 11
+>
+> Popatrz na przykładowy kod:
+> ```html
+<section id="authors" class="section-wrapper">
+  <div class="author-box">
+    <h2>Jane Doe</h2>
+    <p>Jane loves cookies and spend her time riding a bike.</p>
+    <a href="http://jdoe.com" class="author-website">Jane's website</a>
+  </div>
+  <div class="author-box">
+    <h2>Sam Smith</h2>
+    <p>Sam likes swimming and eating burgers.</p>
+    <a href="http://sam-smith.co.uk" class="author-website">Sam's website</a>
+  </div>
+</section>
+```
+> ```css
+.author-box a.author-website {
+  color: green;
+}
+.section-wrapper [href="http://jdoe.com"] {
+  color: yellow;
+}
+#authors .author-box a {
+  color: orange;
+}
+```
+> Wiedząc, w jaki sposób przeglądarka oblicza specyficzność określ, jaki kolor uzyska element `<a href="http://jdoe.com" class="author-website">Jane's website</a>`.

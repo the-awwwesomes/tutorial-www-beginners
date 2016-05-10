@@ -299,17 +299,3 @@ Znacznik ten zatem umożliwia nam powiązać elementy w dany sposób. Dzięki cz
 
 Podglądając kod innych stron w sieci, zauważycie, że `<div>` jest badzo popularnym tagiem. Jednak pamiętajcie, że dla treści, których znaczenie może być precyzyjniej określone, warto stosować konkretne tagi np.`<article>` dla artykułów, `<footer>` dla stopki, `<aside>` dla elementów pobocznych, `<nav>` dla nawigacji itd.
 
-> #### Exercise::Ćwiczenie 13
->
-> Wróćmy do naszego layoutu Planty. Jak dotąd udało Ci się:
->
-> - Zakodować treść dokumentu w HTML,
-> - Dołączyć do projektu fonty z Google Fonts i ostylować tekst.
->
-> Pora na tchnięcie trochę życia i kolorów w Planty. Skorzystaj zatem z świeżo nabytej wiedzy i dokonaj następujących zmian na stronie:
->
-> - Wiesz już, co wchodzi w skład modelu pudełkowego. Odszukaj w projekcie wszystkie elementy, które mogą potrzebować dodania ramki lub wypełnienia (*paddingu*).
-> - Zwróć uwagę na pojawiające się elementy formularzy (przyciski, `input`y, `textarea`). Nadaj im wygląd zgodny z projektem.
->
-> Podpowiadamy, że do dokonania powyższych zmian wystarczy Ci znajomość poznanych dotąd właściwości, czyli `color`, `background-color`, `border`, `padding`, `width`, `height`. Jeśli czujesz się komfortowo używając Photoshopa, możesz pobrać tam wartości kolorów oraz poszczególnych wymiarów.
-
