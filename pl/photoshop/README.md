@@ -130,6 +130,20 @@ W wersji Photohop Creative Cloud mamy możliwość szybkiego zapisywania assetó
 
 Taką czynność powtarzamy dla elementów, których będziemy potrzebować do zbudowania layoutu. Pamiętajcie, że CSS umożliwia stworzenie wielu obiektów takich jak ramki lub proste figury geometryczne, więc nie musimy zapisywać każdej z warstw do pliku. W przypadku Planty potrzebować będziemy jedynie zdjęć i ikon mediów społecznościowych.
 
+> #### Exercise::Ćwiczenie 13
+>
+> Wróćmy do naszego layoutu Planty. Jak dotąd udało Ci się:
+>
+> - Zakodować treść dokumentu w HTML,
+> - Dołączyć do projektu fonty z Google Fonts i ostylować tekst.
+>
+> Pora na tchnięcie trochę życia i kolorów w Planty. Skorzystaj zatem z świeżo nabytej wiedzy i dokonaj następujących zmian na stronie:
+>
+> - Wiesz już, co wchodzi w skład modelu pudełkowego. Odszukaj w projekcie wszystkie elementy, które mogą potrzebować dodania ramki lub wypełnienia (*paddingu*).
+> - Zwróć uwagę na pojawiające się elementy formularzy (przyciski, `input`y, `textarea`). Nadaj im wygląd zgodny z projektem.
+>
+> Podpowiadamy, że do dokonania powyższych zmian wystarczy Ci znajomość poznanych dotąd właściwości, czyli `color`, `background-color`, `border`, `padding`, `width`, `height`. Jeśli czujesz się komfortowo używając Photoshopa, możesz pobrać tam wartości kolorów oraz poszczególnych wymiarów.
+
 
 
 
