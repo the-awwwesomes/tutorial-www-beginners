@@ -242,7 +242,7 @@ html {
 >
 > ![Layout Moodly](/resources/moodly-assets/moodly-layout.png "Layout Moodly")
 >
-> <a href="../resources/moodly-assets/moodly-assets.zip">Ściągnij paczkę z zasobami</a> - w pliku `moodly.txt` podano nazwy potrzebnych fontów. W paczce znajdziesz również plik `background.jpg`, który będziesz mógł użyć do projektu. Jeśli pojawił się u Ciebie problem z formatowaniem tekstu w pliku `.txt`, otwórz go w Sublime Text.
+> <a href="./resources/moodly-assets/moodly-assets.zip">Ściągnij paczkę z zasobami</a> - w pliku `moodly.txt` podano nazwy potrzebnych fontów. W paczce znajdziesz również plik `background.jpg`, który będziesz mógł użyć do projektu. Jeśli pojawił się u Ciebie problem z formatowaniem tekstu w pliku `.txt`, otwórz go w Sublime Text.
 
 >Być może nasuwa Ci się pytanie jak dołączać obrazki jako tło? Odpowiedź znajdziesz pod ćwiczeniem.
 
