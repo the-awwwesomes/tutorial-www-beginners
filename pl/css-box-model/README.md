@@ -310,7 +310,7 @@ Jak by wyglądał kod HTML takiego rozwiązania?
   <div class="author-box">
     <h2>Jane Doe</h2>
     <img src="images/jane-img.jpg"/>
-    <p>Jane loves cookies and spend her time riding a bike</p>
+    <p>Jane loves cookies and likes spending her time riding a bike</p>
   </div>
   <!--koniec kontenera-->
 

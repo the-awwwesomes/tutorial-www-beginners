@@ -250,7 +250,7 @@ Zatem w tej rywalizacji wygra drugi selektor `.main-nav li.active`. Zauwa≈ºmy, ≈
 <section id="authors" class="section-wrapper">
   <div class="author-box">
     <h2>Jane Doe</h2>
-    <p>Jane loves cookies and spend her time riding a bike.</p>
+    <p>Jane loves cookies and likes spending her time riding a bike.</p>
     <a href="http://jdoe.com" class="author-website">Jane's website</a>
   </div>
   <div class="author-box">
