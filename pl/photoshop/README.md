@@ -145,7 +145,8 @@ Taką czynność powtarzamy dla elementów, których będziemy potrzebować do z
 >
 > Podpowiadamy, że do dokonania powyższych zmian wystarczy Ci znajomość poznanych dotąd właściwości, czyli `color`, `background-color`, `border`, `padding`, `width`, `height`. Jeśli czujesz się komfortowo używając Photoshopa, możesz pobrać tam wartości kolorów oraz poszczególnych wymiarów.
 >
->Przypominamy, że paczkę z Planty można <a href="./resources/planty-assets/planty-assets.zip">pobrać tutaj</a>.
+>Przypominamy, że paczkę z Planty można 
+<a href="../resources/planty-assets/planty-assets.zip">pobrać tutaj</a>.
 
 
 
