@@ -44,7 +44,80 @@ Przykładami elementów HTML, które przez przeglądarkę są domyślnie wyświe
 
 ### Elementy liniowe
 
+Elementy liniowe to takie, które zachowują się jak linie tekstu, czyli innymi słowy "płyną" razem z tekstem.
+
+- Nie można określić im wymiarów za pomocą właściwości `width` i `height`.
+- Nie można nadwać im górnych (`margin-top`), ani dolnych (`margin-bottom`) marginesów. Nadanie `margin-left` lub `margin-right` oraz wypełnień jednak w ich przypadku zadziała.
+- Biorąc pod uwagę, że elementy liniowe zachowują się podobnie, jak linie tekstu, można określać ich wyrównanie w pionie za pomocą właściwości `vertical-align`. Zachowanie [`vertical-align`](https://developer.mozilla.org/en/docs/Web/CSS/vertical-align) zostało bardzo przejrzyście wytłumaczone w [tym artykule](https://bitsofco.de/the-vertical-align-property/).
+
+```html
+<p>
+  Hipster cornhole celiac kickstarter asymmetrical cred meggings. 
+  Retro pitchfork semiotics you 
+  <span class="inline">probably haven't heard of them</span>, 
+  thundercats occupy raw denim DIY.
+</p>
+```
+
+```css
+.inline {
+  padding: 5px;
+  vertical-align: super;
+  color: lightblue;
+}
+```
+
+<div class="example-wrapper">
+  <p>Hipster cornhole celiac kickstarter asymmetrical cred meggings. Retro pitchfork semiotics you <span style="padding: 5px;vertical-align:super;color: lightblue;">probably haven't heard of them</span>, thundercats occupy raw denim DIY.</p>
+</div>
+
+Przykładowe elementy liniowe, które już udało nam się poznać to `<span>` oraz `<a>`.
+
+Warto w tym momencie wspomnieć, że istnieją elementy, których domyślne zachowanie nieco różni się od blokowych i liniowych - można powiedzieć, że łączą w sobie rózne ich cechy. Są to tzw. [*replaced elements*](http://www.impressivewebs.com/difference-block-inline-css/). Należą do nich m.in. `<img>`, `<input>` oraz `<select>`. Można określać ich wymiary za pomocą właściwości CSS, jednak w przeciwieństwie do elementów blokowych za żadnym z nich nie następuje złamanie linii. Zauważyliście to z pewnością podczas tworzenia formularzy w czystym HTML.
+
 ### Określamy zachowanie elementów za pomocą właściwości `display`
+
+Każdy z elementów HTML posiada swój domyślny rodzaj zachowania, jednak można w bardzo łatwy sposób go zmienić i sprawić, żeby np. `<div>` zaczął zachowywać się jak element liniowy.
+
+Jak to zrobić? Poznajmy właściwość `display`, która odpowiada za określanie rodzaju sposobu wyświetlania elementu na stronie. Wartości właściwości display jest [bardzo dużo](https://developer.mozilla.org/en-US/docs/Web/CSS/display) i sporo z nich brzmi tajemniczo nawet dla całkiem zaawansowanych deweloperów CSS.
+
+Poznajmy trzy używane zdecydowanie najczęściej:
+
+- `display: inline` - sprawia, że element będzie wyświetlany jako element liniowy
+- `display: block` - element zostanie wyświetlony jako element blokowy
+- `display: inline-block` - łączy cechy elementów liniowych i blokowych, za jego pomocą możemy sprawić, że będzie możliwe nadanie naszemu elementowi wymiarów i wszystkich marginesów, a także nie nastąpi po nim przejście do kolejnej linii.
+
+```html
+<div class="container">
+  <div class="inline-block-item"></div>
+  <span class="inline-block-item"></span>
+  <p class="inline-block-item"></p>
+</div>
+```
+
+```css
+.inline-block-item {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 5px 10px 6px 12px;
+  background-color: lightblue;
+}
+```
+
+<div class="example-wrapper">
+  <div style="display:inline-block;width:150px;height:150px;margin:5px 10px 6px 12px;background-color:lightblue"></div>
+  <span style="display:inline-block;width:150px;height:150px;margin:5px 10px 6px 12px;background-color:lightblue"></span>
+  <p style="display:inline-block;width:150px;height:150px;margin: 5px 10px 6px 12px;background-color:lightblue"></p>
+</div>
+
+Poniżej podsumowujemy w tabeli cechy elementów liniowych, blokowych oraz liniowo-blokowych:
+
+|  | Prawe i lewe marginesy | Górne i dolne marginesy | Możliwość ustawienia `width` i `height` | Wymuszenie złamania linii za elementem | `vertical-align` |
+| -------------- |:---:| :---:| :---:| :---:| :---:|
+| `inline`       | ✔ | ✘ | ✘ | ✘ | ✔ |
+| `block`        | ✔ | ✔ | ✔ | ✔ | ✘ |
+| `inline-block` | ✔ | ✔ | ✔ | ✘ | ✔ |
 
 ## Opływanie
 
