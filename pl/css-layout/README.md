@@ -289,6 +289,12 @@ Opływanie w CSS często przydaje się do tworzenia całych layoutów oraz poszc
 
 ## Umieszczanie elementów na siatce
 
+![Siatka w Bootstrapie][2]
+[2]: /images/grid.png
+
+![Siatka (ang. grid) nałożona na layout Planty][1]
+[1]: /images/planty-grid.jpg
+
 ## Pozycjonujemy elementy na stronie
 
 Domyślnie elementy na stronie umieszczane są jeden za drugim (z uwzględnieniem wartości właściwości `display`). Czasem jednak zdarza się, że potrzebujemy uzyskać efekt nałożenia jednego elementu na drugi bądź przesunięcia. Na szczęście język CSS jest wyposażony w narzędzia, które nam to umożliwiają - są to właściwości związane z **pozycjonowaniem**.
