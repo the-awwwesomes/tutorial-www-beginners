@@ -1,4 +1,5 @@
-# Tworzenie layoutu strony
+
+##Tworzenie layoutu strony
 
 Po przeczytaniu poprzednich rozdziałów zapewne głowy pękają Wam od teorii. Jeśli udało się Wam przez to wszystko przebrnąć - jesteśmy z Was bardzo dumni! I zapraszamy w podróż do świata layoutu stron internetowych. Tutaj również można zagubić się w gąszczu różnych zagadnień, jednak każde z nich jest bardzo ważne i potrzebne w codziennej pracy frontendowca. Gotowi?
 
@@ -289,11 +290,11 @@ Opływanie w CSS często przydaje się do tworzenia całych layoutów oraz poszc
 
 ## Umieszczanie elementów na siatce
 
-![Siatka w Bootstrapie][2]
-[2]: /images/grid.png
+![Siatka w Bootstrapie][1]
+[1]: /images/grid.png
 
-![Siatka (ang. grid) nałożona na layout Planty][1]
-[1]: /images/planty-grid.jpg
+![Siatka (ang. grid) nałożona na layout Planty][2]
+[2]: /images/planty-grid.jpg
 
 ## Pozycjonujemy elementy na stronie
 
@@ -437,4 +438,7 @@ Jeśli używamy pozycjonowania absolutnego nieostrożnie, nasz element może wyl
 ## Jak wycentrować elementy w pionie i poziomie?
 
 ### Flexbox
+
+=======
+Po przeczytaniu poprzednich rozdziałów zapewne głowy pękają Wam od teorii. Jeśli udało się Wam przez to wszystko przebrnąć - jesteśmy z Was bardzo dumni! I zapraszamy w podróż do świata layoutu stron internetowych. Tutaj również można zagubić się w gąszczu różnych zagadnień, jednak każde z nich jest bardzo ważne i potrzebne w codziennej pracy frontendowca. Gotowi?
 

@@ -1,0 +1,1 @@
+## Umieszczamy elementy na siatce
