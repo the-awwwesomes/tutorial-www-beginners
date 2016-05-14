@@ -175,7 +175,7 @@ p {
   border: 1px solid blue
 }
 ```
-> Niedomknięcie linii średnikiem spowoduje błąd w interpretacji arkusza styli i w takiej sytuacji przeglądarka zignoruje źle zapisane deklaracje.
+> Niedomknięcie linii średnikiem spowoduje błąd w interpretacji arkusza stylów i w takiej sytuacji przeglądarka zignoruje źle zapisane deklaracje.
 >
 > Żeby uniknąć sytuacji, kiedy łamiecie sobie głowę zastanawiając się *"czemu mój kod nie działa?"*, bądźcie bardzo skrupulatni w domykaniu linii średnikami!
 
