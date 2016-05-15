@@ -83,7 +83,7 @@ Pozycjonowanie absolutne wymaga od nas nieco ostrożności, jednak jeśli wiemy,
 
 Powyższy element został wyjęty ze swojego miejsca (jak widać, nie pozostawia również po sobie wolnej przestrzeni - cóż za oszczędność!) i umieszczony zupełnie gdzie indziej - w prawym górnym rogu strony.
 
-Jeśli używamy pozycjonowania absolutnego nieostrożnie, nasz element może wylądować w dość niespodziewanym miejscu. Musimy więc pamiętać, że każdy element z `position: absolute` jest pozycjonowany **względem** jakiegoś innego elementu. Takim odniesieniem jest najbliższy elemenent, któremu nadaliśmy `position: relative`. Musimy też pamiętać, że element pozycjonowany absolutnie musi znajdować się **wewnątrz** elementu z `position: relative`.
+Jeśli używamy pozycjonowania absolutnego nieostrożnie, nasz element może wylądować w dość niespodziewanym miejscu. Musimy więc pamiętać, że każdy element z `position: absolute` jest pozycjonowany **względem** jakiegoś innego elementu. Takim odniesieniem jest najbliższy element, któremu nadaliśmy `position: relative`. Musimy też pamiętać, że element pozycjonowany absolutnie musi znajdować się **wewnątrz** elementu z `position: relative`.
 
 ```html
 <div class="item"></div>

@@ -17,8 +17,8 @@ Dla ustalenia uwagi, zaprezentujemy Wam możliwości korzystania z siatki na prz
 Do zbudowania layoutu w oparciu siatkę bootstrapową potrzebny nam plik CSS, w którym siatka jest opisana poprzez style. Kontener zawierający kolumny zdefiniowany jest dla kilku szerokości ekranu - dla desktopu, tabletu i smartfona, natomiast jej poszczególne składniki, czyli kolumny procentowo dostowują się do szerokości kontenera). Dzięki temu nasza strona odpowiednio wyświetla się na różnych urządzeniach. Niestety na naszym kursie nie starczy nam czasu, aby omówić zagadnienia związane z **projektowaniem responsywnym** (ang. <i>responsive o web design</i>), alę dzięki zastosowaniu responsywnej siatki będziemy mogli zaobserwować przynamniej jego częściowe efekty.
 
 Maksymalna liczba kolumn zawartych w danym kontenerze to 12. Żeby nasz element został spozycjonowany według siatki, musi się on zajmować między znacznikami takimi jak:
-`<div class="container">`, czyli kontener,:
-`<div class="row">`, czyli rząd, w którym będą wyświetlać się nasz(e) element(y)
+`<div class="container">`, czyli kontener,
+`<div class="row">`, czyli rząd, w którym będą wyświetlać się nasze elementy
 oraz `<div class="col-md-12">`, czyli div zbudowany z zadanej ilości kolumn (w tym wypadku *12*)
 
 Jeśli chcemy, żeby nasz element zajmował całą całą szerokość kontenera, zastosujemy kod
