@@ -96,17 +96,18 @@ Planty jest dobrym przykładem, gdzie występuje sekcja z tłem, zajmującym ca�
 
 Przykładowo
 ```html
-	<div class="container-fluid">
-		<section class="planty-full-width">
-			<div class="container">
-				<div class="row">   
-			    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
-						<h2>Every flower is a soul<br/>
-	                    blossoming in nature.
-	                	</h2>
-	                </div>
-		    </div>
-		</section>
+<div class="container-fluid">
+	<section class="planty-full-width">
+		<div class="container">
+			<div class="row">   
+		    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+  					<h2>
+              Every flower is a soul <br> blossoming in nature.
+            </h2>
+          </div>
+	    </div>
+	</section>
+</div>
 ```
 
 
