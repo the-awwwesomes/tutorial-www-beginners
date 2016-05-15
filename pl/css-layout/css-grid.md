@@ -14,7 +14,7 @@ Dla ustalenia uwagi, zaprezentujemy Wam możliwości korzystania z siatki na prz
 
 ### Budowanie kolumn w oparciu o siatkę z Boostrapa
 
-Do zbudowania layoutu w oparciu siatkę bootstrapową potrzebny nam plik CSS, w którym jest opisana poprzez style. Kontener zawierający kolumny zdefiniowany jest dla kilku szerokości ekranu - dla desktopu, tabletu i smartfona, natomiast jej poszczególne składniki, czyli kolumny procentowo dostowują się do szerokości kontenera). Dzięki temu nasza strona odpowiednio wyświetla się na różnych urządzeniach. Niestety na naszym kursie nie starczy nam czasu, aby omówić zagadnienia związane z **projektowaniem responsywnym** (ang. <i>responsive o web design</i>), alę dzięki zastosowaniu responsywnej siatki będziemy mogli zaobserwować przynamniej jego częściowe efekty.
+Do zbudowania layoutu w oparciu siatkę bootstrapową potrzebny nam plik CSS, w którym siatka jest opisana poprzez style. Kontener zawierający kolumny zdefiniowany jest dla kilku szerokości ekranu - dla desktopu, tabletu i smartfona, natomiast jej poszczególne składniki, czyli kolumny procentowo dostowują się do szerokości kontenera). Dzięki temu nasza strona odpowiednio wyświetla się na różnych urządzeniach. Niestety na naszym kursie nie starczy nam czasu, aby omówić zagadnienia związane z **projektowaniem responsywnym** (ang. <i>responsive o web design</i>), alę dzięki zastosowaniu responsywnej siatki będziemy mogli zaobserwować przynamniej jego częściowe efekty.
 
 Maksymalna liczba kolumn zawartych w danym kontenerze to 12. Żeby nasz element został spozycjonowany według siatki, musi się on zajmować między znacznikami takimi jak:
 `<div class="container">`, czyli kontener,:
@@ -106,7 +106,7 @@ Jak zauważyliście, dodane zostały nowe klasy `col-xs-12` - definiująca szero
 
 Zerknijcie na poniższą tabelę
 
-|  | B.małe urządzenia <br>smartfony (<768px) | Małe urządzenia<br>tablety (≥768px) | Średnie urządzenia<br>tzw. desktop (≥992px) | Duże urządzenia<br>duże rozdzielczości (≥1200px) 
+|  | Bardzo małe urządzenia <br>smartfony (<768px) | Małe urządzenia<br>tablety (≥768px) | Średnie urządzenia<br>tzw. desktop (≥992px) | Duże urządzenia<br>duże rozdzielczości (≥1200px) 
 | -------------- |:---:| :---:| :---:| :---:|
 | Prefix klasy       | `.col-xs-` | `.col-sm-` |`.col-md-`| `.col-lg-` | 
 | Szerokość kontenera       | brak (auto) | 750px | 960px | 1170px | 
