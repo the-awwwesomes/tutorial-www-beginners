@@ -84,6 +84,35 @@ Tworząc layout możemy również budować kolumny o różnych szerokościach za
 </div>                 
 ```  
 
+#### Kontener zajmujący całą szerokość strony
+Powyższe przykłady pokazały jak definiować kolumny w obrębie kontenera, który dla naszego projektu w wersji desktopowej - wyświetlanej na komputerze - przyjmuje 960px.
+
+Planty jest dobrym przykładem, gdzie występuje sekcja z tłem, zajmującym całą dostępną szerokość strony. W tym wypadku sekcja zawarta będzie w znaczniku:
+
+`<div class="container-fluid">`
+
+![Planty i elementy zawierające layoutu całą szerokość][3]
+[3]: /images/planty-layout.jpg
+
+Przykładowo
+```html
+	<div class="container-fluid">
+		<section class="planty-full-width">
+			<div class="container">
+				<div class="row">   
+			    	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+						<h2>Every flower is a soul<br/>
+	                    blossoming in nature.
+	                	</h2>
+	                </div>
+		    </div>
+		</section>
+```
+
+
+
+Zwróćmy uwagę, że treść tej sekcji (czyli nagłówek `<h2>`) umieściliśmy w kontenerze o klasie `container` i w elemencie `<div>` zajmującym szerokość 12 kolumn, co jest zgodne z projektem layoutu Planty.
+Kontenerem zajmującym całą szerokość strony w Planty jest też stopka.
 
 
 ### Budowanie siatki w zależności od szerokości urządzenia
@@ -113,7 +142,6 @@ Zerknijcie na poniższą tabelę
 
 
 
-
 > #### Exercise::Ćwiczenie 14
 >
 > Porą dołączyć plik CSS, zawierający grid pochodzący z Bootstrapa do naszego projektu Planty. Co warto podkreślić, na zajęciach wykorzystujemy jedynie siatkę bootstrapową. Nie będziemy zajmować się innymi komponentami z frameworku Boostrap.
@@ -123,6 +151,5 @@ Zerknijcie na poniższą tabelę
 > W kodzie HTML do Planty utwórz dwie, równe pod względem szerokości kolumny w sekcji zawierającej formularz.
 >
 >Uzyskaj poniższy efekt:
-![Formularz w Plany z wykorzystaną siatką][3]
-
-[3]: /images/grid-form.png
+![Formularz w Plany z wykorzystaną siatką][4]
+[4]: /images/grid-form.png

@@ -14,8 +14,3 @@
 * [Model pudełkowy CSS](css-box-model/README.md)
 * [Photoshop dla front-endowca](photoshop/README.md)
 * [Tworzenie layoutu strony](css-layout/README.md)
-  * [Elementy liniowe i blokowe](css-layout/css-block-inline-elements.md)
-  * [Opływanie elementów](css-layout/css-floats.md)
-  * [Pozycjonujemy elementy na stronie](css-layout/css-positioning.md)
-  * [Jak wyśrodkować elementy w pionie i poziomie?](css-layout/css-centering.md)
-  * [Umieszczamy elementy na siatce](css-layout/css-grid.md)
