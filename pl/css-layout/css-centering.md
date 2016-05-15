@@ -102,5 +102,3 @@ Dowiedzmy się zatem, w jaki sposób wyśrodkować element blokowy o znanej wyso
 </div>
 
 Powyższa technika bazuje na pozycjonowaniu. Aby wyśrodkować element w pionie, musimy najpierw umieścić jego górną krawędź 50% od góry kontenera. W tym momencie element nie będzie jeszcze wizualnie wyśrodkowany, należy go wtedy przesunąć do góry o połowę jego wysokości. Przydatne tu okazują się ujemne marginesy.
-
-### Flexbox
