@@ -20,3 +20,5 @@
     * [Jak wyśrodkować elementy w pionie i poziomie?](css-layout/css-centering.md)
     * [Umieszczamy elementy na siatce](css-layout/css-grid.md)
 * [Animacje CSS](css-animations/README.md)    
+	* [Funkcja transition](css-animations/css-transition/README.md)   
+	* [Tworzenie animacji - `@keyframes`](css-animations/css-keyframes/README.md)    

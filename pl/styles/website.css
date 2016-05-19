@@ -171,3 +171,23 @@ body {
 img.image-full-width {
     width: 100%;
 }
+
+.awww-ch-animations-exercise {
+    margin: 40px 0;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal div.awww-ch-animations-exercise a.awww-exercise-link {
+    padding: 10px 20px;
+    background-color: salmon !important; 
+    color: #fff !important;
+    margin: 20px 0;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal div.awww-ch-animations-exercise a.awww-exercise-link:hover {
+    background-color: #263479 !important; 
+}
+
+a.awww-exercise-link.added-transition {
+    transition: all .3s ease-in-out;
+}
+
