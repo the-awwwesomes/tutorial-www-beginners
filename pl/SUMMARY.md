@@ -19,3 +19,4 @@
     * [Pozycjonujemy elementy na stronie](css-layout/css-positioning.md)
     * [Jak wyśrodkować elementy w pionie i poziomie?](css-layout/css-centering.md)
     * [Umieszczamy elementy na siatce](css-layout/css-grid.md)
+* [Animacje CSS](css-animations/README.md)    
