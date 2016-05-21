@@ -198,3 +198,22 @@ a.awww-exercise-link.added-transition {
   50% { background-color: #263479; }
   100% { background-color: salmon; }
 }
+
+.circle-ch-anim {
+  margin: 30px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-color: salmon;
+  animation: moveBall 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveBall {
+  0% {
+    
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}

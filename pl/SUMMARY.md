@@ -21,4 +21,5 @@
     * [Umieszczamy elementy na siatce](css-layout/css-grid.md)
 * [Animacje CSS](css-animations/README.md)    
 	* [Funkcja transition](css-animations/css-transition/README.md)   
+	* [Przekształcanie - `transform`](css-animations/css-transform/README.md)    
 	* [Tworzenie animacji - `@keyframes`](css-animations/css-keyframes/README.md)    
