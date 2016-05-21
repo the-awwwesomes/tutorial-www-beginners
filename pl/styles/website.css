@@ -189,5 +189,12 @@ img.image-full-width {
 
 a.awww-exercise-link.added-transition {
     transition: all .3s ease-in-out;
+    animation-name: changeColors; animation-duration: 6s;
 }
 
+@keyframes changeColors
+{
+  0% { background-color: salmon; }
+  50% { background-color: #263479; }
+  100% { background-color: salmon; }
+}
