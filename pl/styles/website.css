@@ -188,6 +188,12 @@ img.image-full-width {
     color: green;
 }
 
+#awww-pseudoselectors-stars li::before {
+    content: '\2605';
+    color: gold;
+    margin-right: 1rem;
+}
+
 .awww-ch-animations-exercise {
     margin: 40px 0;
 }
