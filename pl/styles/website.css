@@ -172,6 +172,22 @@ img.image-full-width {
     width: 100%;
 }
 
+#awww-pseudoclasses-exercise a:visited {
+    color: purple;
+}
+
+#awww-pseudoclasses-exercise a:hover {
+    color: red;
+}
+
+#awww-pseudoclasses-exercise a:focus {
+    color: navy;
+}
+
+#awww-pseudoclasses-exercise a:active {
+    color: green;
+}
+
 .awww-ch-animations-exercise {
     margin: 40px 0;
 }
