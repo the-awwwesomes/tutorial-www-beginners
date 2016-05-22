@@ -43,8 +43,8 @@ Animacje CSS posiadają jeszcze inne parametry. Poznajmy te najczęściej używa
 - `animation-delay` - opóźnienie, czyli czas po jakim animacja zacznie działać
 - `animation-direction` - kierunek rozpoczęcia i powtarzania się animacji, więcej o tej właściwości poniżej
 - `animation-iteration-count` - liczba powtórzeń (iteracji) animacji
-- `animation-fill-mode` -
-- `animation-play-state`-
+- `animation-fill-mode` - określa jakie cechy będzie miał animowany obiekty, gdy jego animacja będzie gdy animacja się zakończy i nie będzie powtarzana.
+- `animation-play-state`- zatrzymywanie bądź wznowienie animacji, dozwolone wartości to `paused` (zatrzymana) i `running` (w toku)
 
 ## Kierunek animacji, czyli `animation-direction`
 - `alternate` - animacja będzie powtarzać się w odwrotnym kierunku niż przy rozpoczęciu

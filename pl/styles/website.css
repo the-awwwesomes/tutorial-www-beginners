@@ -217,3 +217,46 @@ a.awww-exercise-link.added-transition {
     transform: translateX(500px);
   }
 }
+
+.rectangle-ch-anim {
+    height: 120px;
+    width: 120px;
+    background-color: salmon;
+    display: inline-block;
+    margin: 20px 100px 20px 0;
+}
+.rectangle-ch-anim.scale {
+    height: 50px;
+}
+
+.button-ch-anim-scale:hover {
+    transform: scale(1.2);
+}
+
+.container-button-ch-anim {
+    text-align: center;
+}
+.button-ch-anim-scale {
+    background-color: salmon;
+    padding: 20px 100px;
+    display: inline-block;
+    margin: 20px 0;
+    transition: all 0.3 ease-in-out;
+}
+
+.rectangle-ch-anim.multiply-transform {
+    transition: all 0.7 ease-in-out;
+}
+
+.rectangle-ch-anim.multiply-transform {
+    transform: translateX(250px) scale(1.05);
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(50deg);
+  }
+}
