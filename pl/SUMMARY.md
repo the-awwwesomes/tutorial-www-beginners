@@ -23,5 +23,6 @@
   * [Pseudoklasy CSS](css-advanced-selectors/css-pseudoclasses.md)
   * [Pseudoelementy](css-advanced-selectors/css-pseudoelements.md)
 * [Animacje CSS](css-animations/README.md)    
-	* [Funkcja transition](css-animations/css-transition/README.md)   
-	* [Tworzenie animacji - `@keyframes`](css-animations/css-keyframes/README.md)    
+	* [Funkcja `transition`](css-animations/css-transition/README.md)   
+	* [Przekształcanie `transform`](css-animations/css-transform/README.md)    
+	* [Tworzenie animacji `@keyframes`](css-animations/css-keyframes/README.md)    
