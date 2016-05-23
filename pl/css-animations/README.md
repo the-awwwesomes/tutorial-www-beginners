@@ -10,3 +10,4 @@ Warto wspomnieć, że animacje są też coraz szerzej wspierane przez różnego 
 ![Tablica z "caniuse.com"][1]
 [1]: /images/caniuse-anim.jpg
 
+
