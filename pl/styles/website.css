@@ -313,3 +313,7 @@ a.awww-exercise-link.added-transition {
     transform: rotateX(50deg);
   }
 }
+
+.dummy-selector {
+    color: transparent;
+}
