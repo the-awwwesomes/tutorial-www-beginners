@@ -52,10 +52,38 @@ Przykładowo, możemy zmienić domyślne, nudne kropki przy elementach listy na 
 Pseudoelementy okazują się także bardzo przydatne, kiedy chcemy dodać podpowiedzi (*tooltipy*) w jakimś miejscu na stronie.
 
 ```html
+<a href="http://theawwwesomes.org" class="tooltip">
+  The Awwwesomes
+</a>
 ```
 
 ```css
+.tooltip {
+  position: relative;
+}
+
+.tooltip::before {
+  content: 'Darmowe warsztaty HTML i CSS';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: coral;
+  color: white;
+  width: 100%;
+  padding: 0.5em;
+  margin-left: 1em;
+  border-radius: 5px; /* dodaje zaokrąglenia rogów */
+  display: none;
+}
+
+.tooltip:hover::before {
+  display: inline-block;
+}
 ```
+
+<div id="awww-pseudoselectors-tooltip" class="example-wrapper">
+  <a href="http://theawwwesomes.org" class="tooltip">The Awwwesomes</a>
+</div>
 
 Przypomnijmy sobie teraz przykład z [rozdziału 14.2](../css-layout/css-floats.md), w którym próbowaliśmy sobie radzić z *czyszczeniem* opływania za pomocą dodatkowego, pustego elementu HTML. Zapowiedzieliśmy już wtedy, że można to zrobić w dużo bardziej elegancki sposób używając właśnie pseudoelementów.
 
@@ -119,8 +147,20 @@ Za pomocą pseudoelementu `::selection` możemy zmieniać kolor tła zaznaczoneg
 }
 ```
 
+Zaznaczcie fragment poniższego akapitu i sprawdźcie sami, jak to działa:
+
+<div id="awww-pseudoselectors-selection" class="example-wrapper">
+  Readymade yuccie man bun distillery yr twee. Pitchfork etsy salvia quinoa put a bird on it synth. Mixtape craft beer semiotics vice. Chartreuse swag blog drinking vinegar blue bottle brunch meh echo park shabby chic yuccie next level. Flannel small batch semiotics selfies, gastropub forage fingerstache you probably haven't heard of them synth keytar before they sold out. Mumblecore brooklyn meggings put a bird on it, beard pabst kale chips VHS godard typewriter. Swag ethical hashtag man braid locavore small batch.
+</div>
+
+Innym ciekawym pseudoelementem jest `::first-letter`, dzięki któremu możemy uzyskać na przykład efekt znany z książek, czyli wyróżnienie pierwszej litery akapitu.
+
 ```css
 ::first-letter {
   font-size: 3em;
 }
 ```  
+
+<div id="awww-pseudoselectors-letter" class="example-wrapper">
+  <p>Typewriter 90's man braid, banh mi stumptown drinking vinegar XOXO sustainable pabst cronut gluten-free truffaut biodiesel. Locavore pickled freegan, plaid fingerstache bitters ramps gastropub craft beer readymade deep v cornhole aesthetic. Semiotics lo-fi affogato, microdosing single-origin coffee aesthetic tumblr lomo 3 wolf moon iPhone swag marfa pour-over vegan. Vinyl jean shorts squid, 8-bit brooklyn everyday carry viral YOLO stumptown shoreditch locavore slow-carb.</p>
+</div>
