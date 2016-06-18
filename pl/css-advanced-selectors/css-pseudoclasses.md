@@ -1,6 +1,6 @@
 ## Pseudoklasy CSS
 
-Czy wiecie, że możecie tworzyć interaktywne efekty za pomocą CSS? Poznajcie **pseudoklasy**! Można je rozpoznać po charakterystycznym dwukropku przed nazwą - `:`.
+Czy wiecie, że możecie tworzyć interaktywne efekty za pomocą CSS? Poznajcie <b>pseudoklasy</b>! Można je rozpoznać po charakterystycznym dwukropku przed nazwą – `:`.
 
 ```css
 selektor:pseudoklasa {
@@ -8,7 +8,7 @@ selektor:pseudoklasa {
 }
 ```
 
-Pseudoklasy zazwyczaj dotyczą **stanu** w jakim może znajdować się dany element. Przykładowo, w przypadku linków mogą to być:
+Pseudoklasy zazwyczaj dotyczą <b>stanu</b>, w jakim może znajdować się dany element. Przykładowo, w przypadku linków mogą to być:
 
 ```css
 /*
@@ -49,7 +49,7 @@ a:active {
   <a href="http://theawwwesomes.org">Hej! Jestem linkiem!</a>
 </div>
 
-Kiedy na przykład najedziemy kursorem myszy na nasz element, zmieni on swój kolor na czerwony. 
+Kiedy na przykład najedziemy kursorem myszy na nasz element, zmieni on swój kolor na czerwony.
 
 Różne pseudoklasy możemy aplikować dla różnych elementów, w zależności od ich własności.
 
@@ -75,7 +75,7 @@ label > input[type="checkbox"]:checked {
 }
 ```
 
-Ciekawymi typami pseudoklas są `:first-child`, `:last-child` oraz `:nth-child()`. Zapewne domyślacie się już, że pomagają nam one wybrać elementy w zależności od tego, w którym miejscu występują wobec nadrzędnego elementu. Zaprezentujmy działanie powyższych selektorów na przykładzie... listy zakupów!
+Ciekawymi typami pseudoklas są `:first-child`, `:last-child` oraz `:nth-child()`. Zapewne domyślacie się już, że pomagają nam one wybrać elementy w zależności od tego, w którym miejscu występują wobec nadrzędnego elementu. Zaprezentujmy działanie powyższych selektorów na przykładzie… listy zakupów!
 
 ```html
 <label>Do kupienia:</label>
@@ -126,6 +126,6 @@ Ciekawymi typami pseudoklas są `:first-child`, `:last-child` oraz `:nth-child()
 </ul>
 </div>
 
-Pseudoselektor `:first-child` pozwala nam na wskazanie pierwszego elementu na liście, `:last-child` natomiast ostatniego. `:nth-child()` jest nieco bardziej uniwersalny, ponieważ wewnątrz nawiasów `()` możemy podać dowolną liczbę naturalną a także warunek, który powinien spełniać element. Przykładowo `:nth-child(2n)` wskaże wszystkie elementy zajmujące parzyste pozycje na liście, a `nth-child(2n + 1)` - nieparzyste.
+Pseudoselektor `:first-child` pozwala nam na wskazanie pierwszego elementu na liście, `:last-child` natomiast ostatniego. `:nth-child()` jest nieco bardziej uniwersalny, ponieważ wewnątrz nawiasów `()` możemy podać dowolną liczbę naturalną a także warunek, który powinien spełniać element. Przykładowo `:nth-child(2n)` wskaże wszystkie elementy zajmujące parzyste pozycje na liście, a `nth-child(2n + 1)` – nieparzyste.
 
-Pełną listę dostępnych pseudoklas (a jest ona całkiem długa!) możecie znaleźć [tutaj](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
+Pełną listę dostępnych pseudoklas (a jest ona całkiem długa!) możecie znaleźć [na MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).

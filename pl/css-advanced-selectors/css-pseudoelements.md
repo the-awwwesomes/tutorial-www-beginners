@@ -14,7 +14,7 @@ Jednymi z najczęściej używanych pseudoelementów są `::before` oraz `::after
 
 > ####Important::Ważne
 >
-> Istotne jest, aby wewnątrz selektora pseudoelementu (`::before` tak samo jak `::after`) znajdowała się właściwość `content` mówiąca o zawartości tekstowej pseudoelementu. Może się zdarzyć, że nie chcemy wstawiać żadnego tekstu do pseudoelementu, ponieważ jest on tam całkowicie zbędny - wtedy jako wartość właściwości `content` wystarczy podać spację.
+> Istotne jest, aby wewnątrz selektora pseudoelementu (`::before` tak samo jak `::after`) znajdowała się właściwość `content` mówiąca o zawartości tekstowej pseudoelementu. Może się zdarzyć, że nie chcemy wstawiać żadnego tekstu do pseudoelementu, ponieważ jest on tam całkowicie zbędny – wtedy jako wartość właściwości `content` wystarczy podać spację lub pusty ciąg (` ` lub ``).
 
 Powyższe pseudoelementy mogą mieć [wiele różnorodnych zastosowań](https://css-tricks.com/pseudo-element-roundup/). Poniżej prezentujemy kilka z najczęściej używanych.
 
@@ -49,7 +49,7 @@ Przykładowo, możemy zmienić domyślne, nudne kropki przy elementach listy na 
   </ul>
 </div>
 
-Pseudoelementy okazują się także bardzo przydatne, kiedy chcemy dodać podpowiedzi (*tooltipy*) w jakimś miejscu na stronie.
+Pseudoelementy okazują się także bardzo przydatne, kiedy chcemy dodać podpowiedzi (<i>tooltipy</i>) w jakimś miejscu na stronie.
 
 ```html
 <a href="http://theawwwesomes.org" class="tooltip">
@@ -85,9 +85,9 @@ Pseudoelementy okazują się także bardzo przydatne, kiedy chcemy dodać podpow
   <a href="http://theawwwesomes.org" class="tooltip">The Awwwesomes</a>
 </div>
 
-Przypomnijmy sobie teraz przykład z [rozdziału 14.2](../css-layout/css-floats.md), w którym próbowaliśmy sobie radzić z *czyszczeniem* opływania za pomocą dodatkowego, pustego elementu HTML. Zapowiedzieliśmy już wtedy, że można to zrobić w dużo bardziej elegancki sposób używając właśnie pseudoelementów.
+Przypomnijmy sobie teraz przykład z [rozdziału 14.2](../css-layout/css-floats.md), w którym próbowaliśmy sobie radzić z <i>czyszczeniem</i> opływania za pomocą dodatkowego, pustego elementu HTML. Zapowiedzieliśmy już wtedy, że można to zrobić w dużo bardziej elegancki sposób używając właśnie pseudoelementów.
 
-Poniżej prezentujemy [*micro-clearfix*](http://nicolasgallagher.com/micro-clearfix-hack/)
+Poniżej prezentujemy [<i>micro-clearfix</i>](http://nicolasgallagher.com/micro-clearfix-hack/)
 
 ```css
 .clearfix::before,
@@ -97,7 +97,7 @@ Poniżej prezentujemy [*micro-clearfix*](http://nicolasgallagher.com/micro-clear
 }
 
 .clearfix::after {
-  clear: both; /* Pseudoelement zamiast pustego div'a */ 
+  clear: both; /* Pseudoelement zamiast pustego div'a */
 }
 ```
 
@@ -120,11 +120,11 @@ Poniżej prezentujemy [*micro-clearfix*](http://nicolasgallagher.com/micro-clear
   </div>
 </div>
 
-Dodanie zadeklarowanej powyżej klasy `clearfix` sprawi, że wewnątrz konenera powstanie pseudoelement i nie będzie już potrzeby dodawania zupełnie zbędnago, pustego elementu HTML.
+Dodanie zadeklarowanej powyżej klasy `clearfix` sprawi, że wewnątrz kontenera powstanie pseudoelement i nie będzie już potrzeby dodawania zupełnie zbędnego, pustego elementu HTML.
 
 > ####Important::Ważne
 >
-> Niestety, nie jest możliwe dodanie powyższych pseudoelementów dla elementów *pustych*, czyli między innymi `<img>` lub `<input>.`
+> Niestety, nie jest możliwe dodanie powyższych pseudoelementów dla elementów <i>pustych</i>, czyli między innymi `<img>` lub `<input>.`
 
 ### Inne pseudoelementy
 
