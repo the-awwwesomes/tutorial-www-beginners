@@ -6,11 +6,11 @@
 
 Możemy się założyć, że używacie go każdego dnia. Ale czy naprawdę wiecie co się dzieje, gdy wpisujecie w przeglądarce adres http://theawwwesomes.org i wciskacie *enter*?
 
-Aby zrozumieć jak działa Internet powinniście najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak Wasze zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
+Aby zrozumieć jak działa Internet, powinniście najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak Wasze zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
-Jeśli nie mieliście wcześniej do czynienia z programowaniem, może być Wam na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
+Jeśli nie mieliście wcześniej do czynienia z programowaniem, może być Wam na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona – by wyglądała dokładnie tak jak Ty chcesz.
 
-Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ich głównym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* - ponieważ służą do *serwowania* danych.
+Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ich głównym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* – ponieważ służą do *serwowania* danych.
 
 Ok, ale pewnie chcielibyście wiedzieć jak wygląda Internet?
 
@@ -26,7 +26,7 @@ Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączony
 
  [2]: /images/submarine-map.png
 
-To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w Internecie. Więc aby dostać się do maszyny dostępnej w Internecie (na przykład tej, na której zapisane jest http://theawwwesomes.org) potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
+To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w Internecie. Więc aby dostać się do maszyny dostępnej w Internecie (na przykład tej, na której zapisane jest http://theawwwesomes.org), potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
 
 Wygląda to tak:
 
@@ -36,7 +36,7 @@ Wygląda to tak:
 
 Wyobraźcie sobie, że po wpisaniu http://theawwwesomes.org, wysyłacie list o treści: "Drodzy Awwwesomes, chcę zobaczyć stronę *theawwwesomes.org*. Wyślijcie ją do mnie, proszę!"
 
-List trafia do urzędu pocztowego najbliżej Was. Potem idzie do drugiego urzędu, który znajduje się trochę bliżej Waszego adresata. Potem do kolejnego, kolejnego, kolejnego, aż w końcu zostanie doręczony do miejsca przeznaczenia. Ciekawa rzecz - jeśli wyślecie wiele listów (*pakietów danych*) do tego samego adresata, mogą przejść przez zupełnie inne urzędy pocztowe (*routery*). To zależy od tego w jaki sposób zostaną rozdzielone w każdym urzędzie.
+List trafia do urzędu pocztowego najbliżej Was. Potem idzie do drugiego urzędu, który znajduje się trochę bliżej Waszego adresata. Potem do kolejnego, kolejnego, kolejnego, aż w końcu zostanie doręczony do miejsca przeznaczenia. Ciekawa rzecz: jeśli wyślecie wiele listów (*pakietów danych*) do tego samego adresata, mogą przejść przez zupełnie inne urzędy pocztowe (*routery*). To zależy od tego w jaki sposób zostaną rozdzielone w każdym urzędzie.
 
 ![Wysyłamy list][4]
 
