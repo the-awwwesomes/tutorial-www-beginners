@@ -89,6 +89,10 @@ Można powiedzieć, że hiperłącza są solą Internetu!
 
 Użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link, zostanie otwarta w nowej karcie przeglądarki.
 
+> #### Important::Ważne
+>
+> W Sieci trwa nieustanna debata nad tym, czy atrybut `target` i wymuszanie otwierania strony w nowej karcie powinny być używane. [Bardzo wiele osób](http://www.forumweb.pl/forumweb-pl/drobne-pomysly/516489#516489) wskazuje na fakt, że jest to [odbieranie kontroli użytkownikowi](https://kornel.ski/pl/target).
+
 ## Obrazki
 
 Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on <i>pustym elementem</i> i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
