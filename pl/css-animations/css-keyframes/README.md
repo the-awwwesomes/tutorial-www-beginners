@@ -39,7 +39,7 @@ Dzięki tym dwóm właściwościom dodaliśmy do naszego linku z klasą `link` s
 Animacje CSS posiadają jeszcze inne parametry. Poznajmy te najczęściej używane:
 - `animation-name` – nazwa animacji
 - `animation-duration` – czas trwania animacji
-- `animation-timing-function`
+- `animation-timing-function` – funkcja czasowa animacji; mamy do dyspozycji te same funkcje, co w przypadku `transition`
 - `animation-delay` – opóźnienie, czyli czas po jakim animacja zacznie działać
 - `animation-direction` – kierunek rozpoczęcia i powtarzania się animacji, więcej o tej właściwości poniżej
 - `animation-iteration-count` – liczba powtórzeń (iteracji) animacji
