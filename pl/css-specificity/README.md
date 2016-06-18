@@ -6,8 +6,8 @@ W CSS możemy tworzyć złożone (kombinowane) selektory. Umożliwia to nam zaw�
 
 ```css
 
-/* 
-  Wybieram wszystkie elementy typu `a`, 
+/*
+  Wybieram wszystkie elementy typu `a`,
   których wartość atrybutu `href`
   to dokładnie `http://theawwwesomes.org`
 */
@@ -34,7 +34,7 @@ li.active {
 }
 ```
 
-Tak, jak wyżej - jeśli umieścimy obok siebie dwa (lub więcej) selektory (bez spacji!) oznacza to, że dane reguły CSS zostaną zastosowane dla elementów spełniających wszystkie te kryteria **jednocześnie**.
+Tak, jak wyżej – jeśli umieścimy obok siebie dwa (lub więcej) selektory (bez spacji!) oznacza to, że dane reguły CSS zostaną zastosowane dla elementów spełniających wszystkie te kryteria **jednocześnie**.
 
 Możemy również wskazywać na elementy według relacji, w jakich znajdują się wobec siebie w drzewie dokumentu HTML.
 
@@ -116,18 +116,18 @@ ul li a[href="http://theawwwesomes.org"] {
 }
 ```
 
-Mając tę świadomość, a także wiedząc, że style mogą pochodzić z różnych źródeł, w jaki sposób przeglądarka określa, jakie style mają zostać zastosowane dla naszego elementu? Aby odpowiedzieć na to pytanie, musimy zapoznać się z pojęciem [**specyficzności**](https://css-tricks.com/specifics-on-css-specificity/) (ang. *specificity*).
+Mając tę świadomość, a także wiedząc, że style mogą pochodzić z różnych źródeł, w jaki sposób przeglądarka określa, jakie style mają zostać zastosowane dla naszego elementu? Aby odpowiedzieć na to pytanie, musimy zapoznać się z pojęciem [<b>specyficzności</b>](https://css-tricks.com/specifics-on-css-specificity/) (ang. <i>specificity</i>).
 
 Każdy rodzaj selektora możemy umieścić na ściśle określonej pozycji w szeregu ważności. Wymieńmy je w kolejności od najmniej do najbardziej ważnych:
 
-1) Element oraz pseudo-element
+1) Element oraz pseudoelement
 
 ```css
 div { }
 p::after { }
 ```
 
-2) Klasa, pseudo-klasa oraz atrybut
+2) Klasa, pseudoklasa oraz atrybut
 
 ```css
 .container { }
@@ -140,13 +140,13 @@ p::after { }
 ```css
 #users-chart { }
 ```
-4) Styl zapisany *inline*
+4) Styl zapisany <i>inline</i>
 
 ```html
 <ul style="list-style-type: none"></ul>
 ```
 
-O tym, co to są pseudo-klasy i pseudo-elementy dowiemy się w późniejszych rozdziałach.
+O tym, co to są pseudoklasy i pseudoelementy dowiemy się w późniejszych rozdziałach.
 
 > ####Important::Ważne
 >
@@ -163,9 +163,9 @@ O tym, co to są pseudo-klasy i pseudo-elementy dowiemy się w późniejszych ro
 }
 ```
 >
-> W powyższym przykładzie tekst naszego paragrafu zostanie pokolorowany na szaro (`silver`), pomimo, że według reguł specyficzności to style `inline` powinny zyskać najwyższy priorytet.
+> W powyższym przykładzie tekst naszego akapitu zostanie pokolorowany na szaro (`silver`), pomimo że według reguł specyficzności to style `inline` powinny zyskać najwyższy priorytet.
 >
-> Musicie być bardzo ostrożni używając `!important`, ze względu na to, że takie style są bardzo trudne do nadpisania - bardzo łatwo o bałagan w kodzie. Radzimy Wam zatem, aby **unikać** używania tego słowa kluczowego jak tylko się da!
+> Musicie być bardzo ostrożni używając `!important`, ze względu na to, że takie style są bardzo trudne do nadpisania – bardzo łatwo o bałagan w kodzie. Radzimy Wam zatem, aby **unikać** używania tego słowa kluczowego jak tylko się da!
 
 Jeśli zatem na nasz element wskazuje kilka prostych selektorów, określenie, jakie style powinny zostać mu nadane jest całkiem proste. Jak sprawa ma się w przypadku selektorów kombinowanych? W tym wypadku specyficzność jest wyliczana bazując na 4-elementowej [krotce](https://pl.wikipedia.org/wiki/Krotka_%28struktura_danych%29):
 
@@ -173,12 +173,12 @@ Jeśli zatem na nasz element wskazuje kilka prostych selektorów, określenie, j
 0 0 0 0
 ```
 
-1) Dla każdego selektora elementu bądź pseudo-elementu zwiększ 4-ty element o 1.
+1) Dla każdego selektora elementu bądź pseudoelementu zwiększ 4-ty element o 1.
 ```css
 0 0 0 1
 ```
 
-2) Dla każdej klasy, pseudo-klasy lub atrybutu zwiększ 3-ci element o 1.
+2) Dla każdej klasy, pseudoklasy lub atrybutu zwiększ 3-ci element o 1.
 ```css
 0 0 1 0
 ```
@@ -224,12 +224,12 @@ ul li a[href="http://theawwwesomes.org"] {
 I obliczmy specyficzność naszych selektorów:
 
 ```css
-ul li a[href="http://theawwwesomes.org"] 
+ul li a[href="http://theawwwesomes.org"]
 
 /* Mamy tu 3 selektory elementu oraz 1 selektor atrybutu */
 0 0 1 3
 
-.main-nav li.active 
+.main-nav li.active
 
 /* Mamy tu 1 selektor elementu oraz 2 selektory klasy */
 0 0 2 1
