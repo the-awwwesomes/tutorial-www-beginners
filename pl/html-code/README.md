@@ -54,6 +54,8 @@ Deklaracja `DOCTYPE` mówi nam o wersji i typie dokumentu HTML. Nie ma znaczenia
 </html>
 ```
 
+Można zauważyć, że nasz znacznik `<html>` posiada atrybut `lang`. Określa on język, w jakim napisana jest treść strony.
+
 - Wewnątrz tagów `<html>` wyróżniamy dwie sekcje: `<head>`, czyli "głowę" dokumentu, w której będziemy umieszczać <i>metadane</i> oraz `<body>`, która zawiera całą treść dokumentu.
 
 ```html
