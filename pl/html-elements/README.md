@@ -154,7 +154,7 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on <i>pustym eleme
 > i tak dalej.
 > Ścieżki bezwględne będą bardzo przydatne np. przy podłączniu pliku, zawierającego style. Przetestujemy to już niebawem podczas nauki o CSS.
 
-- `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
+- `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany. Jest też używany przez <i>[czytniki ekranowe](https://pl.wikipedia.org/wiki/Czytnik_ekranowy)</i> do informowania osób niewidomych lub niedowidzących o zawartości konkretnej ilustracji. Tym samym `alt` jest jednym z **podstawowych elementów [<i>dostępności stron WWW</i>](https://pl.wikipedia.org/wiki/Dost%C4%99pno%C5%9B%C4%87_(WWW))**.
 
 ```html
 <img src="images/example-img.jpg" alt="Uczymy się kodować">
