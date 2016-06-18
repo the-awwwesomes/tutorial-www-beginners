@@ -126,7 +126,7 @@ Powyższy przykład demonstruje klasyczny przypadek użycia `float` i odnosi si�
   </div>
 </div>
 >
-> Niestety, nie jest to wcale idealne rozwiązanie. Nie chcemy w końcu zaśmiecać naszej strony pustymi elementami użytymi tylko ze względu na wygląd. Istnieje nieco lepszy sposób oparty na <i>pseudoelementach</i> (co to takiego, dowiemy się już niebawem) – tzw. [*micro-clearfix*](http://nicolasgallagher.com/micro-clearfix-hack/).
+> Niestety, nie jest to wcale idealne rozwiązanie. Nie chcemy w końcu zaśmiecać naszej strony pustymi elementami użytymi tylko ze względu na wygląd. Istnieją nieco lepsze sposób, oparte na <i>pseudoelementach</i> (co to takiego, dowiemy się już niebawem) – tzw. [*micro-clearfix*](http://nicolasgallagher.com/micro-clearfix-hack/) – oraz [własności `overflow`](http://www.forumweb.pl/porady-i-tutoriale-www/css-clearowanie-czyli-problemy-z-float,47914).
 
 Opływanie w CSS często przydaje się do tworzenia całych layoutów oraz poszczególnych komponentów strony.
 
