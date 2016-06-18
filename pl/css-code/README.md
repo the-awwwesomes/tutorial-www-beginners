@@ -95,6 +95,10 @@ Nadajmy tekstowi w naszej kontrolce kolor czerwony, odnosząc się do niego po `
 
 Przypomnijmy, że w jednym dokumencie wartości atrybutu `id` powinny być unikalne. W związku z tym style zawarte wewnątrz tego selektora nie są zbyt reużywalne – możemy je zastosować tylko dla jednego, konkretnego elementu na stronie.
 
+> #### Important::Ważne
+>
+> Choć stylowanie po atrybucie `id` jest możliwe, od dawna jest uważane za [złą praktykę](http://forum.pasja-informatyki.pl/109776/html-class-czy-id?show=109816#a109816).
+
 ### Atrybut
 
 Stylować można również elementy zawierające konkretny atrybut. Dobrym przykładem jest np. tag `<input type="text">`. W tym wypadku deklaracja CSS będzie dotyczyła kontrolek `input` typu text.
