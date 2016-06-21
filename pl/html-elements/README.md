@@ -2,19 +2,19 @@
 
 Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrzycie na niego, poza podstawowym szkieletem zawiera on jednolity blok tekstu. Brakuje nam wyróżnienia nagłówków, hiperłączy, obrazka i formularzy. Pora na zapoznanie Was z różnymi znacznikami HTML.
 
-Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w *tagi* (*znaczniki*). Nie poznaliśmy jednak jak dotąd żadnych nazw znaczników, których moglibyśmy użyć na rzeczywistym przykładzie strony.
+Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w <i>tagi</i> (<i>znaczniki</i>). Nie poznaliśmy jednak jak dotąd żadnych nazw znaczników, których moglibyśmy użyć na rzeczywistym przykładzie strony.
 
 ## Komentarze
 
-Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania *"Co autor miał na myśli?"*.
+Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania "Co autor miał na myśli?".
 
-Pomocne bywają nam wtedy komentarze. Są one ignorowane przez przeglądarkę podczas wyświetlania strony i widoczne tylko podczas podglądania jej kodu źródłowego. Komentarze bywają bardzo użyteczne przy opisie kodu i umożliwiają jego dokumentowanie.
+Pomocne dla nas bywają wtedy komentarze. Są one ignorowane przez przeglądarkę podczas wyświetlania strony i widoczne tylko podczas podglądania jej kodu źródłowego. Komentarze są bardzo użyteczne przy opisie kodu i umożliwiają jego dokumentowanie.
 
 ```html
 <!-- To jest komentarz do naszego kodu -->
 ```
 
-## Nagłówki i paragrafy
+## Nagłówki i akapity
 
 Tak samo, jak w dokumentach tekstowych, w HTML-u możemy zdefiniować nagłówki dla naszego tekstu:
 
@@ -42,7 +42,7 @@ Co zostanie zinterpretowane przez przeglądarkę jako:
 >
 > Pamiętajcie, że numery nagłówków nie odnoszą się do rozmiaru wyrenderowanego tekstu, ale oznaczają **hierarchię** zawartości.
 
-Przy okazji omawiania składni CSS napomknęliśmy o znaczniku `p`. Jego nazwa pochodzi od słowa *paragraph* - służy do definiowania akapitów w tekście.
+Przy okazji omawiania składni CSS napomknęliśmy o znaczniku `<p>`. Jego nazwa pochodzi od słowa <i>paragraph<i>, a on sam służy do definiowania akapitów w tekście.
 
 ```html
 <p>To jest akapit tekstu. Możesz w nim umieścić tekst dowolnej długości.</p>
@@ -52,9 +52,9 @@ Przy okazji omawiania składni CSS napomknęliśmy o znaczniku `p`. Jego nazwa p
   <p>To jest akapit tekstu. Możesz w nim umieścić tekst dowolnej długości.</p>
 </div>
 
-Paragrafy zwykle prezentowane są w przeglądarce jako bloki tekstu, wizualnie odseparowane od siebie pionowym odstępem.
+Akapity zwykle prezentowane są w przeglądarce jako bloki tekstu, wizualnie odseparowane od siebie pionowym odstępem.
 
-Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w określonym miejscu. Warto wiedzieć, że nie wystarczy tam wcisnąć *enter* w edytorze tekstu - do łamania linni w HTML-u służy specjalny znacznik `<br>`:
+Kiedy kodujesz akapity, czasem zachodzi potrzeba złamania linii w określonym miejscu. Warto wiedzieć, że nie wystarczy tam wcisnąć <kbd>Enter</kbd> w edytorze tekstu – do łamania linii w HTML-u służy specjalny znacznik `<br>`:
 
 ```html
 <p>Jestem bardzo długim tekstem, który nie mieści się w jednej linii, <br> zatem muszę zostać złamany.</p>
@@ -69,11 +69,11 @@ Kiedy kodujesz paragrafy tekstu, czasem zachodzi potrzeba złamania linii w okre
 
 > #### Important::Ważne
 >
-> Nie stosuj znacznika `<br>` aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić).
+> Nie stosuj znacznika `<br>`, aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić).
 
 ## Hiperłącza
 
-Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal dowolne inne miejsce w sieci. Link możecie umieścić na stronie używając znacznika `<a>` (od angielskiego słowa *anchor*) - podając adres linkowanej strony jako wartość atrybutu `href`.
+Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal dowolne inne miejsce w sieci. Link możecie umieścić na stronie używając znacznika `<a>` (od angielskiego słowa <i>anchor</i>) i podając adres linkowanej strony jako wartość atrybutu `href`.
 
 Można powiedzieć, że hiperłącza są solą Internetu!
 
@@ -87,28 +87,32 @@ Można powiedzieć, że hiperłącza są solą Internetu!
   <a href="http://theawwwesomes.org" target="_blank">Przeniosę Cię na stronę The Awwwesomes!</a>
 </div>
 
-Użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link zostanie otwarta w nowej karcie przeglądarki.
-
-## Obrazki
-
-Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elementem i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
-
-- `src`, który zawiera ścieżkę do obrazka na dysku serwera lub w sieci. Jeśli wskazuje on na ścieżkę na dysku, zwykle jest to ścieżka względna - względem pliku HTML w którym znajduje się konkretny element `<img>`.
+Użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link, zostanie otwarta w nowej karcie przeglądarki.
 
 > #### Important::Ważne
 >
-> W tym momencie chcemy zwrócić Waszą uwagę na ścieżki do zasobów (nie tylko obrazków, niedługo zaczniemy dołączać do naszej strony arkusze styli).
+> W Sieci trwa nieustanna debata nad tym, czy atrybut `target` i wymuszanie otwierania strony w nowej karcie powinny być używane. [Bardzo wiele osób](http://www.forumweb.pl/forumweb-pl/drobne-pomysly/516489#516489) wskazuje na fakt, że jest to [odbieranie kontroli użytkownikowi](https://kornel.ski/pl/target).
+
+## Obrazki
+
+Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on <i>pustym elementem</i> i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
+
+- `src`, który zawiera ścieżkę do obrazka na dysku serwera lub w sieci. Jeśli wskazuje on na ścieżkę na dysku, zwykle jest to ścieżka względna – względem pliku HTML w którym znajduje się konkretny element `<img>`.
+
+> #### Important::Ważne
+>
+> W tym momencie chcemy zwrócić Waszą uwagę na ścieżki do zasobów (nie tylko obrazków, niedługo zaczniemy dołączać do naszej strony arkusze stylów).
 > **Ścieżka bezwzględna** to taka, która zawiera pełny adres internetowy do zasobu, wraz z domeną.
 > ```html
  <img src="http://theawwwesomes.org/images/example.png" alt="Jestem obrazkiem ze ścieżką bezwzględną">
  ```
- > W zasadzie moglibyśmy w tym momencie zakończyć temat ścieżek i przestać zawracać sobie tym głowę. Jednak co się stanie, kiedy adres strony ulegnie zmianie? Musielibyśmy wtedy pozmieniać adresy do wszystkich obrazków na naszej stronie - bardzo dużo roboty!
- > Z pomocą przychodzi nam linkowanie za pomocą **ścieżek względnych**, czyli wskazywanie na położenie zasobu w systemie plików względem miejsca, w którym przechowujemy plik `html` z naszą stroną.
- > Najprostszym przykładem jest ten, kiedy plik grafiki oraz plik ze stroną znajdują się w tym samym miejscu (folderze):
+ > W zasadzie moglibyśmy w tym momencie zakończyć temat ścieżek i przestać zawracać sobie tym głowę. Jednak co się stanie, kiedy adres strony ulegnie zmianie? Musielibyśmy wtedy pozmieniać adresy do wszystkich obrazków na naszej stronie – bardzo dużo roboty!
+ > Z pomocą przychodzi nam linkowanie za pomocą <b>ścieżek względnych</b>, czyli wskazywanie na położenie zasobu w systemie plików względem miejsca, w którym przechowujemy plik `html` z naszą stroną.
+ > Najprostszym przykładem jest ten, w którym plik grafiki oraz plik ze stroną znajdują się w tym samym miejscu (folderze):
  > ```html
  <img src="example.png" alt="Jestem w tym samym folderze, co strona">
  ```
- > Jednak wrzucanie plików z różnymi zasobami do tego samego folderu mogłoby spowodować w krótkim czasie spory bałagan. Zwykle tworzymy specjalne podfoldery - osobny dla obrazków (możemy go nazwać np. `images`), dla plików ze stylami oraz skryptami JavaScript.
+ > Jednak wrzucanie plików z różnymi zasobami do tego samego folderu mogłoby spowodować w krótkim czasie spory bałagan. Zwykle tworzymy specjalne podfoldery – osobny dla obrazków (możemy go nazwać np. `images`), dla plików ze stylami, dla skryptów JavaScript itp..
  > Spróbujmy w prosty sposób zobrazować strukturę katalogu plików (dla uproszczenia uwzględnimy tylko obrazki):
  > ```html
  /my-website
@@ -126,9 +130,9 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
 > ```html
  <img src="images/apples.png" alt="Tu widzimy jabłka">
  ```
-> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`. 
+> Możemy się również odwoływać do zasobów znajdujących się w strukturze folderów "wyżej". Używamy wtedy w ścieżce charakterystycznych dwóch kropek `../`.
 >
-> Przykładowo - plik `index.html`, w którym piszemy kod html znajduje się folderze `/html` umieszczonym w `/my-website`, a `/images` stanowi podfolder `/my-website`. 
+> Przykładowo: plik `index.html`, w którym piszemy kod html, znajduje się folderze `/html` umieszczonym w `/my-website`, a `/images` stanowi podfolder `/my-website`.
 > ```html
  /my-website
   |-- /html
@@ -147,10 +151,10 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on *pustym* elemen
 > ```html
  <img src="../../images/apples.png" alt="Tu widzimy jabłka">
  ```
-> ... i tak dalej.
+> i tak dalej.
 > Ścieżki bezwględne będą bardzo przydatne np. przy podłączniu pliku, zawierającego style. Przetestujemy to już niebawem podczas nauki o CSS.
 
-- `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany.
+- `alt` służy do definiowania pomocniczego tekstu, który zostanie wyświetlony w przypadku, kiedy obrazek z różnych powodów nie zostanie poprawnie załadowany. Jest też używany przez <i>[czytniki ekranowe](https://pl.wikipedia.org/wiki/Czytnik_ekranowy)</i> do informowania osób niewidomych lub niedowidzących o zawartości konkretnej ilustracji. Tym samym `alt` jest jednym z **podstawowych elementów [<i>dostępności stron WWW</i>](https://pl.wikipedia.org/wiki/Dost%C4%99pno%C5%9B%C4%87_(WWW))**.
 
 ```html
 <img src="images/example-img.jpg" alt="Uczymy się kodować">
@@ -197,4 +201,4 @@ Za pomocą znacznika `<ul>` definiujemy listy nieuporządkowanych elementów, na
 
 Pomimo, że najbardziej intuicyjnym (i oczywiście poprawnym) przypadkiem użycia list jest wyliczenie w tekście, znaczników listy możemy używać na przykład do definiowania elementów menu strony.
 
-Powyżej przedstawiliśmy Wam najczęściej używane znaczniki - a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/en/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.
+Powyżej przedstawiliśmy Wam najczęściej używane znaczniki – a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/en/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.

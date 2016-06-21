@@ -18,18 +18,18 @@ p {
 }
 ```
 
-W powyższy sposób ustawiamy kolor tekstu wszystkich paragrafów na stronie na niebieski. Z tego przykładu łatwo wysnuć wniosek, że za pomocą CSS-a możemy wybierać elementy podając nazwy znaczników. Nie jest to jednak jedyny sposób - zapoznajmy się z kilkoma podstawowymi rodzajami **selektorów CSS**.
+W powyższy sposób ustawiamy niebieski kolor tekstu dla wszystkich akapitów na stronie. Z tego przykładu łatwo wysnuć wniosek, że za pomocą CSS-a możemy wybierać elementy podając nazwy znaczników. Nie jest to jednak jedyny sposób. Zapoznajmy się z kilkoma podstawowymi rodzajami <b>selektorów CSS</b>.
 
 ## Podstawowe selektory
 
 Elementy na stronie można wybierać na bardzo różne sposoby. W tym rodziale poznamy podstawowe i najczęściej używane selektory CSS, czyli:
 
-- nazwa tagu (`tagname`)
-- klasa (`.classname`)
-- ID (`#idname`)
-- atrybut (`[attr=value]`)
+- nazwę tagu (`tagname`),
+- klasę (`.classname`),
+- ID (`#idname`),
+- atrybut (`[attr=value]`).
 
-Selektor wybierający element na podstawie tagu już przed chwilą widzieliśmy. Patrząc na selektory ID oraz atrybutu zapewne zaczyna już coś Wam świtać - oznacza to, że możemy wybierać elementy również bazując na wartościach ich atrybutów `id` oraz obecności innych atrybutów. Jedyny rodzaj, który pewnie wydaje się w tej chwili tajemniczy to *klasa*.
+Selektor wybierający element na podstawie tagu już przed chwilą widzieliśmy. Patrząc na selektory ID oraz atrybutu zapewne zaczyna już coś Wam świtać. Oznacza to, że możemy wybierać elementy również bazując na wartościach ich atrybutów `id` oraz obecności innych atrybutów. Jedyny rodzaj, który pewnie wydaje się w tej chwili tajemniczy to <i>klasa</i>.
 
 ### Klasa
 
@@ -41,7 +41,7 @@ Przyjrzyjmy się przykładowemu elementowi strony:
 
 Obok znanych już Wam atrybutów `type` oraz `id` pojawił się nowy: `class`. Jest on bardzo ważny w kontekście stylowania.
 
-W zasadzie jedynym celem atrybutu `class` jest nadanie naszemu elementowi *identyfikatora*, który będzie służył jako selektor. Pewnie pomyślicie teraz *"ale przecież on ma już identyfikator `id`!"*. Słusznie, jednak wartość atrybutu `class` nie musi być unikalna w zakresie dokumentu. Tę samą wartość możemy nadać więcej niż jednemu elementowi, nie muszą też być one tego samego rodzaju.
+W zasadzie jedynym celem atrybutu `class` jest nadanie naszemu elementowi <i>identyfikatora</i>, który będzie służył jako selektor. Pewnie pomyślicie teraz "ale przecież on ma już identyfikator `id`!". Słusznie, jednak wartość atrybutu `class` nie musi być unikalna w zakresie dokumentu. Tę samą wartość możemy nadać więcej niż jednemu elementowi, nie muszą też być one tego samego rodzaju.
 
 ```html
 <body>
@@ -93,15 +93,19 @@ Nadajmy tekstowi w naszej kontrolce kolor czerwony, odnosząc się do niego po `
 }
 ```
 
-Przypomnijmy, że w jednym dokumencie wartości atrybutu `id` powinny być unikalne. W związku z tym style zawarte wewnątrz tego selektora nie są zbyt reużywalne - możemy je zastosować tylko dla jednego, konkretnego elementu na stronie.
+Przypomnijmy, że w jednym dokumencie wartości atrybutu `id` powinny być unikalne. W związku z tym style zawarte wewnątrz tego selektora nie są zbyt reużywalne – możemy je zastosować tylko dla jednego, konkretnego elementu na stronie.
+
+> #### Important::Ważne
+>
+> Choć stylowanie po atrybucie `id` jest możliwe, od dawna jest uważane za [złą praktykę](http://forum.pasja-informatyki.pl/109776/html-class-czy-id?show=109816#a109816).
 
 ### Atrybut
 
-Stylować można również elementy zawierające konkretny atrybut. Dobrym przykładem jest np. tag `<input type="text">`. W tym wypadku deklaracja CSS będzie dotyczyła kontrolek `input` typu text. 
+Stylować można również elementy zawierające konkretny atrybut. Dobrym przykładem jest np. tag `<input type="text">`. W tym wypadku deklaracja CSS będzie dotyczyła kontrolek `input` typu text.
 
 ```css
 input[type="text"] {
-  border: 2px solid blue; 
+  border: 2px solid blue;
 }
 ```
 W wyniku powyższego kodu do kontrolki zostanie dodana ramka o grubości 2px i kolorze niebieskim.
@@ -121,14 +125,14 @@ border-color: blue;
 
 ## Podstawowe właściwości CSS i ich wartości
 
-CSS umożliwia przypisanie do HTML-owych elementów całej palety różnych właściwości - od koloru tekstu, tła, przez zastosowanie dowolnego kroju pisma, dodania cieniowania, gradientu  aż do definiowania pozycji. W tym rozdziale zajmiemy się tymi najbardziej podstawowymi. Inne poznamy na kolejnych zajęciach. Wszystkich chętnych, którzy już teraz chcą zagłębić się w temacie CSS-owych właściwości zapraszamy na <a href="http://www.quackit.com/css/properties/" target="_blank">tę stronę</a>, choć podobnych źródeł w tym temacie znajdziecie jeszcze więcej.
+CSS umożliwia przypisanie do HTML-owych elementów całej palety różnych właściwości: od koloru tekstu, tła, przez zastosowanie dowolnego kroju pisma, dodania cieniowania, gradientu, aż do definiowania pozycji. W tym rozdziale zajmiemy się tymi najbardziej podstawowymi. Inne poznamy na kolejnych zajęciach. Wszystkich chętnych, którzy już teraz chcą zagłębić się w temacie CSS-owych właściwości, zapraszamy na <a href="http://www.quackit.com/css/properties/" target="_blank">stronę QuackIt.com</a>, choć podobnych źródeł w tym temacie znajdziecie jeszcze więcej.
 
 ### Kolorowanie tekstu (`color`)
 
-Służy nam do tego właściwość `color`. Najczęściej wartości kolorów definiuje się w kodzie **heksadecymalnym** (**hex**), czyli szestnastkowym z charakterystycznym znakiem `#`. Kody te pobiera się z tzw. <i>color pickerów</i>, np. <a href="http://htmlcolorcodes.com/" target="_blank">tutaj</a>. w programach graficznych lub innych narzędzi. Jeśli zainteresowaliście się kodem heksadecymalnym więcej do poczytania <a href="https://pl.wikipedia.org/wiki/Kolory_w_Internecie#Zapis_szesnastkowy">tutaj</a>.
+Służy nam do tego właściwość `color`. Najczęściej wartości kolorów definiuje się w kodzie <i>heksadecymalnym</i> (<i>hex</i>), czyli szestnastkowym z charakterystycznym znakiem `#`. Kody te pobiera się z tzw. <i>color pickerów</i>, np. <a href="http://htmlcolorcodes.com/" target="_blank">na stronie HTMLColorCodes.com</a>, w programach graficznych lub innych narzędziach. Jeśli zainteresowaliście się kodem heksadecymalnym, więcej do poczytania <a href="https://pl.wikipedia.org/wiki/Kolory_w_Internecie#Zapis_szesnastkowy">na Wikipedii</a>.
 
 W CSS istnieją też [predefiniowane kolory](https://developer.mozilla.org/en/docs/Web/CSS/color_value) które możemy przypisać do elementów po prostu podając ich nazwę, np. `color: blue;` lub `color: salmon;`.
-Poza kodem heksadecymalnym i predefiniowanymi nazwami, możemy także przypisywać kolory poprzez zapis **rgb** (kanały <i>red, green</i> oraz <i>blue</i>), hsl (<i>**hue**</i> - barwa, <i>saturation</i> - nasycenie, <i>lightness</i> - jasność) czy nawet **rgba** i **hsla** (z uwzględnionym kanałem <i>alfa</i>, czyli kanałem odpowiadającym za stopień przezroczystości). 
+Poza kodem heksadecymalnym i predefiniowanymi nazwami, możemy także przypisywać kolory poprzez zapis <b>rgb</b> (kanały <i>red</i>, <i>green</i> oraz <i>blue</i>), hsl (<i>hue</i> – barwa, <i>saturation</i> – nasycenie, <i>lightness</i> – jasność) czy nawet <b>rgba</b> i <b>hsla</b> (z uwzględnionym kanałem <i>alfa</i>, czyli kanałem odpowiadającym za stopień przezroczystości).
 
 ```css
 p {
@@ -137,16 +141,16 @@ p {
 }
 ```
 
-<p style="color: #f14b5c;">To jest paragraf o kolorze pomarańczowym.</p>
+<p style="color: #f14b5c;">To jest akapit o kolorze pomarańczowym.</p>
 
 
 > #### Important::Ważne
 >
-> W CSS-owych kolorach występuje również wartość `transparent`, czyli przezroczysty. 
+> W CSS-owych kolorach występuje również wartość `transparent`, czyli przezroczysty.
 
 
 ### Kolorowanie tła (`background-color`)
-Służy do tego właściwość: `background-color: #fff;`
+Służy do tego właściwość `background-color`, np.:
 
 ```css
 p {
@@ -159,7 +163,7 @@ p {
 > #### Important::Ważne
 >
 > Zauważyliście już z pewnością, że wewnątrz kodu danego selektora możemy podać wartości więcej niż jednej właściwości.
-> Pamiętajcie o tym, aby każdą linijkę kodu z deklaracją właściwości kończyć średnikiem - `;`.
+> Pamiętajcie o tym, aby każdą linijkę kodu z deklaracją właściwości kończyć średnikiem – `;`.
 > ```css
 /* deklaracja poprawna */
 .good {
@@ -177,16 +181,16 @@ p {
 ```
 > Niedomknięcie linii średnikiem spowoduje błąd w interpretacji arkusza stylów i w takiej sytuacji przeglądarka zignoruje źle zapisane deklaracje.
 >
-> Żeby uniknąć sytuacji, kiedy łamiecie sobie głowę zastanawiając się *"czemu mój kod nie działa?"*, bądźcie bardzo skrupulatni w domykaniu linii średnikami!
+> Żeby uniknąć sytuacji, kiedy łamiecie sobie głowę zastanawiając się "czemu mój kod nie działa?", bądźcie bardzo skrupulatni w domykaniu linii średnikami!
 
 ### Obramowanie (`border`)
 
-Za obramowanie odpowiada właściwość `border`, której przypisać możemy grubość, rodzaj / styl linii (przerywana, ciągła, kropkowana) i kolor. Przy nadawaniu wartości powinna być zachowana powyższa kolejność, czyli: grubość, styl, kolor:
+Za obramowanie odpowiada właściwość `border`, której przypisać możemy grubość, rodzaj/styl linii (przerywana, ciągła, kropkowana…) i kolor. Przy nadawaniu wartości powinna być zachowana powyższa kolejność, czyli: grubość, styl, kolor:
 
 ```css
  border: 2px solid #f14b5c;
 ```
-Dostępne style linii to m.in : `solid` (ciągła), `dotted` (kropkowana), `dashed` (przerywana) czy `double` (podwójna).
+Dostępne style linii to m.in.: `solid` (ciągła), `dotted` (kropkowana), `dashed` (przerywana) czy `double` (podwójna).
 
 ```css
 p {
@@ -195,10 +199,10 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 <!-- ### Dodawanie dopełnień (`padding`)
-Dopełnienie definiowane jest jako odległość między obramowaniem elementu a jego zawartością. Dla każdej strony mogą być to inne wartości. 
+Dopełnienie definiowane jest jako odległość między obramowaniem elementu a jego zawartością. Dla każdej strony mogą być to inne wartości.
 Np 'padding: 5px 10px 15px 20px', oznacza, że dopełnienie od góry wynosi 5px, od prawej 10px, od dołu 15px a od góry 20px. Żeby łatwiej było Ci wpisywać te wartości zapamiętaj, że są one definiowane zgodnie z kierunkiem wskazówek zegara (zaczynając od góry, prawo, dół, lewo).
 
 ```css
@@ -224,10 +228,11 @@ Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b
 ### Wyrównanie tekstu (`text-align`)
 
 Tekst może zostać wyrównany na trzy różne sposoby:
-- do prawej `text-align: right;`
-- do lewej `text-align: left;`
-- do środka `text-align: center;`
-- wyjustowany `text-align: justify;`
+- do prawej (`text-align: right;`),
+- do lewej (`text-align: left;`),
+- do środka (`text-align: center;`).
+
+Dodatkowo tekst może być wyjustowany (`text-align: justify;`).
 
 ```css
 p {
@@ -237,13 +242,13 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 ### Odmiana (grubość) pisma (`font-weight`)
 
-Ta właściwość okaże się przydatna zwłaszcza w kolejnym rozdziale, kiedy będziemy wybierać niestandardowe rodziny fontów. Wtedy zauważycie, że dany krój może mieć różne grubości. CSS umożliwia ostylowanie tekstu różnymi odmianami. 
-Wartości `font-weight` mogą być liczbami np. <i>100, 300, 500, 700</i> lub określone słownie np. <i>normal, bold, light, lighter</i>.
-Pamiętajmy tylko, że nie każdy, wybrany przez nas krój pisma posiadać będzie różne odmiany - w tych przypadkach właściwość CSS w żaden sposób nie wpłynie na zmianę grubości.
+Ta właściwość okaże się przydatna zwłaszcza w kolejnym rozdziale, kiedy będziemy wybierać niestandardowe rodziny fontów. Wtedy zauważycie, że dany krój może mieć różne grubości. CSS umożliwia ostylowanie tekstu różnymi odmianami danego fonta.
+Wartości `font-weight` mogą być liczbami, np. <i>100, 300, 500, 700</i>, lub określone słownie, np. <i>normal, bold, light, lighter</i>.
+Pamiętajmy tylko, że nie każdy wybrany przez nas krój pisma posiadać będzie różne odmiany – w tych przypadkach właściwość CSS w żaden sposób nie wpłynie na zmianę grubości.
 
 ```css
 p {
@@ -254,13 +259,13 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="font-weight: bold; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="font-weight: bold; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
-Czy zauważyliście, w porównaniu do paragrafu z zagadanienia wyżej, że font stał się grubszy?
+Czy zauważyliście, w porównaniu do akapitu z zagadanienia wyżej, że font stał się grubszy?
 
 ### Stopień (rozmiar) pisma (`font-size`)
 
-Możemy przypisywać tekstom różne rozmiary pisma. Istnieje kilka jednostek: `px` (piksele), `rem`, `em` czy nawet `%` procenty. Na razie skupmy się na pikselach, a znaczenie pozostałych jednostek wyjaśnimy już niebawem. 
+Możemy przypisywać tekstom różne rozmiary pisma. Istnieje kilka jednostek: `px` (piksele), `rem`, `em` czy nawet `%` (procenty). Na razie skupmy się na pikselach, a znaczenie pozostałych jednostek wyjaśnimy już niebawem.
 
 ```css
 p {
@@ -271,11 +276,11 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="font-size: 36px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="font-size: 36px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 ### Styl fontu (`font-style`)
 
-Służy do tego właściwość: `font-style: italic;`, gdzie italic to nic innego jak kursywa. Lub `font-style: normal;`.
+Służy do tego właściwość: `font-style: italic;`, gdzie `italic` to nic innego jak kursywa. Normalny tekst uzyskamy, używając `font-style: normal;`.
 
 ```css
 p {
@@ -287,7 +292,7 @@ p {
   border: 2px solid #f14b5c;
 }
 ```
-<p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 Pozostałe właściwości CSS poznamy już niedługo!
 
@@ -314,24 +319,26 @@ Pierwszym z nich jest dołączenie zewnętrznego pliku z rozszrzeniem `.css`, w 
 
 ```html
 <link href="tu wpisz ścieżkę do pliku css" rel="stylesheet">
-``` 
+```
+
 Znacznik `<link>` znajduje się w części `<head>` naszego dokumentu HTML.
+
 ```html
 <html lang="pl-PL">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Darmowe warsztaty z programowania HTML i CSS.">
-    <title>The Awwwesomes - Darmowe warsztaty z programowania HTML & CSS</title>
+    <title>The Awwwesomes – Darmowe warsztaty z programowania HTML & CSS</title>
     <!--poniżej załączony jest plik z arkuszami stylów, czyli plik CSS-->
-    <link rel="stylesheet" href="/styles/website.css"> 
+    <link rel="stylesheet" href="/styles/website.css">
   </head>
   <body>
 ```  
 
 > #### Important::Ważne
 >
-> Kolejność załączania plików CSS ma znaczenie. Może zdarzyć się sytuacja, że Waszym projekcie dołączać będziecie do strony więcej niż jeden plik CSS. Kiedy w obu z nich będą występować te same selektory, lecz zawierające różne właściwości, przeglądarka z pierwszeństwem potraktuje ten selektor, który został załączony jako ostatni. 
+> Kolejność załączania plików CSS ma znaczenie. Może zdarzyć się sytuacja, że Waszym projekcie dołączać będziecie do strony więcej niż jeden plik CSS. Kiedy w obu z nich będą występować te same selektory, lecz zawierające różne właściwości, przeglądarka z pierwszeństwem potraktuje ten selektor, który został załączony jako ostatni.
 > Zilustrujmy to przykładem. Do pliku `index.html` dołączone są następujące pliki css:
 >```html
 <link href="/styles/style-1.css" rel="stylesheet">
@@ -342,18 +349,18 @@ Znacznik `<link>` znajduje się w części `<head>` naszego dokumentu HTML.
 h1 {
   color: red;
 }
-``` 
+```
 >A w pliku `style-2.css`
 >```css
 h1 {
   color: green;
 }
-``` 
+```
 >to przeglądarka nada naszemu nagłówkowi kolor zielony, gdyż występuje on jako *ostatni*.
 
 ## Inne sposoby dołączania stylów
 
-Poznaliśmy już dodawanie stylów poprzez dołączanie zewnętrznego pliku - pliku CSS. Kolejną metodą jest napisanie CSS-owych deklaracji między znacznikami `<style> </style>` w sekcji `<head>`, jest to tzw. **arkusz osadzony** w dokumencie HTML.
+Poznaliśmy już dodawanie stylów poprzez dołączanie zewnętrznego pliku CSS. Kolejną metodą jest napisanie CSS-owych deklaracji między znacznikami `<style> </style>` w sekcji `<head>`. Jest to tzw. <b>arkusz osadzony</b> w dokumencie HTML.
 
 Przykładowo
 ```html
@@ -362,7 +369,7 @@ Przykładowo
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Darmowe warsztaty z programowania HTML i CSS.">
-    <title>The Awwwesomes - Darmowe warsztaty z programowania HTML & CSS</title>
+    <title>The Awwwesomes – Darmowe warsztaty z programowania HTML & CSS</title>
     <!--poniżej załączony jest plik z arkuszami stylów, czyli plik CSS-->
     <style>
         p {
@@ -373,27 +380,27 @@ Przykładowo
     </style>
   </head>
   <body>
-    <p>To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+    <p>To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
   </body>
 </html>
 ```
 
-Trzecia metoda - *inline*'owe dołączanie stylów, czyli **styl wpisany**. jest raczej rzadko stosowana. Style wpisujemy po prostu w danym tagu.
+Trzecia metoda – <i>inline'owe</i> dołączanie stylów, czyli <i>styl wpisany</i> – jest raczej rzadko stosowana. Style wpisujemy po prostu w danym tagu.
 
 ```html
- <p style="color: #f14b5c;">Ten paragraf jest ostylowany poprzez styl wpisany.</p>
+ <p style="color: #f14b5c;">Ten akapit jest ostylowany poprzez styl wpisany.</p>
  ```
 
 Każdą kolejną właściwość dodajemy po średniku:
 
 ```html
-<p style="color: #f14b5c; background-color: #FFE7EC;">Ten paragraf jest ostylowany poprzez styl wpisany.</p>
+<p style="color: #f14b5c; background-color: #FFE7EC;">Ten akapit jest ostylowany poprzez styl wpisany.</p>
 ```
 
 > #### Important::Ważne
 >
-> Dlaczego styl wpisany, czyli połączenie tagu i właściowści CSS-owych jest rzadko stosowane? 
-Odseparowanie HTML-a oraz CSS-a zdecydowanie ułatwia życie np. przy późniejszych modyfikacjach kodu i uznane jest za bardziej elegancką metodę. Dlatego też starajmy się pisać style w oddzielnym pliku.
+> Dlaczego styl wpisany, czyli połączenie tagu i właściowści CSS-owych, jest rzadko stosowane?
+Odseparowanie HTML-a od CSS-a zdecydowanie ułatwia życie np. przy późniejszych modyfikacjach kodu i uznane jest za bardziej elegancką metodę. Dlatego też starajmy się pisać style w oddzielnym pliku.
 
 Zobaczyliśmy, jak wyglądają proste selektory i właściwości CSS, zatem pora na pierwsze ćwiczenie!
 
@@ -401,19 +408,19 @@ Zobaczyliśmy, jak wyglądają proste selektory i właściwości CSS, zatem pora
 >
 > W tym ćwiczeniu nauczysz się jak poprawnie załączać plik CSS do Twojej strony.
 >
-> - Otwórz folder z projektem `planty`, zawierający podstawowy kod z poprzednich zajęć (patrz [Ćwiczenie 6](../html-document-structure/README.md). 
-> - Stwórz pusty plik `style.css` i zapisz go do nowo utworzonego folderu `/styles`. 
-> - Podepnij nowo utworzony plik CSS do `index.html`. W tym celu zastosuj znacznik `<link href="ścieżka do Twojego pliku css" rel="stylesheet">` z odpowiednio uzupełnionymi atrybutami. Przy okazji przećwiczysz ścieżki względne. 
+> - Otwórz folder z projektem `planty`, zawierający podstawowy kod z poprzednich zajęć (patrz [Ćwiczenie 6](../html-document-structure/README.md).
+> - Stwórz pusty plik `style.css` i zapisz go do nowo utworzonego folderu `/styles`.
+> - Podepnij nowo utworzony plik CSS do `index.html`. W tym celu zastosuj znacznik `<link href="ścieżka do Twojego pliku css" rel="stylesheet">` z odpowiednio uzupełnionymi atrybutami. Przy okazji przećwiczysz ścieżki względne.
 
->**Ważne** - znacznik `<link>` dodawany jest pomiędzy znacznikami `<head>` i `</head>`, najlepiej po znacznikach `<meta>`. 
+>**Ważne!** Znacznik `<link>` dodawany jest pomiędzy znacznikami `<head>` i `</head>`, najlepiej po znacznikach `<meta>`.
 
-Jak sprawdzić czy plik CSS został poprawnie dołączony do strony? Najlepiej poprzez zweryfikowanie czy zdefiniowane przez nas style prawidłowo się wyświetlają. Plik `style.css` jest pusty. Pora zatem na napisanie pierwszych CSS-owych deklaracji!
+Jak sprawdzić, czy plik CSS został poprawnie dołączony do strony? Najlepiej poprzez zweryfikowanie, czy zdefiniowane przez nas style prawidłowo się wyświetlają. Plik `style.css` jest pusty. Pora zatem na napisanie pierwszych CSS-owych deklaracji!
 
 > #### Exercise::Ćwiczenie 8
 >
 > W tym ćwiczeniu postawisz swoje pierwsze CSS-owe kroki. Nareszcie Twój kod HTML nabierze życia i zmieni kolory! Gotowy?
-> - Zacznijmy od stworzenia nowego folderu z `exercise-8` i pliku `index.html` zawartego w tym katalogu. 
-> - Stwórz szkielet strony na podstawie poniższego widoku, a następnie ostyluj go. 
+> - Zacznijmy od stworzenia nowego folderu z `exercise-8` i pliku `index.html` zawartego w tym katalogu.
+> - Stwórz szkielet strony na podstawie poniższego widoku, a następnie ostyluj go.
 
 ><div class="example-wrapper" style="background: #ffcbd7; ">
   <article>
@@ -440,8 +447,3 @@ Jak sprawdzić czy plik CSS został poprawnie dołączony do strony? Najlepiej p
     <button type="submit" style="background: #282f5f; color:#fff !important; border: 0; font-size: 20px; ">Prześlij</button>
   </form>
 </div>
-
-
-
-
-

@@ -1,6 +1,6 @@
 ## Jak wyśrodkować elementy w pionie i poziomie?
 
-Częstym problemem w kodowaniu layoutu strony jest środkowanie elementów. Poinstruowanie przeglądarki, aby umieściła nasz wybrany element wydaje się dość skomplikowanym zadaniem.
+Częstym problemem w kodowaniu layoutu strony jest środkowanie elementów. Poinstruowanie przeglądarki, aby umieściła nasz wybrany element w konkretnym miejscu, wydaje się dość skomplikowanym zadaniem.
 
 W tym rodziale postaramy się pokazać Wam, że nie jest to wcale takie trudne i wystarczy poznać kilka prostych technik, aby stać się mistrzem środkowania w CSS.
 
@@ -44,8 +44,8 @@ To, jakiej techniki środkowania w poziomie użyć zależy w dużej mierze od te
 ```
 
 ```css
-/* 
-  Ważne, aby wyśrodkowanie 
+/*
+  Ważne, aby wyśrodkowanie
   zdefiniować na elemencie otaczającym
 */
 .container {
@@ -68,7 +68,7 @@ To, jakiej techniki środkowania w poziomie użyć zależy w dużej mierze od te
 
 ### Środkowanie w pionie
 
-Środkowanie elementów w pionie jest nieco bardziej skomplikowane, niż środkowanie w poziomie. Techniki środkowania w pionie dla elementów liniowych wymagają już nieco wprawy i zaawansowania w CSS, to samo dotyczy elementów blokowych, których wymiary nie są określone wprost. Wszystkich ambitnych, którzy chcą zapoznać się z tajnikami środkowania, odsyłamy do [tego artykułu](https://css-tricks.com/centering-css-complete-guide/).
+Środkowanie elementów w pionie jest nieco bardziej skomplikowane, niż środkowanie w poziomie. Techniki środkowania w pionie dla elementów liniowych wymagają już nieco wprawy i zaawansowania w CSS, to samo dotyczy elementów blokowych, których wymiary nie są określone wprost. Wszystkich ambitnych, którzy chcą zapoznać się z tajnikami środkowania, odsyłamy do [artykułu na CSS Tricks](https://css-tricks.com/centering-css-complete-guide/).
 
 Dowiedzmy się zatem, w jaki sposób wyśrodkować element blokowy o znanej wysokości.
 
