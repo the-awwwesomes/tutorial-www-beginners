@@ -1,17 +1,17 @@
 ## Pozycjonujemy elementy na stronie
 
-Domyślnie elementy na stronie umieszczane są jeden za drugim (z uwzględnieniem wartości właściwości `display`). Czasem jednak zdarza się, że potrzebujemy uzyskać efekt nałożenia jednego elementu na drugi bądź przesunięcia. Na szczęście język CSS jest wyposażony w narzędzia, które nam to umożliwiają - są to właściwości związane z **pozycjonowaniem**.
+Domyślnie elementy na stronie umieszczane są jeden za drugim (z uwzględnieniem wartości właściwości `display`). Czasem jednak zdarza się, że potrzebujemy uzyskać efekt nałożenia jednego elementu na drugi bądź przesunięcia. Na szczęście język CSS jest wyposażony w narzędzia, które nam to umożliwiają. Są to właściwości związane z <b>pozycjonowaniem</b>.
 
 Do pozycjonowania służy właściwość `position`, która może przyjmować poniższe wartości:
 
-- `static` - jest to wartość domyślna dla każdego elementu, nie trzeba deklarować jej wprost.
-- `relative` - zmienia położenie elementu względem niego samego.
-- `absolute` - wyjmuje element z jego pierwotnego położenia i umieszcza go we wskazanym miejscu względem najbliższego kontenera, który ma zdefiniowane `position: relative`.
-- `fixed` - umieszcza element na stałej pozycji względem okna przeglądarki (*viewport*). Dobrym przykładem użycia jest menu na stałe "przyklejone" u góry strony.
+- `static` – jest to wartość domyślna dla każdego elementu, nie trzeba deklarować jej wprost.
+- `relative` – zmienia położenie elementu względem niego samego.
+- `absolute` – wyjmuje element z jego pierwotnego położenia i umieszcza go we wskazanym miejscu względem najbliższego kontenera, który ma zdefiniowane `position: relative`.
+- `fixed` – umieszcza element na stałej pozycji względem okna przeglądarki (<i>viewport</i>). Dobrym przykładem użycia jest menu na stałe "przyklejone" u góry strony.
 
 Oprócz deklaracji `position` musimy również zadeklarować wartości współrzędnych, dzięki którym możemy precyzyjnie określić położenie naszego elementu: `top`, `bottom`, `right` oraz `left`.
 
-Na prostych przykładach zobaczmy, jak opanować pozycjonowanie w CSS.
+Na prostych przykładach zobaczymy, jak opanować pozycjonowanie w CSS.
 
 ```html
 <div class="container">
@@ -45,7 +45,7 @@ Na prostych przykładach zobaczmy, jak opanować pozycjonowanie w CSS.
   <div style="width:150px;height:150px;background:salmon;margin:5px"></div>
 </div>
 
-Powyżej przykład elementu wypozycjonowamego relatywnie (czyli względem samego siebie). 
+Powyżej przykład elementu wypozycjonowamego relatywnie (czyli względem samego siebie).
 
 Pozycjonowanie absolutne wymaga od nas nieco ostrożności, jednak jeśli wiemy, jak działa, nie wpadniemy w żadną pułapkę.
 
@@ -81,7 +81,7 @@ Pozycjonowanie absolutne wymaga od nas nieco ostrożności, jednak jeśli wiemy,
   <div style="width:150px;height:150px;background:salmon;margin:5px"></div>
 </div>
 
-Powyższy element został wyjęty ze swojego miejsca (jak widać, nie pozostawia również po sobie wolnej przestrzeni - cóż za oszczędność!) i umieszczony zupełnie gdzie indziej - w prawym górnym rogu strony.
+Powyższy element został wyjęty ze swojego miejsca (jak widać, nie pozostawia również po sobie wolnej przestrzeni – cóż za oszczędność!) i umieszczony zupełnie gdzie indziej, w prawym górnym rogu strony.
 
 Jeśli używamy pozycjonowania absolutnego nieostrożnie, nasz element może wylądować w dość niespodziewanym miejscu. Musimy więc pamiętać, że każdy element z `position: absolute` jest pozycjonowany **względem** jakiegoś innego elementu. Takim odniesieniem jest najbliższy element, któremu nadaliśmy `position: relative`. Musimy też pamiętać, że element pozycjonowany absolutnie musi znajdować się **wewnątrz** elementu z `position: relative`.
 
@@ -136,4 +136,3 @@ Jeśli używamy pozycjonowania absolutnego nieostrożnie, nasz element może wyl
   <div style="width:100%;height:100px;margin:5px 0;background:salmon;position:relative;"><div style="width:50px;height:50px;background:lightblue;position:absolute;top:0;right:0"></div></div>
   <div style="width:100%;height:100px;margin:5px 0;background:salmon"></div>
 </div>
-

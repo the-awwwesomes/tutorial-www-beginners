@@ -1,11 +1,11 @@
 ## Opływanie elementów
 
-Kolejną właściwością, która pomaga nam w budowaniu layoutów jest `float`, który definiuje **opływanie** elementów.
+Kolejną właściwością, która pomaga nam w budowaniu layoutów, jest `float`, który definiuje <b>opływanie</b> elementów.
 
 ```html
 <p>
   <img src="latte.jpg" alt="cup of latte" class="latte">
-  Cred paleo whatever, portland distillery microdosing pabst. Salvia seitan cardigan kinfolk yuccie, chia umami viral blog. Waistcoat tilde next level, tote bag stumptown four loko franzen. Small batch vice swag, offal chia kickstarter helvetica pitchfork. 
+  Cred paleo whatever, portland distillery microdosing pabst. Salvia seitan cardigan kinfolk yuccie, chia umami viral blog. Waistcoat tilde next level, tote bag stumptown four loko franzen. Small batch vice swag, offal chia kickstarter helvetica pitchfork.
   <img src="bicycle.jpg" alt="hipster bicycle" class="bicycle">
   Cornhole schlitz master cleanse, fap flannel plaid you probably haven't heard of them flexitarian tousled echo park fanny pack viral. Bushwick paleo pour-over, schlitz cred 3 wolf moon try-hard flexitarian chartreuse sustainable vegan beard. Asymmetrical pabst tumblr neutra helvetica.
 </p>
@@ -24,7 +24,7 @@ Kolejną właściwością, która pomaga nam w budowaniu layoutów jest `float`,
 <div class="example-wrapper">
   <p>
     <img src="../images/float-latte.jpg" alt="cup of latte" style="float:left">
-    Cred paleo whatever, portland distillery microdosing pabst. Salvia seitan cardigan kinfolk yuccie, chia umami viral blog. Waistcoat tilde next level, tote bag stumptown four loko franzen. Small batch vice swag, offal chia kickstarter helvetica pitchfork. 
+    Cred paleo whatever, portland distillery microdosing pabst. Salvia seitan cardigan kinfolk yuccie, chia umami viral blog. Waistcoat tilde next level, tote bag stumptown four loko franzen. Small batch vice swag, offal chia kickstarter helvetica pitchfork.
     <img src="../images/float-bicycle.jpg" alt="hipster bicycle" style="float:right">
     Cornhole schlitz master cleanse, fap flannel plaid you probably haven't heard of them flexitarian tousled echo park fanny pack viral. Bushwick paleo pour-over, schlitz cred 3 wolf moon try-hard flexitarian chartreuse sustainable vegan beard. Asymmetrical pabst tumblr neutra helvetica.
   </p>
@@ -45,7 +45,7 @@ Powyższy przykład demonstruje klasyczny przypadek użycia `float` i odnosi si�
 ```
 > ```css
 .item {
-  background: lightgreen; 
+  background: lightgreen;
   width: 100px;
   height: 100px;
   margin: 5px;
@@ -64,7 +64,7 @@ Powyższy przykład demonstruje klasyczny przypadek użycia `float` i odnosi si�
   <div style="float:left;width:100px;height:100px;margin:5px;background:lightblue;clear:both"></div>
 </div>
 >
-> Nasz ostatni element otrzymał właściwość `clear: both`, co oznacza, że zamiast opływać sąsiadujące elementy - i zostać umieszczony w tym samym rzędzie, co zielone kwadraty - pojawił się w następnej linii.
+> Nasz ostatni element otrzymał właściwość `clear: both`, co oznacza, że zamiast opływać sąsiadujące elementy – i zostać umieszczony w tym samym rzędzie, co zielone kwadraty – pojawił się w następnej linii.
 >
 > Spójrzmy jeszcze na przykład, gdzie wewnątrz kontenera znajdują się elementy z `float`.
 >
@@ -82,7 +82,7 @@ Powyższy przykład demonstruje klasyczny przypadek użycia `float` i odnosi si�
   padding: 3px;
 }
 .item {
-  background: lightgreen; 
+  background: lightgreen;
   width: 100px;
   height: 100px;
   margin: 5px;
@@ -126,7 +126,7 @@ Powyższy przykład demonstruje klasyczny przypadek użycia `float` i odnosi si�
   </div>
 </div>
 >
-> Niestety, nie jest to wcale idealne rozwiązanie. Nie chcemy w końcu zaśmiecać naszej strony pustymi elementami użytymi tylko ze względu na wygląd. Istnieje nieco lepszy sposób oparty na *pseudo-elementach* (co to takiego, dowiemy się już niebawem) - tzw. [*micro-clearfix*](http://nicolasgallagher.com/micro-clearfix-hack/).
+> Niestety, nie jest to wcale idealne rozwiązanie. Nie chcemy w końcu zaśmiecać naszej strony pustymi elementami użytymi tylko ze względu na wygląd. Istnieją nieco lepsze sposób, oparte na <i>pseudoelementach</i> (co to takiego, dowiemy się już niebawem) – tzw. [*micro-clearfix*](http://nicolasgallagher.com/micro-clearfix-hack/) – oraz [własności `overflow`](http://www.forumweb.pl/porady-i-tutoriale-www/css-clearowanie-czyli-problemy-z-float,47914).
 
 Opływanie w CSS często przydaje się do tworzenia całych layoutów oraz poszczególnych komponentów strony.
 
