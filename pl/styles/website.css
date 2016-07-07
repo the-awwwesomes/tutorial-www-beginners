@@ -113,6 +113,11 @@
   margin-right: 10px;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal code {
+  background-color: transparent;
+  padding: 0;
+}
+
 /* Code */ 
 
 .book .book-body .page-wrapper .page-inner section.normal pre *, 
