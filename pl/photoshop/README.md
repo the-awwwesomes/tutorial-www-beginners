@@ -1,8 +1,8 @@
-# Photoshop dla front-endowca
+# Photoshop dla frontendowca
 
-Wydawać by się mogło, że podział pracy pomiędzy koderem a projektantem graficznym jest już od dawna ustalony. Grafik tworzy w Photoshopie, a front-endowiec pisze kod. Jednak zawód front-endowca ma to do siebie, że kod jest ściśle powiązany z warstwą wizualną. Dlatego też dbałość o szczegóły i jak najwierniejsze odwzorowanie projektu graficznego są istotnymi cechami każdego kodera stron WWW.
+Wydawać by się mogło, że podział pracy pomiędzy koderem a projektantem graficznym jest już od dawna ustalony. Grafik tworzy w Photoshopie, a frontendowiec pisze kod. Jednak zawód frontendowca ma to do siebie, że kod jest ściśle powiązany z warstwą wizualną. Dlatego też dbałość o szczegóły i jak najwierniejsze odwzorowanie projektu graficznego są istotnymi cechami każdego kodera stron WWW.
 
-Bywa tak, że grafik szczegółowo opisuje programiście swój projekt wraz z rozmiarami poszczególnych elementów, wielkością tekstu, kolorami itp. Zdarzają się również sytuacje, kiedy grafik kończy pracę na stworzeniu pliku `.psd`, który następnie trafia do front-endowca. Zatem część dalszych działań związanych z wygenerowaniem zasobów tzw. <i>assetów</i> czy pomiarem elementów leży po stronie programisty. Właśnie dlatego zachęcamy Was do zapoznania się z podstawowymi możliwościami Photoshopa.
+Bywa tak, że grafik szczegółowo opisuje programiście swój projekt wraz z rozmiarami poszczególnych elementów, wielkością tekstu, kolorami itp. Zdarzają się również sytuacje, kiedy grafik kończy pracę na stworzeniu pliku `.psd`, który następnie trafia do frontendowca. Zatem część dalszych działań związanych z wygenerowaniem zasobów tzw. <i>assetów</i> czy pomiarem elementów leży po stronie programisty. Właśnie dlatego zachęcamy Was do zapoznania się z podstawowymi możliwościami Photoshopa.
 
 Zapraszamy na krótki kurs, dzięki któremu dowiemy się:
 <ul>
@@ -33,7 +33,7 @@ Dzięki temu od tej pory wszystkie wielkości prezentowane będą w pikselach.
 
 ## Sprawdzanie krojów pisma i wielkości fontu
 
-W celu spradzenia m.in. nazwy kroju, wielkości czy interlinii przyda się nam panel `Character`. Uruchamiamy go poprzez: `Window → Character`.
+W celu sprawdzenia m.in. nazwy kroju, wielkości czy interlinii przyda się nam panel `Character`. Uruchamiamy go poprzez: `Window → Character`.
 
 ![Uruchomienie okna "Character"][3]
 [3]: /images/ps-character.jpg
@@ -43,18 +43,18 @@ Powinno pokazać nam się nowe okno, zawierające detale dotyczące naszego teks
 ![Okno "Character"][4]
 [4]: /images/ps-character-panel.jpg
 
-Klikajc klawisz `T` automatycznie przechodzimy do narzędzia `Horizontal Type Tool`, oznaczonego charakterystycznym `T` w panelu narzędzi po lewej stronie.
+Klikając klawisz <kbd>T</kbd> automatycznie przechodzimy do narzędzia `Horizontal Type Tool`, oznaczonego charakterystycznym <kbd>T</kbd> w panelu narzędzi po lewej stronie.
 Dzięki temu możemy kliknąć w dany tekst i odczytać w panelu `Character`, jaki krój pisma został użyty, jaka jest wielkość itd.
-W panelu `Character` znajdziecie wszystko, co będzie potrzebne do wprowadzenia w akurszu stylów, czyli `font-family`, `font-size`, `font-style` oraz `line-height`.
-Wyjaśnijmy jeszcze, czym jest `line-height`. Jest to interlinia, którą możemy określać bezwględnie (w pikselach) lub względnie (w procentach), np.
+W panelu `Character` znajdziecie wszystko, co będzie potrzebne do wprowadzenia w arkuszu stylów, czyli `font-family`, `font-size`, `font-style` oraz `line-height`.
+Wyjaśnijmy jeszcze, czym jest `line-height`. Jest to interlinia, którą możemy określać bezwzględnie (w pikselach) lub względnie (w procentach), np.
 
 ````css
 	line-height: 150%;
 	line-height: 27px;
 ```
 
-
 ## Pomiar elementów
+
 Dowiedzieliśmy się już jak sprawdzać wielkość fontu. Pora teraz na obiekty – kontenery, ramki, obrazki.
 Do pomiaru innych elementów możemy skorzystać z linijki, czyli `Ruler Tool`, która znajduje się w panelu z narzędziami.
 
@@ -85,8 +85,6 @@ Należy jedynie kliknąć na element wykorzystując `Path Selection Tool`.
 [9]: /images/ps-path-selection.gif
 
 
-
-
 > #### Important::Ważne
 >
 > Ze względu na pojawienie się wysokiej rozdzielczości, czyli <i>Retiny</i>, w komputerach Mac grafiki zaczęto przygotowywać w "podwójnej gęstości". Na czym to polega?
@@ -106,13 +104,12 @@ Przykładowo: jeśli tekst "because we care for plants" ma wielkość `36px`, do
 `font-size: 18px;  /* ponieważ 36px/2 = 18px */`.
 
 
-
-## Wygenerowanie assetów w Photoshop Creative Cloud
+## Generowanie assetów w Photoshop Creative Cloud
 
 Photoshop Creative Cloud umożliwia wygenerowanie assetów w bardzo prosty i szybki sposób. Wszystko opiera się na <b>warstwach</b> (ang. <i>layers</i>). Zanim przejdziemy do szczegółów warto zajrzeć do zawartości pliku `planty.psd` (plik znajduje się w <a href="../resources/planty-assets/planty-assets.zip">zaktualizowanej paczce z zasobami</a> ). Z reguły każdy z elementów – zdjęcia, obiekty, teksty – są tworzone w oddzielnej warstwie. Umożliwia to łatwą modyfikację poszczególnych elementów, jak i późniejsze łatwe zapisanie odseparowanych elementów na potrzeby zakodowania layoutu.
 
 ### Warstwy
-Spróbujmy zajrzeć co kryje się w poszczególnych warstawch, uruchamiając panel warstw: `Window → Layers`
+Spróbujmy zajrzeć co kryje się w poszczególnych warstwach, uruchamiając panel warstw: `Window → Layers`
 
 ![Panel z warstwami][10]
 [10]: /images/ps-layers-panel.jpg
@@ -124,7 +121,7 @@ Pora na wygenerowanie plików z naszego layoutu. Skorzystamy z funkcjonalności,
 
 Zwróć uwagę, czy opcja ta jest zaznaczona. Jeśli tak, to automatyczne generowanie assetów na podstawie nazwy warstw jest włączone. Możemy zatem przejść do kolejnego kroku.
 
-W wersji Photohop Creative Cloud mamy możliwość szybkiego zapisywania assetów z poziomu warstw. Wystarczy zmienić nazwę danej warsty np. z `flower-2` na `flower-2.png`, wtedy w folderze, gdzie znajduje się nasz plik .psd, zostaną automatycznie wygenerowane assety z zadaną przez nas nazwą i rozszerzeniem. Assety są zapisywane w podfolderze `planty-assets`. Sprawdźmy teraz, czy pojawił się tam plik z danym assetem.
+W wersji Photohop Creative Cloud mamy możliwość szybkiego zapisywania assetów z poziomu warstw. Wystarczy zmienić nazwę danej warstwy np. z `flower-2` na `flower-2.png`, wtedy w folderze, gdzie znajduje się nasz plik .psd, zostaną automatycznie wygenerowane assety z zadaną przez nas nazwą i rozszerzeniem. Assety są zapisywane w podfolderze `planty-assets`. Sprawdźmy teraz, czy pojawił się tam plik z danym assetem.
 
 
 !["Automatyczne generowanie assetów][11]

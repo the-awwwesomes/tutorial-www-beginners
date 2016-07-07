@@ -58,7 +58,7 @@ Tak, jak pokazaliśmy w przykładzie wyżej, znacznika `<nav>` używamy kiedy ch
 
 Znacznik `<aside>` pozwala nam na określenie danego elementu jako niepowiązanego ściśle tematycznie z główną zawartością strony, choć wciąż ważnego z punktu widzenia odbiorcy. Klasycznym przykładem są tu reklamy umieszczane na stronie.
 
-Tag `<article>` jest przydatny dla elementów takich jak artykuł na blogu lub stronie z wiadomościami, post na forum albo komentarz pozostawiony pod artykułem.
+Tag `<article>` jest przydatny dla elementów takich jak artykuł na blogu lub stronie z wiadomościami, post na forum albo komentarz pozostawiony pod artykułem. Używamy go dla tych elementów, które z powodzeniem mogłyby istnieć samodzielnie, wyjęte z kontekstu całej strony.
 
 ### Podział strony na sekcje
 
@@ -69,6 +69,10 @@ Nie wymieniliśmy powyżej jeszcze jednego ważnego znacznika, który pomaga nam
 ```
 
 Znacznik `<section>` ma już nieco bardziej ogólne zastosowanie. Używamy go, aby tematycznie pogrupować naszą zawartość. Zwykle każda z tak uzyskanych sekcji powinna posiadać nagłówek odpowiedniego poziomu (`<h1>`-`<h6>`).
+
+> #### Important::Ważne
+>
+> Pamiętaj, aby nie używać znacznika `<section>` jako generycznego kontenera "do wszystkiego"! `<section>`, jak wspomnieliśmy powyżej, pozwala nam na tematyczne grupowanie zawartości strony. Natomiast `<div>` jest znacznikiem, który powinien być używany tylko w przypadkach, kiedy żaden inny znacznik nie będzie odpowiedni dla zawartości.
 
 Sekcje z powodzeniem mogą być zagnieżdżane wewnątrz siebie.
 
@@ -111,55 +115,11 @@ Sekcje z powodzeniem mogą być zagnieżdżane wewnątrz siebie.
 > Otwórz [stronę z artykułem](https://www.theguardian.com/technology/2016/apr/23/facebook-global-takeover-f8-conference-messenger-chatbots), która była źródłem przykładu z początku tego rozdziału.
 > - Uruchom narzędzia deweloperskie. Spróbuj zbadać różne elementy strony i sprawdzić, jakich znaczników użyli autorzy strony i w jakich celach?
 
-### Elementy generyczne (ogólne)
-
-"Pomocy! Muszę zakodować element na stronie, jednak nie jestem w stanie dopasować jego znaczenia do żadnego z powyższych tagów!"
-
-Właśnie w takich przypadkach na ratunek spieszą nam elementy generyczne.
-
-```html
-<div>Jestem generycznym elementem blokowym</div>
-```
-
-```html
-<span>Jestem generycznym elementem liniowym</span>
-```
-
-Z pewnością niejednokrotnie znajdziecie się w sytuacji, kiedy zajdzie potrzeba zakodowania jakiegoś elementu, jednak w morzu tagów HTML nie znajdzie się żaden pasujący do roli. Wtedy użycie <i>elementów generycznych</i> nie będzie błędem.
-
-W przykładzie powyżej widzicie aż dwa ich rodzaje: blokowy oraz liniowy. Skąd w ogóle podział na elementy blokowe i liniowe i co on oznacza?
-
-W wielkim skrócie: <b>elementy liniowe</b> to takie, które zachowują się tak, jak linie tekstu. Naszego powyższego znacznika `<span>` możemy z powodzeniem użyć, aby "owinąć" nim fragment akapitu i nie spowoduje to złamania linii.
-
-```html
-<p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
-```
-
-<div class="example-wrapper">
-  <p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
-</div>
-
-Jeśli umieścimy w naszym kodznie <b>element blokowy</b>, spowoduje on złamanie linii – zawartość elementu blokowego zostanie wyświetlona w nowej linii.
-
-```html
-<p>Jestem paragrafem tekstu, który zawiera domyślny <div>element blokowy.</div> Tutaj jest kontynuacja tekstu.</p>
-```
-
-<div class="example-wrapper">
-  <p>Jestem paragrafem tekstu, który zawiera domyślny <div>element blokowy.</div> Tutaj jest kontynuacja tekstu.</p>
-</div>
-
-Dobrą praktyką jest, aby nie umieszczać elementów blokowych wewnątrz liniowych.
-
-> #### Important::Ważne
->
-> Pamiętaj, aby nie używać znacznika `<section>` jako generycznego kontenera "do wszystkiego"! `<section>`, jak już wspomnieliśmy, pozwala nam na tematyczne grupowanie zawartości strony. Natomiast `<div>` jest znacznikiem, który powinien być używany tylko w przypadkach, kiedy żaden inny znacznik nie będzie odpowiedni dla zawartości.
-
-Temat "czym różnią się elementy liniowe od blokowych" jest związany z prezentacją elementów na stronie i rozwiniemy go w odpowiednim rozdziale poświęconym stylom CSS.
+Pora na rozpoczęcie pracy z docelowym layoutem!
 
 > #### Exercise::Ćwiczenie 6
 >
-> Pora na rozpoczęcie pracy z docelowym layoutem. Oto on:
+> Oto on:
 >
 > ![Layout do zakodowania](/resources/planty.png "Layout do zakodowania")
 >

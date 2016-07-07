@@ -235,7 +235,6 @@ html {
 }
 ```
 
-
 > #### Exercise::Ćwiczenie 12* (dla chętnych)
 >
 > Jeśli masz ochotę zakodować nowy layout, to ćwiczenie jest dla Ciebie! Wykorzystaj zdobytą dotychczasową wcześniej wiedzę i postaraj się stworzyć stronę wizualnie zbliżoną do poniższego projektu.
@@ -244,7 +243,7 @@ html {
 >
 > <a href="../resources/moodly-assets/moodly-assets.zip">Ściągnij paczkę z zasobami.</a> W pliku `moodly.txt` podano nazwy potrzebnych fontów. W paczce znajdziesz również plik `background.jpg`, który będziesz mógł użyć do projektu. Jeśli pojawił się u Ciebie problem z formatowaniem tekstu w pliku `.txt`, otwórz go w Sublime Text.
 
->Być może nasuwa Ci się pytanie jak dołączać obrazki jako tło? Odpowiedź znajdziesz pod ćwiczeniem.
+> Być może nasuwa Ci się pytanie jak dołączać obrazki jako tło? Odpowiedź znajdziesz pod ćwiczeniem.
 
 > Do pozostałych elementów użyj znanych tagów i właściwości CSS m.in.
 >
@@ -254,7 +253,6 @@ html {
 >- `background-color` (do nadania koloru tła dla sekcji "Features"),
 >- świeżo zdobytej wiedzy o modelu pudełkowym.
 
-
 > Nie przejmuj się, jeśli nie uda Ci się wiernie odwzorować layoutu. Wrócimy do niego po kolejnych zajęciach, kiedy nauczymy się nowych rzeczy :)
 > Poniżej znajdziecie jeszcze kilka przydatnych informacji, w tym właściwości CSS, które pomogą Wam w tym ćwiczeniu.
 
@@ -263,15 +261,18 @@ html {
 #### Obrazek jako tło `background-image`
 
 Żeby wypełnić dany element (sekcje, kontener, czy nawet całą zawartość strony, czyli `<body>`) obrazkowym tłem, stosujemy właściwość:
+
 ```css
   background-image: url('tutaj podaję ścieżkę do obrazka');
 ```
 
 Przykładowo:
+
 ```
 section {
   background-image: url('./images/background.jpg');
-}```
+}
+```
 Pamiętajcie o prawidłowym podaniu względnej ścieżki do obrazka.
 
 Tło może przyjmować jeszcze wiele ciekawych właściwości, które <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-image" target="_blank">znajdziesz na MDN</a>.
@@ -286,18 +287,20 @@ Warto potestować różne opcje dla rozmiaru tła, czyli `background-size`
 Sprawdźcie jak zmienia się tło pod wpływem zmiany szerokości okna przeglądarki.
 
 #### Stylowanie listy
+
 Pewnie zastanawiacie się jak pozbyć się kropeczek przy elementach listy (`<ul>`).
 Służy do tego właściwość:
+
 ```css
-  ul.list{
+  ul.list {
     list-style: none;
   }
 ```
 Dzięki wartości `none` usunięte zostaną domyślne symbole oznaczające element listy.
 
 
+### Domyślny kontener `<div>`
 
-###`<div>`, czyli kontener
 <a href="../html-document-structure/index.html">W rozdziale 7.</a> wspomnieliśmy o znaczniku `<div>`, czyli elemencie blokowym. Znacznik ten bardzo często służy nam przy budowaniu layoutów, kiedy żaden z innych tagów nie pasuje znaczeniowo do zawartości, którą umieszczamy.
 
 Najlepiej zobrazuje to poniższy przykład.

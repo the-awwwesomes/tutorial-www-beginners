@@ -201,29 +201,6 @@ p {
 ```
 <p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
-<!-- ### Dodawanie dopełnień (`padding`)
-Dopełnienie definiowane jest jako odległość między obramowaniem elementu a jego zawartością. Dla każdej strony mogą być to inne wartości.
-Np 'padding: 5px 10px 15px 20px', oznacza, że dopełnienie od góry wynosi 5px, od prawej 10px, od dołu 15px a od góry 20px. Żeby łatwiej było Ci wpisywać te wartości zapamiętaj, że są one definiowane zgodnie z kierunkiem wskazówek zegara (zaczynając od góry, prawo, dół, lewo).
-
-```css
-p {
-  color: #f14b5c ; //kolor pomarańczowy
-  background-color: #FFE7EC //kolor jasnoróżowy
-  border: 2px solid #f14b5c;
-  padding: 20px 10px 20px 10px; //dopełnienia kolejno od: góry, prawej strony, dołu i lewej strony
-}
-```
-Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
-
-Jeśli dopełnienie ma mieć te same wartości dla każdego z boków to wystarczy podać jedną wartość:
-
-```css
-p {
-  padding: 30px;
-}
-```
-Wynik:<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 30px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle i dopełnieniach równych 30 px.</p>
- -->
 
 ### Wyrównanie tekstu (`text-align`)
 
@@ -295,21 +272,6 @@ p {
 <p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
 
 Pozostałe właściwości CSS poznamy już niedługo!
-
-<!-- ### Dodawanie marginesu (`margin`)
-
-```css
-p {
-  margin: 20px 60px;
-  text-align: center;
-  color: #f14b5c ; //kolor pomarańczowy
-  background-color: #FFE7EC //kolor jasnoróżowy
-  border: 2px solid #f14b5c;
-  padding: 20px 10px 20px 10px; //dopełnienia kolejno od: góry, prawej strony, dołu i lewej strony
-}
-```
-Wynik:<p style="color: #f14b5c; text-align: center; margin: 20px 60px; background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p><p style="color: #f14b5c; text-align: center; background-color:#FFE7EC;border: 1px solid #f14b5c; padding: 20px 10px 20px 10px; margin: 20px 60px;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
- -->
 
 ## Jak dołączyć style do strony?
 

@@ -202,3 +202,45 @@ Za pomocą znacznika `<ul>` definiujemy listy nieuporządkowanych elementów, na
 Pomimo, że najbardziej intuicyjnym (i oczywiście poprawnym) przypadkiem użycia list jest wyliczenie w tekście, znaczników listy możemy używać na przykład do definiowania elementów menu strony.
 
 Powyżej przedstawiliśmy Wam najczęściej używane znaczniki – a to zdecydowanie [nie wszystkie](https://developer.mozilla.org/en/docs/Web/HTML/Element)! W kolejnych rozdziałach dowiecie się natomiast, jak kodować proste formularze oraz określać strukturę dokumentu.
+
+### Elementy generyczne (ogólne)
+
+"Pomocy! Muszę zakodować element na stronie, jednak nie jestem w stanie dopasować jego znaczenia do żadnego z powyższych tagów!"
+
+Właśnie w takich przypadkach na ratunek spieszą nam elementy generyczne.
+
+```html
+<div>Jestem generycznym elementem blokowym</div>
+```
+
+```html
+<span>Jestem generycznym elementem liniowym</span>
+```
+
+Z pewnością niejednokrotnie znajdziecie się w sytuacji, kiedy zajdzie potrzeba zakodowania jakiegoś elementu, jednak w morzu tagów HTML nie znajdzie się żaden pasujący do roli. Wtedy użycie <i>elementów generycznych</i> nie będzie błędem.
+
+W przykładzie powyżej widzicie aż dwa ich rodzaje: blokowy oraz liniowy. Skąd w ogóle podział na elementy blokowe i liniowe i co on oznacza?
+
+W wielkim skrócie: <b>elementy liniowe</b> to takie, które zachowują się tak, jak linie tekstu. Naszego powyższego znacznika `<span>` możemy z powodzeniem użyć, aby "owinąć" nim fragment akapitu i nie spowoduje to złamania linii.
+
+```html
+<p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
+```
+
+<div class="example-wrapper">
+  <p>Jestem paragrafem tekstu, który zawiera domyślny <span>element liniowy.</span> Tutaj jest kontynuacja tekstu.</p>
+</div>
+
+Jeśli umieścimy w naszym kodznie <b>element blokowy</b>, spowoduje on złamanie linii – zawartość elementu blokowego zostanie wyświetlona w nowej linii.
+
+```html
+<p>Jestem paragrafem tekstu, który zawiera domyślny <div>element blokowy.</div> Tutaj jest kontynuacja tekstu.</p>
+```
+
+<div class="example-wrapper">
+  <p>Jestem paragrafem tekstu, który zawiera domyślny <div>element blokowy.</div> Tutaj jest kontynuacja tekstu.</p>
+</div>
+
+Dobrą praktyką jest, aby nie umieszczać elementów blokowych wewnątrz liniowych.
+
+Temat "czym różnią się elementy liniowe od blokowych" jest związany z prezentacją elementów na stronie i rozwiniemy go w odpowiednim rozdziale poświęconym stylom CSS.

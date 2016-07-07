@@ -1,37 +1,20 @@
 /* CSS for website */
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
 
-body {
-  font-family: 'Raleway', sans-serif;
+.book .book-body .page-wrapper .page-inner section.normal * {
+  font-family: 'Open Sans', sans-serif;
   color: #151d46;
   font-weight: 500;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a {
-    color: #f06969;
-    transition: color .3s ease-in;
+  color: #f06969;
+  transition: color .3s ease-in;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal a:hover {
-    color: #151d46;
-    text-decoration: none;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal blockquote, 
-.book .book-body .page-wrapper .page-inner section.normal dl, 
-.book .book-body .page-wrapper .page-inner section.normal ol, 
-.book .book-body .page-wrapper .page-inner section.normal p, 
-.book .book-body .page-wrapper .page-inner section.normal table, 
-.book .book-body .page-wrapper .page-inner section.normal ul, 
-.book .book-body .page-wrapper .page-inner section.normal h1, 
-.book .book-body .page-wrapper .page-inner section.normal h2, 
-.book .book-body .page-wrapper .page-inner section.normal h3, 
-.book .book-body .page-wrapper .page-inner section.normal h4, 
-.book .book-body .page-wrapper .page-inner section.normal h5, 
-.book .book-body .page-wrapper .page-inner section.normal h6 {
-    font-family: 'Raleway', sans-serif;
-    color: #151d46;
-    font-weight: 500;
+  color: #151d46;
+  text-decoration: none;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h1, 
@@ -40,7 +23,8 @@ body {
 .book .book-body .page-wrapper .page-inner section.normal h4, 
 .book .book-body .page-wrapper .page-inner section.normal h5, 
 .book .book-body .page-wrapper .page-inner section.normal h6 {
-    font-weight: 700;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal h3.panel-title {
@@ -48,128 +32,98 @@ body {
 }
 
 .book .book-body .page-wrapper .page-inner section.normal .example-wrapper {
-    font-family: initial;
-    color: #333;
-    margin: 25px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 30px;
-    background-color: white;
-    box-shadow: 0 0 2px rgba(204, 204, 204, 0.4);
+  font-family: initial;
+  color: #333;
+  margin: 25px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 2px rgba(204, 204, 204, 0.4);
 }
 
 .book .book-body .page-wrapper .page-inner section.normal .example-wrapper * {
-    font-family: initial;
-    color: #333;
+  font-family: initial;
+  color: #333;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal .example-wrapper a {
-    color: blue;
+  color: blue;
 }
+
+/* Navigation (table of contents) menu */
 
 .book .book-summary ul.summary {
-    font-family: 'Raleway', sans-serif;
-}
-
-.book .book-summary ul.summary li.active a,
-.book .book-summary ul.summary li a:hover {
-    color: #151d46;
+  font-family: brandon-grotesque, sans-serif;
 }
 
 .book .book-summary ul.summary li a, 
 .book .book-summary ul.summary li span {
-    color: #f06969;
-    transition: color .3s ease-in;
+  font-weight: 500;
+  color: #f06969;
+  transition: color .3s ease-in;
+}
+
+.book .book-summary ul.summary li.active a,
+.book .book-summary ul.summary li a:hover {
+  color: #151d46;
 }
 
 .book .book-summary ul.summary li a b {
-    color: #151d46;
+  color: #151d46;
 }
 
+/* Exercise/info/warning panels */
+
 .panel-success {
-    border-color: #B5B5B5;
-    background-color: #D7DEED;
+  border-color: #B5B5B5;
+  background-color: #D7DEED;
 }
 .panel-success > .panel-heading {
-    color: #ffffff;
-    background-color: #293169;
-    border-color: #293169;
+  color: #ffffff;
+  background-color: #293169;
+  border-color: #293169;
 }
 
 .panel-warning > .panel-heading {
-    color: #ffffff;
-    background-color: #f06969;
-    border-color: #f06969;
+  color: #ffffff;
+  background-color: #f06969;
+  border-color: #f06969;
 }
 
 .panel-warning {
-    border-color: rgba(240, 105, 105, 0.27);
-    background-color: rgba(240, 105, 105, 0.27);
-}
-
-.book .book-summary ul.summary li a, .book .book-summary ul.summary li span {
-	font-weight: 500;
+  border-color: rgba(240, 105, 105, 0.27);
+  background-color: rgba(240, 105, 105, 0.27);
 }
 
 .panel-info {
-    border-color: #FFCCD5;
-    background-color: #FFF4F6;
+  border-color: #FFCCD5;
+  background-color: #FFF4F6;
 }
 
 .panel-info > .panel-heading {
-    background-color: #F594A4;
-    color: #ffffff;
-    border-color: #F594A4;
+  background-color: #F594A4;
+  color: #ffffff;
+  border-color: #F594A4;
 }
 
-.fa {
-    color: #fff;
-    margin-right: 10px;
+.book .book-body .page-wrapper .page-inner section.normal .panel .fa {
+  font-family: FontAwesome;
+  color: #fff;
+  margin-right: 10px;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-title, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-title,
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-string, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-string, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-value, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-value, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-inheritance, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-inheritance, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-header, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-header, 
-.book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-symbol, 
-.book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-symbol, 
-.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-cdata, 
-.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-cdata,
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-variable, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-variable, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-attribute, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-attribute, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-tag, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-tag, 
-.book .book-body .page-wrapper .page-inner section.normal pre .hljs-regexp, 
-.book .book-body .page-wrapper .page-inner section.normal code .hljs-regexp, 
-.book .book-body .page-wrapper .page-inner section.normal pre .ruby .hljs-constant, 
-.book .book-body .page-wrapper .page-inner section.normal code .ruby .hljs-constant, 
-.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-tag .hljs-title, 
-.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-tag .hljs-title, 
-.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-pi, 
-.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-pi, 
-.book .book-body .page-wrapper .page-inner section.normal pre .xml .hljs-doctype, 
-.book .book-body .page-wrapper .page-inner section.normal code .xml .hljs-doctype, 
-.book .book-body .page-wrapper .page-inner section.normal pre .html .hljs-doctype, 
-.book .book-body .page-wrapper .page-inner section.normal code .html .hljs-doctype, 
-.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-id, 
-.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-id, 
-.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-class, 
-.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-class, 
-.book .book-body .page-wrapper .page-inner section.normal pre .css .hljs-pseudo, 
-.book .book-body .page-wrapper .page-inner section.normal code .css .hljs-pseudo {
-    font-family: 'Consolas', monospace;
+/* Code */ 
+
+.book .book-body .page-wrapper .page-inner section.normal pre *, 
+.book .book-body .page-wrapper .page-inner section.normal code * {
+  font-family: 'Consolas', monospace;
 }
 
-img.image-full-width {
-    width: 100%;
+/* Code demo examples */
+
+.image-full-width {
+  width: 100%;
 }
 
 #awww-pseudoclasses-exercise a:visited {
@@ -312,8 +266,4 @@ a.awww-exercise-link.added-transition {
   100% {
     transform: rotateX(50deg);
   }
-}
-
-.dummy-selector {
-    color: transparent;
 }

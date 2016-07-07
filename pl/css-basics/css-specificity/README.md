@@ -243,6 +243,12 @@ Zatem w tej rywalizacji wygra drugi selektor `.main-nav li.active`. Zauważmy, �
   color: deeppink;
 ```
 
+>####Important::Ważne
+>
+> Rozpisywanie krotek na kartce papieru ma wyłącznie pomóc Wam zrozumieć, jak działa specyficzność. Nie umieszczamy tego w kodzie, nie musimy tego robić za każdym razem, kiedy kodujemy złożony selektor. Może jednak okazać się pomocne, kiedy będziemy chcieli naprawić błędy w kodzie!
+
+Zdajemy sobie sprawę, że specyficzność nie jest łatwym zagadnieniem na początek. Ale nie przejmujcie się! Im więcej wprawy będziecie nabierać w kodowaniu, tym bardziej stanie się to dla Was jasne.
+
 > ####Exercise::Ćwiczenie 11
 >
 > Popatrz na przykładowy kod:

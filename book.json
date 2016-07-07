@@ -8,7 +8,8 @@
     "epub": "styles/epub.css"
     },
   "plugins": [
-    "callouts"
+    "callouts",
+    "typekit@0.0.2"
     ],
   "pluginsConfig": {
     "callouts": {
@@ -20,6 +21,9 @@
         "alert": "warning",
         "picto": "fa-lightbulb-o"
       }
+    },
+    "typekit" : {
+      "kitID": "axy0wet"
     }
   }
 }
