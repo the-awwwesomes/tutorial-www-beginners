@@ -3,7 +3,7 @@
 > #### Info::Ważna informacja
 >
 > Niniejsza praca jest licencjonowana zgodnie z [Creative Commons Attribution-ShareAlike License 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
-> Jeśli zamierzasz skopiować fragmenty tutoriala i umieścić je w swojej pracy, będzie nam bardzo miło, kiedy nas o tym [poinformujesz](mailto:contact@theawwwesomes.org).
+> Jeśli zamierzasz skopiować fragmenty tutoriala i umieścić je w swojej pracy, będzie nam bardzo miło, kiedy nas o tym [poinformujesz](mailto:contact@theawwwesomes.org). Koniecznie umieść też informację o naszym autorstwie!
 
 Cześć! Wygląda na to, że przywędrowaliście tu, bo jesteście zainteresowani tworzeniem stron internetowych. Trafiliście zatem w bardzo dobre miejsce! Tworzenie stron jest naszą pasją i chcielibyśmy podzielić się nią z jak największą liczbą osób.
 
@@ -17,10 +17,10 @@ Z drugiej strony, dla osób, które mają już pewne doświadczenia z programowa
 
 ## Czego będziemy uczyć?
 
-Zakres naszego kursu obejmuje dwa główne języki programowania WWW, czyli **HTML** i **CSS**. Zdecydowaliśmy się nie włączać języka JavaScript ze względu na ograniczenia czasowe - JS jest zatem tematem na zupełnie osobny tutorial!
+Zakres naszego kursu obejmuje dwa główne języki programowania WWW, czyli **HTML** i **CSS**. Zdecydowaliśmy się nie włączać języka JavaScript ze względu na ograniczenia czasowe &ndash; JS jest zatem tematem na zupełnie osobny tutorial!
 
 Ale nie przejmujcie się! Podczas warsztatów, na podstawie przykładowego layoutu nauczycie się, jak stworzyć od podstaw prostą, statyczną stronę internetową. Będziemy starali się od początku zakorzeniać w Was dobre praktyki w pisaniu kodu. Kodowanie HTML i CSS może wydawać się na początku niezbyt trudne. Jednak właśnie utrzymanie kodu w czasie stanowi w ich przypadku spore wyzwanie!
 
 Zaczniemy od prostych przykładów w czystym HTML, który służy do definiowania zawartości strony. Potem zaczniemy się zagłębiać w tajniki CSS, czyli arkuszy stylów, które umożliwiają nam dopasowanie wyglądu strony do naszych potrzeb. Od początku będziemy też zachęcać Was do korzystania z profesjonalnych narzędzi programistycznych. Jak tylko poznacie podstawy (a nie będziemy z tym zwlekać), zabierzemy się do kodowania przykładowego layoutu.
 
-A teraz - ruszamy w drogę!
+A teraz &ndash; ruszamy w drogę!

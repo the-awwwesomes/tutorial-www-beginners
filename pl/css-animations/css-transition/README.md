@@ -1,8 +1,9 @@
-# Funkcja `transition`, czyli funkcja przejścia
-W CSS możemy wykorzystać poznane we wcześniejszym rozdziale pseudoklasy, do wywoływania zmiany stanu. Brzmi enigmatycznie, ale zerknijcie na przykład poniżej.
+# Właściwość `transition`
+
+W CSS możemy wykorzystać poznane we wcześniejszym rozdziale pseudoklasy do wywoływania zmiany stanu. Brzmi enigmatycznie, ale zerknijcie na przykład poniżej.
 
 <div class="awww-ch-animations-exercise">
-<a href="" class="awww-exercise-link">to jest link</a>
+	<a href="" class="awww-exercise-link">to jest link</a>
 </div>
 
 ```html

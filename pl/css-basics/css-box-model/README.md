@@ -76,7 +76,7 @@ padding: 10px 15px 20px 12px;
 
 ### Obramowanie (`border`)
 
-O obramowaniu dowiedzieliśmy się w [rozdziale 8](../css-code/README.md). Przypomnijmy, że możemy nadawać naszym elementom ramki o różnych stylach.
+O obramowaniu dowiedzieliśmy się w [rozdziale 8](../../css-code/README.md). Przypomnijmy, że możemy nadawać naszym elementom ramki o różnych stylach.
 
 ```html
 <div class="box-of-chocolates">

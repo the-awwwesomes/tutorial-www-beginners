@@ -1,8 +1,6 @@
 # Kaskadowość i dziedziczenie w CSS
 
-Właśnie postawiliście swoje pierwsze kroki w stylowaniu dokumentu HTML – gratulujemy! Z pewnością rozbudziło to Wasze apetyty na więcej, ale też zrodziło nieco pytań i wątpliwości.
-
-W [rozdziale 8](../css-code/README.md), przy okazji pokazania, jak dołączać arkusze stylów do strony, zwróciliśmy Waszą uwagę na kolejność dołączania plików. Niektórym z Was już pewnie w tamtym momencie zaświtało, że style dla naszej strony mogą pochodzić z różnych źródeł.
+W [rozdziale 8](../../css-code/README.md), przy okazji pokazania, jak dołączać arkusze stylów do strony, zwróciliśmy Waszą uwagę na kolejność dołączania plików. Niektórym z Was już pewnie w tamtym momencie zaświtało, że style dla naszej strony mogą pochodzić z różnych źródeł.
 
 ## Kaskada CSS
 

@@ -1,8 +1,8 @@
 # Dodatkowe ćwiczenia
 
-Hurrra! Jeśli dotarłeś do tego miejsca, to znaczy, że prawdopodobnie przerobiłeś już wszystkie zadania a „Planty” jest gotowe.
+Hurrra! Jeśli dotarliście do tego miejsca, to znaczy, że prawdopodobnie przerobiliście już wszystkie zadania a „Planty” jest gotowe.
 
-W tym rozdziale znajdziesz ćwiczenia, dzięki którym będziesz mógł przetestować zdobytą wiedzę w praktyce.
+W tym rozdziale znajdziecie ćwiczenia, dzięki którym będziecie mogli przetestować zdobytą wiedzę w praktyce.
 
 > #### Exercise::Ćwiczenie 17
 > Nasze zadanie jest proste - zakodujmy layout „Big City”. 

@@ -1,6 +1,6 @@
 # Podstawy kodowania responsywnych stron
 
-W dzisiejszych czasach przeglądamy Internet nie tylko siedząc w domu przed biurkiem, ale też korzystając ze smartfona jadąc autobusem, spoglądając na smartwatcha albo przesuwając palcem po tablecie. Mnogość typów urządzeń, ich rozdzielczości wydaje się oszałamiająca i sprawia wrażenie, że zaprojektowanie i zakodowanie strony, która będzie się na każdym prawidłowo wyświetlać, wydaje się niewykonalne.
+W dzisiejszych czasach przeglądamy internet nie tylko siedząc w domu przed biurkiem, ale też korzystając ze smartfona jadąc autobusem, spoglądając na smartwatcha albo przesuwając palcem po tablecie. Mnogość typów urządzeń, ich rozdzielczości wydaje się oszałamiająca i sprawia wrażenie, że zaprojektowanie i zakodowanie strony, która będzie się na każdym prawidłowo wyświetlać, wydaje się niewykonalne.
 
 Bardzo ważne jest zatem, aby już na etapie projektowania, a także później kodowania, zadbać o to, aby strona była responsywna. Termin <i>Responsive Web Design</i> [istnieje w obiegu już od 2010 roku](http://alistapart.com/article/responsive-web-design). Od tamtej pory zgromadzono całkiem spory zasób wiedzy na temat tego, jak dostosowywać strony do wyświetlania za pomocą różnych mediów.
 

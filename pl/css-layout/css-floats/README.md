@@ -23,9 +23,9 @@ Kolejną właściwością, która pomaga nam w budowaniu layoutów, jest `float`
 
 <div class="example-wrapper">
   <p>
-    <img src="../images/float-latte.jpg" alt="cup of latte" style="float:left">
+    <img src="../../images/float-latte.jpg" alt="cup of latte" style="float:left">
     Cred paleo whatever, portland distillery microdosing pabst. Salvia seitan cardigan kinfolk yuccie, chia umami viral blog. Waistcoat tilde next level, tote bag stumptown four loko franzen. Small batch vice swag, offal chia kickstarter helvetica pitchfork.
-    <img src="../images/float-bicycle.jpg" alt="hipster bicycle" style="float:right">
+    <img src="../../images/float-bicycle.jpg" alt="hipster bicycle" style="float:right">
     Cornhole schlitz master cleanse, fap flannel plaid you probably haven't heard of them flexitarian tousled echo park fanny pack viral. Bushwick paleo pour-over, schlitz cred 3 wolf moon try-hard flexitarian chartreuse sustainable vegan beard. Asymmetrical pabst tumblr neutra helvetica.
   </p>
 </div>
@@ -158,7 +158,7 @@ Opływanie w CSS często przydaje się do tworzenia całych layoutów oraz poszc
 
 <div class="example-wrapper">
   <div style="border: 5px solid lightgreen;padding: 15px;">
-    <img src="../images/float-hipster.jpg" alt="random hipster" style="float:left;margin-right:15px;border: 5px solid lightgreen;">
+    <img src="../../images/float-hipster.jpg" alt="random hipster" style="float:left;margin-right:15px;border: 5px solid lightgreen;">
     <h1>Rafael Williamson</h1>
     <p>Vinyl fanny pack cardigan tousled umami slow-carb meh. Kinfolk post-ironic synth DIY heirloom, vegan schlitz.</p>
     <div style="clear:both"></div>

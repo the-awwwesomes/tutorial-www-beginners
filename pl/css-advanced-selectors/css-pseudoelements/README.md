@@ -85,7 +85,7 @@ Pseudoelementy okazują się także bardzo przydatne, kiedy chcemy dodać podpow
   <a href="http://theawwwesomes.org" class="tooltip">The Awwwesomes</a>
 </div>
 
-Przypomnijmy sobie teraz przykład z [rozdziału 14.2](../css-layout/css-floats.md), w którym próbowaliśmy sobie radzić z <i>czyszczeniem</i> opływania za pomocą dodatkowego, pustego elementu HTML. Zapowiedzieliśmy już wtedy, że można to zrobić w dużo bardziej elegancki sposób używając właśnie pseudoelementów.
+Przypomnijmy sobie teraz przykład z [rozdziału 14.2](../../css-layout/css-floats/README.md), w którym próbowaliśmy sobie radzić z <i>czyszczeniem</i> opływania za pomocą dodatkowego, pustego elementu HTML. Zapowiedzieliśmy już wtedy, że można to zrobić w dużo bardziej elegancki sposób używając właśnie pseudoelementów.
 
 Poniżej prezentujemy [<i>micro-clearfix</i>](http://nicolasgallagher.com/micro-clearfix-hack/)
 

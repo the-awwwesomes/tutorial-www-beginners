@@ -40,7 +40,7 @@ Być może kiedyś, kiedy korzystaliście z jakiejś aplikacji na swoim komputer
 
 Ze stronami internetowymi sytuacja przedstawia się nieco inaczej. Będąc zwykłym odbiorcą, który czyta wiadomości przy śniadaniu, możecie podejrzeć kod strony i zobaczyć, w jaki sposób została zakodowana! Niemożliwe? Wchodząc na dowolną stronę, klikając prawym przyciskiem myszy ukaże się menu kontekstowe. W tym menu powinna znajdować się pozycja `Wyświetl źródło strony` (lub `Pokaż źródło strony`, w zależności od przeglądarki). Po kliknięciu na nią Waszym oczom powinien ukazać się wtedy blok kodu źródłowego strony. To jednak nie koniec możliwości przeglądarki w zakresie badania kodu stron.
 
-Praca programisty byłaby prosta, a jego życie usłane różami, gdyby wszystkie linijki kodu działały prawidłowo, a rezultaty ich działania – przewidywalne. Niestety, jak pewnie się domyślacie, tak nie jest. Kiedy kod nie działa tak, jak trzeba, bardzo przydatna jest wiedza na temat tego, jak znaleźć przyczynę błędu. Proces szukania błędów w kodzie nazywamy [debugowaniem](https://pl.wikipedia.org/wiki/Debugowanie).
+Praca programisty byłaby prosta, a jego życie usłane różami, gdyby wszystkie linijki kodu działały prawidłowo, a rezultaty ich działania były przewidywalne. Niestety, jak pewnie się domyślacie, tak nie jest. Kiedy kod nie działa tak, jak trzeba, bardzo przydatna jest wiedza na temat tego, jak znaleźć przyczynę błędu. Proces szukania błędów w kodzie nazywamy [debugowaniem](https://pl.wikipedia.org/wiki/Debugowanie).
 
 > #### Important::Ważne
 >

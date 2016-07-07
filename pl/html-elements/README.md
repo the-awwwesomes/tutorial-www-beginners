@@ -75,7 +75,7 @@ Kiedy kodujesz akapity, czasem zachodzi potrzeba złamania linii w określonym m
 
 Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal dowolne inne miejsce w sieci. Link możecie umieścić na stronie używając znacznika `<a>` (od angielskiego słowa <i>anchor</i>) i podając adres linkowanej strony jako wartość atrybutu `href`.
 
-Można powiedzieć, że hiperłącza są solą Internetu!
+Można powiedzieć, że hiperłącza są solą internetu!
 
 ```html
 <a href="http://theawwwesomes.org" target="_blank">
