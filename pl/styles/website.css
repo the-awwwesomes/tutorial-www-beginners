@@ -27,6 +27,10 @@
   font-weight: 700;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal kbd {
+  font-family: monospace;
+}
+
 .book .book-body .page-wrapper .page-inner section.normal h3.panel-title {
   color: #ffffff;
 }
@@ -123,6 +127,21 @@
 .book .book-body .page-wrapper .page-inner section.normal pre *, 
 .book .book-body .page-wrapper .page-inner section.normal code * {
   font-family: 'Consolas', monospace;
+}
+
+/* Good/bad examples */
+
+.book .book-body .page-wrapper .page-inner section.normal .good, 
+.book .book-body .page-wrapper .page-inner section.normal .wrong {
+  font-size: 32px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .good {
+  color: #1DBD07;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .wrong {
+  color: #D65269;
 }
 
 /* Code demo examples */

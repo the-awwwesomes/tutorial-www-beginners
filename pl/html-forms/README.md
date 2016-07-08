@@ -220,6 +220,12 @@ Wymieniliśmy już większość bardzo przydatnych kontrolek, jakie można umie�
   <button>Kliknij mnie!</button>
 </div>
 
+> #### Important::Ważne
+>
+> Zanim na poważnie zabierzecie się za kodowanie Waszej pierwszej strony, zapraszamy do zapoznania się z [kilkoma naszymi radami na temat pisania przejrzystego kodu](../appendix/clean-code/README.md). Z pewnością ułatwią Wam pracę!
+
+Jeśli wiecie już, jak pisać czytelny kod, pora przejść do ćwiczeń.
+
 > #### Exercise::Ćwiczenie 4
 >
 > Wróćmy do naszego przykładu z Ćwiczenia 3:
