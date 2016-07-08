@@ -144,6 +144,56 @@ To, jak model pudełkowy został wyliczony przez przeglądarkę, możemy podejrz
 
 [2]: /images/box-model-devtools.png
 
+### Właściwość `box-model`
+
+Przyjrzyjmy się jeszcze raz stylom dla naszego przykładu:
+
+```css
+.box-of-chocolates {
+  width: 200px;
+  height: 100px;
+  padding: 30px; 
+  border: 2px dashed navy;
+  margin: 20px;
+  background-color: lightsalmon;
+}
+```
+
+Ile miejsca będzie w rzeczywistości zajmował na stronie? W domyślnym przypadku, wyrenderowaną szerokość elementu możemy obliczyć jako:
+
+```css
+200px + 2 * 30px + 2 * 2px = 264px /* szerokość zawartości + wypełnienie + ramka */
+```
+
+Zatem:
+
+```css
+wyrenderowana szerokość = szerokość zawartości zadeklarowana za pomocą width 
+  + wypełnienie + ramka
+```
+
+Biorąc pod uwagę, że zadeklarowaliśmy `width` na `200px` nie brzmi to intuicyjne, prawda? Chcielibyśmy móc ustalać rzeczywiste wymiary elementu deklarując wprost jego wymiary, nie dokonując w głowie żadnych kalkulacji. Sprawa dodatkowo może się skomplikować, jeśli zdecydowalibyśmy się określić te wymiary na przykład w procentach.
+
+Na szczęście w CSS istnieje możliwość zmiany interpretacji modelu pudełkowego. Służy do tego [właściwość `box-sizing`](https://developer.mozilla.org/en/docs/Web/CSS/box-sizing). Możemy dzięki niej określić, że wartość nadanego przez nas wymiaru będzie równa sumarycznej szerokości/wysokości zawartości zsumowanej z wymiarami wypełnienia i ramki.
+
+W przypadku szerokości będzie to:
+
+```css
+wyrenderowana szerokość = szerokość zawartości zadeklarowana za pomocą width 
+```
+
+Aby uzyskać taki efekt, należy określić wartość tej właściwości jako `box-sizing: border-box`. Obecnie przyjmuje się to jako <b>standard</b>. Najlepiej zrobić to od razu dla wszystkich elementów na stronie. Aby to się udało, musimy umieścić <b>na początku</b> naszego arkusza stylów taki kod:
+
+```css
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+```
+
+`*` to nic innego jak <i>uniwersalny selektor</i>, który nadaje podane właściwości dosłownie <b>wszystkim</b> elementom naszej strony. Selektorami `::before` oraz `::after` nie musicie się teraz przejmować, wrócimy do nich [za chwilę](../../css-advanced-selectors/css-pseudoelements/README.md).
+
+Nieco więcej o `box-sizing` możecie doczytać w [artykule na CSS-Tricks](https://css-tricks.com/box-sizing/).
+
 ## Jednostki w CSS
 
 Czy wiedzieliście, że w CSS możecie określić długość linii tekstu w liczbie znaków? Tak, jest [wiele opcji do wyboru, nie tylko piksele](https://developer.mozilla.org/en/docs/Web/CSS/length). Te przeróżne jednostki przydają się nam do określenia wymiarów elementów (model pudełkowy!), a także rozmiaru fontu. Zapoznajmy się zatem z kilkoma najpopularniejszymi.

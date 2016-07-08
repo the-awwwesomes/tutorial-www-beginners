@@ -77,8 +77,9 @@ Każdy z elementów HTML posiada swój domyślny rodzaj zachowania, jednak możn
 
 Jak to zrobić? Poznajmy właściwość `display`, która odpowiada za określanie rodzaju sposobu wyświetlania elementu na stronie. Wartości właściwości `display` jest [bardzo dużo](https://developer.mozilla.org/en-US/docs/Web/CSS/display) i sporo z nich brzmi tajemniczo nawet dla całkiem zaawansowanych deweloperów CSS.
 
-Poznajmy trzy używane zdecydowanie najczęściej:
+Poznajmy cztery używane zdecydowanie najczęściej:
 
+- `display: none` – za pomocą którego możemy ukryć nasz element.
 - `display: inline` – sprawia, że element będzie wyświetlany jako element liniowy.
 - `display: block` – element zostanie wyświetlony jako element blokowy.
 - `display: inline-block` – łączy cechy elementów liniowych i blokowych. Za jego pomocą możemy sprawić, że będzie możliwe nadanie naszemu elementowi wymiarów i wszystkich marginesów, a także nie nastąpi po nim przejście do kolejnej linii.
