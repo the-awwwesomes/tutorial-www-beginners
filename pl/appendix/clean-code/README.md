@@ -103,8 +103,6 @@ Teraz jest idealnie!
 
 Ta rada jest bardzo podobna do powyższej, jednak dotyczy nieco szerszego zakresu, niż tylko wcięć.
 
-<!-- tabs vs spaces -->
-
 ### HTML
 
 #### Źle <span class="wrong">✘</span>
@@ -178,10 +176,121 @@ Powyżej widzimy ten sam kod, lepiej sformatowany. Co poprawilśmy? Tu głównie
 
 ## Jesteśmy konsekwentni w nadawaniu nazw
 
-<!-- Mieszanie nazw w różnych językach, używanie na zmianę camelCase, myślników, itd. -->
+Nadawanie nazw w kodzie (na przykład selektorom CSS) nie jest tak prostym tematem, jak z początku się wydaje. Z punktu widzenia przeglądarki możemy nasze elementy nazywać w zasadzie jakkolwiek, byle w efekcie strona działała zgodnie z oczekiwaniami. Jednak musimy starać się również nie utrudniać pracy samym sobie. Jak powinniśmy nadawać nazwy, aby nie przyprawiać się o ból głowy, kiedy edytujemy kod?
+
+### CSS
+
+#### Źle <span class="wrong">✘</span>
+
+```css
+.box1 {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.boxaaa {
+  border: 1px solid crimson;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#b2 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+```
+
+Powyżej widzimy kilka przykładów źle nazwanych selektorów. Jeśli odpowiadają im konretne elementy w kodzie HTML, wszystko będzie działać poprawnie. Co się jednak stanie, kiedy będziecie zmuszeni wrócić do takiego kodu po jakimś czasie? Podejrzewamy, że nazwy typu `box1` albo nawet `b2` nie będą Wam wiele mówić.
+
+Powinniśmy starać się używać takich nazw, aby móc jak najkrócej się zastanawiać "do czego służy ten selektor?". W powyższym przykładzie nazwa `box1` jest prawie w porządku, nie za bardzo wiadomo tylko, do czego służy `1`. Co, jeśli w kodzie z jakichś powodów umieścimy selektor `box2`? Trudno będzie określić co je różni i w jakich konkretnie sytuacjach został użyty pierwszy, a w jakich drugi. Nie bójcie się bycia opisowym w nazywaniu elementów, oczywiście w ramach zdrowego rozsądku (zbyt długie nazwy selektorów też mogą utrudniać życie).
+
+#### Źle <span class="wrong">✘</span>
+
+```css
+.box {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.boxAlert {
+  border: 1px solid crimson;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#tytul-sekcji {
+  font-weight: bold;
+  text-decoration: underline;
+}
+```
+
+Już jest lepiej, dużo lepiej &ndash; powiecie &ndash; dlaczego umieszczacie to jako antyprzykład?
+
+Chcemy Wam zwrócić uwagę na konsekwencję w nadawaniu nazw. W powyższym przykładzie <b>brak konsekwencji w języku</b>, w jakim są pisane nazwy selektorów. Niby nic, a jednak szybko w kodzie robi się bałagan. Warto na początku określić, czy będziemy nazywać selektory w naszym ojczystym języku (wymuszony brak znaków diakrytycznych może jednak razić purystów), czy zdecydujemy się na uniwersalny angielski.
+
+Mocno zalecamy Wam już od początku przyzwyczajać się do pisania kodu w <b>języku angielskim</b>, ponieważ, rzecz jasna w tym przypadku Wasz kod jest zrozumiały dla dużo większej grupy osób. Obecnie przyjmuje się to jako <b>standard</b>. Środowisko programistów frontend jest międzynarodowe, więc bez znajomości angielskiego ani rusz!
+
+#### Źle <span class="wrong">✘</span>
+
+```css
+.box {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.boxAlert {
+  border: 1px solid crimson;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#section-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.text_highlighted {
+  color: lime;
+}
+```
+
+Super, umiemy już nadawać naszym elementom nazwy. Niestety, brakuje nam jeszcze konsekwencji w ich <b>zapisie</b>. Często zdarza się, że nasza nazwa musi składać się z więcej niż jednego słowa i chcąc zwiększyć jej czytelność chcemy w jakiś sposób wyróżnić początek każdego z nich.
+
+W powyższym przykładzie użyliśmy aż trzech sposobów: separowanie myślnikami (`-`), znakami podkreślenia (`_`) oraz tzw. [`camelCase`](https://en.wikipedia.org/wiki/CamelCase). Warto wybrać sobie spośród nich jeden i cały czas go trzymać &ndash; wtedy nasz kod będzie się dużo przyjemniej czytało.
+
+#### Dobrze <span class="good">✔</span>
+
+```css
+.box {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.box-alert {
+  border: 1px solid crimson;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#section-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.text-highlighted {
+  color: lime;
+}
+```
+
+Brawo, teraz umiemy już nadawać nazwy naszym elementom!
 
 ## Piszemy komentarze
 
 ## Ustawienia edytora tekstowego
 
 <!-- Na przykładzie Sublime Text -->
+<!-- tabs vs spaces -->
