@@ -119,7 +119,7 @@ border-color: blue;
 ```
 
 <div class="example-wrapper">
-<input type="text" style="border: 2px solid blue; ">
+  <input type="text" style="border: 2px solid blue;">
 </div>
 
 
@@ -141,7 +141,9 @@ p {
 }
 ```
 
-<p style="color: #f14b5c;">To jest akapit o kolorze pomarańczowym.</p>
+<div class="example-wrapper">
+  <p style="color: #f14b5c;">To jest akapit o kolorze pomarańczowym.</p>
+</div>
 
 
 > #### Important::Ważne
@@ -158,7 +160,11 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="color: #f14b5c ;background-color:#FFE7EC;">To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.</p>
+<div class="example-wrapper">
+  <p style="color:#f14b5c;background-color:#FFE7EC;">
+    To jest paragraf o kolorze pomarańczowym na jasnoróżowym tle.
+  </p>
+</div>
 
 > #### Important::Ważne
 >
@@ -199,7 +205,12 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+<div class="example-wrapper">
+  <p style="color:#f14b5c;background-color:#FFE7EC;border: 1px solid #f14b5c;">
+    To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.
+  </p>
+</div>
 
 
 ### Wyrównanie tekstu (`text-align`)
@@ -219,7 +230,12 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+<div class="example-wrapper">
+  <p style="color:#f14b5c;background-color:#FFE7EC;border:1px solid #f14b5c;text-align:center;">
+    To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.
+  </p>
+</div>
 
 ### Odmiana (grubość) pisma (`font-weight`)
 
@@ -236,7 +252,12 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="font-weight: bold; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+<div class="example-wrapper">
+  <p style="font-weight:bold;color:#f14b5c;background-color:#FFE7EC;border:1px solid #f14b5c;text-align:center;">
+    To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.
+  </p>
+</div>
 
 Czy zauważyliście, w porównaniu do akapitu z zagadanienia wyżej, że font stał się grubszy?
 
@@ -253,7 +274,12 @@ p {
   background-color: #FFE7EC; /* kolor jasnoróżowy */
 }
 ```
-<p style="font-size: 36px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+<div class="example-wrapper">
+  <p style="font-size:36px;color:#f14b5c;background-color:#FFE7EC;border: 1px solid #f14b5c;text-align:center;">
+    To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.
+  </p>
+</div>
 
 ### Styl fontu (`font-style`)
 
@@ -269,7 +295,52 @@ p {
   border: 2px solid #f14b5c;
 }
 ```
-<p style="font-style: italic; font-size: 20px; color: #f14b5c ;background-color:#FFE7EC;border: 1px solid #f14b5c; text-align: center;">To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.</p>
+
+<div class="example-wrapper">
+  <p style="font-style:italic;font-size:20px;color:#f14b5c;background-color:#FFE7EC;border:1px solid #f14b5c;text-align:center;">
+    To jest akapit o kolorze pomarańczowym na jasnoróżowym tle.
+  </p>
+</div>
+
+### Obrazek jako tło (`background-image`)
+
+Żeby wypełnić dany element (sekcje, kontener, czy nawet całą zawartość strony, czyli `<body>`) obrazkowym tłem, stosujemy właściwość:
+
+```css
+  background-image: url('tutaj podaję ścieżkę do obrazka');
+```
+
+Przykładowo:
+
+```
+section {
+  background-image: url('./images/background.jpg');
+}
+```
+Pamiętajcie o prawidłowym podaniu względnej ścieżki do obrazka.
+
+Tło może przyjmować jeszcze wiele ciekawych właściwości, które <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-image" target="_blank">znajdziesz na MDN</a>.
+
+Warto potestować różne opcje dla rozmiaru tła, czyli `background-size`
+```css
+  background-size: cover;
+  background-size: 100%;
+  background-size: contain;
+  background-size: 50%;
+```
+Sprawdźcie jak zmienia się tło pod wpływem zmiany szerokości okna przeglądarki.
+
+#### Stylowanie listy
+
+Pewnie zastanawiacie się jak pozbyć się kropeczek przy elementach listy (`<ul>`).
+Służy do tego właściwość:
+
+```css
+  ul.list {
+    list-style: none;
+  }
+```
+Dzięki wartości `none` usunięte zostaną domyślne symbole oznaczające element listy.
 
 Pozostałe właściwości CSS poznamy już niedługo!
 
@@ -306,13 +377,13 @@ Znacznik `<link>` znajduje się w części `<head>` naszego dokumentu HTML.
 <link href="/styles/style-1.css" rel="stylesheet">
 <link href="/styles/style-2.css" rel="stylesheet">
 ```
->Jeśli w pliku `style-1.css` występuje deklaracja:
+> Jeśli w pliku `style-1.css` występuje deklaracja:
 >```css
 h1 {
   color: red;
 }
 ```
->A w pliku `style-2.css`
+> A w pliku `style-2.css`
 >```css
 h1 {
   color: green;

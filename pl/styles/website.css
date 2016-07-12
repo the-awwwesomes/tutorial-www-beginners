@@ -55,6 +55,14 @@
   color: blue;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal .codepen-link {
+  display: block;
+  font-family: brandon-grotesque, sans-serif;
+  font-size: 20px;
+  text-align: right;
+  margin-top: -25px;
+}
+
 /* Navigation (table of contents) menu */
 
 .book .book-summary ul.summary {
@@ -144,7 +152,9 @@
   color: #D65269;
 }
 
-/* Code demo examples */
+/* 
+* Code demo examples 
+*/
 
 .image-full-width {
   width: 100%;

@@ -30,6 +30,8 @@ Kolejną właściwością, która pomaga nam w budowaniu layoutów, jest `float`
   </p>
 </div>
 
+<a href="http://codepen.io/theawwwesomes/pen/oLoBRJ" class="codepen-link">Edytuj na CodePen</a>
+
 Powyższy przykład demonstruje klasyczny przypadek użycia `float` i odnosi się wprost do opływania elementu tekstem. `float` wyjmuje element z jego naturalnej pozycji na stronie i wyrównuje odpowiednio do lewej lub prawej strony kontenera (rodzica). Pozostałe elementy, które znajdują się wewnątrz tego samego kontenera, będą go opływać.
 
 > ####Important::Ważne

@@ -1,4 +1,4 @@
-# Definiowanie struktury strony
+## Definiowanie struktury strony
 
 Hurra! Potraficie już zakodować prostą stronę w HTML. Jednak to jeszcze nie koniec! Zanim zabierzecie się za trudniejsze wyzwania, warto zapoznać się ze znacznikami, które pomagają nam logicznie porządkować i grupować zawartość strony według jej znaczenia.
 

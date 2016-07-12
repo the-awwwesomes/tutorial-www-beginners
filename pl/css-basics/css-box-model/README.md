@@ -1,4 +1,4 @@
-# Model pudełkowy CSS
+## Model pudełkowy CSS
 
 "Życie jest jak pudełko czekoladek – nigdy nie wiesz, co Ci się trafi" – powiedział kiedyś Forrest Gump. Z pisaniem kodu CSS może być podobnie – nigdy nie wiadomo, co się trafi, jeśli nie zna się reguł nim rządzących. Dowiedzieliśmy się właśnie, w jaki sposób przeglądarka decyduje, jakie style nadawać elementom HTML. Kolejnym stopniem wtajemniczenia kodera WWW jest zaznajomienie się z zasadami, w jaki sposób owe elementy są wyświetlane i rozmieszczane na stronie. Tutaj bowiem kryje się najwięcej zabawy!
 
@@ -20,14 +20,14 @@ Elementom HTML możemy nadawać wysokość i szerokość za pomocą właściwoś
 
 ```css
 .box-of-chocolates {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   background-color: lightsalmon;
 }
 ```
 
 <div class="example-wrapper">
-  <div style="width: 200px;height: 100px;background-color: lightsalmon;">
+  <div style="width: 400px;height: 200px;background-color: lightsalmon;box-sizing: content-box;">
     Tu siedzą czekoladki!
   </div>
 </div>
@@ -44,15 +44,15 @@ Widzicie pewnie, że w naszym powyższym przykładzie tekst przylega do krawędz
 
 ```css
 .box-of-chocolates {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   padding: 30px; /* Dodaję do elmementu wypełnienie o szerokości 30px */
   background-color: lightsalmon;
 }
 ```
 
 <div class="example-wrapper">
-  <div style="width: 200px;height: 100px;background-color: lightsalmon;padding: 30px;">
+  <div style="width: 400px;height: 200px;background-color: lightsalmon;padding: 30px;box-sizing: content-box;">
     Tu siedzą czekoladki!
   </div>
 </div>
@@ -86,8 +86,8 @@ O obramowaniu dowiedzieliśmy się w [rozdziale 8](../../css-code/README.md). Pr
 
 ```css
 .box-of-chocolates {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   padding: 30px; /* Dodaję do elmementu wypełnienie o szerokości 30px */
   border: 2px dashed navy; /* Dodaję do elementu przerywaną ramkę o szerokości 2px w kolorze granatowym */
   background-color: lightsalmon;
@@ -95,7 +95,7 @@ O obramowaniu dowiedzieliśmy się w [rozdziale 8](../../css-code/README.md). Pr
 ```
 
 <div class="example-wrapper">
-  <div style="width: 200px;height: 100px;background-color: lightsalmon;padding: 30px; border: 2px dashed navy;">
+  <div style="width: 400px;height: 200px;background-color: lightsalmon;padding: 30px; border: 2px dashed navy;box-sizing: content-box;">
     Tu siedzą czekoladki!
   </div>
 </div>
@@ -120,8 +120,8 @@ Margines jest to odległość między krawędzią (ramką) elementu a innym, są
 
 ```css
 .box-of-chocolates {
-  width: 200px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   padding: 30px; /* Dodaję do elmementu wypełnienie o szerokości 30px */
   border: 2px dashed navy; /* Dodaję do elementu przerywaną ramkę o szerokości 2px w kolorze granatowym */
   margin: 20px; /* Dodaję do elmementu margines o szerokości 20px */
@@ -130,10 +130,12 @@ Margines jest to odległość między krawędzią (ramką) elementu a innym, są
 ```
 
 <div class="example-wrapper">
-  <div style="width: 200px;height: 100px;background-color: lightsalmon;padding: 30px; border: 2px dashed navy;margin: 20px;">
+  <div style="width: 400px;height: 200px;background-color: lightsalmon;padding: 30px; border: 2px dashed navy;margin: 20px;box-sizing: content-box;">
     Tu siedzą czekoladki!
   </div>
 </div>
+
+<a href="http://codepen.io/theawwwesomes/pen/YWENGj" class="codepen-link">Edytuj na CodePen</a>
 
 Co ciekawe, marginesy mogą również przybierać <b>wartości ujemne</b>, w przeciwieństwie do wypełnień i ramek, które to powinny zawsze przyjmować <b>wartości dodatnie</b> (ujemne w tych przypadkach zostaną zignorowane przez przeglądarkę).
 
@@ -174,7 +176,7 @@ wyrenderowana szerokość = szerokość zawartości zadeklarowana za pomocą wid
 
 Biorąc pod uwagę, że zadeklarowaliśmy `width` na `200px` nie brzmi to intuicyjne, prawda? Chcielibyśmy móc ustalać rzeczywiste wymiary elementu deklarując wprost jego wymiary, nie dokonując w głowie żadnych kalkulacji. Sprawa dodatkowo może się skomplikować, jeśli zdecydowalibyśmy się określić te wymiary na przykład w procentach.
 
-Na szczęście w CSS istnieje możliwość zmiany interpretacji modelu pudełkowego. Służy do tego [właściwość `box-sizing`](https://developer.mozilla.org/en/docs/Web/CSS/box-sizing). Możemy dzięki niej określić, że wartość nadanego przez nas wymiaru będzie równa sumarycznej szerokości/wysokości zawartości zsumowanej z wymiarami wypełnienia i ramki.
+Na szczęście w CSS istnieje możliwość zmiany interpretacji modelu pudełkowego. Służy do tego [właściwość `box-sizing`](https://developer.mozilla.org/en/docs/Web/CSS/box-sizing). Możemy dzięki niej określić, że wartość nadanego przez nas wymiaru będzie równa szerokości/wysokości zawartości zsumowanej z wymiarami wypełnienia i ramki.
 
 W przypadku szerokości będzie to:
 
@@ -182,7 +184,46 @@ W przypadku szerokości będzie to:
 wyrenderowana szerokość = szerokość zawartości zadeklarowana za pomocą width 
 ```
 
-Aby uzyskać taki efekt, należy określić wartość tej właściwości jako `box-sizing: border-box`. Obecnie przyjmuje się to jako <b>standard</b>. Najlepiej zrobić to od razu dla wszystkich elementów na stronie. Aby to się udało, musimy umieścić <b>na początku</b> naszego arkusza stylów taki kod:
+Aby uzyskać taki efekt, należy określić wartość tej właściwości jako `box-sizing: border-box`. 
+
+```css
+.box-of-chocolates {
+  width: 200px;
+  height: 100px;
+  padding: 30px; 
+  border: 2px dashed navy;
+  margin: 20px;
+  background-color: lightsalmon;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+```
+
+```html
+<div class="box-of-chocolates">
+  Tu siedzą czekoladki!
+</div>
+
+<div class="box-of-chocolates border-box">
+  Tu siedzą czekoladki!
+</div>
+```
+
+<div class="example-wrapper">
+  <div style="width: 400px;height: 200px;background-color: lightsalmon;padding: 30px; border: 2px dashed navy;margin: 20px;box-sizing: content-box;">
+    Tu siedzą czekoladki!
+  </div>
+  <div style="width: 400px;height: 200px;background-color: lightsalmon;padding: 30px; border: 2px dashed navy;margin: 20px;box-sizing: border-box;">
+    Tu siedzą czekoladki!
+  </div>
+</div>
+
+<a href="http://codepen.io/theawwwesomes/pen/XKzpNr" class="codepen-link">Edytuj na CodePen</a>
+
+
+Obecnie taką interpretację modelu pudełkowego przyjmuje się to jako <b>standard</b>. Najlepiej zrobić to od razu dla wszystkich elementów na stronie. Aby to się udało, musimy umieścić <b>na początku</b> naszego arkusza stylów taki kod:
 
 ```css
 *, *::before, *::after {
@@ -193,199 +234,3 @@ Aby uzyskać taki efekt, należy określić wartość tej właściwości jako `b
 `*` to nic innego jak <i>uniwersalny selektor</i>, który nadaje podane właściwości dosłownie <b>wszystkim</b> elementom naszej strony. Selektorami `::before` oraz `::after` nie musicie się teraz przejmować, wrócimy do nich [za chwilę](../../css-advanced-selectors/css-pseudoelements/README.md).
 
 Nieco więcej o `box-sizing` możecie doczytać w [artykule na CSS-Tricks](https://css-tricks.com/box-sizing/).
-
-## Jednostki w CSS
-
-Czy wiedzieliście, że w CSS możecie określić długość linii tekstu w liczbie znaków? Tak, jest [wiele opcji do wyboru, nie tylko piksele](https://developer.mozilla.org/en/docs/Web/CSS/length). Te przeróżne jednostki przydają się nam do określenia wymiarów elementów (model pudełkowy!), a także rozmiaru fontu. Zapoznajmy się zatem z kilkoma najpopularniejszymi.
-
-- `%`, czyli procenty. Możemy określać wymiary elementu w procentach. Będą one wtedy wyrażały te wymiary względem rodzica elementu (czyli kontenera, w którym dany element się znajduje). Procenty są przydatne, jeśli chcemy uzyskać elastyczny layout, którego elementy zmieniają wymiary płynnie wraz ze skalowaniem okna.
-
-```css
-.fluid-container {
-  width: 33.33%;
-}
-```
-
-- `em` – podczas, gdy piksele reprezentują fizyczne piksele na ekranie i są jednostką bezwzględną, `em` jest jednostką względną i odnosi się do rozmiaru fontu rodzica elementu. Jeśli nadamy elementowi rozmiar lub wielkość fontu równą `1em`, będzie to oznaczało, że wymiar ten jest równy rozmiarowi fontu jego bezpośredniego rodzica. Spójrzmy na przykład:
-
-```html
-<div class="grandpa">
-  Jestem dziadkiem
-  <div class="father">
-    Jestem ojcem
-    <div class="son">
-      Jestem synem
-    </div>
-  </div>
-</div>
-```
-
-```css
-.grandpa {
-  font-size: 1.5em; /* 16px */
-}
-
-.father {
-  font-size: 1.5em; /* 1.5 * 16px = 24px */
-}
-
-
-.son {
-  font-size: 1.5em; /* 1.5 * 24px = 36px */
-}
-```
-
-<div class="example-wrapper">
-  <div style="font-size: 1.5em;">
-    Jestem dziadkiem
-    <div style="font-size: 1.5em;">
-      Jestem ojcem
-      <div style="font-size: 1.5em;">
-        Jestem synem
-      </div>
-    </div>
-  </div>
-</div>
-
-Widzicie więc, że pomimo, iż każdy z elementów posiada identyczną wartość `font-size` – `1.5em` – wynikowe wielkości się różnią. Na początku może się Wam to wydawać mało intuicyjne, jednak w miarę jak będziecie się stawać bardziej zaawansowani, odkryje się przed Wami bogactwo zastosowań dla `em`.
-
-- `rem` – również jest to jednostka względna. Jej nazwę można rozwinąć jako "<i>root</i> `em`". Działa więc podobnie do `em` z tą różnicą, że wartość wynikowa jest obliczana względem <b>korzenia</b> (<i>root</i>) drzewa dokumentu HTML. Zwykle oznacza to, że wartości `rem` obliczane są względem wielkości fonta zadeklarowanego wewnątrz selektora `html`.
-
-```html
-<section class="outer">
-  <h1>Nagłówek zewnętrzny</h1>
-  <p>Paragraf umieszczony w zewnętrznej sekcji.</p>
-  <section class="inner">
-      <h2>Nagłówek wewnętrzny</h2>
-      <p>Paragraf umieszczony w wewnętrznej sekcji.</p>
-  </section>
-</section>
-```
-
-```css
-html {
-  font-size: 16px;
-}
-
-.outer {
-  font-size: 1.5rem; /* 1.5 * 16px = 24px */
-}
-
-.inner {
-  font-size: 2rem; /* 2 * 16px = 32px */
-}
-```
-
-- `vw` (ang. <i>vieport witdh</i>) oraz `vh` (ang. <i>viewport height</i>). Są to jednostki dotyczące wysokości i szerokości <b>okna przeglądarki</b>. `1vw` oznacza `1/100` szerokości okna, a `1vh` – `1/100` wysokości okna.
-
-```css
-.scalable-element {
-  width: 50vh; /* Zajmuję połowę wysokości okna przeglądarki */
-  height: 100vw; /* Zajmuję całą szerokość okna */
-}
-```
-
-> #### Exercise::Ćwiczenie 12* (dla chętnych)
->
-> Jeśli masz ochotę zakodować nowy layout, to ćwiczenie jest dla Ciebie! Wykorzystaj zdobytą dotychczasową wcześniej wiedzę i postaraj się stworzyć stronę wizualnie zbliżoną do poniższego projektu.
->
-> ![Layout Moodly](/resources/moodly-assets/moodly-layout.png "Layout Moodly")
->
-> <a href="../resources/moodly-assets/moodly-assets.zip">Ściągnij paczkę z zasobami.</a> W pliku `moodly.txt` podano nazwy potrzebnych fontów. W paczce znajdziesz również plik `background.jpg`, który będziesz mógł użyć do projektu. Jeśli pojawił się u Ciebie problem z formatowaniem tekstu w pliku `.txt`, otwórz go w Sublime Text.
-
-> Być może nasuwa Ci się pytanie jak dołączać obrazki jako tło? Odpowiedź znajdziesz pod ćwiczeniem.
-
-> Do pozostałych elementów użyj znanych tagów i właściwości CSS m.in.
->
->- `height` i `width` (do zdefiniowania rozmiarów),
->- `text-align` (do wycentrowania tekstu),
->-`border` (do obramowania guzika "download"),
->- `background-color` (do nadania koloru tła dla sekcji "Features"),
->- świeżo zdobytej wiedzy o modelu pudełkowym.
-
-> Nie przejmuj się, jeśli nie uda Ci się wiernie odwzorować layoutu. Wrócimy do niego po kolejnych zajęciach, kiedy nauczymy się nowych rzeczy :)
-> Poniżej znajdziecie jeszcze kilka przydatnych informacji, w tym właściwości CSS, które pomogą Wam w tym ćwiczeniu.
-
-### Inne właściwości CSS
-
-#### Obrazek jako tło `background-image`
-
-Żeby wypełnić dany element (sekcje, kontener, czy nawet całą zawartość strony, czyli `<body>`) obrazkowym tłem, stosujemy właściwość:
-
-```css
-  background-image: url('tutaj podaję ścieżkę do obrazka');
-```
-
-Przykładowo:
-
-```
-section {
-  background-image: url('./images/background.jpg');
-}
-```
-Pamiętajcie o prawidłowym podaniu względnej ścieżki do obrazka.
-
-Tło może przyjmować jeszcze wiele ciekawych właściwości, które <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-image" target="_blank">znajdziesz na MDN</a>.
-
-Warto potestować różne opcje dla rozmiaru tła, czyli `background-size`
-```css
-    background-size: cover;
-    background-size: 100%;
-    background-size: contain;
-    background-size: 50%;
-```
-Sprawdźcie jak zmienia się tło pod wpływem zmiany szerokości okna przeglądarki.
-
-#### Stylowanie listy
-
-Pewnie zastanawiacie się jak pozbyć się kropeczek przy elementach listy (`<ul>`).
-Służy do tego właściwość:
-
-```css
-  ul.list {
-    list-style: none;
-  }
-```
-Dzięki wartości `none` usunięte zostaną domyślne symbole oznaczające element listy.
-
-
-### Domyślny kontener `<div>`
-
-<a href="../html-document-structure/index.html">W rozdziale 7.</a> wspomnieliśmy o znaczniku `<div>`, czyli elemencie blokowym. Znacznik ten bardzo często służy nam przy budowaniu layoutów, kiedy żaden z innych tagów nie pasuje znaczeniowo do zawartości, którą umieszczamy.
-
-Najlepiej zobrazuje to poniższy przykład.
-Wyobraźmy sobie, że na naszej stronie występuje sekcja "Autorzy", w której zawartych jest kilka kontenerów ze zdjęciami i opisami osób.
-Jak by wyglądał kod HTML takiego rozwiązania?
-
-```html
-<section id="authors">
-  <!--kontener dla autora-->
-  <div class="author-box">
-    <h2>Jane Doe</h2>
-    <img src="images/jane-img.jpg"/>
-    <p>Jane loves cookies and likes spending her time riding a bike</p>
-  </div>
-  <!--koniec kontenera-->
-
-  <!--kontener dla autora-->
-  <div class="author-box">
-    <h2>Sam Smith</h2>
-    <img src="images/sam-img.jpg"/>
-    <p>Sam likes swimming and eating burgers.</p>
-  </div>
-  <!--koniec kontenera-->
-
-  <!--kontener dla autora-->
-  <div class="author-box">
-    <h2>Kim Sofa</h2>
-    <img src="images/kim-img.jpg"/>
-    <p>Kim is keen on watching movies and jogging</p>
-  </div>
-  <!--koniec kontenera-->
-</section>
-```
-
-Tak jak widzcie, sylwetka każdego autora zosała umieszczona w konterze, jakim jest `<div>`.
-Znacznik ten zatem umożliwia nam powiązać elementy w dany sposób. Dzięki czemu zawartość staje się jeszcze bardziej uporządkowana, a my możemy wykorzystać CSS-ową klasę kontenera i przypisać mu konkretne style.
-
-Podglądając kod innych stron w sieci, zauważycie, że `<div>` jest badzo popularnym tagiem. Jednak pamiętajcie, że dla treści, których znaczenie może być precyzyjniej określone, warto stosować konkretne tagi, np.`<article>` dla artykułów, `<footer>` dla stopki, `<aside>` dla elementów pobocznych, `<nav>` dla nawigacji itd.

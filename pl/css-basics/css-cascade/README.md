@@ -1,8 +1,8 @@
-# Kaskadowość i dziedziczenie w CSS
+## Kaskadowość i dziedziczenie w CSS
 
 W [rozdziale 8](../../css-code/README.md), przy okazji pokazania, jak dołączać arkusze stylów do strony, zwróciliśmy Waszą uwagę na kolejność dołączania plików. Niektórym z Was już pewnie w tamtym momencie zaświtało, że style dla naszej strony mogą pochodzić z różnych źródeł.
 
-## Kaskada CSS
+### Kaskada CSS
 
 Co to znaczy, że style pochodzą z różnych źródeł? Czy na wygląd naszej strony wpływają też arkusze stylów z nieznanego nam miejsca, które są poza naszą kontrolą?
 
@@ -46,7 +46,7 @@ Mając do dyspozycji style z różnych źródeł, w jaki sposób przeglądarka d
 
 Czym jest `!important`, dowiemy się niebawem, już w kolejnym rozdziale.
 
-## Dziedziczenie stylów
+### Dziedziczenie stylów
 
 Wykonując ćwiczenie 8 zauważyliście, że udało Wam się pokolorować tekst na całej stronie używając tylko selektora `body`.
 
@@ -85,6 +85,8 @@ Cechę CSS, dzięki której wartości poszczególnych właściwości są przekaz
   </div>
   <p>Jestem przykładowym tekstem, który nie zostanie pokolorowany.</p>
 </div>
+
+<a href="http://codepen.io/theawwwesomes/pen/GqONLB" class="codepen-link">Edytuj na CodePen</a>
 
 Nie wszystkie właściwości CSS są dziedziczone. Nie dzieje się tak na przykład w przypadku ramek, co jest zresztą dość intuicyjne. Spróbujcie sobie tylko wyobrazić, jakby wyglądałby efekt, gdyby dodano obramowanie do `body` a pozostałe elementy dziedziczyły tę właściwość! Poniżej podajemy, które ze znanych już Wam właściwości są dziedziczone, a które nie.
 

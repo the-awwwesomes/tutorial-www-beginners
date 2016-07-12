@@ -1,8 +1,8 @@
-# Proste formularze
+## Proste formularze
 
 Na pewno niejednokrotnie zdarzyło się Wam, korzystając ze strony internetowej, podawać swoje dane (na przykład dokonując zakupu w sklepie internetowym) albo dodawać komentarze pod artykułem. HTML, oprócz tego, że umożliwia nam wyświetlanie zawartości strony pobranej z serwera, pozwala również na takie podstawowe interakcje, jak <i>wypełnianie formularzy</i>.
 
-## Jak wstawić formularz na stronę?
+### Jak wstawić formularz na stronę?
 
 W Ćwiczeniu 3 na pewno zauważyliście pod artykułem kontrolki, dzięki którym użytkownik mógł wpisać swoje podstawowe dane oraz treść komentarza.
 
@@ -16,7 +16,7 @@ Kiedy umieszczamy na stronie formularz, najpierw musimy "powiedzieć" przegląda
 
 Wiedząc, jak zadeklarować sam formularz, możemy po kolei zapoznać się z różnymi rodzajami kontrolek.
 
-### Podstawowe interaktywne kontrolki (`<input>`)
+#### Podstawowe interaktywne kontrolki (`<input>`)
 
 Załóżmy, że chcemy umieścić w naszym formularzu kilka prostych pól, dzięki którym użytkownik będzie mógł podać swoje imię, nazwisko oraz miejsce zamieszkania. Spójrzcie na kod poniżej:
 
@@ -170,7 +170,7 @@ W formularzach istnieje również możliwość dodania pola, dzięki któremu mo
   <input type="file" id="fileUpload">
 </div>
 
-### Pole tekstowe z wieloma liniami (`<textarea>`)
+#### Pole tekstowe z wieloma liniami (`<textarea>`)
 
 Wiemy już, jak wstawiać do naszego formularza pola tekstowe, czyli `<input type="text">`. Co, jeśli jednak użytkownik potrzebuje wpisać większą porcję tekstu, tak jak w przypadku komentarzy pod artykułem na blogu?
 
@@ -184,7 +184,7 @@ Z pomocą przychodzi nam znacznik `<textarea>`, dzięki któremu umożliwimy nas
   <textarea rows="10" cols="30">Napisz coś tutaj</textarea>
 </div>
 
-### Listy rozwijalne (pola typu <i>dropdown</i>)
+#### Listy rozwijalne (pola typu <i>dropdown</i>)
 
 Do wstawiania elementu rozwijalnej listy do formularza służy nam znacznik `<select>`.
 
@@ -208,7 +208,7 @@ Do wstawiania elementu rozwijalnej listy do formularza służy nam znacznik `<se
   </select>
 </div>
 
-### Przyciski
+#### Przyciski
 
 Wymieniliśmy już większość bardzo przydatnych kontrolek, jakie można umieścić w formularzu. I na razie moglibyśmy na tym zakończyć, gdyby nie jedna, bardzo popularna – bez której właściwie większość formularzy byłaby mało użyteczna – przyciski. Deklarujemy je w poniższy sposób:
 

@@ -292,5 +292,12 @@ Brawo, teraz umiemy już nadawać nazwy naszym elementom!
 
 ## Ustawienia edytora tekstowego
 
-<!-- Na przykładzie Sublime Text -->
-<!-- tabs vs spaces -->
+Aby pisać czytelny kod, trzeba bardzo się pilnować. Czy jest jakiś sposób, aby sobie pomóc i zautomatyzować formatowanie kodu? 
+
+Oczywiście, pokażemy Wam kilka skrótów i ustawień na przykładzie edytora [Sublime Text](https://www.sublimetext.com/3), które pomogą Wam okiełznać kod. Warto zastosować te wszystkie ustawienia jeszcze <b>zanim</b> zaczynacie pracę nad projektem. Jeśli pracuje nad nim więcej niż jedna osoba, należy zadbać, aby każda miała identyczne ustawienia edytora.
+
+### Ustawiamy rozmiar wcięć w kodzie
+
+### Szybkie formatowanie
+
+### Pilnujemy maksymalnej długości linii

@@ -36,6 +36,8 @@ Elementy blokowe to elementy, które mają  być wyświetlane jako <b>bloki</b>.
   </div>
 </div>
 
+<a href="http://codepen.io/theawwwesomes/pen/mEqRvk" class="codepen-link">Edytuj na CodePen</a>
+
 Przykładami elementów HTML, które przez przeglądarkę są domyślnie wyświetlane jako blokowe, to wspomniany już `<div>`, ale też `<p>`, `<header>`, `<section>`, `<nav>`, `<footer>`, `<article>`, `<form>`, `<ul>`, `<ol>` oraz nagłówki, np. `<h1>`.
 
 ### Elementy liniowe
@@ -66,6 +68,8 @@ Elementy liniowe to takie, które zachowują się jak linie tekstu, czyli innymi
 <div class="example-wrapper">
   <p>Hipster cornhole celiac kickstarter asymmetrical cred meggings. Retro pitchfork semiotics you <span style="padding: 5px;vertical-align:super;color: lightblue;">probably haven't heard of them</span>, thundercats occupy raw denim DIY.</p>
 </div>
+
+<a href="http://codepen.io/theawwwesomes/pen/jAayJV" class="codepen-link">Edytuj na CodePen</a>
 
 Przykładowe elementy liniowe, które już udało nam się poznać to `<span>` oraz `<a>`.
 
@@ -107,6 +111,8 @@ Poznajmy cztery używane zdecydowanie najczęściej:
   <span style="display:inline-block;width:150px;height:150px;margin:5px 10px 6px 12px;background-color:lightblue"></span>
   <p style="display:inline-block;width:150px;height:150px;margin: 5px 10px 6px 12px;background-color:lightblue"></p>
 </div>
+
+<a href="http://codepen.io/theawwwesomes/pen/qNVRvr" class="codepen-link">Edytuj na CodePen</a>
 
 Poniżej podsumowujemy w tabeli cechy elementów liniowych, blokowych oraz liniowo-blokowych:
 

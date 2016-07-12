@@ -1,10 +1,10 @@
-# Podstawowe znaczniki HTML
+## Podstawowe znaczniki HTML
 
 Właśnie napisaliście swój pierwszy kod HTML, gratulacje! Kiedy jednak spojrzycie na niego, poza podstawowym szkieletem zawiera on jednolity blok tekstu. Brakuje nam wyróżnienia nagłówków, hiperłączy, obrazka i formularzy. Pora na zapoznanie Was z różnymi znacznikami HTML.
 
 Wiemy już, że aby uzyskać HTML-owy element należy "owinąć" go w <i>tagi</i> (<i>znaczniki</i>). Nie poznaliśmy jednak jak dotąd żadnych nazw znaczników, których moglibyśmy użyć na rzeczywistym przykładzie strony.
 
-## Komentarze
+### Komentarze
 
 Często bywa tak, że kod jednej strony edytuje przynajmniej kilku programistów. Zdarza się też, że trzeba wrócić do kodu, który został napisany dość dawno temu. W takich przypadkach bywa, że pojawiają się niejasności i pytania "Co autor miał na myśli?".
 
@@ -14,7 +14,7 @@ Pomocne dla nas bywają wtedy komentarze. Są one ignorowane przez przeglądark�
 <!-- To jest komentarz do naszego kodu -->
 ```
 
-## Nagłówki i akapity
+### Nagłówki i akapity
 
 Tak samo, jak w dokumentach tekstowych, w HTML-u możemy zdefiniować nagłówki dla naszego tekstu:
 
@@ -71,7 +71,7 @@ Kiedy kodujesz akapity, czasem zachodzi potrzeba złamania linii w określonym m
 >
 > Nie stosuj znacznika `<br>`, aby wizualnie odseparować od siebie elementy w pionie! HTML powinien być używany **wyłącznie do definiowania treści**. W tym przypadku należy nadać elementom **pionowe marginesy za pomocą CSS** (już niedługo dowiecie się dokładnie, jak to zrobić).
 
-## Hiperłącza
+### Hiperłącza
 
 Dzięki hiperłączom (czyli po prostu linkom) możemy przenieść się w niemal dowolne inne miejsce w sieci. Link możecie umieścić na stronie używając znacznika `<a>` (od angielskiego słowa <i>anchor</i>) i podając adres linkowanej strony jako wartość atrybutu `href`.
 
@@ -93,7 +93,7 @@ Użycie `target="_blank"` spowoduje, że strona, do której prowadzi Wasz link, 
 >
 > W Sieci trwa nieustanna debata nad tym, czy atrybut `target` i wymuszanie otwierania strony w nowej karcie powinny być używane. [Bardzo wiele osób](http://www.forumweb.pl/forumweb-pl/drobne-pomysly/516489#516489) wskazuje na fakt, że jest to [odbieranie kontroli użytkownikowi](https://kornel.ski/pl/target).
 
-## Obrazki
+### Obrazki
 
 Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on <i>pustym elementem</i> i nie posiada znacznika zamykającego. Dwa najważniejsze atrybuty, jakie może przyjmować `<img>` to:
 
@@ -167,7 +167,7 @@ Obrazki w kodzie wstawiamy za pomocą znacznika `<img>`. Jest on <i>pustym eleme
   <img src="/images/example-img-broken.jpg" alt="Ten obrazek nie został poprawnie załadowany">
 </div>
 
-## Listy
+### Listy
 
 Za pomocą znacznika `<ul>` definiujemy listy nieuporządkowanych elementów, natomiast listy uporządkowane zamykamy wewnątrz znaczników `<ol>`:
 

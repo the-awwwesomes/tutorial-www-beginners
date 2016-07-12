@@ -1,4 +1,4 @@
-# Złożone selektory i specyficzność
+## Złożone selektory i specyficzność
 
 Wiemy już, jak tworzyć proste selektory w CSS. Umiemy stylować elementy wykorzystując ich nazwy, atrybuty, `id` lub klasy. Przyszła pora, aby przenieść się na nieco wyższy poziom i zaznajomić z nieco trudniejszymi zagadnieniami.
 
@@ -90,7 +90,9 @@ W takim wypadku należy umieszczać kolejne selektory po spacji. Zobaczcie zresz
   </nav>
 </div>
 
-## Specyficzność
+<a href="http://codepen.io/theawwwesomes/pen/zBPogo" class="codepen-link">Edytuj na CodePen</a>
+
+### Specyficzność
 
 Wybierając za pomocą CSS dowolny element w dokumencie HTML można zazwyczaj zastosować więcej niż jeden selektor.
 
