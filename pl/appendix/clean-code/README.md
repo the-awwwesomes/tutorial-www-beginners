@@ -334,6 +334,22 @@ Oczywiście! Pokażemy Wam kilka skrótów i ustawień na przykładzie edytora [
 
 ### Ustawiamy rozmiar wcięć w kodzie
 
+Najprostszym sposobem dodawania wcięcia jest wciśnięcie klawisza <kbd>Tab</kbd>. Nie każdy jednak gustuje w znakach tabulacji (przyznajcie szczerze, zajmują dużo miejsca), dlatego istnieje możliwość zmapowania sobie znaku tabulacji na odpowiednią liczbę spacji (domyślnie wielkość znaku tabulacji równa jest 4 spacjom).
+
+W prawym dolnym rogu Sublime wyświetla informacje na temat wcięć w kodzie. Można zmienić to ustawienie dla konkretnego pilku.
+
 ### Szybkie formatowanie
 
+Jeśli nie chcemy się przemęczać, możemy kazać edytorowi automatycznie sformatować cały kod w pliku, nad którym pracujemy. W Sublime domyślnie można to zrobić zaznaczając kawałek kodu, który chcemy sformatować (lub <kbd>Ctrl</kbd>+<kbd>A</kbd>, jeśli chcemy zaznaczyć całą zawartość pliku) i następnie wybierając w menu `Edit`→`Line`→`Reindent`.
+
+Żeby nie musieć za każdym razem, kiedy zajdzie taka potrzeba, wylkikiwać tego w menu, warto dodać sobie w ustawieniach Sublime skrót klawiaturowy.
+
+```json
+{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false }
+```
+
 ### Pilnujemy maksymalnej długości linii
+
+Czasem zdarza się (zwłaszcza w HTML), że z powodu dużej liczby wcięć bądź po prostu samej zawartości linie kodu przestają się mieścić na ekranie. W tym wypadku należy po prostu złamać zbyt długą linię. W którym momencie to zrobić? Bardzo często jako standard maksymalnej długości linii przyjmuje się 80 znaków.
+
+W Sublime możemy w widoku edycji umieścić sobie linijkę pilnującą nas przed nieprzekraczaniem maksymalnej liczby znaków w linii. Na początku dodajmy w ustawieniach linijkę mówiącą o tym, ile znaków chcemy maksymalnie mieścić w linii.
