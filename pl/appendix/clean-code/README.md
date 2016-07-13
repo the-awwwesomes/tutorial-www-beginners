@@ -290,11 +290,47 @@ Brawo, teraz umiemy już nadawać nazwy naszym elementom!
 
 ## Piszemy komentarze
 
+Kolejnym ułatwieniem podczas naszej pracy z kodem są <b>komentarze</b>. Pomagają nam one w opisie niezbyt oczywistych na pierwszy rzut oka rozwiązań. W przypadku CSS mogą się wydawać niemal zupełnie zbędne, jeśli używamy wystarczająco opisowych nazw selektorów. To tylko pozory, ponieważ w miarę rozbudowywania się bazy kodu, a także stosowania bardziej złożonych rozwiązań może być już trudniej odgadnąć, co miał na myśli inny programista albo my sami jakiś czas temu. Komentarze w CSS umieszczamy wewnątrz specjalnych znaków `/* */`. 
+
+Spójrzmy na przykład bardziej rozbudowanego komentarza w CSS:
+
+```css
+/**
+ * Apply this class for an element which should be
+ * centered both horizontally and vertically
+ * inside its parent element
+ *
+ * 1. The centered container should live inside
+ *    a relatively positioned parent element to allow
+ *    absolute positioning
+ * 2. Move both the top and left edges of an element to 
+ *    the center of the parent block
+ * 3. Adjust the element's position to the center
+ *    using CSS 2D transforms
+ */
+.centered {
+  position: absolute; /* [1] */
+  top: 50%; /* [2] */
+  left: 50%; /* [2] */
+  transform: translate(-50%, -50%); /* [3] */
+}
+```
+
+W kodzie HTML również możemy umieszczać komentarze:
+
+```html
+<!-- There should be only one instance of `header-lead` on a single page -->
+<header>
+  <h1 class="header-lead">Wiadomość z ostatniej chwili</h1>
+  <h2 class="header-sub">Szczegóły wiadomości z ostatniej chwili</h2>
+</header>
+```
+
 ## Ustawienia edytora tekstowego
 
 Aby pisać czytelny kod, trzeba bardzo się pilnować. Czy jest jakiś sposób, aby sobie pomóc i zautomatyzować formatowanie kodu? 
 
-Oczywiście, pokażemy Wam kilka skrótów i ustawień na przykładzie edytora [Sublime Text](https://www.sublimetext.com/3), które pomogą Wam okiełznać kod. Warto zastosować te wszystkie ustawienia jeszcze <b>zanim</b> zaczynacie pracę nad projektem. Jeśli pracuje nad nim więcej niż jedna osoba, należy zadbać, aby każda miała identyczne ustawienia edytora.
+Oczywiście! Pokażemy Wam kilka skrótów i ustawień na przykładzie edytora [Sublime Text](https://www.sublimetext.com/3), które pomogą Wam okiełznać kod. Warto zastosować te wszystkie ustawienia jeszcze <b>zanim</b> zaczynacie pracę nad projektem. Jeśli pracuje nad nim więcej niż jedna osoba, należy zadbać, aby każda miała identyczne ustawienia edytora.
 
 ### Ustawiamy rozmiar wcięć w kodzie
 
