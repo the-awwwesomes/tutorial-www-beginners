@@ -336,20 +336,51 @@ Oczywiście! Pokażemy Wam kilka skrótów i ustawień na przykładzie edytora [
 
 Najprostszym sposobem dodawania wcięcia jest wciśnięcie klawisza <kbd>Tab</kbd>. Nie każdy jednak gustuje w znakach tabulacji (przyznajcie szczerze, zajmują dużo miejsca), dlatego istnieje możliwość zmapowania sobie znaku tabulacji na odpowiednią liczbę spacji (domyślnie wielkość znaku tabulacji równa jest 4 spacjom).
 
+W Sublime Text ustawienia użytkownika są przechowywane w specjalnym pliku [JSON](https://en.wikipedia.org/wiki/JSON#Example). Aby je wyedytować, wchodzimy w menu do `Preferences`→`Settings – User`. Powinien otworzyć się w osobnej zakładce gotowy do edycji plik. Wewnątrz nawiasów klamrowych należy dodać dwie linijki:
+
+```json
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true
+```
+
+Powiedzą one edytorowi o tym, jaki powinien stosować rozmiar wcięcia (w naszym przypadku dwie spacje) oraz żeby "tłumaczył" znak tabulacji na spacje.
+
 W prawym dolnym rogu Sublime wyświetla informacje na temat wcięć w kodzie. Można zmienić to ustawienie dla konkretnego pilku.
+
+!["Rozmiar wcięcia w kodzie w edytorze Sublime"](/images/sublime-tabs.png "Rozmiar wcięcia w kodzie w edytorze Sublime")
+
+!["Zmiana rozmiaru wcięcia w kodzie w edytorze Sublime"](/images/sublime-change-indent.png "Zmiana rozmiaru wcięcia w kodzie w edytorze Sublime")
 
 ### Szybkie formatowanie
 
-Jeśli nie chcemy się przemęczać, możemy kazać edytorowi automatycznie sformatować cały kod w pliku, nad którym pracujemy. W Sublime domyślnie można to zrobić zaznaczając kawałek kodu, który chcemy sformatować (lub <kbd>Ctrl</kbd>+<kbd>A</kbd>, jeśli chcemy zaznaczyć całą zawartość pliku) i następnie wybierając w menu `Edit`→`Line`→`Reindent`.
+Jeśli nie chcemy się przemęczać, możemy kazać edytorowi automatycznie sformatować cały kod w pliku, nad którym pracujemy. W Sublime domyślnie można to zrobić zaznaczając kawałek kodu, który chcemy sformatować (lub <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>A</kbd>, jeśli chcemy zaznaczyć całą zawartość pliku) i następnie wybierając w menu `Edit`→`Line`→`Reindent`.
 
-Żeby nie musieć za każdym razem, kiedy zajdzie taka potrzeba, wylkikiwać tego w menu, warto dodać sobie w ustawieniach Sublime skrót klawiaturowy.
+Żeby nie musieć za każdym razem, kiedy zajdzie taka potrzeba, wyklikiwać tego w menu, warto dodać sobie w ustawieniach Sublime skrót klawiaturowy. Skróty klawiaturowe dodaje się w bardzo podobny sposób, jak ustawienia. W tym celu wchodzimy do `Preferences`→`Key Bindings – User` i wewnątrz nawiasów klamrowych wklejamy jedną z poniższych linijek.
+
+Dla Windowsa:
 
 ```json
 { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false }
 ```
+
+Dla MacOS:
+
+```json
+{ "keys": ["cmd+shift+r"], "command": "reindent" , "args": { "single_line": false }
+```
+
+Za pomocą linijek powyżej mapujemy formatowanie kodu na skrót klawiszowy <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>.
 
 ### Pilnujemy maksymalnej długości linii
 
 Czasem zdarza się (zwłaszcza w HTML), że z powodu dużej liczby wcięć bądź po prostu samej zawartości linie kodu przestają się mieścić na ekranie. W tym wypadku należy po prostu złamać zbyt długą linię. W którym momencie to zrobić? Bardzo często jako standard maksymalnej długości linii przyjmuje się 80 znaków.
 
 W Sublime możemy w widoku edycji umieścić sobie linijkę pilnującą nas przed nieprzekraczaniem maksymalnej liczby znaków w linii. Na początku dodajmy w ustawieniach linijkę mówiącą o tym, ile znaków chcemy maksymalnie mieścić w linii.
+
+```json
+"rulers": [ 80 ]
+```
+
+Po zapisaniu ustawień możemy już włączyć opcję pokazywania pionowej linijki w menu `View`→`Ruler`
+
+!["Linijka w Sublime"](/images/sublime-ruler.png "Linijka w Sublime")
