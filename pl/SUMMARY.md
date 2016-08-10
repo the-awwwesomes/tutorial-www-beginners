@@ -20,7 +20,6 @@
     * [Pozycjonujemy elementy na stronie](css-layout/css-positioning/README.md)
     * [Jak wyśrodkować elementy w pionie i poziomie?](css-layout/css-centering/README.md)
     * [Umieszczamy elementy na siatce](css-layout/css-grid/README.md)
-    * [Flexbox](css-layout/css-flexbox/README.md)
 * [Zaawansowane selektory CSS](css-advanced-selectors/README.md)
   * [Pseudoklasy CSS](css-advanced-selectors/css-pseudoclasses/README.md)
   * [Pseudoelementy](css-advanced-selectors/css-pseudoelements/README.md)
@@ -33,4 +32,4 @@
 * [Dodatki](appendix/README.md)
     * [Dodatek I: Jak pisać czytelny kod?](appendix/clean-code/README.md) 
     * [Dodatek II: Photoshop dla frontendowca](appendix/photoshop/README.md)
-    * [Dodatek III: Dodatkowe ćwiczenia](appendix/bonus-exercise/README.md)
+    * [Dodatek III:Layouty do zakodowania](appendix/layouts/README.md)

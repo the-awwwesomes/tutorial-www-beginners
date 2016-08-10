@@ -441,7 +441,7 @@ Zobaczyliśmy, jak wyglądają proste selektory i właściwości CSS, zatem pora
 >
 > W tym ćwiczeniu nauczysz się jak poprawnie załączać plik CSS do Twojej strony.
 >
-> - Otwórz folder z projektem `planty`, zawierający podstawowy kod z poprzednich zajęć (patrz [Ćwiczenie 6](../html-document-structure/README.md).
+> - Otwórz folder z projektem, zawierający podstawowy kod z poprzednich zajęć (patrz [Ćwiczenie 6](../html-document-structure/README.md)).
 > - Stwórz pusty plik `style.css` i zapisz go do nowo utworzonego folderu `/styles`.
 > - Podepnij nowo utworzony plik CSS do `index.html`. W tym celu zastosuj znacznik `<link href="ścieżka do Twojego pliku css" rel="stylesheet">` z odpowiednio uzupełnionymi atrybutami. Przy okazji przećwiczysz ścieżki względne.
 

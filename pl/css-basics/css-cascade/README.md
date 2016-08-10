@@ -26,9 +26,9 @@ Na początku pracy ze stroną polecamy dołączyć do dokumentu style niwelując
 
 > #### Exercise::Ćwiczenie 10
 >
-> - Przejdź do folderu `planty`.
+> - Przejdź do folderu `layout`.
 > - Przejdź do strony [`normalize.css`](https://necolas.github.io/normalize.css/) i kilknij <i>Download</i> (<i>Pobierz</i>). Skopiuj zawartość.
-> - Utwórz w folderze `planty/styles` plik o nazwie `normalize.css` i wklej do niego skopiowane przed chwilą style.
+> - Utwórz w folderze `layout/styles` plik o nazwie `normalize.css` i wklej do niego skopiowane przed chwilą style.
 > - Podłącz arkusz stylów `normalize.css` do `index.html` uważając na to, aby był zalinkowany **przed** Twoim własnym arkuszem stylów.
 
 Style zdefiniowane przez użytkownika to dość rzadki przypadek. Warto jednak w tym momencie zauważyć, że istnieje taka możliwość, aby CSS został zdefiniowany po stronie użytkownika. Dobrym przykładem takich arkuszy stylów są te stosowane np. przez wtyczki przełączające stronę w tryb polepszonej czytelności (przydatny do czytania artykułów – usuwa z pola widzenia wszystkie "rozpraszacze").

@@ -13,7 +13,6 @@ Zapraszamy na krótki kurs, dzięki któremu dowiemy się:
 </ul>
 
 Jeśli jesteś projektantem graficznym lub stawiałeś już pierwsze kroki w Photoshopie, możesz pominąć ten rozdział.
-Na samym końcu znajdziesz Ćwiczenie 13.
 
 ## Ustawienie wybranych jednostek
 
@@ -98,7 +97,7 @@ Dlatego też od jakiegoś czasu graficy zwykli projektować strony www w dwukrot
 
 Jeśli chcesz zagłębić się w temat pikseli oraz Retiny przydatna może być lektura <a href="https://www.smashingmagazine.com/2012/08/towards-retina-web/" target="_blank">artykułu na Smashing Magazine</a>.
 
-Biorąc pod uwagę, to co przeczytaliście w akapicie powyżej, w pliku `planty.psd` wszystkie elementy oraz wielkość tekstów są dwukrotnie większe. Zatem jeśli będziecie sprawdzać rozmiary elementów i fontów, pamiętajcie o podzieleniu ich przez 2 przy przypisywaniu wartości w CSS.
+Biorąc pod uwagę, to co przeczytaliście w akapicie powyżej, w pliku `.psd`, który pobraliście w paczce z zasobami, wszystkie elementy oraz wielkość tekstów są dwukrotnie większe. Zatem jeśli będziecie sprawdzać rozmiary elementów i fontów, pamiętajcie o podzieleniu ich przez 2 przy przypisywaniu wartości w CSS.
 
 Przykładowo: jeśli tekst "because we care for plants" ma wielkość `36px`, docelowo nadamy w pliku CSS wartość:
 `font-size: 18px;  /* ponieważ 36px/2 = 18px */`.
@@ -106,7 +105,7 @@ Przykładowo: jeśli tekst "because we care for plants" ma wielkość `36px`, do
 
 ## Generowanie assetów w Photoshop Creative Cloud
 
-Photoshop Creative Cloud umożliwia wygenerowanie assetów w bardzo prosty i szybki sposób. Wszystko opiera się na <b>warstwach</b> (ang. <i>layers</i>). Zanim przejdziemy do szczegółów warto zajrzeć do zawartości pliku `planty.psd` (plik znajduje się w <a href="../resources/planty-assets/planty-assets.zip">zaktualizowanej paczce z zasobami</a> ). Z reguły każdy z elementów – zdjęcia, obiekty, teksty – są tworzone w oddzielnej warstwie. Umożliwia to łatwą modyfikację poszczególnych elementów, jak i późniejsze łatwe zapisanie odseparowanych elementów na potrzeby zakodowania layoutu.
+Photoshop Creative Cloud umożliwia wygenerowanie assetów w bardzo prosty i szybki sposób. Wszystko opiera się na <b>warstwach</b> (ang. <i>layers</i>). Zanim przejdziemy do szczegółów warto zajrzeć do zawartości pliku `.psd`. Z reguły każdy z elementów – zdjęcia, obiekty, teksty – są tworzone w oddzielnej warstwie. Umożliwia to łatwą modyfikację poszczególnych elementów, jak i późniejsze łatwe zapisanie odseparowanych elementów na potrzeby zakodowania layoutu.
 
 ### Warstwy
 Spróbujmy zajrzeć co kryje się w poszczególnych warstwach, uruchamiając panel warstw: `Window → Layers`
@@ -121,27 +120,19 @@ Pora na wygenerowanie plików z naszego layoutu. Skorzystamy z funkcjonalności,
 
 Zwróć uwagę, czy opcja ta jest zaznaczona. Jeśli tak, to automatyczne generowanie assetów na podstawie nazwy warstw jest włączone. Możemy zatem przejść do kolejnego kroku.
 
-W wersji Photohop Creative Cloud mamy możliwość szybkiego zapisywania assetów z poziomu warstw. Wystarczy zmienić nazwę danej warstwy np. z `flower-2` na `flower-2.png`, wtedy w folderze, gdzie znajduje się nasz plik .psd, zostaną automatycznie wygenerowane assety z zadaną przez nas nazwą i rozszerzeniem. Assety są zapisywane w podfolderze `planty-assets`. Sprawdźmy teraz, czy pojawił się tam plik z danym assetem.
+W wersji Photohop Creative Cloud mamy możliwość szybkiego zapisywania assetów z poziomu warstw. Wystarczy zmienić nazwę danej warstwy np. z `flower-2` na `flower-2.png`, wtedy w folderze, gdzie znajduje się nasz plik .psd, zostaną automatycznie wygenerowane assety z zadaną przez nas nazwą i rozszerzeniem. Assety są zapisywane w podfolderze `*-assets`. Sprawdźmy teraz, czy pojawił się tam plik z danym assetem.
 
 
-!["Automatyczne generowanie assetów][11]
+![Automatyczne generowanie assetów][11]
 [11]: /images/ps-generate-assets.gif
 
 Taką czynność powtarzamy dla elementów, których będziemy potrzebować do zbudowania layoutu. Pamiętajcie, że CSS umożliwia stworzenie wielu obiektów takich jak ramki lub proste figury geometryczne, więc nie musimy zapisywać każdej z warstw do pliku. W przypadku Planty potrzebować będziemy jedynie zdjęć i ikon mediów społecznościowych.
 
-> #### Exercise::Ćwiczenie 13
+> #### Exercise::Ćwiczenie
 >
-> Wróćmy do naszego layoutu Planty. Jak dotąd udało Ci się:
->
-> - Zakodować treść dokumentu w HTML,
-> - Dołączyć do projektu fonty z Google Fonts i ostylować tekst.
->
-> Pora na tchnięcie trochę życia i kolorów w Planty. Skorzystaj zatem z świeżo nabytej wiedzy i dokonaj następujących zmian na stronie:
+> Wróćmy do naszego layoutu &ndash; pora na tchnięcie w niego trochę życia i kolorów. Skorzystaj zatem z świeżo nabytej wiedzy i dokonaj następujących zmian na stronie:
 >
 > - Wiesz już, co wchodzi w skład modelu pudełkowego. Odszukaj w projekcie wszystkie elementy, które mogą potrzebować dodania ramki lub wypełnienia (<i>paddingu</i>).
 > - Zwróć uwagę na pojawiające się elementy formularzy (przyciski, `input`y, `textarea`). Nadaj im wygląd zgodny z projektem.
 >
 > Podpowiadamy, że do dokonania powyższych zmian wystarczy Ci znajomość poznanych dotąd właściwości, czyli `color`, `background-color`, `border`, `padding`, `width`, `height`. Jeśli czujesz się komfortowo używając Photoshopa, możesz pobrać tam wartości kolorów oraz poszczególnych wymiarów.
->
->Przypominamy, że paczkę z Planty można
-<a href="../resources/planty-assets/planty-assets.zip">pobrać z zasobów dołączonych do tutorialu</a>.

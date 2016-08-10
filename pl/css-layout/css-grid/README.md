@@ -1,6 +1,6 @@
 ## Umieszczamy elementy na siatce
 
-Każdy z Was, kto miał już do czynienia z projektowaniem graficznym stron internetowych, z pewnością wie, do czego służy siatka. Jest ona bardzo ważna dla kompozycji strony, ułatwia harmonijne i estetyczne rozmieszczenie jej elementów. Spójrzmy, jak wygląda siatka naszego layoutu Planty:
+Każdy z Was, kto miał już do czynienia z projektowaniem graficznym stron internetowych, z pewnością wie, do czego służy siatka. Jest ona bardzo ważna dla kompozycji strony, ułatwia harmonijne i estetyczne rozmieszczenie jej elementów. Spójrzmy, jak wygląda siatka layoutu Planty:
 
 ![Siatka projektu layoutu Planty][1]
 
@@ -111,32 +111,10 @@ Zerknijcie na poniższą tabelę
 
 
 
-> #### Exercise::Ćwiczenie 14
+> #### Exercise::Ćwiczenie 12
 >
-> Porą dołączyć plik CSS, zawierający grid pochodzący z Bootstrapa do naszego projektu Planty. Co warto podkreślić, na zajęciach wykorzystujemy jedynie siatkę bootstrapową. Nie będziemy zajmować się innymi komponentami z frameworku Boostrap.
+> Porą dołączyć plik CSS, zawierający grid pochodzący z Bootstrapa do naszego projektu. Co warto podkreślić, na zajęciach wykorzystujemy jedynie siatkę bootstrapową. Nie będziemy zajmować się innymi komponentami z frameworku Boostrap.
 > <a href="../resources/bootstrap-grid.css" target="_blank">Ściągnij plik `bootstrap-grid.css`</a> i zapisz go do folderu ze stylami, czyli `styles`. Następnie dodaj plik do Twojego kodu HTML, korzystając ze znacznika
 >`<link href="tu wpisz ścieżkę do pliku css" rel="stylesheet">`. Pamiętaj o napisaniu prawidłowej ścieżki!
-> Pora na wypróbowanie jak działa siatka.
-> W kodzie HTML do Planty utwórz dwie, równe pod względem szerokości kolumny w sekcji zawierającej formularz.
 >
->Uzyskaj poniższy efekt, wykorzystując dotychczas zdobytą wiedzę.
->Na razie nie przejmuj się pastelową ramką nałożoną na obrazek – w kolejnym rozdziale dowiesz się jak to zrobić.
->
-![Formularz w Plany z wykorzystaną siatką][3]
-[3]: /images/grid-form.png
-
-
-
-Jeśli zrobiliście już ćwiczenie 14. i macie ochotę na podszlifowanie umięjętności budowania layoutu w oparciu o szkielet z Bootstrapa, to poniżej znajdziecie ćwiczenie dla chętnych.
-
-
-
-> #### Exercise::Ćwiczenie 15* (dla chętnych)
->
->Oto następny layout do zakodowania.
->Załącz font pochodzący <a href="http://google.com/fonts" target="_blank">Google Fonts</a>. W tym projekcie jest to wspaniały krój **Lato** zaprojektowany przez Łukasza Dziedzica. Do nagłówków przyda się wersja <i>bold</i>, zaś do reszty tekstów wersja <i>regular</i>.
->
-><a href="../resources/exercise-15/exercise-15.zip">Pobierz potrzebne assety</a> do zbudowania layoutu – obrazki oraz teksty na stronę.
->
-![Layout dla chętnych][4]
-[4]: /resources/exercise15-layout.jpg
+> Wykorzystaj zdobytą wiedzę o siatce i rozmieść w budowanym layoucie elementy w kolumnach, używając do tego siatki Bootstrapa.

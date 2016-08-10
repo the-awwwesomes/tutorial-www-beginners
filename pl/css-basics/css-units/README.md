@@ -103,24 +103,3 @@ html {
   height: 100vw; /* Zajmuję całą szerokość okna */
 }
 ```
-
-> #### Exercise::Ćwiczenie 12* (dla chętnych)
->
-> Jeśli masz ochotę zakodować nowy layout, to ćwiczenie jest dla Ciebie! Wykorzystaj zdobytą dotychczasową wcześniej wiedzę i postaraj się stworzyć stronę wizualnie zbliżoną do poniższego projektu.
->
-> ![Layout Moodly](/resources/moodly-assets/moodly-layout.png "Layout Moodly")
->
-> <a href="../resources/moodly-assets/moodly-assets.zip">Ściągnij paczkę z zasobami.</a> W pliku `moodly.txt` podano nazwy potrzebnych fontów. W paczce znajdziesz również plik `background.jpg`, który będziesz mógł użyć do projektu. Jeśli pojawił się u Ciebie problem z formatowaniem tekstu w pliku `.txt`, otwórz go w Sublime Text.
-
-> Być może nasuwa Ci się pytanie jak dołączać obrazki jako tło? Odpowiedź znajdziesz pod ćwiczeniem.
-
-> Do pozostałych elementów użyj znanych tagów i właściwości CSS m.in.
->
->- `height` i `width` (do zdefiniowania rozmiarów),
->- `text-align` (do wycentrowania tekstu),
->-`border` (do obramowania guzika "download"),
->- `background-color` (do nadania koloru tła dla sekcji "Features"),
->- świeżo zdobytej wiedzy o modelu pudełkowym.
-
-> Nie przejmuj się, jeśli nie uda Ci się wiernie odwzorować layoutu. Wrócimy do niego po kolejnych zajęciach, kiedy nauczymy się nowych rzeczy :)
-> Poniżej znajdziecie jeszcze kilka przydatnych informacji, w tym właściwości CSS, które pomogą Wam w tym ćwiczeniu.

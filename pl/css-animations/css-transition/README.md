@@ -91,12 +91,11 @@ Tutaj przykład animacji z zastosowanym opóźnieniem (`transition-delay`):
 <a href="" class="awww-exercise-link added-transition" style="transition: all 0.7s ease-in-out 0.7s;">to jest link</a>
 </div>
 
-> #### Exercise::Ćwiczenie 16
+> #### Exercise::Ćwiczenie 13
 >
->Pora na ożywienie linków na stronie. Niech każdy link z nawigacji po najechaniu kursorem zmieni kolor na wartość `#acceb7`.
-> Wykorzystaj funkcję `transition` z dobranymi przez Ciebie parametrami czasu.
+>Pora na ożywienie linków na stronie. Niech każdy link z nawigacji po najechaniu kursorem zmieni kolor. Wykorzystaj funkcję `transition` z dobranymi przez Ciebie parametrami czasu.
 >
-> Zmień kolor tła przycisków po najechaniu kursorem, tak aby osiągnąć poniższy efekt:
+> Zmień kolor tła przycisków po najechaniu kursorem, tak aby osiągnąć podobny do poniższego efekt:
 >
 >![Animacja][2]
 [2]: /images/button-animation.gif

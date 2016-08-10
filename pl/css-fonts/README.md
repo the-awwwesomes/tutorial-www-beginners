@@ -9,6 +9,7 @@ Zanim jednak zaczniemy szukać odpowiedniego kroju, musimy pamiętać, że jedyn
 Obecnie istnieje wiele portali, które darmowo udostępniają bardzo wiele różnych fontów. Jednym z najczęściej używanych jest <a href="https://www.google.com/fonts">Google Fonts</a>.
 
 ## Jak podłączyć font z Google Fonts?
+
 Odwiedźmy stronę <a href="https://www.google.com/fonts">Google Fonts</a> i wybierzmy font. W naszym layoucie Planty wykorzystane zostały trzy różne rodziny fontów: <i>Playfair Display</i>, <i>Montserat</i> oraz <i>Muli</i>. Znajdziemy je na <a href="https://www.google.com/fonts">Google Fonts</a>.
 Fonty te poza tym, że mogą zostać podpięte pod naszą stronę, mogą także zostać ściągnięte i zainstalowane na naszych komputerach.
 
@@ -49,15 +50,16 @@ ul li {
 
 Kod ten oznacza: "wyświetl font 'Playfair Display'; jeśli nie jest to możliwe, to wyświetl font 'Georgia'; jeśli 'Georgia' nie została znaleziona, to wyświetl dowolny font szeryfowy".
 
-
-Teraz możemy sprawdzić czy nasza lista na stronie Planty zmieniła font. W celu weryfikacji dla elementu listy odznaczmy właściwość `font-family` w Narzędziach Developerskich. Czy zaobserwowaliście zmianę fontu?
+Teraz możemy sprawdzić czy nasza lista na stronie zmieniła font. W celu weryfikacji dla elementu listy odznaczmy właściwość `font-family` w narzędziach developerskich. Czy zaobserwowaliście zmianę fontu?
 
 > #### Exercise::Ćwiczenie 9
 >
-> Pora na podłączenie pozostałych dwóch fontów do Planty. Są to <i>Muli (Normal 400)</i> oraz <i>Montserrat (Bold 700)</i>. Po podłączeniu fontów, przejdź do pliku CSS i przypisz akapitom font <i>Muli</i>, natomiast tekstowi "because we care for plants" font <i>Montserrat</i>, tak żeby osiągnąc poniższy efekt:
-
-> ![Podłączone fonty: Muli, Montserrat oraz Playfair Display](/images/googlefonts-layout.png "Podłączone fonty: Muli, Montserrat oraz Playfair Display")
->Renderowanie fontów może nieco różnić się w zależności od przeglądarki, więc nie przejmuj się na razie, jeśli u Ciebie fonty wyglądają na "cieńsze" lub "bardziej tłuste". Pomińmy też na tym etapie wielkości fontów.
+> Pora na podłączenie pozostałych dwóch fontów do naszego layoutu. 
 >
+> Jakie to fonty? Możesz sprawdzić to za pomocą programu graficznego, który otwiera pliki `.psd` (Photoshop), jednak dla ułatwienia przygotowaliśmy dla Ciebie informacje o rodzajach fontów w pliku tekstowym. 
+>
+> Taki plik znajdziecie w folderach z zasobami dla każdego layoutu pod nazwą `info.txt`.
+>
+> Uwaga &ndash; renderowanie fontów może nieco różnić się w zależności od przeglądarki, więc nie przejmuj się na razie, jeśli u Ciebie fonty wyglądają na "cieńsze" lub "bardziej tłuste". Pomińmy też na tym etapie wielkości fontów.
 
-Możesz dodawać dowolną liczbę niesystemowych fontów. Pamiętaj jednak, że fonty ładowane są wraz z ładowaniem strony internetowej. Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.
+Możecie dodawać dowolną liczbę niesystemowych fontów. Pamiętajcie jednak, że fonty ładowane są wraz z ładowaniem strony internetowej. Przy wolniejszym transferze internetowym zauważyć można doładowywanie fontów.
