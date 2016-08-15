@@ -1,4 +1,4 @@
-# Jak działa internet?
+# Jak działa Internet?
 
 > #### Info::Fragmenty tej sekcji została zaczerpnięte z tutoriala warsztatów Django Girls
 >
@@ -6,15 +6,15 @@
 
 Możemy się założyć, że używacie go każdego dnia. Ale czy naprawdę wiecie co się dzieje, gdy wpisujecie w przeglądarce adres http://theawwwesomes.org i wciskacie <kbd>Enter</kbd>?
 
-Aby zrozumieć jak działa internet, powinniście najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak Wasze zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
+Aby zrozumieć jak działa Internet, powinniście najpierw dowiedzieć się czym tak naprawdę jest strona internetowa, a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak Wasze zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
 Jeśli nie mieliście wcześniej do czynienia z programowaniem, może być Wam na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Wasza strona – by wyglądała dokładnie tak jak chcecie.
 
 Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych <i>serwerami</i> (ang. <i>servers</i>). Serwery nie posiadają monitorów, myszy ani klawiatur, ich głównym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane <i>serwerami</i> – ponieważ służą do *serwowania* danych.
 
-Ok, ale pewnie chcielibyście wiedzieć jak wygląda internet?
+Ok, ale pewnie chcielibyście wiedzieć jak wygląda Internet?
 
-Narysowaliśmy Ci schemat internetu! Wygląda tak:
+Narysowaliśmy Ci schemat Internetu! Wygląda tak:
 
 ![Rysunek 1.1][1]
 

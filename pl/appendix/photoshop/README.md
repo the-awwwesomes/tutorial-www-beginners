@@ -133,6 +133,6 @@ Taką czynność powtarzamy dla elementów, których będziemy potrzebować do z
 > Wróćmy do naszego layoutu &ndash; pora na tchnięcie w niego trochę życia i kolorów. Skorzystaj zatem z świeżo nabytej wiedzy i dokonaj następujących zmian na stronie:
 >
 > - Wiesz już, co wchodzi w skład modelu pudełkowego. Odszukaj w projekcie wszystkie elementy, które mogą potrzebować dodania ramki lub wypełnienia (<i>paddingu</i>).
-> - Zwróć uwagę na pojawiające się elementy formularzy (przyciski, `input`y, `textarea`). Nadaj im wygląd zgodny z projektem.
+> - Zwróć uwagę na pojawiające się elementy formularzy (przyciski, czyli `buttony`, `inputy`, `textarea`). Nadaj im wygląd zgodny z projektem.
 >
 > Podpowiadamy, że do dokonania powyższych zmian wystarczy Ci znajomość poznanych dotąd właściwości, czyli `color`, `background-color`, `border`, `padding`, `width`, `height`. Jeśli czujesz się komfortowo używając Photoshopa, możesz pobrać tam wartości kolorów oraz poszczególnych wymiarów.

@@ -8,7 +8,7 @@ Zatem jakie wyzwania teraz na Was czekają?
 
 ## HTML i CSS
 
-W tym zakresie macie już solidne podstawy (zakładając, że bardzo uważnie przerobiliście tutorial!). Mamy tu dla Was jedną radę: "ćwiczyć, ćwiczyć i jeszcze raz &ndash; ćwiczyć!". W [Dodatku III](../appendix/bonus-exercise/README.md) przygotowaliśmy dla Was kilka dodatkowych layoutów do samodzielnego zakodowania. Z pewnością możecie też przeszukać internet &ndash; nietrudno znaleźć proste, darmowe szablony `psd` i spróbować przenieść je do kodu. 
+W tym zakresie macie już solidne podstawy (zakładając, że bardzo uważnie przerobiliście tutorial!). Mamy tu dla Was jedną radę: "ćwiczyć, ćwiczyć i jeszcze raz &ndash; ćwiczyć!". W [Dodatku III](../appendix/bonus-exercise/README.md) przygotowaliśmy dla Was kilka dodatkowych layoutów do samodzielnego zakodowania. Z pewnością możecie też przeszukać Internet &ndash; nietrudno znaleźć proste, darmowe szablony `psd` i spróbować przenieść je do kodu. 
 
 W ramach naszego kursu zapoznaliśmy się z niektórymi tagami, dzięki którym można zakodować prostą, statyczną stronę. Część z nich pojawiła się niedawno (choć w świecie web developmentu to już spory kawał czasu!) w ramach standardu [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5). HTML5 można rozumieć dwojako:
 
@@ -48,15 +48,15 @@ Na początek polecamy Wam:
 
 - [interaktywny kurs na Codeacademy](https://www.codecademy.com/learn/javascript), gdzie możecie nauczyć się składni języka,
 - [dokumentację na MDN](https://developer.mozilla.org/pl/docs/Web/JavaScript),
-- kiedy poczujecie się już nieco pewniej, warto zabrać się za lekturę książki [Eloquent JavaScript](http://eloquentjavascript.net/), dostępnej za darmo do przeczytania w internecie.
+- kiedy poczujecie się już nieco pewniej, warto zabrać się za lekturę książki [Eloquent JavaScript](http://eloquentjavascript.net/), dostępnej za darmo do przeczytania w Internecie.
 
 ## Programowanie aplikacji webowych
 
 Jeśli poważnie myślicie o rozpoczęciu kariery jako programista/programistka frontend, powyższe zagadnienia nie wyczerpują tematyki programowania aplikacji webowych.
 
-Przypomnijcie sobie treść pierwszego rozdziału "Jak działa internet?". Czy wydaje się Wam to trudne?
+Przypomnijcie sobie treść pierwszego rozdziału "Jak działa Internet?". Czy wydaje się Wam to trudne?
 
-Programista frontend zwykle zna technologie, dzięki którym działa internet, aby móc efektywnie tworzyć rozwiązania umożliwiające komunikację części klienckiej z backendem. Na pewno warto dogłębnie zrozumieć, jak działają [zapytania HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), [ciasteczka](https://en.wikipedia.org/wiki/HTTP_cookie) (<i>cookies</i>), a także w jaki sposób przeglądarka renderuje stronę. Warto też mieć chociaż ogólne pojęcie na temat technologii backendowych, między innymi baz danych.
+Programista frontend zwykle zna technologie, dzięki którym działa Internet, aby móc efektywnie tworzyć rozwiązania umożliwiające komunikację części klienckiej z backendem. Na pewno warto dogłębnie zrozumieć, jak działają [zapytania HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), [ciasteczka](https://en.wikipedia.org/wiki/HTTP_cookie) (<i>cookies</i>), a także w jaki sposób przeglądarka renderuje stronę. Warto też mieć chociaż ogólne pojęcie na temat technologii backendowych, między innymi baz danych.
 
 Poza tym znajomość czystego JavaScriptu może okazać się niewystarczająca. Obecnie często zdarza się, że część kliencka aplikacji jest bardzo rozbudowana, dużo danych jest wyświetlanych w czasie rzeczywistym, itd. Aby rozwiązać wiele związanych z tym problemów stworzono <i>frameworki</i>, czyli rozbudowane biblioteki wymuszające tworzenie aplikacji zgodnie z określonymi regułami i strukturą. Nauka każdego <i>frameworka</i> jest osobnym wyzwaniem. Obecnie jednymi z najpopularniejszych są [AngularJS](https://angularjs.org/) (wraz ze swoją odświeżoną wersją [Angular 2](https://angular.io/)) oraz [ReactJS](https://facebook.github.io/react/).
 
