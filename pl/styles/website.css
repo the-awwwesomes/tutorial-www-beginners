@@ -1,8 +1,8 @@
 /* CSS for website */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
 
 .book .book-body .page-wrapper .page-inner section.normal * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #151d46;
   font-weight: 500;
 }
