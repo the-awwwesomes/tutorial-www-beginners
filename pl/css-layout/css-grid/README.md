@@ -114,7 +114,7 @@ Zerknijcie na poniższą tabelę
 > #### Exercise::Ćwiczenie 12
 >
 > Porą dołączyć plik CSS, zawierający grid pochodzący z Bootstrapa do naszego projektu. Co warto podkreślić, na zajęciach wykorzystujemy jedynie siatkę bootstrapową. Nie będziemy zajmować się innymi komponentami z frameworku Boostrap.
-> <a href="../resources/bootstrap-grid.css" target="_blank">Ściągnij plik `bootstrap-grid.css`</a> i zapisz go do folderu ze stylami, czyli `styles`. Następnie dodaj plik do Twojego kodu HTML, korzystając ze znacznika
+> <a href="../../resources/bootstrap-grid.css" target="_blank">Ściągnij plik `bootstrap-grid.css`</a> i zapisz go do folderu ze stylami, czyli `styles`. Następnie dodaj plik do Twojego kodu HTML, korzystając ze znacznika
 >`<link href="tu wpisz ścieżkę do pliku css" rel="stylesheet">`. Pamiętaj o napisaniu prawidłowej ścieżki!
 >
 > Wykorzystaj zdobytą wiedzę o siatce i rozmieść w budowanym layoucie elementy w kolumnach, używając do tego siatki Bootstrapa.
