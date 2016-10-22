@@ -2,10 +2,54 @@
 
 Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów, aby przećwiczyć zdobytą wiedzę w praktyce.
 
-## Planty
+## Hello Colors
 
-![Layout Planty][1]
-[1]: /resources/planty.png
+<a href="../../resources/hello-colors/hello-colors.zip" class="button-download">
+  Pobierz paczkę z assetami
+</a>
+
+<a href="../../resources/hello-colors/hello-colors.psd" class="button-download">
+  Pobierz plik .psd projektu
+</a>
+
+![Layout Hello Colors][1]
+[1]: /resources/hello-colors.jpg
+
+
+
+
+## Hello Minimal
+
+<a href="../../resources/hello-minimal/hello-minimal.zip" class="button-download">
+  Pobierz paczkę z assetami
+</a>
+
+<a href="../../resources/hello-minimal/hello-minimal.psd" class="button-download">
+  Pobierz plik .psd projektu
+</a>
+
+![Layout Hello Minimal][2]
+[2]: /resources/hello-minimal.jpg
+
+
+
+## Hello Neon
+
+<a href="../../resources/hello-neon/hello-neon.zip" class="button-download">
+  Pobierz paczkę z assetami
+</a>
+
+<a href="../../resources/hello-neon/hello-neon.psd" class="button-download">
+  Pobierz plik .psd projektu
+</a>
+
+![Layout Hello Neon][3]
+[3]: /resources/hello-neon.jpg
+
+
+
+
+## Planty
 
 <a href="../../resources/planty/planty.zip" class="button-download">
   Pobierz paczkę z assetami
@@ -15,10 +59,12 @@ Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów
   Pobierz plik .psd projektu
 </a>
 
-## Moodly
+![Layout Planty][4]
+[4]: /resources/planty.png
 
-![Layout Moodly][2]
-[2]: /resources/moodly.png
+
+
+## Moodly
 
 <a href="../../resources/moodly/moodly.zip" class="button-download">
   Pobierz paczkę z assetami
@@ -28,10 +74,12 @@ Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów
   Pobierz plik .psd projektu
 </a>
 
-## Living in a Big City
+![Layout Moodly][5]
+[5]: /resources/moodly.png
 
-![Layout Big City][3]
-[3]: /resources/big-city.jpg
+
+
+## Living in a Big City
 
 <a href="../../resources/big-city/big-city.zip" class="button-download">
   Pobierz paczkę z assetami
@@ -40,3 +88,6 @@ Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów
 <a href="../../resources/big-city/big-city.psd" class="button-download">
   Pobierz plik .psd projektu
 </a>
+
+![Layout Big City][6]
+[6]: /resources/big-city.jpg
