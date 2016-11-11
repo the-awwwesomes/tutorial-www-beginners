@@ -364,7 +364,7 @@ Znacznik `<link>` znajduje się w części `<head>` naszego dokumentu HTML.
     <meta name="description" content="Darmowe warsztaty z programowania HTML i CSS.">
     <title>The Awwwesomes – Darmowe warsztaty z programowania HTML & CSS</title>
     <!--poniżej załączony jest plik z arkuszami stylów, czyli plik CSS-->
-    <link rel="stylesheet" href="/styles/website.css">
+    <link rel="stylesheet" href="styles/website.css">
   </head>
   <body>
 ```  
@@ -374,8 +374,8 @@ Znacznik `<link>` znajduje się w części `<head>` naszego dokumentu HTML.
 > Kolejność załączania plików CSS ma znaczenie. Może zdarzyć się sytuacja, że Waszym projekcie dołączać będziecie do strony więcej niż jeden plik CSS. Kiedy w obu z nich będą występować te same selektory, lecz zawierające różne właściwości, przeglądarka z pierwszeństwem potraktuje ten selektor, który został załączony jako ostatni.
 > Zilustrujmy to przykładem. Do pliku `index.html` dołączone są następujące pliki css:
 >```html
-<link href="/styles/style-1.css" rel="stylesheet">
-<link href="/styles/style-2.css" rel="stylesheet">
+<link href="styles/style-1.css" rel="stylesheet">
+<link href="styles/style-2.css" rel="stylesheet">
 ```
 > Jeśli w pliku `style-1.css` występuje deklaracja:
 >```css
