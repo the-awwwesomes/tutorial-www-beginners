@@ -4,7 +4,7 @@ Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów
 
 ## Hello Colors
 
-<a href="../../resources/hello-colors/hello-colors.zip" class="button-download">
+<a href="https://drive.google.com/open?id=0B57UcPjjeE3lbFBZbVNIbW96TjA" class="button-download">
   Pobierz paczkę z assetami
 </a>
 
@@ -20,7 +20,7 @@ Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów
 
 ## Hello Minimal
 
-<a href="../../resources/hello-minimal/hello-minimal.zip" class="button-download">
+<a href="https://drive.google.com/file/d/0B57UcPjjeE3lR2FoMWZ5YkFZcTA/view?usp=sharing" class="button-download">
   Pobierz paczkę z assetami
 </a>
 
@@ -35,7 +35,7 @@ Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów
 
 ## Hello Neon
 
-<a href="../../resources/hello-neon/hello-neon.zip" class="button-download">
+<a href="https://drive.google.com/open?id=0B57UcPjjeE3lQ0JoUzFfb0FvUlk" class="button-download">
   Pobierz paczkę z assetami
 </a>
 

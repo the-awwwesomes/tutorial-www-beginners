@@ -10,24 +10,49 @@ Obecnie istnieje wiele portali, które darmowo udostępniają bardzo wiele róż
 
 ## Jak podłączyć font z Google Fonts?
 
-Odwiedźmy stronę <a href="https://www.google.com/fonts">Google Fonts</a> i wybierzmy font. W naszym layoucie Planty wykorzystane zostały trzy różne rodziny fontów: <i>Playfair Display</i>, <i>Montserat</i> oraz <i>Muli</i>. Znajdziemy je na <a href="https://www.google.com/fonts">Google Fonts</a>.
+Odwiedźmy stronę <a href="https://www.google.com/fonts">Google Fonts</a> i wybierzmy font. W naszym layoucie [Planty](../appendix/layouts/README.md) wykorzystane zostały trzy różne rodziny fontów: <i>Playfair Display</i>, <i>Montserat</i> oraz <i>Muli</i>. Znajdziemy je na <a href="https://www.google.com/fonts">Google Fonts</a>.
 Fonty te poza tym, że mogą zostać podpięte pod naszą stronę, mogą także zostać ściągnięte i zainstalowane na naszych komputerach.
 
-Jeśli szukany przez nas font (np. <i>Playfair Display</i>) został już znaleziony, należy kliknąć w ikonę <i>Quick use</i> zaznaczoną pomarańczowym kółkiem.
+Na stronie Google Fonts w oknie wyszukiwania, z prawej strony wpisujemy nazwę fontu.
 
-> ![](/images/googlefonts-quickuse.png "")
 
-W punkcie 1. wybierzmy interesujące nas style danego kroju. W projekcie Planty będziemy korzystać z "Normal 400" oraz "Normal 400 Italic". W przypadkach, gdy współpracujemy z projektantami graficznymi zapytajmy o to, które style użyte są w projekcie.
+> ![](/images/googlefonts-1.jpg "Google Fonts i zaznaczona wyszukiwarka z prawej strony.")
+>
+>
 
-> ![Layout do zakodowania](/images/googlefonts-styles.png "Layout do zakodowania")
 
-Jeśli tworzymy stronę w języku polskim, upewnijmy się czy font wyposażony jest w polskie znaki. Można to sprawdzić wpisując tekst w Google Fonts i obserwując jak te znaki są wyświetlane. Domyślnie font nie ma zaznaczonego checkboksa "Latin extended", który zawiera m.in. polskie znaki.
+
+Następnie będąc na stronie danego fontu, klikamy w „Select this font”.
+
+
+> ![](/images/googlefonts-2.jpg "")
+
+
+Na samym dole klikamy w czarny panel „Family Selected”.
+
+> ![](/images/googlefonts-3.jpg "")
+
+
+Powinien pokazać się pop-up, gdzie znajdziemy najważniejsze dla nas informację, które wykorzystamy do podpięcia wybranego fontu. Interesować nas będzie znacznik `<link ...>`, który umieszczamy w sekcji `<head>` oraz właściwość `font-family: "..."`, którą nadajemy danemu elementowi w pliku CSS. Dokładniejszy opis jak to zrobić znajdziecie poniżej.
+
+
+
+
+
+
+W zakładce „Customize” wybierzmy interesujące nas style danego kroju. W projekcie Planty będziemy korzystać z „Normal 400” oraz „Normal 400 Italic”. W przypadkach, gdy współpracujemy z projektantami graficznymi zapytajmy o to, które style użyte są w projekcie.
+
+
+> ![](/images/googlefonts-4.jpg "Zakłaka 'Customize'"")
+
+
+Jeśli tworzymy stronę w języku polskim, upewnijmy się czy font wyposażony jest w polskie znaki. Można to sprawdzić wpisując tekst w Google Fonts i obserwując jak te znaki są wyświetlane. Domyślnie font nie ma zaznaczonego checkboksa „Latin extended”, który zawiera m.in. polskie znaki.
 
 
 Pamiętajmy, żeby zaznaczyć tę opcję, jeśli potrzebujemy polskich znaków. W przypadku Planty możemy zostawić opcję domyślną (teksty są w języku angielskim).
 
 
-Zgodnie z tym, co znajdziesz w punkcie 3, należy umieścić poniższy tag w sekcji` <head>`.
+Poniższy znacznik należy umieścić w sekcji` <head>`.
 ```html
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 ```
