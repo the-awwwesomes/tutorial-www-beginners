@@ -360,13 +360,13 @@ Jeśli nie chcemy się przemęczać, możemy kazać edytorowi automatycznie sfor
 Dla Windowsa:
 
 ```json
-{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false }
+{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } }
 ```
 
 Dla MacOS:
 
 ```json
-{ "keys": ["cmd+shift+r"], "command": "reindent" , "args": { "single_line": false }
+{ "keys": ["cmd+shift+r"], "command": "reindent" , "args": { "single_line": false } }
 ```
 
 Za pomocą linijek powyżej mapujemy formatowanie kodu na skrót klawiszowy <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>.
