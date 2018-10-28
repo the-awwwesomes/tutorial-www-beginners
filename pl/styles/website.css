@@ -17,13 +17,12 @@
   text-decoration: none;
 }
 
-.book .book-body .page-wrapper .page-inner section.normal h1, 
-.book .book-body .page-wrapper .page-inner section.normal h2, 
-.book .book-body .page-wrapper .page-inner section.normal h3, 
-.book .book-body .page-wrapper .page-inner section.normal h4, 
-.book .book-body .page-wrapper .page-inner section.normal h5, 
+.book .book-body .page-wrapper .page-inner section.normal h1,
+.book .book-body .page-wrapper .page-inner section.normal h2,
+.book .book-body .page-wrapper .page-inner section.normal h3,
+.book .book-body .page-wrapper .page-inner section.normal h4,
+.book .book-body .page-wrapper .page-inner section.normal h5,
 .book .book-body .page-wrapper .page-inner section.normal h6 {
-  font-family: brandon-grotesque, sans-serif;
   font-weight: 700;
 }
 
@@ -43,7 +42,6 @@
 }
 
 .book .book-body .page-wrapper .page-inner section.normal .button-download {
-  font-family: brandon-grotesque, sans-serif;
   display: block;
   padding: 1rem;
   color: white;
@@ -85,7 +83,6 @@
 
 .book .book-body .page-wrapper .page-inner section.normal .codepen-link {
   display: block;
-  font-family: brandon-grotesque, sans-serif;
   font-size: 20px;
   text-align: right;
   margin-top: -25px;
@@ -94,10 +91,9 @@
 /* Navigation (table of contents) menu */
 
 .book .book-summary ul.summary {
-  font-family: brandon-grotesque, sans-serif;
 }
 
-.book .book-summary ul.summary li a, 
+.book .book-summary ul.summary li a,
 .book .book-summary ul.summary li span {
   font-weight: 500;
   color: #f06969;
@@ -158,16 +154,16 @@
   padding: 0;
 }
 
-/* Code */ 
+/* Code */
 
-.book .book-body .page-wrapper .page-inner section.normal pre *, 
+.book .book-body .page-wrapper .page-inner section.normal pre *,
 .book .book-body .page-wrapper .page-inner section.normal code * {
   font-family: 'Consolas', monospace;
 }
 
 /* Good/bad examples */
 
-.book .book-body .page-wrapper .page-inner section.normal .good, 
+.book .book-body .page-wrapper .page-inner section.normal .good,
 .book .book-body .page-wrapper .page-inner section.normal .wrong {
   font-size: 32px;
 }
@@ -180,8 +176,8 @@
   color: #D65269;
 }
 
-/* 
-* Code demo examples 
+/*
+* Code demo examples
 */
 
 .image-full-width {
@@ -247,13 +243,13 @@
 
 .book .book-body .page-wrapper .page-inner section.normal div.awww-ch-animations-exercise a.awww-exercise-link {
     padding: 10px 20px;
-    background-color: salmon !important; 
+    background-color: salmon !important;
     color: #fff !important;
     margin: 20px 0;
 }
 
 .book .book-body .page-wrapper .page-inner section.normal div.awww-ch-animations-exercise a.awww-exercise-link:hover {
-    background-color: #263479 !important; 
+    background-color: #263479 !important;
 }
 
 a.awww-exercise-link.added-transition {
@@ -280,7 +276,7 @@ a.awww-exercise-link.added-transition {
 
 @keyframes moveBall {
   0% {
-    
+
   }
   100% {
     transform: translateX(500px);
@@ -319,6 +315,11 @@ a.awww-exercise-link.added-transition {
 
 .rectangle-ch-anim.multiply-transform {
     transform: translateX(250px) scale(1.05);
+}
+
+.logo {
+  margin: 50px auto 30px auto;
+  display: block;
 }
 
 @keyframes rotateX {

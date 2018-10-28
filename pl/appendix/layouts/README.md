@@ -1,6 +1,10 @@
 # Layouty do zakodowania
 
-Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów, aby przećwiczyć zdobytą wiedzę w praktyce.
+Tutaj znajdują się wszystkie layouty, jakie wykorzystujemy podczas warsztatów, aby przećwiczyć zdobytą wiedzę w praktyce. Layouty zostały zaprojektowane przez nas specjalnie na warsztaty. Bardzo starałyśmy się, żeby były przyjemne do zakodowania, no i oczywiście przyjemna dla oka :) Mamy nadzieję, że przypadną Wam do gustu!
+
+
+Będzie nam super miło, jeśli korzystając z tych materiałów oznaczysz nas w mediach społecznościowych – np. na instagramie: [@theawwwesomes](http://instagram.com/theawwwesomes), lub na [facebook'u](https://www.facebook.com/theawwwesomes/) oraz dodasz hashtag: *#theawwwesomes*.
+
 
 ## We Create
 
